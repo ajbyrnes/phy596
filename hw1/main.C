@@ -18,7 +18,7 @@ void fit(const int xs[], const int ys[], const int sigmas[], const int lasts[], 
 
 	int eventX[1000]{};
 	int eventY[1000]{};
-	int eventSigma[1000]{};
+	float eventSigma[1000]{};
 
 	float S{0}, Sx{0}, Sy{0};
 	float t{0}, Stt{0}, bSum{0};
@@ -59,7 +59,8 @@ void fit(const int xs[], const int ys[], const int sigmas[], const int lasts[], 
 			// Calculate t and anything involving t
 			for (int j{0}; j < numObservations; j++) {
 				// Perform preliminary per-event calulations
-				t = (1 / sigma) * (eventX[j] - (Sx / S));
+				t = (1 / eventSigma[j])* (eventX[j] - (Sx / S));
+				// t = (1 / eventSigma[j]);
 				Stt += (t * t);
 				bSum += ((eventY[j] * t) / eventSigma[j]);
 			}
@@ -78,12 +79,17 @@ void fit(const int xs[], const int ys[], const int sigmas[], const int lasts[], 
 			chiSquaredNdof /= (numObservations - 2);
 
 			// Output results
-			std::cout << "numObservations: " << numObservations << ", ";
-			std::cout << "a: " << a << ", ";
-			std::cout << "b: " << b << ", ";
-			std::cout << "sigmaA: " << sigmaA << ", ";
-			std::cout << "sigmaB: " << sigmaB << ", ";
+			std::cout << "numObservations: " << numObservations << std::endl;
+			std::cout << "S: " << S << std::endl;
+			std::cout << "Sx: " << Sx << std::endl;
+			std::cout << "Sy: " << Sy << std::endl;
+			std::cout << "Stt: " << Stt << std::endl;
+			std::cout << "a: " << a << std::endl;
+			std::cout << "b: " << b << std::endl;
+			std::cout << "sigmaA: " << sigmaA << std::endl;
+			std::cout << "sigmaB: " << sigmaB << std::endl;
 			std::cout << "chiSquaredNdof: " << chiSquaredNdof << std::endl;
+			std::cout << std::endl;
 
 			// Reset observation count, clear sums
 			numObservations = 0;
@@ -92,6 +98,8 @@ void fit(const int xs[], const int ys[], const int sigmas[], const int lasts[], 
 			Sy = 0;
 			Stt = 0;
 			bSum = 0;
+
+			exit(0);
 		}
 	}
 }
