@@ -60,7 +60,6 @@ void fit(const int xs[], const int ys[], const int sigmas[], const int lasts[], 
 			for (int j{0}; j < numObservations; j++) {
 				// Perform preliminary per-event calulations
 				t = (1 / eventSigma[j])* (eventX[j] - (Sx / S));
-				// t = (1 / eventSigma[j]);
 				Stt += (t * t);
 				bSum += ((eventY[j] * t) / eventSigma[j]);
 			}
@@ -69,7 +68,7 @@ void fit(const int xs[], const int ys[], const int sigmas[], const int lasts[], 
 			b = bSum / Stt;
 			a = (Sy - Sx * b) / S;
 			sigmaA = (1 + (Sx * Sx) / (S * Stt)) / S;
-			sigmaB = 1 / Stt;
+			sigmaB = 1 (/ Stt;
 			
 			// Calcaluate chi-squared
 			for (int j{0}; j < numObservations; j++) {
@@ -98,8 +97,6 @@ void fit(const int xs[], const int ys[], const int sigmas[], const int lasts[], 
 			Sy = 0;
 			Stt = 0;
 			bSum = 0;
-
-			exit(0);
 		}
 	}
 }
