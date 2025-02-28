@@ -3,13 +3,16 @@ CXXFLAGS = -std=c++20 -pedantic -Wall -Wextra -Wno-unused-parameter
 
 all: main
 
-main: main.o
-	$(CXX) $(CXXFLAGS) -o main main.o
-
-main.o: main.C
+main: main.o fit.o
+	$(CXX) $(CXXFLAGS) -o main main.o fit.o
+	
+main.o: main.C fit.h fit.C
 	$(CXX) $(CXXFLAGS) -c main.C
 
-clean:
-	rm -f main.o main
+fit.o: fit.C fit.h
+	$(CXX) $(CXXFLAGS) -c fit.C
+
+clean: 
+	rm -f main.o fit.o main
 
 .PHONY: all clean
