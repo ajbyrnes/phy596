@@ -1,5 +1,5 @@
-CXX = g++-13
-CXXFLAGS = -std=c++20 -pedantic -Wall -Wextra -Wno-unused-parameter
+CXX = g++
+CXXFLAGS = -std=c++17 -pedantic -Wall -Wextra -Wno-unused-parameter
 
 all: main
 
