@@ -1,0 +1,179 @@
+
+
+================================================================
+== Synthesis Summary Report of 'fit'
+================================================================
++ General Information: 
+    * Date:           Wed Mar  5 03:43:43 2025
+    * Version:        2023.1 (Build 3854077 on May  4 2023)
+    * Project:        baseline
+    * Solution:       solution1 (Vitis Kernel Flow Target)
+    * Product family: spartan7
+    * Target device:  xc7s100-fgga676-2
+    
+
++ Performance & Resource Estimates: 
+    
+    PS: '+' for module; 'o' for loop; '*' for dataflow
+    +---------------------+------+------+---------+-----------+----------+---------+------+----------+---------+------------+-------------+-------------+-----+
+    |       Modules       | Issue|      | Latency |  Latency  | Iteration|         | Trip |          |         |            |             |             |     |
+    |       & Loops       | Type | Slack| (cycles)|    (ns)   |  Latency | Interval| Count| Pipelined|  BRAM   |     DSP    |      FF     |     LUT     | URAM|
+    +---------------------+------+------+---------+-----------+----------+---------+------+----------+---------+------------+-------------+-------------+-----+
+    |+ fit*               |     -|  0.27|        -|          -|         -|        -|     -|  dataflow|  19 (7%)|  168 (105%)|  55825 (43%)|  41608 (65%)|    -|
+    | + readStage         |     -|  0.27|        -|          -|         -|        -|     -|        no|        -|      8 (5%)|    3151 (2%)|    2327 (3%)|    -|
+    |  o VITIS_LOOP_28_1  |     -|  7.30|        -|          -|        41|        1|     -|       yes|        -|           -|            -|            -|    -|
+    | + interStage1       |     -|  1.53|   535000|  5.350e+06|         -|   535000|     -|        no|        -|     15 (9%)|  27017 (21%)|  20723 (32%)|    -|
+    |  o inter1           |     -|  7.30|   534999|  5.350e+06|       107|        -|  5000|        no|        -|           -|            -|            -|    -|
+    | + interStage2       |     -|  0.29|   485000|  4.850e+06|         -|   485000|     -|        no|        -|    91 (56%)|  12959 (10%)|   9191 (14%)|    -|
+    |  o inter2           |     -|  7.30|   484999|  4.850e+06|        97|        -|  5000|        no|        -|           -|            -|            -|    -|
+    | + finalStage        |     -|  0.67|   430000|  4.300e+06|         -|   430000|     -|        no|        -|    54 (33%)|   10924 (8%)|   8201 (12%)|    -|
+    |  o readResult       |     -|  7.30|   429999|  4.300e+06|        86|        -|  5000|        no|        -|           -|            -|            -|    -|
+    +---------------------+------+------+---------+-----------+----------+---------+------+----------+---------+------------+-------------+-------------+-----+
+
+
+================================================================
+== HW Interfaces
+================================================================
+* S_AXILITE Interfaces
++---------------+------------+---------------+
+| Interface     | Data Width | Address Width |
++---------------+------------+---------------+
+| s_axi_control | 32         | 4             |
++---------------+------------+---------------+
+
+* S_AXILITE Registers
++---------------+----------+--------+-------+--------+----------------------------------+------------------------------------------------------------------------------------+
+| Interface     | Register | Offset | Width | Access | Description                      | Bit Fields                                                                         |
++---------------+----------+--------+-------+--------+----------------------------------+------------------------------------------------------------------------------------+
+| s_axi_control | CTRL     | 0x00   | 32    | RW     | Control signals                  | 0=AP_START 1=AP_DONE 2=AP_IDLE 3=AP_READY 4=AP_CONTINUE 7=AUTO_RESTART 9=INTERRUPT |
+| s_axi_control | GIER     | 0x04   | 32    | RW     | Global Interrupt Enable Register | 0=Enable                                                                           |
+| s_axi_control | IP_IER   | 0x08   | 32    | RW     | IP Interrupt Enable Register     | 0=CHAN0_INT_EN 1=CHAN1_INT_EN                                                      |
+| s_axi_control | IP_ISR   | 0x0c   | 32    | RW     | IP Interrupt Status Register     | 0=CHAN0_INT_ST 1=CHAN1_INT_ST                                                      |
++---------------+----------+--------+-------+--------+----------------------------------+------------------------------------------------------------------------------------+
+
+* AXIS
++-----------+-----------+---------------+-------+--------+--------+
+| Interface | Direction | Register Mode | TDATA | TREADY | TVALID |
++-----------+-----------+---------------+-------+--------+--------+
+| input_r   | in        | both          | 64    | 1      | 1      |
+| output_r  | out       | both          | 384   | 1      | 1      |
++-----------+-----------+---------------+-------+--------+--------+
+
+* TOP LEVEL CONTROL
++-----------+---------------+-----------+
+| Interface | Type          | Ports     |
++-----------+---------------+-----------+
+| ap_clk    | clock         | ap_clk    |
+| ap_rst_n  | reset         | ap_rst_n  |
+| interrupt | interrupt     | interrupt |
+| ap_ctrl   | ap_ctrl_chain |           |
++-----------+---------------+-----------+
+
+
+================================================================
+== SW I/O Information
+================================================================
+* Top Function Arguments
++----------+-----------+---------------------------+
+| Argument | Direction | Datatype                  |
++----------+-----------+---------------------------+
+| input    | in        | stream<Observation, 500>& |
+| output   | out       | stream<Result, 10>&       |
++----------+-----------+---------------------------+
+
+* SW-to-HW Mapping
++----------+--------------+-----------+
+| Argument | HW Interface | HW Type   |
++----------+--------------+-----------+
+| input    | input_r      | interface |
+| output   | output_r     | interface |
++----------+--------------+-----------+
+
+
+================================================================
+== M_AXI Burst Information
+================================================================
+ Note: All burst requests might be further partitioned into multiple requests during RTL generation based on max_read_burst_length or max_write_burst_length settings.
+
+
+================================================================
+== Bind Op Report
+================================================================
++-----------------------------+-----+--------+-------------+-----+--------+---------+
+| Name                        | DSP | Pragma | Variable    | Op  | Impl   | Latency |
++-----------------------------+-----+--------+-------------+-----+--------+---------+
+| + fit                       | 168 |        |             |     |        |         |
+|  + readStage                | 8   |        |             |     |        |         |
+|    mul_34s_34s_68_1_1_U1    | 4   |        | mul_ln38    | mul | auto   | 0       |
+|    mul_36s_12s_48_1_1_U2    | 2   |        | mul_ln45    | mul | auto   | 0       |
+|    mul_36s_12s_48_1_1_U3    | 2   |        | mul_ln46    | mul | auto   | 0       |
+|  + interStage1              | 15  |        |             |     |        |         |
+|    mul_64s_64s_96_5_1_U22   | 15  |        | mul_ln109   | mul | auto   | 4       |
+|  + interStage2              | 91  |        |             |     |        |         |
+|    sub_ln140_fu_225_p2      | -   |        | sub_ln140   | sub | fabric | 0       |
+|    mul_65s_64s_96_5_1_U40   | 15  |        | mul_ln140   | mul | auto   | 4       |
+|    mul_64s_64s_96_5_1_U38   | 15  |        | mul_ln141   | mul | auto   | 4       |
+|    add_ln141_fu_283_p2      | -   |        | add_ln141   | add | fabric | 0       |
+|    mul_64s_12s_76_5_1_U37   | 4   |        | mul_ln142   | mul | auto   | 4       |
+|    mul_76s_64s_96_5_1_U41   | 15  |        | mul_ln142_1 | mul | auto   | 4       |
+|    add_ln142_fu_309_p2      | -   |        | add_ln142   | add | fabric | 0       |
+|    mul_64s_64s_96_5_1_U38   | 15  |        | mul_ln148   | mul | auto   | 4       |
+|    mul_64s_64s_96_5_1_U38   | 15  |        | mul_ln149   | mul | auto   | 4       |
+|    sub_ln149_fu_402_p2      | -   |        | sub_ln149   | sub | fabric | 0       |
+|    mul_64s_64s_128_5_1_U39  | 16  |        | mul_ln150   | mul | auto   | 4       |
+|    mul_128s_64s_128_5_1_U42 | 26  |        | mul_ln150_1 | mul | auto   | 4       |
+|  + finalStage               | 54  |        |             |     |        |         |
+|    sub_ln181_fu_333_p2      | -   |        | sub_ln181   | sub | fabric | 0       |
+|    mul_64s_44s_96_5_1_U58   | 12  |        | mul_ln181   | mul | auto   | 4       |
+|    sub_ln181_1_fu_347_p2    | -   |        | sub_ln181_1 | sub | fabric | 0       |
+|    mul_64s_64s_128_5_1_U59  | 16  |        | mul_ln182   | mul | auto   | 4       |
+|    mul_128s_64s_128_5_1_U60 | 26  |        | mul_ln182_1 | mul | auto   | 4       |
+|    r_n_fu_380_p2            | -   |        | r_n         | add | fabric | 0       |
+|    add_ln188_fu_394_p2      | -   |        | add_ln188   | add | fabric | 0       |
++-----------------------------+-----+--------+-------------+-----+--------+---------+
+
+
+================================================================
+== Bind Storage Report
+================================================================
++----------------------+------+------+--------+------------------+---------+--------+---------+
+| Name                 | BRAM | URAM | Pragma | Variable         | Storage | Impl   | Latency |
++----------------------+------+------+--------+------------------+---------+--------+---------+
+| + fit                | 19   | 0    |        |                  |         |        |         |
+|   x1_U               | -    | -    |        | x1               | fifo    | srl    | 0       |
+|   x2_U               | -    | -    |        | x2               | fifo    | srl    | 0       |
+|   y1_U               | -    | -    |        | y1               | fifo    | srl    | 0       |
+|   y2_U               | -    | -    |        | y2               | fifo    | srl    | 0       |
+|   sigmaDiv1_U        | -    | -    |        | sigmaDiv1        | fifo    | srl    | 0       |
+|   sigmaSquaredDiv1_U | -    | -    |        | sigmaSquaredDiv1 | fifo    | srl    | 0       |
+|   last1_U            | -    | -    |        | last1            | fifo    | srl    | 0       |
+|   last2_U            | -    | -    |        | last2            | fifo    | srl    | 0       |
+|   last3_U            | -    | -    |        | last3            | fifo    | srl    | 0       |
+|   partialS_U         | -    | -    |        | partialS         | fifo    | srl    | 0       |
+|   partialSx_U        | -    | -    |        | partialSx        | fifo    | srl    | 0       |
+|   partialSy_U        | -    | -    |        | partialSy        | fifo    | srl    | 0       |
+|   SDiv1_U            | -    | -    |        | SDiv1            | fifo    | srl    | 0       |
+|   SxDivS_U           | -    | -    |        | SxDivS           | fifo    | srl    | 0       |
+|   SxSquaredDivS_U    | -    | -    |        | SxSquaredDivS    | fifo    | srl    | 0       |
+|   SyDivS_U           | -    | -    |        | SyDivS           | fifo    | srl    | 0       |
+|   resultStream_U     | 19   | -    |        | resultStream     | fifo    | memory | 0       |
++----------------------+------+------+--------+------------------+---------+--------+---------+
+
+
+================================================================
+== Pragma Report
+================================================================
+* Valid Pragma Syntax
++----------------+--------------------+-------------------------------------+
+| Type           | Options            | Location                            |
++----------------+--------------------+-------------------------------------+
+| pipeline       | II=5               | baseline/fit.cpp:91 in interstage1  |
+| loop_tripcount | min=500 max=500*10 | baseline/fit.cpp:93 in interstage1  |
+| pipeline       | II=5               | baseline/fit.cpp:136 in interstage2 |
+| loop_tripcount | min=500 max=500*10 | baseline/fit.cpp:138 in interstage2 |
+| pipeline       | II=5               | baseline/fit.cpp:174 in finalstage  |
+| loop_tripcount | min=500 max=500*10 | baseline/fit.cpp:176 in finalstage  |
+| dataflow       |                    | baseline/fit.cpp:211 in fit         |
++----------------+--------------------+-------------------------------------+
+
+

@@ -1,0 +1,44 @@
+[
+  {
+    "functionLabel": "",
+    "functionName": "fit",
+    "id": 0,
+    "ifcond": "",
+    "insert_position": "",
+    "label": "",
+    "pragma": {
+      "name": "TOP",
+      "option": [
+        {
+          "name": "name",
+          "value": "fit"
+        }
+      ]
+    },
+    "slx": false,
+    "sourceFile": "C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/directives.tcl",
+    "sourceLine": 7,
+    "success": true
+  },
+  {
+    "functionLabel": "",
+    "functionName": "fit",
+    "id": 1,
+    "ifcond": "",
+    "insert_position": "",
+    "label": "",
+    "pragma": {
+      "name": "TOP",
+      "option": [
+        {
+          "name": "name",
+          "value": "fit"
+        }
+      ]
+    },
+    "slx": false,
+    "sourceFile": "C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/csynth.tcl",
+    "sourceLine": 21,
+    "success": true
+  }
+]

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low." projectName="baseline" solutionName="solution1" date="2025-03-05T03:43:42.411-0600" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'n' is power-on initialization." projectName="baseline" solutionName="solution1" date="2025-03-05T03:43:41.826-0600" type="Warning"/>
+        <logs message="WARNING: [HLS 200-1020] Increasing the depth of FIFO start_for_finalStage_U0 (from readStage_U0 to finalStage_U0) to 4 to improve performance and/or avoid deadlocks." projectName="baseline" solutionName="solution1" date="2025-03-05T03:43:40.001-0600" type="Warning"/>
+        <logs message="WARNING: [HLS 200-1020] Increasing the depth of FIFO start_for_interStage2_U0 (from readStage_U0 to interStage2_U0) to 3 to improve performance and/or avoid deadlocks." projectName="baseline" solutionName="solution1" date="2025-03-05T03:43:39.986-0600" type="Warning"/>
+        <logs message="WARNING: [SCHED 204-65] Unable to satisfy pipeline directive for function 'finalStage': contains subloop(s) that are not unrolled." projectName="baseline" solutionName="solution1" date="2025-03-05T03:43:38.674-0600" type="Warning"/>
+        <logs message="WARNING: [SCHED 204-65] Unable to satisfy pipeline directive for function 'interStage2': contains subloop(s) that are not unrolled." projectName="baseline" solutionName="solution1" date="2025-03-05T03:43:37.040-0600" type="Warning"/>
+        <logs message="WARNING: [SCHED 204-65] Unable to satisfy pipeline directive for function 'interStage1': contains subloop(s) that are not unrolled." projectName="baseline" solutionName="solution1" date="2025-03-05T03:43:35.143-0600" type="Warning"/>
+        <logs message="WARNING: [HLS 200-932] Cannot unroll loop 'readResult' (baseline/fit.cpp:175) in function 'finalStage' completely: variable loop bound." projectName="baseline" solutionName="solution1" date="2025-03-05T03:43:33.835-0600" type="Warning"/>
+        <logs message="WARNING: [HLS 200-932] Cannot unroll loop 'inter1' (baseline/fit.cpp:92) in function 'interStage1' completely: variable loop bound." projectName="baseline" solutionName="solution1" date="2025-03-05T03:43:33.775-0600" type="Warning"/>
+        <logs message="WARNING: [HLS 200-932] Cannot unroll loop 'inter2' (baseline/fit.cpp:137) in function 'interStage2' completely: variable loop bound." projectName="baseline" solutionName="solution1" date="2025-03-05T03:43:33.756-0600" type="Warning"/>
+        <logs message="WARNING: [SYNCHK 200-120] baseline/fit.cpp:141: multiplication is assumed not to overflow by default, otherwise, please add option '-fwrapv'." projectName="baseline" solutionName="solution1" date="2025-03-05T03:43:33.650-0600" type="Warning"/>
+        <logs message="WARNING: [HLS 200-40] Skipped source file 'data.txt'. Source files must have extensions .c, .C, .cc, .cpp, .c++, .cp, or .cxx." projectName="baseline" solutionName="solution1" date="2025-03-05T03:43:06.794-0600" type="Warning"/>
+      </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

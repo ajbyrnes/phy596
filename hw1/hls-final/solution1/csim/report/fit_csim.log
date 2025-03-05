@@ -1,0 +1,47 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch GCC as the compiler.
+   Compiling ../../../fit.cpp in debug mode
+   Generating csim.exe
+Event: 1
+	numObservations: 100
+	a: 40.1769
+	b: -0.505989
+	sigmaA: 0.14275
+	sigmaB: 5.22716e-05
+	chiSquaredNdof: 1.42974
+
+Event: 2
+	numObservations: 94
+	a: 119.021
+	b: -3.31984
+	sigmaA: 0.185871
+	sigmaB: 7.74399e-05
+	chiSquaredNdof: 21.4269
+
+Event: 3
+	numObservations: 242
+	a: 58.994
+	b: 1.11135
+	sigmaA: 0.295228
+	sigmaB: 0.000107304
+	chiSquaredNdof: 0.961636
+
+Event: 4
+	numObservations: 242
+	a: 1.06124
+	b: -1.28918
+	sigmaA: 0.0577358
+	sigmaB: 2.46805e-05
+	chiSquaredNdof: 0.994762
+
+Event: 5
+	numObservations: 242
+	a: 14.3103
+	b: 10.9737
+	sigmaA: 7.61796
+	sigmaB: 0.00339365
+	chiSquaredNdof: 0.948025
+
+INFO [HLS SIM]: The maximum depth reached by any hls::stream() instance in the design is 1362
+INFO: [SIM 1] CSim done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************

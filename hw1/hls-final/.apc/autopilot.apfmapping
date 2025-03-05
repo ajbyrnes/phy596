@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="data.txt" path="C:\Users\abelo\AppData\Roaming\Xilinx\Vitis\phy596\hw1\baseline\data.txt"/>
+    <originFiles name="fit.cpp" path="C:\Users\abelo\AppData\Roaming\Xilinx\Vitis\phy596\hw1\baseline\fit.cpp"/>
+    <originFiles name="fit.hpp" path="C:\Users\abelo\AppData\Roaming\Xilinx\Vitis\phy596\hw1\baseline\fit.hpp"/>
+  </source>
+  <testbench>
+    <originFiles name="main.cpp" path="C:\Users\abelo\AppData\Roaming\Xilinx\Vitis\phy596\hw1\baseline\main.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

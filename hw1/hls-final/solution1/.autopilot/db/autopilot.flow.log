@@ -1,0 +1,926 @@
+INFO-FLOW: Workspace C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1 opened at Wed Mar 05 03:43:02 -0600 2025
+Execute     ap_set_clock -name default -period 10 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute     set_part xc7s100-fgga676-2 
+Execute       create_platform xc7s100-fgga676-2 -board  
+DBG:HLSDevice: Trying to load device library: E:/Vitis_HLS/2023.1\lib\win64.o\xv_hlsvwrap.dll
+DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: E:/Vivado/2023.1/data/parts/arch.xml
+DBG:HLSDevice: init success
+INFO: [HLS 200-1611] Setting target device to 'xc7s100-fgga676-2'
+Command       create_platform done; 3.826 sec.
+Execute       source E:/Vitis_HLS/2023.1/common/technology/xilinx/common/xilinx.gen 
+Execute         source E:/Vitis_HLS/2023.1/common/technology/xilinx/interface/plb46.gen 
+Execute         source E:/Vitis_HLS/2023.1/common/technology/xilinx/interface/axi4.gen 
+Execute         source E:/Vitis_HLS/2023.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source E:/Vitis_HLS/2023.1/common/technology/xilinx/interface/saxilite.gen 
+Execute         source E:/Vitis_HLS/2023.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source E:/Vitis_HLS/2023.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source E:/Vitis_HLS/2023.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source E:/Vitis_HLS/2023.1/common/technology/xilinx/ip/util.gen 
+Execute         source E:/Vitis_HLS/2023.1/common/technology/xilinx/ip/xfft.gen 
+Execute         source E:/Vitis_HLS/2023.1/common/technology/xilinx/ip/xfir.gen 
+Execute         source E:/Vitis_HLS/2023.1/common/technology/xilinx/DSP48/dsp48.gen 
+Execute       ap_part_info -name xc7s100-fgga676-2 -data info 
+Execute       config_compile -quiet -complex-mul-dsp=0 
+Command     set_part done; 3.984 sec.
+Execute     send_msg_by_id INFO @200-1505@%s%s  vitis 
+INFO: [HLS 200-1505] Using flow_target 'vitis'
+Execute     send_msg_by_id INFO @200-1464@%s config_interface -default_interface=kernel 
+INFO: [HLS 200-1464] Running solution command: config_interface -default_interface=kernel
+Execute     config_interface -default_interface=kernel 
+Execute     send_msg_by_id INFO @200-1464@%s config_interface -m_axi_alignment_byte_size=64 
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_alignment_byte_size=64
+Execute     config_interface -m_axi_alignment_byte_size=64 
+Execute     send_msg_by_id INFO @200-1464@%s config_interface -m_axi_latency=64 
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_latency=64
+Execute     config_interface -m_axi_latency=64 
+Execute     send_msg_by_id INFO @200-1464@%s config_interface -m_axi_max_widen_bitwidth=512 
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_max_widen_bitwidth=512
+Execute     config_interface -m_axi_max_widen_bitwidth=512 
+Execute     send_msg_by_id INFO @200-1464@%s config_rtl -register_reset_num=3 
+INFO: [HLS 200-1464] Running solution command: config_rtl -register_reset_num=3
+Execute     config_rtl -register_reset_num=3 
+Execute     send_msg_by_id INFO @200-1464@%s config_cosim -enable_dataflow_profiling=1 
+INFO: [HLS 200-1464] Running solution command: config_cosim -enable_dataflow_profiling=1
+Execute     config_cosim -enable_dataflow_profiling=1 
+Execute     send_msg_by_id INFO @200-1464@%s config_cosim -tool=xsim 
+INFO: [HLS 200-1464] Running solution command: config_cosim -tool=xsim
+Execute     config_cosim -tool=xsim 
+Execute     send_msg_by_id INFO @200-1464@%s config_export -flow=syn 
+INFO: [HLS 200-1464] Running solution command: config_export -flow=syn
+Execute     config_export -flow=syn 
+Execute     send_msg_by_id INFO @200-1464@%s config_export -format=ip_catalog 
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+Execute     config_export -format=ip_catalog 
+Execute     send_msg_by_id INFO @200-1464@%s config_export -rtl=verilog 
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+Execute     config_export -rtl=verilog 
+Execute     send_msg_by_id INFO @200-1464@%s config_export -vivado_clock=10 
+INFO: [HLS 200-1464] Running solution command: config_export -vivado_clock=10
+Execute     config_export -vivado_clock=10 
+Command   open_solution done; 4.088 sec.
+Execute   set_part xc7s100-fgga676-2 
+INFO: [HLS 200-1510] Running: set_part xc7s100-fgga676-2 
+Execute     create_platform xc7s100-fgga676-2 -board  
+Execute     source E:/Vitis_HLS/2023.1/common/technology/xilinx/common/xilinx.gen 
+Execute       source E:/Vitis_HLS/2023.1/common/technology/xilinx/interface/plb46.gen 
+Execute       source E:/Vitis_HLS/2023.1/common/technology/xilinx/interface/axi4.gen 
+Execute       source E:/Vitis_HLS/2023.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source E:/Vitis_HLS/2023.1/common/technology/xilinx/interface/saxilite.gen 
+Execute       source E:/Vitis_HLS/2023.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source E:/Vitis_HLS/2023.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source E:/Vitis_HLS/2023.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source E:/Vitis_HLS/2023.1/common/technology/xilinx/ip/util.gen 
+Execute       source E:/Vitis_HLS/2023.1/common/technology/xilinx/ip/xfft.gen 
+Execute       source E:/Vitis_HLS/2023.1/common/technology/xilinx/ip/xfir.gen 
+Execute       source E:/Vitis_HLS/2023.1/common/technology/xilinx/DSP48/dsp48.gen 
+Execute     ap_part_info -name xc7s100-fgga676-2 -data info 
+Execute     config_compile -quiet -complex-mul-dsp=0 
+Command   set_part done; 0.216 sec.
+Execute   create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+Execute   config_interface -m_axi_alignment_byte_size 64 -m_axi_latency 64 -m_axi_max_widen_bitwidth 512 
+INFO: [HLS 200-1510] Running: config_interface -m_axi_alignment_byte_size 64 -m_axi_latency 64 -m_axi_max_widen_bitwidth 512 
+Execute   config_rtl -register_reset_num 3 
+INFO: [HLS 200-1510] Running: config_rtl -register_reset_num 3 
+Execute   config_cosim -enable_dataflow_profiling -tool xsim 
+INFO: [HLS 200-1510] Running: config_cosim -enable_dataflow_profiling -tool xsim 
+Execute   config_export -flow syn -format ip_catalog -rtl verilog -vivado_clock 10 
+INFO: [HLS 200-1510] Running: config_export -flow syn -format ip_catalog -rtl verilog -vivado_clock 10 
+Execute   source ./baseline/solution1/directives.tcl 
+INFO: [HLS 200-1510] Running: source ./baseline/solution1/directives.tcl
+Execute     set_directive_top -name fit fit 
+INFO: [HLS 200-1510] Running: set_directive_top -name fit fit 
+Execute   csynth_design 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO-FLOW: Running SLX 'csynth' proc: ::SLX::run_csynth
+Execute     elaborate -effort=medium -skip_syncheck=0 -keep_printf=0 -skip_cdt=0 -skip_transform=0 -ng=0 -g=0 -opt_fp=0 -from_csynth_design=1 
+WARNING: [HLS 200-40] Skipped source file 'data.txt'. Source files must have extensions .c, .C, .cc, .cpp, .c++, .cp, or .cxx.
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.132 seconds; current allocated memory: 1.044 GB.
+Execute       set_directive_top fit -name=fit 
+Execute       source E:/Vitis_HLS/2023.1/tps/tcl/tcllib1.11.1/yaml/huddle.tcl 
+Execute       source E:/Vitis_HLS/2023.1/tps/tcl/tcllib1.11.1/yaml/json2huddle.tcl 
+Execute         source E:/Vitis_HLS/2023.1/tps/tcl/tcllib1.11.1/try/try.tcl 
+INFO: [HLS 200-10] Analyzing design file 'baseline/fit.cpp' ... 
+INFO-FLOW: Compiling one TU...
+INFO-FLOW: Handling baseline/fit.cpp as C++
+Execute       ap_part_info -name xc7s100-fgga676-2 -data info 
+INFO-FLOW: Running: GCC PP 39
+INFO-FLOW: Source preprocessing
+INFO-FLOW: run_clang exec: E:/Vitis_HLS/2023.1/win64/tools/clang-3.9-csynth/bin/clang baseline/fit.cpp -foptimization-record-file=C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/.autopilot/db/fit.cpp.clang.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll -mllvm -pass-remarks=reflow|pasta|unroll|inline -fno-limit-debug-info --sysroot E:/Vitis_HLS/2023.1/tps/mingw/8.3.0/win64.o/nt -fhls -fno-exceptions -insert-hls-directive=C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/.autopilot/db/all.directive.json -E -fno-math-errno -c -emit-llvm -mllvm -disable-llvm-optzns -Werror=implicit-function-declaration -Werror=implicit-hls-streams -Werror=return-type -Wpragmas -Wunused-parameter -Wdump-hls-pragmas -Wno-error=dump-hls-pragmas -fno-threadsafe-statics -fno-use-cxa-atexit -std=gnu++14 -target fpga64-xilinx-mingw32 -fno-threadsafe-statics -fno-use-cxa-atexit -D__VITIS_HLS__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I E:/Vitis_HLS/2023.1/common/technology/autopilot -I E:/Vitis_HLS/2023.1/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -I /usr/include/x86_64-linux-gnu -o C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/.autopilot/db/fit.pp.0.cpp {-hls-platform-db-name=E:/Vitis_HLS/2023.1/common/technology\xilinx/common/platform.db} -hls-platform-name=spartan7_medium -device-resource-info=BRAM_240.000000_DSP_160.000000_FF_128000.000000_LUT_64000.000000_SLICE_16000.000000_URAM_0.000000 -device-name-info=xc7s100fgga676-2 > C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/.autopilot/db/fit.cpp.clang.out.log 2> C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/.autopilot/db/fit.cpp.clang.err.log
+INFO-FLOW: Done: GCC PP 39 time: 0.3 seconds per iteration
+INFO-FLOW: Source syntax check for synthesis
+INFO-FLOW: run_clang exec: E:/Vitis_HLS/2023.1/win64/tools/clang-3.9-csynth/bin/clang -foptimization-record-file=C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/.autopilot/db/clang.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll -mllvm -pass-remarks=reflow|pasta|unroll|inline -fsyntax-only -fhls -target fpga64-xilinx-linux-gnu C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/.autopilot/db/fit.pp.0.cpp {-hls-platform-db-name=E:/Vitis_HLS/2023.1/common/technology\xilinx/common/platform.db} -hls-platform-name=spartan7_medium -device-resource-info=BRAM_240.000000_DSP_160.000000_FF_128000.000000_LUT_64000.000000_SLICE_16000.000000_URAM_0.000000 -device-name-info=xc7s100fgga676-2 > C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/.autopilot/db/clang.out.log 2> C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/.autopilot/db/clang.err.log
+Execute       clang_tidy xilinx-systemc-detector -desc systemc-detector C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/.autopilot/db/fit.pp.0.cpp std=gnu++14 -target fpga  -directive=C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/.autopilot/db/.systemc_flag 
+INFO-FLOW: exec E:/Vitis_HLS/2023.1/win64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-systemc-detector -import-directive=C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/.autopilot/db/.systemc_flag -fix-errors C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/.autopilot/db/fit.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0
+Command       clang_tidy done; 3.318 sec.
+INFO-FLOW: Running: clang-tidy CDT preprocess 39
+Execute       clang_tidy xilinx-directive2pragma -desc directive2pragma C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/.autopilot/db/fit.pp.0.cpp std=gnu++14 -target fpga  -directive=C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/.autopilot/db/all.directive.json 
+INFO-FLOW: exec E:/Vitis_HLS/2023.1/win64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-directive2pragma -import-directive=C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/.autopilot/db/all.directive.json -fix-errors C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/.autopilot/db/fit.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0
+Command       clang_tidy done; 3.709 sec.
+INFO-FLOW: Done: clang-tidy CDT preprocess 39 time: 3.7 seconds per iteration
+INFO-FLOW: Calling xilinx-label-all-loops ... 
+INFO-FLOW: Calling xilinx-aggregate-on-hls-vector ... 
+Execute       clang_tidy -errorcheck -desc loop-label xilinx-label-all-loops,xilinx-aggregate-on-hls-vector,,xilinx-warn-mayneed-no-ctor-attribute C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/.autopilot/db/fit.pp.0.cpp std=gnu++14 -target fpga  
+INFO-FLOW: run_clang exec: E:/Vitis_HLS/2023.1/win64/tools/clang-3.9-csynth/bin/clang-tidy -export-fixes=C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/.autopilot/db/fit.pp.0.cpp.clang-tidy.loop-label.diag.yml -header-filter=.* --checks=-*,xilinx-label-all-loops,xilinx-aggregate-on-hls-vector,,xilinx-warn-mayneed-no-ctor-attribute -fix-errors C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/.autopilot/db/fit.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0 > C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/.autopilot/db/fit.pp.0.cpp.clang-tidy.loop-label.out.log 2> C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/.autopilot/db/fit.pp.0.cpp.clang-tidy.loop-label.err.log
+Execute         source E:/Vitis_HLS/2023.1/tps/tcl/tcllib1.11.1/yaml/yaml.tcl 
+Command       clang_tidy done; 6.698 sec.
+INFO-FLOW: run_clang exec: E:/Vitis_HLS/2023.1/win64/tools/clang-3.9-csynth/bin/xilinx-dataflow-lawyer -export-fixes=C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/.autopilot/db/fit.pp.0.cpp.xilinx-dataflow-lawyer.diag.yml C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/.autopilot/db/fit.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0 -fstrict-dataflow > C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/.autopilot/db/fit.pp.0.cpp.xilinx-dataflow-lawyer.out.log 2> C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/.autopilot/db/fit.pp.0.cpp.xilinx-dataflow-lawyer.err.log
+Execute       ap_part_info -name xc7s100-fgga676-2 -data info 
+INFO-FLOW: compiling source code to llvm bc
+INFO-FLOW: run_clang exec: E:/Vitis_HLS/2023.1/win64/tools/clang-3.9-csynth/bin/clang -foptimization-record-file=C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/.autopilot/db/fit.pp.0.cpp.clang.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll -mllvm -pass-remarks=reflow|pasta|unroll|inline -fno-limit-debug-info -fhls -flto -fno-exceptions -Wno-error=c++11-narrowing C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/.autopilot/db/fit.pp.0.cpp -fno-math-errno -c -emit-llvm -mllvm -disable-llvm-optzns -Werror=implicit-function-declaration -Werror=implicit-hls-streams -Werror=return-type -Wpragmas -Wunused-parameter -Wdump-hls-pragmas -Wno-error=dump-hls-pragmas -fno-threadsafe-statics -fno-use-cxa-atexit -std=gnu++14 -target fpga64-xilinx-linux-gnu -D__VITIS_HLS__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I E:/Vitis_HLS/2023.1/common/technology/autopilot -I E:/Vitis_HLS/2023.1/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -g -o C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/.autopilot/db/fit.bc {-hls-platform-db-name=E:/Vitis_HLS/2023.1/common/technology\xilinx/common/platform.db} -hls-platform-name=spartan7_medium -device-resource-info=BRAM_240.000000_DSP_160.000000_FF_128000.000000_LUT_64000.000000_SLICE_16000.000000_URAM_0.000000 -device-name-info=xc7s100fgga676-2 > C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/.autopilot/db/fit.pp.0.cpp.clang.out.log 2> C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/.autopilot/db/fit.pp.0.cpp.clang.err.log
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 23.769 seconds; current allocated memory: 1.049 GB.
+INFO-FLOW: Linking Debug ...
+INFO-FLOW: Linking dut bc code.
+Execute       run_link_or_opt -out C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/.autopilot/db/a.g.ld.0.bc -args  "C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/.autopilot/db/fit.g.bc"  
+INFO-FLOW: run_clang exec: E:/Vitis_HLS/2023.1/win64/tools/clang-3.9-csynth/bin/llvm-link C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/.autopilot/db/fit.g.bc -o C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/.autopilot/db/a.g.ld.0.bc > C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/.autopilot/db/a.g.ld.0.bc.llvm-link.out.log 2> C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/.autopilot/db/a.g.ld.0.bc.llvm-link.err.log
+INFO-FLOW: 
+Execute       run_link_or_opt -opt -out C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/.autopilot/db/a.g.ld.1.lower.bc -args C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/.autopilot/db/a.g.ld.0.bc -reflow-lower-math-intrinsics 
+INFO-FLOW: run_clang exec: E:/Vitis_HLS/2023.1/win64/tools/clang-3.9-csynth/bin/opt -pass-remarks-missed=reflow|pasta|unroll -pass-remarks=reflow|pasta|unroll|inline -pass-remarks-output=C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/.autopilot/db/a.g.ld.1.lower.bc.opt.diag.yml C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/.autopilot/db/a.g.ld.0.bc -reflow-lower-math-intrinsics -o C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/.autopilot/db/a.g.ld.1.lower.bc > C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/.autopilot/db/a.g.ld.1.lower.bc.opt.out.log 2> C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/.autopilot/db/a.g.ld.1.lower.bc.opt.err.log
+INFO-FLOW: 
+INFO-FLOW: Running: gen_design_size_report post-opt
+INFO-FLOW: Done: gen_design_size_report post-opt time: 0 seconds per iteration
+INFO-FLOW: Linking math bc lib
+Execute       run_link_or_opt -out C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/.autopilot/db/a.g.ld.2.m1.bc -args C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/.autopilot/db/a.g.ld.1.lower.bc -only-needed E:/Vitis_HLS/2023.1/win64/lib/libhlsm_39.bc E:/Vitis_HLS/2023.1/win64/lib/libhlsmc++_39.bc 
+INFO-FLOW: run_clang exec: E:/Vitis_HLS/2023.1/win64/tools/clang-3.9-csynth/bin/llvm-link C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/.autopilot/db/a.g.ld.1.lower.bc -only-needed E:/Vitis_HLS/2023.1/win64/lib/libhlsm_39.bc E:/Vitis_HLS/2023.1/win64/lib/libhlsmc++_39.bc -o C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/.autopilot/db/a.g.ld.2.m1.bc > C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/.autopilot/db/a.g.ld.2.m1.bc.llvm-link.out.log 2> C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/.autopilot/db/a.g.ld.2.m1.bc.llvm-link.err.log
+INFO-FLOW: 
+Command       run_link_or_opt done; 1.341 sec.
+Execute       run_link_or_opt -opt -out C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/.autopilot/db/a.g.ld.3.fpc.bc -args C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/.autopilot/db/a.g.ld.2.m1.bc -reflow-globaldce -hls-top-function-name=fit -reflow-float-conversion 
+INFO-FLOW: run_clang exec: E:/Vitis_HLS/2023.1/win64/tools/clang-3.9-csynth/bin/opt -pass-remarks-missed=reflow|pasta|unroll -pass-remarks=reflow|pasta|unroll|inline -pass-remarks-output=C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/.autopilot/db/a.g.ld.3.fpc.bc.opt.diag.yml C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/.autopilot/db/a.g.ld.2.m1.bc -reflow-globaldce -hls-top-function-name=fit -reflow-float-conversion -o C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/.autopilot/db/a.g.ld.3.fpc.bc > C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/.autopilot/db/a.g.ld.3.fpc.bc.opt.out.log 2> C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/.autopilot/db/a.g.ld.3.fpc.bc.opt.err.log
+INFO-FLOW: 
+INFO-FLOW: Running: gen_design_size_report post-opt
+INFO-FLOW: Done: gen_design_size_report post-opt time: 0 seconds per iteration
+Command       run_link_or_opt done; 0.63 sec.
+Execute       run_link_or_opt -out C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/.autopilot/db/a.g.ld.4.m2.bc -args C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/.autopilot/db/a.g.ld.3.fpc.bc -only-needed E:/Vitis_HLS/2023.1/win64/lib/libfloatconversion_39.bc 
+INFO-FLOW: run_clang exec: E:/Vitis_HLS/2023.1/win64/tools/clang-3.9-csynth/bin/llvm-link C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/.autopilot/db/a.g.ld.3.fpc.bc -only-needed E:/Vitis_HLS/2023.1/win64/lib/libfloatconversion_39.bc -o C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/.autopilot/db/a.g.ld.4.m2.bc > C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/.autopilot/db/a.g.ld.4.m2.bc.llvm-link.out.log 2> C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/.autopilot/db/a.g.ld.4.m2.bc.llvm-link.err.log
+INFO-FLOW: 
+Execute       run_link_or_opt -opt -out C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/.autopilot/db/a.g.ld.5.gdce.bc -args C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/.autopilot/db/a.g.ld.4.m2.bc -reflow-globaldce -hls-top-function-name=fit 
+INFO-FLOW: run_clang exec: E:/Vitis_HLS/2023.1/win64/tools/clang-3.9-csynth/bin/opt -pass-remarks-missed=reflow|pasta|unroll -pass-remarks=reflow|pasta|unroll|inline -pass-remarks-output=C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/.autopilot/db/a.g.ld.5.gdce.bc.opt.diag.yml C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/.autopilot/db/a.g.ld.4.m2.bc -reflow-globaldce -hls-top-function-name=fit -o C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/.autopilot/db/a.g.ld.5.gdce.bc > C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/.autopilot/db/a.g.ld.5.gdce.bc.opt.out.log 2> C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/.autopilot/db/a.g.ld.5.gdce.bc.opt.err.log
+INFO-FLOW: 
+INFO-FLOW: Running: gen_design_size_report post-opt
+INFO-FLOW: Done: gen_design_size_report post-opt time: 0 seconds per iteration
+Execute       send_msg_by_id INFO @200-777@%s Vitis 
+INFO: [HLS 200-777] Using interface defaults for 'Vitis' flow target.
+Execute       is_m_axi_addr64 
+INFO-FLOW: Doing LTO.
+INFO-FLOW: run_clang exec: E:/Vitis_HLS/2023.1/win64/tools/clang-3.9-csynth/bin/clang -foptimization-record-file=C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/.autopilot/db/a.g.ld.0.bc.clang.reflow.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll -mllvm -pass-remarks=reflow|pasta|unroll|inline -fhls -mllvm -hls-top-function-name=fit -mllvm -hls-db-dir -mllvm C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/.autopilot/db -emit-llvm -c -target fpga64-xilinx-none -mllvm -xcl-xmlinfo=C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/.autopilot/db/../../../kernel.xml -mllvm -top-io-mapping-info=C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/.autopilot/db/top-io-fe.xml -mllvm -hls-bitcode-version=3.1 -mllvm -reflow-enable-slave-interface-default-setting=true -mllvm -gen-kernel-xml=true -mllvm -default-maxi-offset=slave -mllvm -maxi-latency=64 -mllvm -hls-maxi-data-size-in-bits=8 -mllvm -hls-maxi-max-data-size-in-bits=1024 -mllvm -hls-max-widen-size-in-bits=512 -mllvm -xcl-kernel-max-mem-ports=0 -mllvm -maxi-read-trans=16 -mllvm -maxi-write-trans=16 -mllvm -maxi-read-burst-len=16 -mllvm -maxi-write-burst-len=16 -mllvm -reflow-enable-saxi-64bits=0 -mllvm -reflow-basic-block-instr-threshold=200000 -mllvm -reflow-auto-pipeline-threshold=64 -mllvm -reflow-enable-maxi-auto-id-channel=0 -mllvm -enable-fp-thr=0 -mllvm -reflow-bdd-simplify-threshold=1024 -mllvm -reflow-fanout-threshold=16 -mllvm -assume-maxi-align=64 -mllvm -reflow-pipeline-style-llvm-setting=2 -mllvm -reflow-enable-dataflow-strict-mode-checking=1 -ftime-report -mllvm -time-passes -mllvm -reflow-auto-array-partition-mode=default -mllvm -reflow-enable-auto-array-partition=true -mllvm -reflow-enable-auto-parallel-performance-driven=true -mllvm -reflow-enable-partition-for-automation=true -mllvm -reflow-aggregate-bitwidth-threshold=4096 -mllvm -reflow-reserved-saxilite-registers=1024 -mllvm -reflow-assume-no-address-wrap=true -mllvm -reflow-enable-occurrence-inference=true -mllvm -hls -mllvm -disable-inlined-alloca-merging=true -mllvm -enable-reflow-vitis-flow-setting=true -mllvm -default-clock-period=10 -x ir C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/.autopilot/db/a.g.ld.5.gdce.bc -o C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/.autopilot/db/a.g.lto.bc {-hls-platform-db-name=E:/Vitis_HLS/2023.1/common/technology\xilinx/common/platform.db} -hls-platform-name=spartan7_medium -device-resource-info=BRAM_240.000000_DSP_160.000000_FF_128000.000000_LUT_64000.000000_SLICE_16000.000000_URAM_0.000000 -device-name-info=xc7s100fgga676-2 > C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/.autopilot/db/a.g.ld.0.bc.clang.reflow.out.log 2> C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/.autopilot/db/a.g.ld.0.bc.clang.reflow.err.log
+INFO: [HLS 214-291] Loop 'readResult' is marked as complete unroll implied by the pipeline pragma (baseline/fit.cpp:175:14)
+INFO: [HLS 214-291] Loop 'inter2' is marked as complete unroll implied by the pipeline pragma (baseline/fit.cpp:137:10)
+INFO: [HLS 214-291] Loop 'inter1' is marked as complete unroll implied by the pipeline pragma (baseline/fit.cpp:92:10)
+INFO: [HLS 214-241] Aggregating fifo (hls::stream) variable 'resultStream' with compact=bit mode in 332-bits (baseline/fit.cpp:209:26)
+INFO-FLOW: DBG:PUTS: copy_raw_kernel_xml ap_link_39: copying raw kernel.xml: C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/.autopilot/db/../../../kernel.xml -> C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/.autopilot/db/kernel.internal.xml
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 2.94 seconds; current allocated memory: 1.050 GB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.003 seconds; current allocated memory: 1.050 GB.
+Execute       opt_and_import_c a -opt_level=2 -skip_syncheck=0 -ng=0 -keep_printf=0 
+Execute         cleanup_all_models 
+INFO: [HLS 200-10] Starting code transformations ...
+INFO-FLOW: Running Standard Transforms...
+Execute         transform -hls -share-std-xform -demangle-name -inline-byval-memcpy -always-inline -promote-dbg-pointer -interface-preproc -mem2reg -scalarrepl -mem2reg -keep-read-access -instcombine -dce -promote-dbg-pointer -bitop-raise -loop-simplify -indvarspre -indvars -loop-simplify -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -basicaa -simplifycfg -mem2reg -globalopt -global-constprop -deadargelim -instcombine -simplifycfg -scalarrepl -instcombine -reassociate -licm -simplifycfg -loop-simplify -indvars -instcombine -simplifycfg -mem2reg -loop-simplify -indvars -instcombine -gvn -gvn -instcombine -adce -break-crit-edges -simplifycfg -loop-delete -global-array-opt -dce -dse -adce -find-syn-modules -top fit -deadargelim -mem2reg -instcombine -dce -presyn-prepare -auto-rom-infer -interface-preproc -syn-check -check-rec-only -find-region -simplifycfg -func-extr -function-inline -globaldce -mem2reg -instcombine -dce -gvn -globaldce -adce -adse -constprop -instcombine -bit-constprop -instcombine -dce -simplifycfg -bitop-raise -simplifycfg -dce -loop-delete -reassociate -globalopt -global-privatize -mem2reg -dce -global-constprop -pointer-simplify -constprop -dce -auto-shift-reg-idiom -promote-dbg-pointer -norm-name C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/.autopilot/db/a.g.0.bc -o C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/.autopilot/db/a.g.1.bc -f -phase std-opt 
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.067 seconds; current allocated memory: 1.057 GB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO-FLOW: Checking Synthesizability 1/2..
+Execute         transform -hls -syn-check -check-rec-only -scalarrepl -norm-name -dce -mem2reg -instcombine -directive-preproc -mem2reg -dse -dce -auto-rom-infer -dce -pag -array-normalize -instcombine -dce -array-seg-normalize -instcombine -dce -data-pack -instcombine -dce -inst-simplify -array-flatten -instcombine -dce -array-burst -dce -deadargelim -promote-global-argument -simplifycfg -mem2reg -globaldce -dce -deadargelim -dce -instcombine -function-inline -globaldce -dce -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -dse -adse -instcombine -ptrLegalization -simplifycfg -dce -instcombine -pointer-simplify -ptrArgReplace -dce -instcombine -resolve-double-ptr -scalarrepl -norm-name -dce -mem2reg -instcombine -ptrLegalization -simplifycfg -deadargelim -instcombine -dce -inst-simplify -directive-preproc -mem2reg -dse -dce -globaldce C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/.autopilot/db/a.g.1.bc -o C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/.autopilot/db/a.g.2.prechk.bc -f 
+INFO-FLOW: Checking Synthesizability 2/2..
+Execute         transform -syn-check C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/.autopilot/db/a.g.2.prechk.bc -o C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/.autopilot/db/a.g.2.bc -f -phase syn-check 
+WARNING: [SYNCHK 200-120] baseline/fit.cpp:141: multiplication is assumed not to overflow by default, otherwise, please add option '-fwrapv'.
+INFO: [SYNCHK 200-10] 0 error(s), 1 warning(s).
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.075 seconds; current allocated memory: 1.060 GB.
+INFO-FLOW: Compiler optimizing ...
+INFO-FLOW: Share syncheck's 1.bc for syn flow: copy C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/.autopilot/db/a.g.1.bc to C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/.autopilot/db/a.o.1.bc
+INFO-FLOW: Presyn 1...
+Execute         transform -hls -tmp C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/.autopilot/db -interface-port-rename -directive-preproc -mem2reg -dse -dce -scalarrepl -norm-name -deadargelim -mem2reg -instcombine -dce -simplifycfg -auto-rom-infer -dce -resource-proc -clib-intrinsic-prepare -dce -func-buffer -dce -pag -array-normalize -func-legal -instcombine -gvn -constprop -dce -simplifycfg -mem2reg -globaldce -resolve-double-ptr -dce -deadargelim -dce -instcombine -ptrArgReplace -mem2reg -dce -array-seg-normalize -deadargelim -instcombine -dce -directive-preproc -mem2reg -dse -dce -pointer-simplify -dce -port-alignment -dce -interface-preproc -data-pack -instcombine -dce -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -loop-simplify -indvars -instcombine -gvn -loop-simplify -mem2reg -dce -find-region -instcombine -auto-loop-pipeline -inst-simplify -interface-preproc -cfgopt -instcombine -indvars -auto-loop-unroll -loop-simplify -loop-bound -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -clean-region -attach-range -gvn -inst-simplify -constprop -simplifycfg -dce -pointer-simplify -dce -globalopt -constprop -dce -array-promote -scalar-auto-dep-elim -constprop -dce -ptrArgReplace -mem2reg -simplifycfg -dce -instcombine -dce -array-transform-check -array-reshape -instcombine -simplifycfg -dce -ptrArgReplace -deadargelim -mem2reg -instcombine -simplifycfg -dce -indvars -loop-simplify -loop-bound -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -duplicate-dataflow-processes -globaldce -instcombine -array-partition -prepare-dynamic-array-partition -instcombine -simplifycfg -dce -ptrArgReplace -global-constprop -deadargelim -mem2reg -func-legal -dce -global-constprop -deadargelim -mem2reg -simplifycfg -dce -merge-param -deadargelim -globalopt -constprop -dce -array-promote -scalar-auto-dep-elim -constprop -dce -ptrArgReplace -mem2reg -simplifycfg -dce -mem-intrinsic-preproc -dce -global-internalize -global-privatize -mem2reg -globaldce -promote-global-argument -ptrArgReplace -mem2reg -dce -globalopt -mergereturn -simplify-global-access -mem2reg -dce -pointer-simplify -dce -functionattrs -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -dce -norm-name -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -accesses-merge -function-inline -complex-op-raise -inst-simplify -globaldce -func-legal -dce -loop-bound -arraycheck -bitwidthmin2 -bitwidthmin2 -on-by-dataflow -loop-delete -instcombine -simplifycfg -globaldce -dce -gvn -deadargelim -dce -loop-simplify -clean-region -simplifycfg -propagate-stable-arguments -loop-stream -instcombine -simplifycfg -dce -globaldce -duplicate-dataflow-processes -stream-intrinsic-preproc -dce -check-ap-stream -loop-simplify -eliminate-keepreads -extract-dataflow-in-loop -loop-simplify -dce -gvn -deadargelim -dse -duplicate-dataflow-processes -check-dataflow-syntax -legalize-stream-variable -globaldce -legalize-global -extract-subproc -dce -dead-channel-elimination -canonicalize-gep -globaldce -dce -gvn -hls-dead-arg-elim -deadargelim -directive-preproc -canonicalize-dataflow -dce -globaldce -scalar-preprocessing -scalar-propagation2 -deadargelim -globaldce -mem2reg -check-dataflow-channels -function-stream -dce -globaldce -prop-fifo-spec -internal-stream-gen -canonicalize-gep -globaldce -dce -gvn -deadargelim -mergereturn -indvars -loop-simplify -instcombine -array-stream -array-seg-normalize -array-partition -func-legal -instcombine -simplifycfg -dce -bundle-memfifo-ops -deadargelim -directive-preproc -mem2reg -dse -dce -group-axi-access -licm -simplifycfg -dce -loop-delete -hls-display -norm-name C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/.autopilot/db/a.o.1.bc -o C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/.autopilot/db/a.o.1.tmp.bc -f 
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_28_1' (baseline/fit.cpp:28) in function 'readStage' automatically.
+INFO: [XFORM 203-502] Unrolling all loops for pipelining in function 'interStage2' (baseline/fit.cpp:119:25).
+INFO: [XFORM 203-502] Unrolling all loops for pipelining in function 'interStage1' (baseline/fit.cpp:81:3).
+INFO: [XFORM 203-502] Unrolling all loops for pipelining in function 'finalStage' (baseline/fit.cpp:164:3).
+WARNING: [HLS 200-932] Cannot unroll loop 'inter2' (baseline/fit.cpp:137) in function 'interStage2' completely: variable loop bound.
+WARNING: [HLS 200-932] Cannot unroll loop 'inter1' (baseline/fit.cpp:92) in function 'interStage1' completely: variable loop bound.
+WARNING: [HLS 200-932] Cannot unroll loop 'readResult' (baseline/fit.cpp:175) in function 'finalStage' completely: variable loop bound.
+INFO: [XFORM 203-712] Applying dataflow to function 'fit' (baseline/fit.cpp:201), detected/extracted 4 process function(s): 
+	 'readStage'
+	 'interStage1'
+	 'interStage2'
+	 'finalStage'.
+Command         transform done; 0.189 sec.
+INFO-FLOW: Presyn 2...
+Execute         transform -hls -keep-callgraph -scalarrepl -mem2reg -port-alignment -attach-range -dce -pipe-mux-gen -indvars -loop-bound -inst-simplify -instcombine -dce -merge-array-access -mem2reg -dce -clean-region -mergereturn -if-conv -instcombine -dce -constprop -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -scalarrepl -mem2reg -global-constprop -deadargelim -deadargelim -instcombine -dce -simplifycfg -ptrArgReplace -mem2reg -function-inline -globaldce -mem2reg -instcombine -dce -expr-balance -instcombine -dce -bitwidthmin2 -bitwidthmin2 -interface-preproc -directive-preproc -inst-rectify -instcombine -dce -functionattrs -constprop -instcombine -bit-constprop -simplify-global-access -globalopt -globaldce -inst-simplify -instcombine -elimdeaddata -dce -loop-delete -simplifycfg -loop-simplify -barrier -norm-name C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/.autopilot/db/a.o.1.tmp.bc -o C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/.autopilot/db/a.o.2.bc -f -phase presyn 
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.267 seconds; current allocated memory: 1.085 GB.
+INFO-FLOW: Building ssdm...
+Execute         transform -hls -auto-function-inline -globaldce -ptrArgReplace -mem2reg -dce -reset-lda -loop-simplify -indvars -aggr-aa -licm -loop-dep -loop-bound -licm -loop-simplify -loop-sink-hoist -flattenloopnest -array-flatten -gvn -instcombine -dce -array-map -dce -func-legal -gvn -adce -instcombine -cfgopt -simplifycfg-lite -loop-simplify -array-burst -promote-global-argument -dce -array-seg-normalize -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -gvn -gvn -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -dse -adse -adce -licm -inst-simplify -dce -globaldce -instcombine -array-stream -eliminate-keepreads -instcombine -dce -deadargelim -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -mem2reg -norm-name -mem2reg -instcombine -dse -adse -adce -ptrLegalization -dce -auto-rom-infer -array-flatten -dce -instcombine -check-doubleptr -loop-rot -constprop -cfgopt -simplifycfg-lite -loop-simplify -indvars -pointer-simplify -dce -loop-bound -loop-simplify -loop-preproc -constprop -global-constprop -gvn -mem2reg -instcombine -dce -loop-bound -loop-merge -dce -deadargelim -dce -canonicalize-dataflow -dce -deadargelim -globaldce -mem2reg -bram-byte-enable -load-elim -read-loop-dep -loop-simplify -loop-extract-inner -directive-preproc -bitwidthmin2 -bitwidthmin2 -read-loop-dep -interface-preproc -directive-preproc -interface-gen -bram-byte-enable-spec-prop -deadargelim -inst-simplify -dce -gvn -mem2reg -instcombine -dce -adse -loop-bound -instcombine -cfgopt -simplifycfg-lite -loop-simplify -clean-region -io-protocol -find-region -mem2reg -bitop-raise -complex-op-raise -inst-simplify -inst-rectify -instcombine -adce -deadargelim -float-op-raise -loop-simplify -phi-opt -bitop-raise -cfgopt -simplifycfg-lite -strip-dead-prototypes -interface-lower -bitop-lower -intrinsic-lower -auto-function-inline -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -inst-simplify -simplifycfg-lite -loop-simplify -mergereturn -inst-simplify -inst-rectify -globaldce -dce -load-elim -bitop-lower -float-op-raise -fma-raise -loop-rewind -pointer-simplify -dce -cfgopt -dce -loop-bound -loop-dep -read-loop-dep -dce -dyn-mem-reuse -dce -recurrence-min -dce -share-scalar-alloca -deadargelim -dce -check-stream -norm-name -legalize -validate-dataflow -inst-clarity -bitwidth -dce -dump-loop-dep-to-ir -check-all-ssdm -dump-complexity-metric -cdfg-build C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/.autopilot/db/a.o.2.bc -o C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/.autopilot/db/a.o.3.bc -f -phase build-ssdm 
+Execute           auto_get_db
+Command         transform done; 0.133 sec.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.135 seconds; current allocated memory: 1.114 GB.
+INFO-FLOW: Finish building internal data model.
+Command       opt_and_import_c done; 0.555 sec.
+Command     elaborate done; 27.291 sec.
+Execute     ap_eval exec zip -j C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/.autopilot/db/dut.hcp $dbDir/a.o.3.bc $dbDir/${topname}.rtl_wrap.cfg.tcl $dbDir/apatb_${topname}.cpp $dbDir/apatb_${topname}_util.cpp $dbDir/apatb_${topname}_ir.ll $dbDir/mapper_${topname}.cpp $dbDir/top-io-fe.xml $dbDir/kernel.internal.xml $workdir/../hls.app 
+Execute     autosyn -from_csynth_design=1 
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO-FLOW: Synthesizing C/C++ design ...
+INFO: [HLS 200-10] Synthesizing 'fit' ...
+Execute       ap_set_top_model fit 
+Execute       get_model_list fit -filter all-wo-channel -topdown 
+Execute       preproc_iomode -model fit 
+Execute       preproc_iomode -model finalStage 
+Execute       preproc_iomode -model interStage2 
+Execute       preproc_iomode -model interStage1 
+Execute       preproc_iomode -model readStage 
+Execute       get_model_list fit -filter all-wo-channel 
+INFO-FLOW: Model list for configure: readStage interStage1 interStage2 finalStage fit
+INFO-FLOW: Configuring Module : readStage ...
+Execute       set_default_model readStage 
+Execute       apply_spec_resource_limit readStage 
+INFO-FLOW: Configuring Module : interStage1 ...
+Execute       set_default_model interStage1 
+Execute       apply_spec_resource_limit interStage1 
+INFO-FLOW: Configuring Module : interStage2 ...
+Execute       set_default_model interStage2 
+Execute       apply_spec_resource_limit interStage2 
+INFO-FLOW: Configuring Module : finalStage ...
+Execute       set_default_model finalStage 
+Execute       apply_spec_resource_limit finalStage 
+INFO-FLOW: Configuring Module : fit ...
+Execute       set_default_model fit 
+Execute       apply_spec_resource_limit fit 
+INFO-FLOW: Model list for preprocess: readStage interStage1 interStage2 finalStage fit
+INFO-FLOW: Preprocessing Module: readStage ...
+Execute       set_default_model readStage 
+Execute       cdfg_preprocess -model readStage 
+Execute       rtl_gen_preprocess readStage 
+INFO-FLOW: Preprocessing Module: interStage1 ...
+Execute       set_default_model interStage1 
+Execute       cdfg_preprocess -model interStage1 
+Execute       rtl_gen_preprocess interStage1 
+INFO-FLOW: Preprocessing Module: interStage2 ...
+Execute       set_default_model interStage2 
+Execute       cdfg_preprocess -model interStage2 
+Execute       rtl_gen_preprocess interStage2 
+INFO-FLOW: Preprocessing Module: finalStage ...
+Execute       set_default_model finalStage 
+Execute       cdfg_preprocess -model finalStage 
+Execute       rtl_gen_preprocess finalStage 
+INFO-FLOW: Preprocessing Module: fit ...
+Execute       set_default_model fit 
+Execute       cdfg_preprocess -model fit 
+Execute       rtl_gen_preprocess fit 
+INFO-FLOW: Model list for synthesis: readStage interStage1 interStage2 finalStage fit
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'readStage' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model readStage 
+Execute       schedule -model readStage 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_28_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 41, loop 'VITIS_LOOP_28_1'
+INFO: [SCHED 204-11] Finished scheduling.
+Command       schedule done; 0.219 sec.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.354 seconds; current allocated memory: 1.119 GB.
+Execute       syn_report -verbosereport -o C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/.autopilot/db/readStage.verbose.sched.rpt 
+Execute         list_part -family xc7s100-fgga676-2 
+Execute           ap_family_info -name xc7s100-fgga676-2 -data names 
+Execute           ap_part_info -quiet -name xc7s100-fgga676-2 -data family 
+Command       syn_report done; 0.257 sec.
+Execute       db_write -o C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/.autopilot/db/readStage.sched.adb -f 
+INFO-FLOW: Finish scheduling readStage.
+Execute       set_default_model readStage 
+Execute       bind -model readStage 
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+Command       bind done; 0.177 sec.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.442 seconds; current allocated memory: 1.120 GB.
+Execute       syn_report -verbosereport -o C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/.autopilot/db/readStage.verbose.bind.rpt 
+Execute         list_part -family xc7s100-fgga676-2 
+Execute           ap_family_info -name xc7s100-fgga676-2 -data names 
+Execute           ap_part_info -quiet -name xc7s100-fgga676-2 -data family 
+Execute       db_write -o C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/.autopilot/db/readStage.bind.adb -f 
+INFO-FLOW: Finish binding readStage.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'interStage1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model interStage1 
+Execute       schedule -model interStage1 
+INFO: [SCHED 204-11] Starting scheduling ...
+WARNING: [SCHED 204-65] Unable to satisfy pipeline directive for function 'interStage1': contains subloop(s) that are not unrolled.
+WARNING: [SCHED 204-65] Unable to satisfy pipeline directive for function 'interStage1': contains subloop(s) that are not unrolled.
+INFO: [SCHED 204-11] Finished scheduling.
+Command       schedule done; 0.446 sec.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.54 seconds; current allocated memory: 1.121 GB.
+Execute       syn_report -verbosereport -o C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/.autopilot/db/interStage1.verbose.sched.rpt 
+Execute         list_part -family xc7s100-fgga676-2 
+Execute           ap_family_info -name xc7s100-fgga676-2 -data names 
+Execute           ap_part_info -quiet -name xc7s100-fgga676-2 -data family 
+Command       syn_report done; 0.703 sec.
+Execute       db_write -o C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/.autopilot/db/interStage1.sched.adb -f 
+INFO-FLOW: Finish scheduling interStage1.
+Execute       set_default_model interStage1 
+Execute       bind -model interStage1 
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+Command       bind done; 0.463 sec.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.175 seconds; current allocated memory: 1.121 GB.
+Execute       syn_report -verbosereport -o C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/.autopilot/db/interStage1.verbose.bind.rpt 
+Execute         list_part -family xc7s100-fgga676-2 
+Execute           ap_family_info -name xc7s100-fgga676-2 -data names 
+Execute           ap_part_info -quiet -name xc7s100-fgga676-2 -data family 
+Command       syn_report done; 0.148 sec.
+Execute       db_write -o C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/.autopilot/db/interStage1.bind.adb -f 
+INFO-FLOW: Finish binding interStage1.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'interStage2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model interStage2 
+Execute       schedule -model interStage2 
+INFO: [SCHED 204-11] Starting scheduling ...
+WARNING: [SCHED 204-65] Unable to satisfy pipeline directive for function 'interStage2': contains subloop(s) that are not unrolled.
+WARNING: [SCHED 204-65] Unable to satisfy pipeline directive for function 'interStage2': contains subloop(s) that are not unrolled.
+INFO: [SCHED 204-11] Finished scheduling.
+Command       schedule done; 0.491 sec.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.673 seconds; current allocated memory: 1.122 GB.
+Execute       syn_report -verbosereport -o C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/.autopilot/db/interStage2.verbose.sched.rpt 
+Execute         list_part -family xc7s100-fgga676-2 
+Execute           ap_family_info -name xc7s100-fgga676-2 -data names 
+Execute           ap_part_info -quiet -name xc7s100-fgga676-2 -data family 
+Command       syn_report done; 0.595 sec.
+Execute       db_write -o C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/.autopilot/db/interStage2.sched.adb -f 
+INFO-FLOW: Finish scheduling interStage2.
+Execute       set_default_model interStage2 
+Execute       bind -model interStage2 
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+Command       bind done; 0.374 sec.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.982 seconds; current allocated memory: 1.123 GB.
+Execute       syn_report -verbosereport -o C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/.autopilot/db/interStage2.verbose.bind.rpt 
+Execute         list_part -family xc7s100-fgga676-2 
+Execute           ap_family_info -name xc7s100-fgga676-2 -data names 
+Execute           ap_part_info -quiet -name xc7s100-fgga676-2 -data family 
+Command       syn_report done; 0.151 sec.
+Execute       db_write -o C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/.autopilot/db/interStage2.bind.adb -f 
+INFO-FLOW: Finish binding interStage2.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'finalStage' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model finalStage 
+Execute       schedule -model finalStage 
+INFO: [SCHED 204-11] Starting scheduling ...
+WARNING: [SCHED 204-65] Unable to satisfy pipeline directive for function 'finalStage': contains subloop(s) that are not unrolled.
+WARNING: [SCHED 204-65] Unable to satisfy pipeline directive for function 'finalStage': contains subloop(s) that are not unrolled.
+INFO: [SCHED 204-11] Finished scheduling.
+Command       schedule done; 0.42 sec.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.612 seconds; current allocated memory: 1.124 GB.
+Execute       syn_report -verbosereport -o C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/.autopilot/db/finalStage.verbose.sched.rpt 
+Execute         list_part -family xc7s100-fgga676-2 
+Execute           ap_family_info -name xc7s100-fgga676-2 -data names 
+Execute           ap_part_info -quiet -name xc7s100-fgga676-2 -data family 
+Command       syn_report done; 0.519 sec.
+Execute       db_write -o C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/.autopilot/db/finalStage.sched.adb -f 
+INFO-FLOW: Finish scheduling finalStage.
+Execute       set_default_model finalStage 
+Execute       bind -model finalStage 
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+Command       bind done; 0.34 sec.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.872 seconds; current allocated memory: 1.124 GB.
+Execute       syn_report -verbosereport -o C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/.autopilot/db/finalStage.verbose.bind.rpt 
+Execute         list_part -family xc7s100-fgga676-2 
+Execute           ap_family_info -name xc7s100-fgga676-2 -data names 
+Execute           ap_part_info -quiet -name xc7s100-fgga676-2 -data family 
+Command       syn_report done; 0.123 sec.
+Execute       db_write -o C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/.autopilot/db/finalStage.bind.adb -f 
+INFO-FLOW: Finish binding finalStage.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'fit' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model fit 
+Execute       schedule -model fit 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+WARNING: [HLS 200-1020] Increasing the depth of FIFO start_for_interStage2_U0 (from readStage_U0 to interStage2_U0) to 3 to improve performance and/or avoid deadlocks.
+WARNING: [HLS 200-1020] Increasing the depth of FIFO start_for_finalStage_U0 (from readStage_U0 to finalStage_U0) to 4 to improve performance and/or avoid deadlocks.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.235 seconds; current allocated memory: 1.124 GB.
+Execute       syn_report -verbosereport -o C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/.autopilot/db/fit.verbose.sched.rpt 
+Execute         list_part -family xc7s100-fgga676-2 
+Execute           ap_family_info -name xc7s100-fgga676-2 -data names 
+Execute           ap_part_info -quiet -name xc7s100-fgga676-2 -data family 
+Execute       db_write -o C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/.autopilot/db/fit.sched.adb -f 
+INFO-FLOW: Finish scheduling fit.
+Execute       set_default_model fit 
+Execute       bind -model fit 
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.156 seconds; current allocated memory: 1.125 GB.
+Execute       syn_report -verbosereport -o C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/.autopilot/db/fit.verbose.bind.rpt 
+Execute         list_part -family xc7s100-fgga676-2 
+Execute           ap_family_info -name xc7s100-fgga676-2 -data names 
+Execute           ap_part_info -quiet -name xc7s100-fgga676-2 -data family 
+Execute       db_write -o C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/.autopilot/db/fit.bind.adb -f 
+INFO-FLOW: Finish binding fit.
+Execute       get_model_list fit -filter all-wo-channel 
+INFO-FLOW: Preprocessing for RTLGen ...
+Execute       rtl_gen_preprocess readStage 
+Execute       rtl_gen_preprocess interStage1 
+Execute       rtl_gen_preprocess interStage2 
+Execute       rtl_gen_preprocess finalStage 
+Execute       rtl_gen_preprocess fit 
+INFO-FLOW: Model list for RTL generation: readStage interStage1 interStage2 finalStage fit
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'readStage' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       create_rtl_model readStage -top_prefix fit_ -sub_prefix fit_ -mg_file C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/.autopilot/db/readStage.compgen.tcl 
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'readStage' pipeline 'VITIS_LOOP_28_1' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'mul_34s_34s_68_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_36s_12s_48_1_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sdiv_34ns_12s_34_38_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'readStage'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.156 seconds; current allocated memory: 1.128 GB.
+Execute       source C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/.autopilot/db/fit.rtl_wrap.cfg.tcl 
+Execute       gen_rtl readStage -style xilinx -f -lang vhdl -o C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/syn/vhdl/fit_readStage 
+Execute       gen_rtl readStage -style xilinx -f -lang vlog -o C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/syn/verilog/fit_readStage 
+Execute       syn_report -csynth -model readStage -o C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/syn/report/readStage_csynth.rpt 
+Execute         list_part -family xc7s100-fgga676-2 
+Execute           ap_family_info -name xc7s100-fgga676-2 -data names 
+Execute           ap_part_info -quiet -name xc7s100-fgga676-2 -data family 
+Execute       syn_report -rtlxml -model readStage -o C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/syn/report/readStage_csynth.xml 
+Execute         list_part -family xc7s100-fgga676-2 
+Execute           ap_family_info -name xc7s100-fgga676-2 -data names 
+Execute           ap_part_info -quiet -name xc7s100-fgga676-2 -data family 
+Execute       syn_report -verbosereport -model readStage -o C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/.autopilot/db/readStage.verbose.rpt 
+Execute         list_part -family xc7s100-fgga676-2 
+Execute           ap_family_info -name xc7s100-fgga676-2 -data names 
+Execute           ap_part_info -quiet -name xc7s100-fgga676-2 -data family 
+Execute       db_write -model readStage -f -o C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/.autopilot/db/readStage.adb 
+Execute       db_write -model readStage -bindview -o C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/.autopilot/db/design.bindinfo.xml 
+Execute       gen_tb_info readStage -p C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/.autopilot/db -o C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/.autopilot/db/readStage 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'interStage1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       create_rtl_model interStage1 -top_prefix fit_ -sub_prefix fit_ -mg_file C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/.autopilot/db/interStage1.compgen.tcl 
+INFO: [RTGEN 206-100] Generating core module 'mul_64s_64s_96_5_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sdiv_66ns_64s_64_70_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sdiv_96ns_64s_64_100_1': 2 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'interStage1'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.431 seconds; current allocated memory: 1.132 GB.
+Execute       source C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/.autopilot/db/fit.rtl_wrap.cfg.tcl 
+Execute       gen_rtl interStage1 -style xilinx -f -lang vhdl -o C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/syn/vhdl/fit_interStage1 
+Execute       gen_rtl interStage1 -style xilinx -f -lang vlog -o C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/syn/verilog/fit_interStage1 
+Execute       syn_report -csynth -model interStage1 -o C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/syn/report/interStage1_csynth.rpt 
+Execute         list_part -family xc7s100-fgga676-2 
+Execute           ap_family_info -name xc7s100-fgga676-2 -data names 
+Execute           ap_part_info -quiet -name xc7s100-fgga676-2 -data family 
+Execute       syn_report -rtlxml -model interStage1 -o C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/syn/report/interStage1_csynth.xml 
+Execute         list_part -family xc7s100-fgga676-2 
+Execute           ap_family_info -name xc7s100-fgga676-2 -data names 
+Execute           ap_part_info -quiet -name xc7s100-fgga676-2 -data family 
+Execute       syn_report -verbosereport -model interStage1 -o C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/.autopilot/db/interStage1.verbose.rpt 
+Execute         list_part -family xc7s100-fgga676-2 
+Execute           ap_family_info -name xc7s100-fgga676-2 -data names 
+Execute           ap_part_info -quiet -name xc7s100-fgga676-2 -data family 
+Command       syn_report done; 0.163 sec.
+Execute       db_write -model interStage1 -f -o C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/.autopilot/db/interStage1.adb 
+Execute       db_write -model interStage1 -bindview -o C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/.autopilot/db/design.bindinfo.xml 
+Execute       gen_tb_info interStage1 -p C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/.autopilot/db -o C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/.autopilot/db/interStage1 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'interStage2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       create_rtl_model interStage2 -top_prefix fit_ -sub_prefix fit_ -mg_file C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/.autopilot/db/interStage2.compgen.tcl 
+INFO: [RTGEN 206-100] Generating core module 'mul_128s_64s_128_5_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_64s_12s_76_5_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_64s_64s_128_5_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_64s_64s_96_5_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_65s_64s_96_5_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_76s_64s_96_5_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sdiv_66ns_64s_64_70_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'interStage2'.
+Command       create_rtl_model done; 0.107 sec.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 1 seconds. Elapsed time: 0.49 seconds; current allocated memory: 1.135 GB.
+Execute       source C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/.autopilot/db/fit.rtl_wrap.cfg.tcl 
+Execute       gen_rtl interStage2 -style xilinx -f -lang vhdl -o C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/syn/vhdl/fit_interStage2 
+Execute       gen_rtl interStage2 -style xilinx -f -lang vlog -o C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/syn/verilog/fit_interStage2 
+Execute       syn_report -csynth -model interStage2 -o C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/syn/report/interStage2_csynth.rpt 
+Execute         list_part -family xc7s100-fgga676-2 
+Execute           ap_family_info -name xc7s100-fgga676-2 -data names 
+Execute           ap_part_info -quiet -name xc7s100-fgga676-2 -data family 
+Execute       syn_report -rtlxml -model interStage2 -o C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/syn/report/interStage2_csynth.xml 
+Execute         list_part -family xc7s100-fgga676-2 
+Execute           ap_family_info -name xc7s100-fgga676-2 -data names 
+Execute           ap_part_info -quiet -name xc7s100-fgga676-2 -data family 
+Execute       syn_report -verbosereport -model interStage2 -o C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/.autopilot/db/interStage2.verbose.rpt 
+Execute         list_part -family xc7s100-fgga676-2 
+Execute           ap_family_info -name xc7s100-fgga676-2 -data names 
+Execute           ap_part_info -quiet -name xc7s100-fgga676-2 -data family 
+Command       syn_report done; 0.162 sec.
+Execute       db_write -model interStage2 -f -o C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/.autopilot/db/interStage2.adb 
+Execute       db_write -model interStage2 -bindview -o C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/.autopilot/db/design.bindinfo.xml 
+Execute       gen_tb_info interStage2 -p C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/.autopilot/db -o C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/.autopilot/db/interStage2 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'finalStage' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       create_rtl_model finalStage -top_prefix fit_ -sub_prefix fit_ -mg_file C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/.autopilot/db/finalStage.compgen.tcl 
+WARNING: [RTGEN 206-101] Register 'n' is power-on initialization.
+INFO: [RTGEN 206-100] Generating core module 'mul_128s_64s_128_5_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_64s_44s_96_5_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_64s_64s_128_5_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sdiv_64ns_13s_64_68_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'finalStage'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.615 seconds; current allocated memory: 1.139 GB.
+Execute       source C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/.autopilot/db/fit.rtl_wrap.cfg.tcl 
+Execute       gen_rtl finalStage -style xilinx -f -lang vhdl -o C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/syn/vhdl/fit_finalStage 
+Execute       gen_rtl finalStage -style xilinx -f -lang vlog -o C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/syn/verilog/fit_finalStage 
+Execute       syn_report -csynth -model finalStage -o C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/syn/report/finalStage_csynth.rpt 
+Execute         list_part -family xc7s100-fgga676-2 
+Execute           ap_family_info -name xc7s100-fgga676-2 -data names 
+Execute           ap_part_info -quiet -name xc7s100-fgga676-2 -data family 
+Execute       syn_report -rtlxml -model finalStage -o C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/syn/report/finalStage_csynth.xml 
+Execute         list_part -family xc7s100-fgga676-2 
+Execute           ap_family_info -name xc7s100-fgga676-2 -data names 
+Execute           ap_part_info -quiet -name xc7s100-fgga676-2 -data family 
+Execute       syn_report -verbosereport -model finalStage -o C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/.autopilot/db/finalStage.verbose.rpt 
+Execute         list_part -family xc7s100-fgga676-2 
+Execute           ap_family_info -name xc7s100-fgga676-2 -data names 
+Execute           ap_part_info -quiet -name xc7s100-fgga676-2 -data family 
+Command       syn_report done; 0.149 sec.
+Execute       db_write -model finalStage -f -o C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/.autopilot/db/finalStage.adb 
+Execute       db_write -model finalStage -bindview -o C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/.autopilot/db/design.bindinfo.xml 
+Execute       gen_tb_info finalStage -p C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/.autopilot/db -o C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/.autopilot/db/finalStage 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'fit' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       create_rtl_model fit -top_prefix  -sub_prefix fit_ -mg_file C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/.autopilot/db/fit.compgen.tcl 
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'fit/input_r' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'fit/output_r' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on function 'fit' to 's_axilite & ap_ctrl_chain'.
+INFO: [RTGEN 206-100] Bundling port 'return' to AXI-Lite port control.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'fit'.
+INFO: [RTMG 210-285] Implementing FIFO 'partialS_U(fit_fifo_w64_d10_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'partialSx_U(fit_fifo_w64_d10_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'partialSy_U(fit_fifo_w64_d10_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'x1_U(fit_fifo_w12_d10_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'x2_U(fit_fifo_w12_d10_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'y1_U(fit_fifo_w12_d10_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'y2_U(fit_fifo_w12_d10_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'sigmaDiv1_U(fit_fifo_w64_d10_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'sigmaSquaredDiv1_U(fit_fifo_w64_d10_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'last1_U(fit_fifo_w2_d10_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'last2_U(fit_fifo_w2_d10_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'last3_U(fit_fifo_w2_d10_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'SDiv1_U(fit_fifo_w64_d10_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'SxDivS_U(fit_fifo_w64_d10_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'SxSquaredDivS_U(fit_fifo_w64_d10_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'SyDivS_U(fit_fifo_w64_d10_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'resultStream_U(fit_fifo_w332_d10_A)' using Vivado Default RAMs.
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_interStage1_U0_U(fit_start_for_interStage1_U0)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_interStage2_U0_U(fit_start_for_interStage2_U0)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_finalStage_U0_U(fit_start_for_finalStage_U0)' using Shift Registers.
+Command       create_rtl_model done; 0.28 sec.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.8 seconds; current allocated memory: 1.142 GB.
+Execute       source C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/.autopilot/db/fit.rtl_wrap.cfg.tcl 
+Execute       gen_rtl fit -istop -style xilinx -f -lang vhdl -o C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/syn/vhdl/fit 
+Execute       gen_rtl fit -istop -style xilinx -f -lang vlog -o C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/syn/verilog/fit 
+Execute       syn_report -csynth -model fit -o C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/syn/report/fit_csynth.rpt 
+Execute         list_part -family xc7s100-fgga676-2 
+Execute           ap_family_info -name xc7s100-fgga676-2 -data names 
+Execute           ap_part_info -quiet -name xc7s100-fgga676-2 -data family 
+Execute       syn_report -rtlxml -model fit -o C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/syn/report/fit_csynth.xml 
+Execute         list_part -family xc7s100-fgga676-2 
+Execute           ap_family_info -name xc7s100-fgga676-2 -data names 
+Execute           ap_part_info -quiet -name xc7s100-fgga676-2 -data family 
+Execute       syn_report -verbosereport -model fit -o C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/.autopilot/db/fit.verbose.rpt 
+Execute         list_part -family xc7s100-fgga676-2 
+Execute           ap_family_info -name xc7s100-fgga676-2 -data names 
+Execute           ap_part_info -quiet -name xc7s100-fgga676-2 -data family 
+Execute       db_write -model fit -f -o C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/.autopilot/db/fit.adb 
+Execute       db_write -model fit -bindview -o C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/.autopilot/db/design.bindinfo.xml 
+Execute       gen_tb_info fit -p C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/.autopilot/db -o C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/.autopilot/db/fit 
+Execute       export_constraint_db -f -tool general -o C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/.autopilot/db/fit.constraint.tcl 
+Execute       syn_report -designview -model fit -o C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/.autopilot/db/fit.design.xml 
+Command       syn_report done; 0.199 sec.
+Execute       syn_report -csynthDesign -model fit -o C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/syn/report/csynth.rpt -MHOut C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/.autopilot/db/kernel_module_hierarchy.tcl 
+Execute         list_part -family xc7s100-fgga676-2 
+Execute           ap_family_info -name xc7s100-fgga676-2 -data names 
+Execute           ap_part_info -quiet -name xc7s100-fgga676-2 -data family 
+Execute       syn_report -wcfg -model fit -o C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/.autopilot/db/fit_dataflow_ana.wcfg 
+Execute       syn_report -protoinst -model fit -o C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/.autopilot/db/fit.protoinst 
+Execute       sc_get_clocks fit 
+Execute       sc_get_portdomain fit 
+INFO-FLOW: Model list for RTL component generation: readStage interStage1 interStage2 finalStage fit
+INFO-FLOW: Handling components in module [readStage] ... 
+Execute       source C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/.autopilot/db/readStage.compgen.tcl 
+INFO-FLOW: Found component fit_mul_34s_34s_68_1_1.
+INFO-FLOW: Append model fit_mul_34s_34s_68_1_1
+INFO-FLOW: Found component fit_mul_36s_12s_48_1_1.
+INFO-FLOW: Append model fit_mul_36s_12s_48_1_1
+INFO-FLOW: Found component fit_sdiv_34ns_12s_34_38_1.
+INFO-FLOW: Append model fit_sdiv_34ns_12s_34_38_1
+INFO-FLOW: Found component fit_regslice_both.
+INFO-FLOW: Append model fit_regslice_both
+INFO-FLOW: Found component fit_flow_control_loop_pipe.
+INFO-FLOW: Append model fit_flow_control_loop_pipe
+INFO-FLOW: Handling components in module [interStage1] ... 
+Execute       source C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/.autopilot/db/interStage1.compgen.tcl 
+INFO-FLOW: Found component fit_mul_64s_64s_96_5_1.
+INFO-FLOW: Append model fit_mul_64s_64s_96_5_1
+INFO-FLOW: Found component fit_sdiv_96ns_64s_64_100_1.
+INFO-FLOW: Append model fit_sdiv_96ns_64s_64_100_1
+INFO-FLOW: Found component fit_sdiv_66ns_64s_64_70_1.
+INFO-FLOW: Append model fit_sdiv_66ns_64s_64_70_1
+INFO-FLOW: Handling components in module [interStage2] ... 
+Execute       source C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/.autopilot/db/interStage2.compgen.tcl 
+INFO-FLOW: Found component fit_mul_64s_12s_76_5_1.
+INFO-FLOW: Append model fit_mul_64s_12s_76_5_1
+INFO-FLOW: Found component fit_mul_64s_64s_128_5_1.
+INFO-FLOW: Append model fit_mul_64s_64s_128_5_1
+INFO-FLOW: Found component fit_mul_65s_64s_96_5_1.
+INFO-FLOW: Append model fit_mul_65s_64s_96_5_1
+INFO-FLOW: Found component fit_mul_76s_64s_96_5_1.
+INFO-FLOW: Append model fit_mul_76s_64s_96_5_1
+INFO-FLOW: Found component fit_mul_128s_64s_128_5_1.
+INFO-FLOW: Append model fit_mul_128s_64s_128_5_1
+INFO-FLOW: Handling components in module [finalStage] ... 
+Execute       source C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/.autopilot/db/finalStage.compgen.tcl 
+INFO-FLOW: Found component fit_mul_64s_44s_96_5_1.
+INFO-FLOW: Append model fit_mul_64s_44s_96_5_1
+INFO-FLOW: Found component fit_sdiv_64ns_13s_64_68_1.
+INFO-FLOW: Append model fit_sdiv_64ns_13s_64_68_1
+INFO-FLOW: Found component fit_regslice_both.
+INFO-FLOW: Append model fit_regslice_both
+INFO-FLOW: Handling components in module [fit] ... 
+Execute       source C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/.autopilot/db/fit.compgen.tcl 
+INFO-FLOW: Found component fit_fifo_w64_d10_S.
+INFO-FLOW: Append model fit_fifo_w64_d10_S
+INFO-FLOW: Found component fit_fifo_w64_d10_S.
+INFO-FLOW: Append model fit_fifo_w64_d10_S
+INFO-FLOW: Found component fit_fifo_w64_d10_S.
+INFO-FLOW: Append model fit_fifo_w64_d10_S
+INFO-FLOW: Found component fit_fifo_w12_d10_S.
+INFO-FLOW: Append model fit_fifo_w12_d10_S
+INFO-FLOW: Found component fit_fifo_w12_d10_S.
+INFO-FLOW: Append model fit_fifo_w12_d10_S
+INFO-FLOW: Found component fit_fifo_w12_d10_S.
+INFO-FLOW: Append model fit_fifo_w12_d10_S
+INFO-FLOW: Found component fit_fifo_w12_d10_S.
+INFO-FLOW: Append model fit_fifo_w12_d10_S
+INFO-FLOW: Found component fit_fifo_w64_d10_S.
+INFO-FLOW: Append model fit_fifo_w64_d10_S
+INFO-FLOW: Found component fit_fifo_w64_d10_S.
+INFO-FLOW: Append model fit_fifo_w64_d10_S
+INFO-FLOW: Found component fit_fifo_w2_d10_S.
+INFO-FLOW: Append model fit_fifo_w2_d10_S
+INFO-FLOW: Found component fit_fifo_w2_d10_S.
+INFO-FLOW: Append model fit_fifo_w2_d10_S
+INFO-FLOW: Found component fit_fifo_w2_d10_S.
+INFO-FLOW: Append model fit_fifo_w2_d10_S
+INFO-FLOW: Found component fit_fifo_w64_d10_S.
+INFO-FLOW: Append model fit_fifo_w64_d10_S
+INFO-FLOW: Found component fit_fifo_w64_d10_S.
+INFO-FLOW: Append model fit_fifo_w64_d10_S
+INFO-FLOW: Found component fit_fifo_w64_d10_S.
+INFO-FLOW: Append model fit_fifo_w64_d10_S
+INFO-FLOW: Found component fit_fifo_w64_d10_S.
+INFO-FLOW: Append model fit_fifo_w64_d10_S
+INFO-FLOW: Found component fit_fifo_w332_d10_A.
+INFO-FLOW: Append model fit_fifo_w332_d10_A
+INFO-FLOW: Found component fit_start_for_interStage1_U0.
+INFO-FLOW: Append model fit_start_for_interStage1_U0
+INFO-FLOW: Found component fit_start_for_interStage2_U0.
+INFO-FLOW: Append model fit_start_for_interStage2_U0
+INFO-FLOW: Found component fit_start_for_finalStage_U0.
+INFO-FLOW: Append model fit_start_for_finalStage_U0
+INFO-FLOW: Found component fit_control_s_axi.
+INFO-FLOW: Append model fit_control_s_axi
+INFO-FLOW: Append model readStage
+INFO-FLOW: Append model interStage1
+INFO-FLOW: Append model interStage2
+INFO-FLOW: Append model finalStage
+INFO-FLOW: Append model fit
+INFO-FLOW: Generating RTL model list ...
+INFO-FLOW: All models in this session: fit_mul_34s_34s_68_1_1 fit_mul_36s_12s_48_1_1 fit_sdiv_34ns_12s_34_38_1 fit_regslice_both fit_flow_control_loop_pipe fit_mul_64s_64s_96_5_1 fit_sdiv_96ns_64s_64_100_1 fit_sdiv_66ns_64s_64_70_1 fit_mul_64s_12s_76_5_1 fit_mul_64s_64s_128_5_1 fit_mul_65s_64s_96_5_1 fit_mul_76s_64s_96_5_1 fit_mul_128s_64s_128_5_1 fit_mul_64s_44s_96_5_1 fit_sdiv_64ns_13s_64_68_1 fit_regslice_both fit_fifo_w64_d10_S fit_fifo_w64_d10_S fit_fifo_w64_d10_S fit_fifo_w12_d10_S fit_fifo_w12_d10_S fit_fifo_w12_d10_S fit_fifo_w12_d10_S fit_fifo_w64_d10_S fit_fifo_w64_d10_S fit_fifo_w2_d10_S fit_fifo_w2_d10_S fit_fifo_w2_d10_S fit_fifo_w64_d10_S fit_fifo_w64_d10_S fit_fifo_w64_d10_S fit_fifo_w64_d10_S fit_fifo_w332_d10_A fit_start_for_interStage1_U0 fit_start_for_interStage2_U0 fit_start_for_finalStage_U0 fit_control_s_axi readStage interStage1 interStage2 finalStage fit
+INFO-FLOW: Generating C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/.autopilot/db/autopilot.rtl.models.txt file...
+INFO-FLOW: To file: write model fit_mul_34s_34s_68_1_1
+INFO-FLOW: To file: write model fit_mul_36s_12s_48_1_1
+INFO-FLOW: To file: write model fit_sdiv_34ns_12s_34_38_1
+INFO-FLOW: To file: write model fit_regslice_both
+INFO-FLOW: To file: write model fit_flow_control_loop_pipe
+INFO-FLOW: To file: write model fit_mul_64s_64s_96_5_1
+INFO-FLOW: To file: write model fit_sdiv_96ns_64s_64_100_1
+INFO-FLOW: To file: write model fit_sdiv_66ns_64s_64_70_1
+INFO-FLOW: To file: write model fit_mul_64s_12s_76_5_1
+INFO-FLOW: To file: write model fit_mul_64s_64s_128_5_1
+INFO-FLOW: To file: write model fit_mul_65s_64s_96_5_1
+INFO-FLOW: To file: write model fit_mul_76s_64s_96_5_1
+INFO-FLOW: To file: write model fit_mul_128s_64s_128_5_1
+INFO-FLOW: To file: write model fit_mul_64s_44s_96_5_1
+INFO-FLOW: To file: write model fit_sdiv_64ns_13s_64_68_1
+INFO-FLOW: To file: write model fit_regslice_both
+INFO-FLOW: To file: write model fit_fifo_w64_d10_S
+INFO-FLOW: To file: write model fit_fifo_w64_d10_S
+INFO-FLOW: To file: write model fit_fifo_w64_d10_S
+INFO-FLOW: To file: write model fit_fifo_w12_d10_S
+INFO-FLOW: To file: write model fit_fifo_w12_d10_S
+INFO-FLOW: To file: write model fit_fifo_w12_d10_S
+INFO-FLOW: To file: write model fit_fifo_w12_d10_S
+INFO-FLOW: To file: write model fit_fifo_w64_d10_S
+INFO-FLOW: To file: write model fit_fifo_w64_d10_S
+INFO-FLOW: To file: write model fit_fifo_w2_d10_S
+INFO-FLOW: To file: write model fit_fifo_w2_d10_S
+INFO-FLOW: To file: write model fit_fifo_w2_d10_S
+INFO-FLOW: To file: write model fit_fifo_w64_d10_S
+INFO-FLOW: To file: write model fit_fifo_w64_d10_S
+INFO-FLOW: To file: write model fit_fifo_w64_d10_S
+INFO-FLOW: To file: write model fit_fifo_w64_d10_S
+INFO-FLOW: To file: write model fit_fifo_w332_d10_A
+INFO-FLOW: To file: write model fit_start_for_interStage1_U0
+INFO-FLOW: To file: write model fit_start_for_interStage2_U0
+INFO-FLOW: To file: write model fit_start_for_finalStage_U0
+INFO-FLOW: To file: write model fit_control_s_axi
+INFO-FLOW: To file: write model readStage
+INFO-FLOW: To file: write model interStage1
+INFO-FLOW: To file: write model interStage2
+INFO-FLOW: To file: write model finalStage
+INFO-FLOW: To file: write model fit
+INFO-FLOW: Generating C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/.autopilot/db/autopilot.rtl.models.tcl file...
+INFO-FLOW: Finished generating RTL model list.
+
+
+INFO-FLOW: RTL Generation done.
+INFO-FLOW: CAS Generation done.
+INFO-FLOW: CBC Generation done.
+INFO-FLOW: DBG:PROC: ::AESL_AUTOMG::auto_generate_csynth_design
+INFO-FLOW: DBG:PUTS: read_platform_lib C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/.autopilot/db/global.setting.tcl
+Execute       source E:/Vitis_HLS/2023.1/common/technology/generic/autopilot/common.gen 
+Execute         source E:/Vitis_HLS/2023.1/common/technology/generic/autopilot/APCoreGen.gen 
+Execute       source E:/Vitis_HLS/2023.1/common/technology/generic/autopilot/op.gen 
+Execute       source E:/Vitis_HLS/2023.1/common/technology/generic/autopilot/op_simcore.gen 
+Execute       source E:/Vitis_HLS/2023.1/common/technology/generic/autopilot/interface.gen 
+Execute       source C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/.autopilot/db/global.setting.tcl 
+Execute       source E:/Vitis_HLS/2023.1/common/technology/xilinx/common/xilinx.gen 
+Execute         source E:/Vitis_HLS/2023.1/common/technology/xilinx/interface/plb46.gen 
+Execute         source E:/Vitis_HLS/2023.1/common/technology/xilinx/interface/axi4.gen 
+Execute         source E:/Vitis_HLS/2023.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source E:/Vitis_HLS/2023.1/common/technology/xilinx/interface/saxilite.gen 
+Execute         source E:/Vitis_HLS/2023.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source E:/Vitis_HLS/2023.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source E:/Vitis_HLS/2023.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source E:/Vitis_HLS/2023.1/common/technology/xilinx/ip/util.gen 
+Execute         source E:/Vitis_HLS/2023.1/common/technology/xilinx/ip/xfft.gen 
+Execute         source E:/Vitis_HLS/2023.1/common/technology/xilinx/ip/xfir.gen 
+Execute         source E:/Vitis_HLS/2023.1/common/technology/xilinx/DSP48/dsp48.gen 
+INFO-FLOW: DBG:PUTS:   using AESL_AUTOCG::g_clock_period=10 (was NA)
+INFO-FLOW: DBG:PROC: ::AESL_AUTOMG::generate_ip_cores gen_sim_model='1' gen_fp_models='0' gen_for_export='0' dstSCDir='' dstVhdlDir='C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/.autopilot/db/vhdl' dstVlogDir='C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/.autopilot/db/vlog' tclDir='C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/.autopilot/db' modelList='fit_mul_34s_34s_68_1_1
+fit_mul_36s_12s_48_1_1
+fit_sdiv_34ns_12s_34_38_1
+fit_regslice_both
+fit_flow_control_loop_pipe
+fit_mul_64s_64s_96_5_1
+fit_sdiv_96ns_64s_64_100_1
+fit_sdiv_66ns_64s_64_70_1
+fit_mul_64s_12s_76_5_1
+fit_mul_64s_64s_128_5_1
+fit_mul_65s_64s_96_5_1
+fit_mul_76s_64s_96_5_1
+fit_mul_128s_64s_128_5_1
+fit_mul_64s_44s_96_5_1
+fit_sdiv_64ns_13s_64_68_1
+fit_regslice_both
+fit_fifo_w64_d10_S
+fit_fifo_w64_d10_S
+fit_fifo_w64_d10_S
+fit_fifo_w12_d10_S
+fit_fifo_w12_d10_S
+fit_fifo_w12_d10_S
+fit_fifo_w12_d10_S
+fit_fifo_w64_d10_S
+fit_fifo_w64_d10_S
+fit_fifo_w2_d10_S
+fit_fifo_w2_d10_S
+fit_fifo_w2_d10_S
+fit_fifo_w64_d10_S
+fit_fifo_w64_d10_S
+fit_fifo_w64_d10_S
+fit_fifo_w64_d10_S
+fit_fifo_w332_d10_A
+fit_start_for_interStage1_U0
+fit_start_for_interStage2_U0
+fit_start_for_finalStage_U0
+fit_control_s_axi
+readStage
+interStage1
+interStage2
+finalStage
+fit
+' expOnly='0'
+Execute       source C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/.autopilot/db/global.setting.tcl 
+Execute       ap_part_info -name xc7s100-fgga676-2 -data names -quiet 
+Execute       ap_part_info -name xc7s100-fgga676-2 -data info -quiet 
+Execute       source C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/.autopilot/db/global.setting.tcl 
+Execute       source C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/.autopilot/db/global.setting.tcl 
+Execute       source C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/.autopilot/db/readStage.compgen.tcl 
+Execute       source C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/.autopilot/db/interStage1.compgen.tcl 
+Execute       source C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/.autopilot/db/interStage2.compgen.tcl 
+Execute       source C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/.autopilot/db/finalStage.compgen.tcl 
+Execute       source C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/.autopilot/db/fit.compgen.tcl 
+Execute         source ./control.slave.tcl 
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.922 seconds; current allocated memory: 1.146 GB.
+INFO-FLOW: DBG:PROC: ::HLSREPORTS::create_csynth_xml bind_info_var='bind_info' RtlSubPrefix='fit_' outfile=''
+INFO-FLOW: Running: create_csynth_xml read xml data
+INFO-FLOW: Done: create_csynth_xml read xml data time: 0 seconds per iteration
+INFO-FLOW: Running: create_csynth_xml bind info
+INFO-FLOW: Done: create_csynth_xml bind info time: 0 seconds per iteration
+INFO-FLOW: Running: create_csynth_xml config info
+INFO-FLOW: Done: create_csynth_xml config info time: 0.5 seconds per iteration
+INFO-FLOW: Running: create_csynth_xml write xml
+INFO-FLOW: Done: create_csynth_xml write xml time: 0 seconds per iteration
+INFO-FLOW: DBG:PUTS:      create_csynth_xml wrote csynth_xml=C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/syn/report/csynth.xml
+INFO-FLOW: DBG:PROC: ::AP::DESIGN_DATA::generate_json generate_bd_files='0' generate_xo_files='0' modelList='fit_mul_34s_34s_68_1_1
+fit_mul_36s_12s_48_1_1
+fit_sdiv_34ns_12s_34_38_1
+fit_regslice_both
+fit_flow_control_loop_pipe
+fit_mul_64s_64s_96_5_1
+fit_sdiv_96ns_64s_64_100_1
+fit_sdiv_66ns_64s_64_70_1
+fit_mul_64s_12s_76_5_1
+fit_mul_64s_64s_128_5_1
+fit_mul_65s_64s_96_5_1
+fit_mul_76s_64s_96_5_1
+fit_mul_128s_64s_128_5_1
+fit_mul_64s_44s_96_5_1
+fit_sdiv_64ns_13s_64_68_1
+fit_regslice_both
+fit_fifo_w64_d10_S
+fit_fifo_w64_d10_S
+fit_fifo_w64_d10_S
+fit_fifo_w12_d10_S
+fit_fifo_w12_d10_S
+fit_fifo_w12_d10_S
+fit_fifo_w12_d10_S
+fit_fifo_w64_d10_S
+fit_fifo_w64_d10_S
+fit_fifo_w2_d10_S
+fit_fifo_w2_d10_S
+fit_fifo_w2_d10_S
+fit_fifo_w64_d10_S
+fit_fifo_w64_d10_S
+fit_fifo_w64_d10_S
+fit_fifo_w64_d10_S
+fit_fifo_w332_d10_A
+fit_start_for_interStage1_U0
+fit_start_for_interStage2_U0
+fit_start_for_finalStage_U0
+fit_control_s_axi
+readStage
+interStage1
+interStage2
+finalStage
+fit
+' rtl_lang='both' bootstrap_tcl='false' outdir='' outfilename=''
+Execute       source C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/.autopilot/db/global.setting.tcl 
+Execute       source C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/.autopilot/db/global.setting.tcl 
+Execute       source C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/.autopilot/db/top-io-be.tcl 
+Execute       source C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/.autopilot/db/fit.tbgen.tcl 
+Execute       source C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/.autopilot/db/fit.compgen.dataonly.tcl 
+Execute       source C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/.autopilot/db/fit.compgen.dataonly.tcl 
+Execute       source C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/.autopilot/db/fit.rtl_wrap.cfg.tcl 
+Execute       source C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/.autopilot/db/fit.compgen.dataonly.tcl 
+Execute       source C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/.autopilot/db/readStage.tbgen.tcl 
+Execute       source C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/.autopilot/db/interStage1.tbgen.tcl 
+Execute       source C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/.autopilot/db/interStage2.tbgen.tcl 
+Execute       source C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/.autopilot/db/finalStage.tbgen.tcl 
+Execute       source C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/.autopilot/db/fit.tbgen.tcl 
+Execute       source C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/.autopilot/db/global.setting.tcl 
+Execute       ap_part_info -name xc7s100-fgga676-2 -data names -quiet 
+Execute       ap_part_info -name xc7s100-fgga676-2 -data info -quiet 
+Execute       source C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/.autopilot/db/fit.constraint.tcl 
+Execute       sc_get_clocks fit 
+Execute       source C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:PROC: ::HLSREPORTS::add_csynth_report_sections bind_info_dict='adapter_nodes {{BINDTYPE adapter DISPLAY {bind_adapter axilite} ID {} IMPL {} LATENCY {} OPTYPE {} PRAGMA yes RTLNAME control_s_axi_U SOURCE {} VARIABLE {} MODULE fit LOOP {} BUNDLEDNAME control DSP 0 BRAM 0 URAM 0}} report_dict {TOPINST fit MODULE2INSTS {fit fit readStage readStage_U0 interStage1 interStage1_U0 interStage2 interStage2_U0 finalStage finalStage_U0} INST2MODULE {fit fit readStage_U0 readStage interStage1_U0 interStage1 interStage2_U0 interStage2 finalStage_U0 finalStage} INSTDATA {fit {DEPTH 1 CHILDREN {readStage_U0 interStage1_U0 interStage2_U0 finalStage_U0}} readStage_U0 {DEPTH 2 CHILDREN {}} interStage1_U0 {DEPTH 2 CHILDREN {}} interStage2_U0 {DEPTH 2 CHILDREN {}} finalStage_U0 {DEPTH 2 CHILDREN {}}} MODULEDATA {readStage {BINDINFO {{BINDTYPE op ID {} IMPL auto LATENCY 0 OPTYPE mul PRAGMA {} RTLNAME mul_34s_34s_68_1_1_U1 SOURCE baseline/fit.cpp:38 VARIABLE mul_ln38 LOOP VITIS_LOOP_28_1 BUNDLEDNAME {} DSP 4 BRAM 0 URAM 0 DISPNAME {bind_op mul}} {BINDTYPE op ID {} IMPL auto LATENCY 0 OPTYPE mul PRAGMA {} RTLNAME mul_36s_12s_48_1_1_U2 SOURCE baseline/fit.cpp:45 VARIABLE mul_ln45 LOOP VITIS_LOOP_28_1 BUNDLEDNAME {} DSP 2 BRAM 0 URAM 0 DISPNAME {bind_op mul}} {BINDTYPE op ID {} IMPL auto LATENCY 0 OPTYPE mul PRAGMA {} RTLNAME mul_36s_12s_48_1_1_U3 SOURCE baseline/fit.cpp:46 VARIABLE mul_ln46 LOOP VITIS_LOOP_28_1 BUNDLEDNAME {} DSP 2 BRAM 0 URAM 0 DISPNAME {bind_op mul}}} AREA {DSP 8 BRAM 0 URAM 0}} interStage1 {BINDINFO {{BINDTYPE op ID {} IMPL auto LATENCY 4 OPTYPE mul PRAGMA {} RTLNAME mul_64s_64s_96_5_1_U22 SOURCE baseline/fit.cpp:109 VARIABLE mul_ln109 LOOP inter1 BUNDLEDNAME {} DSP 15 BRAM 0 URAM 0 DISPNAME {bind_op mul}}} AREA {DSP 15 BRAM 0 URAM 0}} interStage2 {BINDINFO {{BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME sub_ln140_fu_225_p2 SOURCE baseline/fit.cpp:140 VARIABLE sub_ln140 LOOP inter2 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op sub}} {BINDTYPE op ID {} IMPL auto LATENCY 4 OPTYPE mul PRAGMA {} RTLNAME mul_65s_64s_96_5_1_U40 SOURCE baseline/fit.cpp:140 VARIABLE mul_ln140 LOOP inter2 BUNDLEDNAME {} DSP 15 BRAM 0 URAM 0 DISPNAME {bind_op mul}} {BINDTYPE op ID {} IMPL auto LATENCY 4 OPTYPE mul PRAGMA {} RTLNAME mul_64s_64s_96_5_1_U38 SOURCE baseline/fit.cpp:141 VARIABLE mul_ln141 LOOP inter2 BUNDLEDNAME {} DSP 15 BRAM 0 URAM 0 DISPNAME {bind_op mul}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln141_fu_283_p2 SOURCE baseline/fit.cpp:141 VARIABLE add_ln141 LOOP inter2 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL auto LATENCY 4 OPTYPE mul PRAGMA {} RTLNAME mul_64s_12s_76_5_1_U37 SOURCE baseline/fit.cpp:142 VARIABLE mul_ln142 LOOP inter2 BUNDLEDNAME {} DSP 4 BRAM 0 URAM 0 DISPNAME {bind_op mul}} {BINDTYPE op ID {} IMPL auto LATENCY 4 OPTYPE mul PRAGMA {} RTLNAME mul_76s_64s_96_5_1_U41 SOURCE baseline/fit.cpp:142 VARIABLE mul_ln142_1 LOOP inter2 BUNDLEDNAME {} DSP 15 BRAM 0 URAM 0 DISPNAME {bind_op mul}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln142_fu_309_p2 SOURCE baseline/fit.cpp:142 VARIABLE add_ln142 LOOP inter2 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL auto LATENCY 4 OPTYPE mul PRAGMA {} RTLNAME mul_64s_64s_96_5_1_U38 SOURCE baseline/fit.cpp:148 VARIABLE mul_ln148 LOOP inter2 BUNDLEDNAME {} DSP 15 BRAM 0 URAM 0 DISPNAME {bind_op mul}} {BINDTYPE op ID {} IMPL auto LATENCY 4 OPTYPE mul PRAGMA {} RTLNAME mul_64s_64s_96_5_1_U38 SOURCE baseline/fit.cpp:149 VARIABLE mul_ln149 LOOP inter2 BUNDLEDNAME {} DSP 15 BRAM 0 URAM 0 DISPNAME {bind_op mul}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME sub_ln149_fu_402_p2 SOURCE baseline/fit.cpp:149 VARIABLE sub_ln149 LOOP inter2 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op sub}} {BINDTYPE op ID {} IMPL auto LATENCY 4 OPTYPE mul PRAGMA {} RTLNAME mul_64s_64s_128_5_1_U39 SOURCE baseline/fit.cpp:150 VARIABLE mul_ln150 LOOP inter2 BUNDLEDNAME {} DSP 16 BRAM 0 URAM 0 DISPNAME {bind_op mul}} {BINDTYPE op ID {} IMPL auto LATENCY 4 OPTYPE mul PRAGMA {} RTLNAME mul_128s_64s_128_5_1_U42 SOURCE baseline/fit.cpp:150 VARIABLE mul_ln150_1 LOOP inter2 BUNDLEDNAME {} DSP 26 BRAM 0 URAM 0 DISPNAME {bind_op mul}}} AREA {DSP 91 BRAM 0 URAM 0}} finalStage {BINDINFO {{BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME sub_ln181_fu_333_p2 SOURCE baseline/fit.cpp:181 VARIABLE sub_ln181 LOOP readResult BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op sub}} {BINDTYPE op ID {} IMPL auto LATENCY 4 OPTYPE mul PRAGMA {} RTLNAME mul_64s_44s_96_5_1_U58 SOURCE baseline/fit.cpp:181 VARIABLE mul_ln181 LOOP readResult BUNDLEDNAME {} DSP 12 BRAM 0 URAM 0 DISPNAME {bind_op mul}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME sub_ln181_1_fu_347_p2 SOURCE baseline/fit.cpp:181 VARIABLE sub_ln181_1 LOOP readResult BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op sub}} {BINDTYPE op ID {} IMPL auto LATENCY 4 OPTYPE mul PRAGMA {} RTLNAME mul_64s_64s_128_5_1_U59 SOURCE baseline/fit.cpp:182 VARIABLE mul_ln182 LOOP readResult BUNDLEDNAME {} DSP 16 BRAM 0 URAM 0 DISPNAME {bind_op mul}} {BINDTYPE op ID {} IMPL auto LATENCY 4 OPTYPE mul PRAGMA {} RTLNAME mul_128s_64s_128_5_1_U60 SOURCE baseline/fit.cpp:182 VARIABLE mul_ln182_1 LOOP readResult BUNDLEDNAME {} DSP 26 BRAM 0 URAM 0 DISPNAME {bind_op mul}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME r_n_fu_380_p2 SOURCE baseline/fit.cpp:184 VARIABLE r_n LOOP readResult BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln188_fu_394_p2 SOURCE baseline/fit.cpp:188 VARIABLE add_ln188 LOOP readResult BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}}} AREA {DSP 54 BRAM 0 URAM 0}} fit {BINDINFO {{BINDTYPE storage ID {} IMPL srl LATENCY 0 OPTYPE fifo PRAGMA {} RTLNAME x1_U SOURCE baseline/fit.cpp:204 VARIABLE x1 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_storage fifo}} {BINDTYPE storage ID {} IMPL srl LATENCY 0 OPTYPE fifo PRAGMA {} RTLNAME x2_U SOURCE baseline/fit.cpp:204 VARIABLE x2 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_storage fifo}} {BINDTYPE storage ID {} IMPL srl LATENCY 0 OPTYPE fifo PRAGMA {} RTLNAME y1_U SOURCE baseline/fit.cpp:204 VARIABLE y1 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_storage fifo}} {BINDTYPE storage ID {} IMPL srl LATENCY 0 OPTYPE fifo PRAGMA {} RTLNAME y2_U SOURCE baseline/fit.cpp:204 VARIABLE y2 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_storage fifo}} {BINDTYPE storage ID {} IMPL srl LATENCY 0 OPTYPE fifo PRAGMA {} RTLNAME sigmaDiv1_U SOURCE baseline/fit.cpp:205 VARIABLE sigmaDiv1 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_storage fifo}} {BINDTYPE storage ID {} IMPL srl LATENCY 0 OPTYPE fifo PRAGMA {} RTLNAME sigmaSquaredDiv1_U SOURCE baseline/fit.cpp:205 VARIABLE sigmaSquaredDiv1 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_storage fifo}} {BINDTYPE storage ID {} IMPL srl LATENCY 0 OPTYPE fifo PRAGMA {} RTLNAME last1_U SOURCE baseline/fit.cpp:206 VARIABLE last1 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_storage fifo}} {BINDTYPE storage ID {} IMPL srl LATENCY 0 OPTYPE fifo PRAGMA {} RTLNAME last2_U SOURCE baseline/fit.cpp:206 VARIABLE last2 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_storage fifo}} {BINDTYPE storage ID {} IMPL srl LATENCY 0 OPTYPE fifo PRAGMA {} RTLNAME last3_U SOURCE baseline/fit.cpp:206 VARIABLE last3 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_storage fifo}} {BINDTYPE storage ID {} IMPL srl LATENCY 0 OPTYPE fifo PRAGMA {} RTLNAME partialS_U SOURCE baseline/fit.cpp:207 VARIABLE partialS LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_storage fifo}} {BINDTYPE storage ID {} IMPL srl LATENCY 0 OPTYPE fifo PRAGMA {} RTLNAME partialSx_U SOURCE baseline/fit.cpp:207 VARIABLE partialSx LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_storage fifo}} {BINDTYPE storage ID {} IMPL srl LATENCY 0 OPTYPE fifo PRAGMA {} RTLNAME partialSy_U SOURCE baseline/fit.cpp:207 VARIABLE partialSy LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_storage fifo}} {BINDTYPE storage ID {} IMPL srl LATENCY 0 OPTYPE fifo PRAGMA {} RTLNAME SDiv1_U SOURCE baseline/fit.cpp:208 VARIABLE SDiv1 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_storage fifo}} {BINDTYPE storage ID {} IMPL srl LATENCY 0 OPTYPE fifo PRAGMA {} RTLNAME SxDivS_U SOURCE baseline/fit.cpp:208 VARIABLE SxDivS LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_storage fifo}} {BINDTYPE storage ID {} IMPL srl LATENCY 0 OPTYPE fifo PRAGMA {} RTLNAME SxSquaredDivS_U SOURCE baseline/fit.cpp:208 VARIABLE SxSquaredDivS LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_storage fifo}} {BINDTYPE storage ID {} IMPL srl LATENCY 0 OPTYPE fifo PRAGMA {} RTLNAME SyDivS_U SOURCE baseline/fit.cpp:208 VARIABLE SyDivS LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_storage fifo}} {BINDTYPE storage ID {} IMPL memory LATENCY 0 OPTYPE fifo PRAGMA {} RTLNAME resultStream_U SOURCE {} VARIABLE resultStream LOOP {} BUNDLEDNAME {} DSP 0 BRAM 19 URAM 0 DISPNAME {bind_storage fifo}}} AREA {DSP 168 BRAM 19 URAM 0}}}}'
+INFO-FLOW: DBG:PUTS:      update_csynth_reports json2rpt_hw_sw_interfaces
+INFO-FLOW: Running: gen_csynth_sec_pragma
+INFO-FLOW: Done: gen_csynth_sec_pragma time: 0.1 seconds per iteration
+INFO-FLOW: DBG:PUTS:      update_csynth_reports wrote xml
+INFO-FLOW: DBG:PUTS:      update_csynth_reports appended to csynth rpt file
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 0 seconds. CPU system time: 1 seconds. Elapsed time: 1.166 seconds; current allocated memory: 1.154 GB.
+INFO: [VHDL 208-304] Generating VHDL RTL for fit.
+INFO: [VLOG 209-307] Generating Verilog RTL for fit.
+Execute       syn_report -model fit -printsummary 
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 142.25 MHz
+Command     autosyn done; 10.681 sec.
+Command   csynth_design done; 38.161 sec.
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 9 seconds. CPU system time: 2 seconds. Elapsed time: 38.161 seconds; current allocated memory: 113.234 MB.
+Command ap_source done; 42.541 sec.
+Execute cleanup_all 

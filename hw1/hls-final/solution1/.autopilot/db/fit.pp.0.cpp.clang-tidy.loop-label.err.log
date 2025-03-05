@@ -1,0 +1,5 @@
+1 warning and 26 errors generated.
+Error while processing C:\Users\abelo\AppData\Roaming\Xilinx\Vitis\phy596\hw1\baseline\solution1\.autopilot\db\fit.pp.0.cpp.
+clang-tidy applied 131 of 131 suggested fixes.
+Suppressed 88 warnings (87 in non-user code, 1 with check filters).
+Use -header-filter=.* to display errors from all non-system headers. Use -system-headers to display errors from system headers as well.

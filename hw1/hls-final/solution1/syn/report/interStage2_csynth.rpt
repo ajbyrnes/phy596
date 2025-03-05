@@ -1,0 +1,236 @@
+
+
+================================================================
+== Vitis HLS Report for 'interStage2'
+================================================================
+* Date:           Wed Mar  5 03:43:41 2025
+
+* Version:        2023.1 (Build 3854077 on May  4 2023)
+* Project:        baseline
+* Solution:       solution1 (Vitis Kernel Flow Target)
+* Product family: spartan7
+* Target device:  xc7s100-fgga676-2
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  7.005 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+-----------+----------+-----+--------+---------+
+    |  Latency (cycles) |  Latency (absolute)  |   Interval   | Pipeline|
+    |   min   |   max   |    min    |    max   | min |   max  |   Type  |
+    +---------+---------+-----------+----------+-----+--------+---------+
+    |        1|   485000|  10.000 ns|  4.850 ms|    1|  485000|       no|
+    +---------+---------+-----------+----------+-----+--------+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +----------+---------+---------+----------+-----------+-----------+------------+----------+
+        |          |  Latency (cycles) | Iteration|  Initiation Interval  |    Trip    |          |
+        | Loop Name|   min   |   max   |  Latency |  achieved |   target  |    Count   | Pipelined|
+        +----------+---------+---------+----------+-----------+-----------+------------+----------+
+        |- inter2  |     8999|   484999|   18 ~ 97|          -|          -|  500 ~ 5000|        no|
+        +----------+---------+---------+----------+-----------+-----------+------------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-----+--------+-------+-----+
+|       Name      | BRAM_18K| DSP |   FF   |  LUT  | URAM|
++-----------------+---------+-----+--------+-------+-----+
+|DSP              |        -|    -|       -|      -|    -|
+|Expression       |        -|    -|       0|    407|    -|
+|FIFO             |        -|    -|       -|      -|    -|
+|Instance         |        -|   91|   11297|   8143|    -|
+|Memory           |        -|    -|       -|      -|    -|
+|Multiplexer      |        -|    -|       -|    641|    -|
+|Register         |        -|    -|    1662|      -|    -|
++-----------------+---------+-----+--------+-------+-----+
+|Total            |        0|   91|   12959|   9191|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Available        |      240|  160|  128000|  64000|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Utilization (%)  |        0|   56|      10|     14|    0|
++-----------------+---------+-----+--------+-------+-----+
+
++ Detail: 
+    * Instance: 
+    +---------------------------+-----------------------+---------+----+------+------+-----+
+    |          Instance         |         Module        | BRAM_18K| DSP|  FF  |  LUT | URAM|
+    +---------------------------+-----------------------+---------+----+------+------+-----+
+    |mul_128s_64s_128_5_1_U42   |mul_128s_64s_128_5_1   |        0|  26|   441|   256|    0|
+    |mul_64s_12s_76_5_1_U37     |mul_64s_12s_76_5_1     |        0|   4|   441|   256|    0|
+    |mul_64s_64s_128_5_1_U39    |mul_64s_64s_128_5_1    |        0|  16|   441|   256|    0|
+    |mul_64s_64s_96_5_1_U38     |mul_64s_64s_96_5_1     |        0|  15|   441|   256|    0|
+    |mul_65s_64s_96_5_1_U40     |mul_65s_64s_96_5_1     |        0|  15|   441|   256|    0|
+    |mul_76s_64s_96_5_1_U41     |mul_76s_64s_96_5_1     |        0|  15|   441|   256|    0|
+    |sdiv_66ns_64s_64_70_1_U43  |sdiv_66ns_64s_64_70_1  |        0|   0|  8651|  6607|    0|
+    +---------------------------+-----------------------+---------+----+------+------+-----+
+    |Total                      |                       |        0|  91| 11297|  8143|    0|
+    +---------------------------+-----------------------+---------+----+------+------+-----+
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +----------------------------------+----------+----+---+-----+------------+------------+
+    |           Variable Name          | Operation| DSP| FF| LUT | Bitwidth P0| Bitwidth P1|
+    +----------------------------------+----------+----+---+-----+------------+------------+
+    |add_ln141_fu_283_p2               |         +|   0|  0|  103|          96|          96|
+    |add_ln142_fu_309_p2               |         +|   0|  0|  103|          96|          96|
+    |sub_ln140_fu_225_p2               |         -|   0|  0|   72|          65|          65|
+    |sub_ln149_fu_402_p2               |         -|   0|  0|  103|          96|          96|
+    |ap_predicate_op279_write_state98  |       and|   0|  0|    2|           1|           1|
+    |ap_predicate_op284_read_state98   |       and|   0|  0|    2|           1|           1|
+    |grp_nbreadreq_fu_102_p3           |       and|   0|  0|    2|           1|           0|
+    |tmp_9_nbreadreq_fu_159_p3         |       and|   0|  0|    2|           1|           0|
+    |icmp_ln144_fu_231_p2              |      icmp|   0|  0|   10|           2|           1|
+    |ap_block_state1                   |        or|   0|  0|    2|           1|           1|
+    |ap_block_state2                   |        or|   0|  0|    2|           1|           1|
+    |ap_block_state87                  |        or|   0|  0|    2|           1|           1|
+    |ap_block_state98                  |        or|   0|  0|    2|           1|           1|
+    +----------------------------------+----------+----+---+-----+------------+------------+
+    |Total                             |          |   0|  0|  407|         363|         360|
+    +----------------------------------+----------+----+---+-----+------------+------------+
+
+    * Multiplexer: 
+    +---------------------+-----+-----------+-----+-----------+
+    |         Name        | LUT | Input Size| Bits| Total Bits|
+    +---------------------+-----+-----------+-----+-----------+
+    |SDiv1_blk_n          |    9|          2|    1|          2|
+    |Stt_fu_84            |    9|          2|   64|        128|
+    |SxDivS_blk_n         |    9|          2|    1|          2|
+    |SxSquaredDivS_blk_n  |    9|          2|    1|          2|
+    |SyDivS_blk_n         |    9|          2|    1|          2|
+    |ap_NS_fsm            |  491|         99|    1|         99|
+    |ap_done              |    9|          2|    1|          2|
+    |bSum_fu_88           |    9|          2|   64|        128|
+    |grp_fu_171_p0        |   21|          4|   64|        256|
+    |grp_fu_171_p1        |   21|          4|   64|        256|
+    |last2_blk_n          |    9|          2|    1|          2|
+    |resultStream_blk_n   |    9|          2|    1|          2|
+    |sigmaDiv1_blk_n      |    9|          2|    1|          2|
+    |x1_blk_n             |    9|          2|    1|          2|
+    |y1_blk_n             |    9|          2|    1|          2|
+    +---------------------+-----+-----------+-----+-----------+
+    |Total                |  641|        131|  267|        887|
+    +---------------------+-----+-----------+-----+-----------+
+
+    * Register: 
+    +----------------------------+-----+----+-----+-----------+
+    |            Name            |  FF | LUT| Bits| Const Bits|
+    +----------------------------+-----+----+-----+-----------+
+    |SDiv1_read_reg_576          |   64|   0|   64|          0|
+    |Stt_2_reg_545               |   64|   0|   64|          0|
+    |Stt_fu_84                   |   64|   0|   64|          0|
+    |SxDivSTemp_1_fu_92          |   64|   0|   64|          0|
+    |SxSquaredDivS_read_reg_581  |   64|   0|   64|          0|
+    |SyDivS_read_reg_571         |   64|   0|   64|          0|
+    |ap_CS_fsm                   |   98|   0|   98|          0|
+    |ap_done_reg                 |    1|   0|    1|          0|
+    |bSum_2_reg_556              |   64|   0|   64|          0|
+    |bSum_fu_88                  |   64|   0|   64|          0|
+    |icmp_ln144_reg_493          |    1|   0|    1|          0|
+    |mul_ln141_reg_540           |   96|   0|   96|          0|
+    |mul_ln142_1_reg_551         |   96|   0|   96|          0|
+    |mul_ln142_reg_530           |   76|   0|   76|          0|
+    |mul_ln149_reg_637           |   96|   0|   96|          0|
+    |mul_ln150_reg_617           |  128|   0|  128|          0|
+    |r_b_reg_611                 |   64|   0|   64|          0|
+    |r_sigmaB_reg_586            |   64|   0|   64|          0|
+    |sdiv_ln147_reg_566          |   64|   0|   64|          0|
+    |sext_ln140_2_reg_497        |   96|   0|   96|          0|
+    |sigmaDiv1Temp_reg_478       |   64|   0|   64|          0|
+    |sub_ln140_reg_483           |   65|   0|   65|          0|
+    |t_reg_508                   |   64|   0|   64|          0|
+    |tmp_2_reg_642               |   64|   0|   64|          0|
+    |tmp_reg_448                 |    1|   0|    1|          0|
+    |y1_read_reg_488             |   12|   0|   12|          0|
+    +----------------------------+-----+----+-----+-----------+
+    |Total                       | 1662|   0| 1662|          0|
+    +----------------------------+-----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++------------------------------+-----+-----+------------+---------------+--------------+
+|           RTL Ports          | Dir | Bits|  Protocol  | Source Object |    C Type    |
++------------------------------+-----+-----+------------+---------------+--------------+
+|ap_clk                        |   in|    1|  ap_ctrl_hs|    interStage2|  return value|
+|ap_rst                        |   in|    1|  ap_ctrl_hs|    interStage2|  return value|
+|ap_start                      |   in|    1|  ap_ctrl_hs|    interStage2|  return value|
+|ap_done                       |  out|    1|  ap_ctrl_hs|    interStage2|  return value|
+|ap_continue                   |   in|    1|  ap_ctrl_hs|    interStage2|  return value|
+|ap_idle                       |  out|    1|  ap_ctrl_hs|    interStage2|  return value|
+|ap_ready                      |  out|    1|  ap_ctrl_hs|    interStage2|  return value|
+|x1_dout                       |   in|   12|     ap_fifo|             x1|       pointer|
+|x1_num_data_valid             |   in|    5|     ap_fifo|             x1|       pointer|
+|x1_fifo_cap                   |   in|    5|     ap_fifo|             x1|       pointer|
+|x1_empty_n                    |   in|    1|     ap_fifo|             x1|       pointer|
+|x1_read                       |  out|    1|     ap_fifo|             x1|       pointer|
+|y1_dout                       |   in|   12|     ap_fifo|             y1|       pointer|
+|y1_num_data_valid             |   in|    5|     ap_fifo|             y1|       pointer|
+|y1_fifo_cap                   |   in|    5|     ap_fifo|             y1|       pointer|
+|y1_empty_n                    |   in|    1|     ap_fifo|             y1|       pointer|
+|y1_read                       |  out|    1|     ap_fifo|             y1|       pointer|
+|sigmaDiv1_dout                |   in|   64|     ap_fifo|      sigmaDiv1|       pointer|
+|sigmaDiv1_num_data_valid      |   in|    5|     ap_fifo|      sigmaDiv1|       pointer|
+|sigmaDiv1_fifo_cap            |   in|    5|     ap_fifo|      sigmaDiv1|       pointer|
+|sigmaDiv1_empty_n             |   in|    1|     ap_fifo|      sigmaDiv1|       pointer|
+|sigmaDiv1_read                |  out|    1|     ap_fifo|      sigmaDiv1|       pointer|
+|SDiv1_dout                    |   in|   64|     ap_fifo|          SDiv1|       pointer|
+|SDiv1_num_data_valid          |   in|    5|     ap_fifo|          SDiv1|       pointer|
+|SDiv1_fifo_cap                |   in|    5|     ap_fifo|          SDiv1|       pointer|
+|SDiv1_empty_n                 |   in|    1|     ap_fifo|          SDiv1|       pointer|
+|SDiv1_read                    |  out|    1|     ap_fifo|          SDiv1|       pointer|
+|SxDivS_dout                   |   in|   64|     ap_fifo|         SxDivS|       pointer|
+|SxDivS_num_data_valid         |   in|    5|     ap_fifo|         SxDivS|       pointer|
+|SxDivS_fifo_cap               |   in|    5|     ap_fifo|         SxDivS|       pointer|
+|SxDivS_empty_n                |   in|    1|     ap_fifo|         SxDivS|       pointer|
+|SxDivS_read                   |  out|    1|     ap_fifo|         SxDivS|       pointer|
+|SxSquaredDivS_dout            |   in|   64|     ap_fifo|  SxSquaredDivS|       pointer|
+|SxSquaredDivS_num_data_valid  |   in|    5|     ap_fifo|  SxSquaredDivS|       pointer|
+|SxSquaredDivS_fifo_cap        |   in|    5|     ap_fifo|  SxSquaredDivS|       pointer|
+|SxSquaredDivS_empty_n         |   in|    1|     ap_fifo|  SxSquaredDivS|       pointer|
+|SxSquaredDivS_read            |  out|    1|     ap_fifo|  SxSquaredDivS|       pointer|
+|SyDivS_dout                   |   in|   64|     ap_fifo|         SyDivS|       pointer|
+|SyDivS_num_data_valid         |   in|    5|     ap_fifo|         SyDivS|       pointer|
+|SyDivS_fifo_cap               |   in|    5|     ap_fifo|         SyDivS|       pointer|
+|SyDivS_empty_n                |   in|    1|     ap_fifo|         SyDivS|       pointer|
+|SyDivS_read                   |  out|    1|     ap_fifo|         SyDivS|       pointer|
+|last2_dout                    |   in|    2|     ap_fifo|          last2|       pointer|
+|last2_num_data_valid          |   in|    5|     ap_fifo|          last2|       pointer|
+|last2_fifo_cap                |   in|    5|     ap_fifo|          last2|       pointer|
+|last2_empty_n                 |   in|    1|     ap_fifo|          last2|       pointer|
+|last2_read                    |  out|    1|     ap_fifo|          last2|       pointer|
+|resultStream_din              |  out|  332|     ap_fifo|   resultStream|       pointer|
+|resultStream_num_data_valid   |   in|    5|     ap_fifo|   resultStream|       pointer|
+|resultStream_fifo_cap         |   in|    5|     ap_fifo|   resultStream|       pointer|
+|resultStream_full_n           |   in|    1|     ap_fifo|   resultStream|       pointer|
+|resultStream_write            |  out|    1|     ap_fifo|   resultStream|       pointer|
++------------------------------+-----+-----+------------+---------------+--------------+
+

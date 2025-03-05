@@ -1,0 +1,73 @@
+{
+    "0": {
+        "name": "fit",
+        "file": "fit.cpp",
+        "fileloc": "201",
+        "instructions": "64",
+        "total_instructions": "336",
+        "calls": "2 4 3 1",
+        "basicblocks": "1"
+    },
+    "1": {
+        "name": "finalStage",
+        "file": "fit.cpp",
+        "fileloc": "163",
+        "instructions": "87",
+        "total_instructions": "87",
+        "calls": "",
+        "basicblocks": "10",
+        "loads": {
+            "G": "1",
+            "L": "6"
+        },
+        "stores": {
+            "G": "1",
+            "L": "11"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "2": {
+        "name": "readStage",
+        "file": "fit.cpp",
+        "fileloc": "14",
+        "instructions": "51",
+        "total_instructions": "51",
+        "calls": "",
+        "basicblocks": "4",
+        "loops": {
+            "L": "1"
+        }
+    },
+    "3": {
+        "name": "interStage2",
+        "file": "fit.cpp",
+        "fileloc": "119",
+        "instructions": "91",
+        "total_instructions": "91",
+        "calls": "",
+        "basicblocks": "9",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "8"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "4": {
+        "name": "interStage1",
+        "file": "fit.cpp",
+        "fileloc": "81",
+        "instructions": "43",
+        "total_instructions": "43",
+        "calls": "",
+        "basicblocks": "7",
+        "loops": {
+            "L": "1"
+        }
+    }
+}
