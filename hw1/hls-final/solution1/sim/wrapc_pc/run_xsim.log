@@ -1,0 +1,267 @@
+Event: 1
+	numObservations: 100
+	a: 40.1769
+	b: -0.505989
+	sigmaA: 0.14275
+	sigmaB: 5.22716e-05
+	chiSquaredNdof: 1.42974
+
+Event: 2
+	numObservations: 94
+	a: 119.021
+	b: -3.31984
+	sigmaA: 0.185871
+	sigmaB: 7.74399e-05
+	chiSquaredNdof: 21.4269
+
+Event: 3
+	numObservations: 242
+	a: 58.994
+	b: 1.11135
+	sigmaA: 0.295228
+	sigmaB: 0.000107304
+	chiSquaredNdof: 0.961636
+
+Event: 4
+	numObservations: 242
+	a: 1.06124
+	b: -1.28918
+	sigmaA: 0.0577358
+	sigmaB: 2.46805e-05
+	chiSquaredNdof: 0.994762
+
+Event: 5
+	numObservations: 242
+	a: 14.3103
+	b: 10.9737
+	sigmaA: 7.61796
+	sigmaB: 0.00339365
+	chiSquaredNdof: 0.948025
+
+Event: 6
+	numObservations: 442
+	a: 6.84636
+	b: 7.02548
+	sigmaA: 0.105042
+	sigmaB: 4.50828e-05
+	chiSquaredNdof: 26.926
+
+INFO [HLS SIM]: The maximum depth reached by any hls::stream() instance in the design is 1362
+
+C:\Users\abelo\AppData\Roaming\Xilinx\Vitis\phy596\hw1\baseline\solution1\sim\verilog>set PATH= 
+
+C:\Users\abelo\AppData\Roaming\Xilinx\Vitis\phy596\hw1\baseline\solution1\sim\verilog>call E:/Vivado/2023.1/bin/xelab xil_defaultlib.apatb_fit_top glbl -Oenable_linking_all_libraries  -prj fit.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm  -L floating_point_v7_1_15 -L floating_point_v7_0_20 --lib "ieee_proposed=./ieee_proposed" -s fit  
+Vivado Simulator v2023.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: E:/Vivado/2023.1/bin/unwrapped/win64.o/xelab.exe xil_defaultlib.apatb_fit_top glbl -Oenable_linking_all_libraries -prj fit.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm -L floating_point_v7_1_15 -L floating_point_v7_0_20 --lib ieee_proposed=./ieee_proposed -s fit 
+Multi-threading is on. Using 14 slave threads.
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/sim/verilog/glbl.v" into library work
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/sim/verilog/AESL_axi_slave_control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_axi_slave_control
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/sim/verilog/AESL_axi_s_input_r.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_axi_s_input_r
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/sim/verilog/AESL_axi_s_output_r.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_axi_s_output_r
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/sim/verilog/AESL_deadlock_detection_unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_deadlock_detect_unit
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/sim/verilog/AESL_deadlock_detector.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_deadlock_detector
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/sim/verilog/AESL_deadlock_idx0_monitor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_deadlock_idx0_monitor
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/sim/verilog/AESL_deadlock_kernel_monitor_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_deadlock_kernel_monitor_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/sim/verilog/AESL_deadlock_report_unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_deadlock_report_unit
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/sim/verilog/AESL_fifo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/sim/verilog/fit.autotb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module apatb_fit_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/sim/verilog/fit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fit
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/sim/verilog/fit_control_s_axi.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fit_control_s_axi
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/sim/verilog/fit_fifo_w12_d10_S.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fit_fifo_w12_d10_S
+INFO: [VRFC 10-311] analyzing module fit_fifo_w12_d10_S_ShiftReg
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/sim/verilog/fit_fifo_w1_d10_S.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fit_fifo_w1_d10_S
+INFO: [VRFC 10-311] analyzing module fit_fifo_w1_d10_S_ShiftReg
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/sim/verilog/fit_fifo_w332_d10_A.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fit_fifo_w332_d10_A
+INFO: [VRFC 10-311] analyzing module fit_fifo_w332_d10_A_ram
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/sim/verilog/fit_fifo_w64_d10_S.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fit_fifo_w64_d10_S
+INFO: [VRFC 10-311] analyzing module fit_fifo_w64_d10_S_ShiftReg
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/sim/verilog/fit_finalStage.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fit_finalStage
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/sim/verilog/fit_interStage1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fit_interStage1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/sim/verilog/fit_interStage2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fit_interStage2
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/sim/verilog/fit_mul_128s_64s_128_5_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fit_mul_128s_64s_128_5_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/sim/verilog/fit_mul_12s_12s_24_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fit_mul_12s_12s_24_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/sim/verilog/fit_mul_44s_34s_78_3_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fit_mul_44s_34s_78_3_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/sim/verilog/fit_mul_64s_12s_76_5_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fit_mul_64s_12s_76_5_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/sim/verilog/fit_mul_64s_44s_96_5_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fit_mul_64s_44s_96_5_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/sim/verilog/fit_mul_64s_64s_128_5_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fit_mul_64s_64s_128_5_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/sim/verilog/fit_mul_64s_64s_96_5_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fit_mul_64s_64s_96_5_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/sim/verilog/fit_mul_65s_64s_96_5_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fit_mul_65s_64s_96_5_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/sim/verilog/fit_mul_76s_64s_96_5_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fit_mul_76s_64s_96_5_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/sim/verilog/fit_readStage.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fit_readStage
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/sim/verilog/fit_regslice_both.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fit_regslice_both
+INFO: [VRFC 10-311] analyzing module fit_regslice_both_w1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/sim/verilog/fit_sdiv_34ns_12s_34_38_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fit_sdiv_34ns_12s_34_38_1_divider
+INFO: [VRFC 10-311] analyzing module fit_sdiv_34ns_12s_34_38_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/sim/verilog/fit_sdiv_34ns_24s_34_38_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fit_sdiv_34ns_24s_34_38_1_divider
+INFO: [VRFC 10-311] analyzing module fit_sdiv_34ns_24s_34_38_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/sim/verilog/fit_sdiv_64ns_13s_64_68_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fit_sdiv_64ns_13s_64_68_1_divider
+INFO: [VRFC 10-311] analyzing module fit_sdiv_64ns_13s_64_68_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/sim/verilog/fit_sdiv_66ns_64s_64_70_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fit_sdiv_66ns_64s_64_70_1_divider
+INFO: [VRFC 10-311] analyzing module fit_sdiv_66ns_64s_64_70_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/sim/verilog/fit_sdiv_96ns_64s_64_100_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fit_sdiv_96ns_64s_64_100_1_divider
+INFO: [VRFC 10-311] analyzing module fit_sdiv_96ns_64s_64_100_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/sim/verilog/fit_start_for_finalStage_U0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fit_start_for_finalStage_U0
+INFO: [VRFC 10-311] analyzing module fit_start_for_finalStage_U0_ShiftReg
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/sim/verilog/fit_start_for_interStage1_U0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fit_start_for_interStage1_U0
+INFO: [VRFC 10-311] analyzing module fit_start_for_interStage1_U0_ShiftReg
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/sim/verilog/fit_start_for_interStage2_U0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fit_start_for_interStage2_U0
+INFO: [VRFC 10-311] analyzing module fit_start_for_interStage2_U0_ShiftReg
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/sim/verilog/dataflow_monitor.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dataflow_monitor
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package xil_defaultlib.$unit_dataflow_monitor_sv
+Compiling module xil_defaultlib.fit_control_s_axi
+Compiling module xil_defaultlib.fit_mul_44s_34s_78_3_1(NUM_STAGE...
+Compiling module xil_defaultlib.fit_mul_12s_12s_24_1_1(NUM_STAGE...
+Compiling module xil_defaultlib.fit_sdiv_34ns_24s_34_38_1_divide...
+Compiling module xil_defaultlib.fit_sdiv_34ns_24s_34_38_1(NUM_ST...
+Compiling module xil_defaultlib.fit_sdiv_34ns_12s_34_38_1_divide...
+Compiling module xil_defaultlib.fit_sdiv_34ns_12s_34_38_1(NUM_ST...
+Compiling module xil_defaultlib.fit_regslice_both(DataWidth=64)
+Compiling module xil_defaultlib.fit_readStage
+Compiling module xil_defaultlib.fit_mul_64s_64s_96_5_1(NUM_STAGE...
+Compiling module xil_defaultlib.fit_sdiv_96ns_64s_64_100_1_divid...
+Compiling module xil_defaultlib.fit_sdiv_96ns_64s_64_100_1(NUM_S...
+Compiling module xil_defaultlib.fit_sdiv_66ns_64s_64_70_1_divide...
+Compiling module xil_defaultlib.fit_sdiv_66ns_64s_64_70_1(NUM_ST...
+Compiling module xil_defaultlib.fit_interStage1
+Compiling module xil_defaultlib.fit_mul_64s_12s_76_5_1(NUM_STAGE...
+Compiling module xil_defaultlib.fit_mul_64s_64s_128_5_1(NUM_STAG...
+Compiling module xil_defaultlib.fit_mul_65s_64s_96_5_1(NUM_STAGE...
+Compiling module xil_defaultlib.fit_mul_76s_64s_96_5_1(NUM_STAGE...
+Compiling module xil_defaultlib.fit_mul_128s_64s_128_5_1(NUM_STA...
+Compiling module xil_defaultlib.fit_interStage2
+Compiling module xil_defaultlib.fit_mul_64s_44s_96_5_1(NUM_STAGE...
+Compiling module xil_defaultlib.fit_sdiv_64ns_13s_64_68_1_divide...
+Compiling module xil_defaultlib.fit_sdiv_64ns_13s_64_68_1(NUM_ST...
+Compiling module xil_defaultlib.fit_regslice_both(DataWidth=384)
+Compiling module xil_defaultlib.fit_finalStage
+Compiling module xil_defaultlib.fit_fifo_w64_d10_S_ShiftReg
+Compiling module xil_defaultlib.fit_fifo_w64_d10_S
+Compiling module xil_defaultlib.fit_fifo_w12_d10_S_ShiftReg
+Compiling module xil_defaultlib.fit_fifo_w12_d10_S
+Compiling module xil_defaultlib.fit_fifo_w1_d10_S_ShiftReg
+Compiling module xil_defaultlib.fit_fifo_w1_d10_S
+Compiling module xil_defaultlib.fit_fifo_w332_d10_A_ram
+Compiling module xil_defaultlib.fit_fifo_w332_d10_A
+Compiling module xil_defaultlib.fit_start_for_interStage1_U0_Shi...
+Compiling module xil_defaultlib.fit_start_for_interStage1_U0
+Compiling module xil_defaultlib.fit_start_for_interStage2_U0_Shi...
+Compiling module xil_defaultlib.fit_start_for_interStage2_U0
+Compiling module xil_defaultlib.fit_start_for_finalStage_U0_Shif...
+Compiling module xil_defaultlib.fit_start_for_finalStage_U0
+Compiling module xil_defaultlib.fit
+Compiling module xil_defaultlib.fifo(DEPTH=1362,WIDTH=64)
+Compiling module xil_defaultlib.AESL_axi_s_input_r
+Compiling module xil_defaultlib.fifo(DEPTH=6,WIDTH=384)
+Compiling module xil_defaultlib.AESL_axi_s_output_r
+Compiling module xil_defaultlib.AESL_axi_slave_control
+Compiling module xil_defaultlib.AESL_deadlock_detect_unit(IN_CHA...
+Compiling module xil_defaultlib.AESL_deadlock_detect_unit(PROC_I...
+Compiling module xil_defaultlib.AESL_deadlock_detect_unit(PROC_I...
+Compiling module xil_defaultlib.AESL_deadlock_detect_unit(PROC_I...
+Compiling module xil_defaultlib.AESL_deadlock_report_unit_defaul...
+Compiling module xil_defaultlib.AESL_deadlock_detector_1
+Compiling module xil_defaultlib.AESL_deadlock_idx0_monitor
+Compiling module xil_defaultlib.AESL_deadlock_kernel_monitor_top...
+Compiling module xil_defaultlib.df_fifo_intf
+Compiling module xil_defaultlib.df_process_intf
+Compiling module xil_defaultlib.nodf_module_intf
+Compiling module xil_defaultlib.seq_loop_intf(FSM_WIDTH=44)
+Compiling module xil_defaultlib.seq_loop_intf(FSM_WIDTH=108)
+Compiling module xil_defaultlib.seq_loop_intf(FSM_WIDTH=98)
+Compiling module xil_defaultlib.seq_loop_intf(FSM_WIDTH=87)
+Compiling module xil_defaultlib.dataflow_monitor_1
+Compiling module xil_defaultlib.apatb_fit_top
+Compiling module work.glbl
+Built simulation snapshot fit
+
+****** xsim v2023.1 (64-bit)
+  **** SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+  **** IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+  **** SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source xsim.dir/fit/xsim_script.tcl
+# xsim {fit} -autoloadwcfg -tclbatch {fit.tcl}
+Time resolution is 1 ps
+source fit.tcl
+## run all
+////////////////////////////////////////////////////////////////////////////////////
+// Inter-Transaction Progress: Completed Transaction / Total Transaction
+// Intra-Transaction Progress: Measured Latency / Latency Estimation * 100%
+//
+// RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
+////////////////////////////////////////////////////////////////////////////////////
+// RTL Simulation : 0 / 1 [0.00%] @ "155000"
+
+//////////////////////////////////////////////////////////////////////////////
+// ERROR!!! DEADLOCK DETECTED at 15000000 ns! SIMULATION WILL BE STOPPED! //
+//////////////////////////////////////////////////////////////////////////////
+/////////////////////////
+// Dependence cycle 1:
+// (1): Process: fit.finalStage_U0
+//      Blocked by empty input FIFO 'fit.resultStream_U' written by process 'fit.interStage2_U0'
+// (2): Process: fit.interStage2_U0
+//      Blocked by empty input FIFO 'fit.SxDivS_U' written by process 'fit.interStage1_U0'
+// (3): Process: fit.interStage1_U0
+//      Blocked by missing 'ap_start' from start propagation FIFO 'fit.start_for_interStage1_U0_U' written by process 'fit.readStage_U0',
+// (4): Process: fit.readStage_U0
+//      Blocked by full output FIFO 'fit.x2_U' read by process 'fit.finalStage_U0'
+//      Blocked by full output FIFO 'fit.y2_U' read by process 'fit.finalStage_U0'
+//      Blocked by full output FIFO 'fit.sigmaSquaredDiv1_U' read by process 'fit.finalStage_U0'
+//      Blocked by full output FIFO 'fit.last3_U' read by process 'fit.finalStage_U0'
+////////////////////////////////////////////////////////////////////////
+// Totally 1 cycles detected!
+////////////////////////////////////////////////////////////////////////
+$finish called at time : 15070 ns : File "C:/Users/abelo/AppData/Roaming/Xilinx/Vitis/phy596/hw1/baseline/solution1/sim/verilog/AESL_deadlock_report_unit.v" Line 765
+## quit
+INFO: [Common 17-206] Exiting xsim at Wed Mar  5 02:56:54 2025...
+INFO [HLS SIM]: The maximum depth reached by any hls::stream() instance in the design is 1362

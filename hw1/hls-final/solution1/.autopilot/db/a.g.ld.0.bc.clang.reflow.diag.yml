@@ -1,0 +1,218 @@
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: baseline/fit.cpp, Line: 175, Column: 14 }
+Function:        _Z10finalStageRN3hls6streamI6ResultLi10EEERNS0_I6ap_intILi12EELi0EEES7_RNS0_I8ap_fixedILi64ELi32EL9ap_q_mode5EL9ap_o_mode3ELi0EELi10EEERNS0_IS4_ILi2EELi10EEES3_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        readResult
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: baseline/fit.cpp, Line: 137, Column: 10 }
+Function:        _Z11interStage2RN3hls6streamI6ap_intILi12EELi10EEES4_RNS0_I8ap_fixedILi64ELi32EL9ap_q_mode5EL9ap_o_mode3ELi0EELi10EEESA_SA_SA_SA_RNS0_IS1_ILi2EELi10EEERNS0_I6ResultLi0EEE
+Args:            
+  - String:          'Loop '''
+  - LoopName:        inter2
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: baseline/fit.cpp, Line: 92, Column: 10 }
+Function:        _Z11interStage1RN3hls6streamI8ap_fixedILi64ELi32EL9ap_q_mode5EL9ap_o_mode3ELi0EELi10EEES6_S6_RNS0_I6ap_intILi2EELi10EEES6_S6_S6_S6_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        inter1
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-aggr
+Name:            AggrSucc
+DebugLoc:        { File: baseline/fit.cpp, Line: 209, Column: 26 }
+Function:        _Z3fitRN3hls6streamI11ObservationLi500EEERNS0_I6ResultLi10EEE
+Args:            
+  - String:          'Aggregating '
+  - HwTyName:        'fifo (hls::stream)'
+  - String:          ' variable '''
+  - Name:            resultStream
+  - String:          ''' with '
+  - AggregateTypeName: 'compact=bit'
+  - String:          ' mode in '
+  - Bitwidth:        '332'
+  - String:          '-bits'
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzeBoundsPattern
+DebugLoc:        { File: baseline/fit.cpp, Line: 28, Column: 19 }
+Function:        _Z9readStageRN3hls6streamI11ObservationLi500EEERNS0_I8ap_fixedILi64ELi32EL9ap_q_mode5EL9ap_o_mode3ELi0EELi10EEES9_S9_RNS0_I6ap_intILi12EELi10EEESD_SD_SD_S9_S9_RNS0_ISA_ILi2EELi10EEESG_SG_
+Args:            
+  - String:          Could not analyze the loop bounds
+  - String:          ' _XLX_SEP_ '
+  - LoopName:        VITIS_LOOP_28_1
+  - String:          ' '
+  - LoopLoc:         'baseline/fit.cpp:28:19'
+  - String:          ' '
+  - Function:        'readStage(hls::stream<Observation, 500>&, hls::stream<ap_fixed<64, 32, (ap_q_mode)5, (ap_o_mode)3, 0>, 10>&, hls::stream<ap_fixed<64, 32, (ap_q_mode)5, (ap_o_mode)3, 0>, 10>&, hls::stream<ap_fixed<64, 32, (ap_q_mode)5, (ap_o_mode)3, 0>, 10>&, hls::stream<ap_int<12>, 10>&, hls::stream<ap_int<12>, 10>&, hls::stream<ap_int<12>, 10>&, hls::stream<ap_int<12>, 10>&, hls::stream<ap_fixed<64, 32, (ap_q_mode)5, (ap_o_mode)3, 0>, 10>&, hls::stream<ap_fixed<64, 32, (ap_q_mode)5, (ap_o_mode)3, 0>, 10>&, hls::stream<ap_int<2>, 10>&, hls::stream<ap_int<2>, 10>&, hls::stream<ap_int<2>, 10>&)'
+    DebugLoc:        { File: baseline/fit.cpp, Line: 26, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzeBoundsPattern
+DebugLoc:        { File: baseline/fit.cpp, Line: 92, Column: 10 }
+Function:        _Z11interStage1RN3hls6streamI8ap_fixedILi64ELi32EL9ap_q_mode5EL9ap_o_mode3ELi0EELi10EEES6_S6_RNS0_I6ap_intILi2EELi10EEES6_S6_S6_S6_
+Args:            
+  - String:          Could not analyze the loop bounds
+  - String:          ' _XLX_SEP_ '
+  - LoopName:        inter1
+  - String:          ' '
+  - LoopLoc:         'baseline/fit.cpp:92:10'
+  - String:          ' '
+  - Function:        'interStage1(hls::stream<ap_fixed<64, 32, (ap_q_mode)5, (ap_o_mode)3, 0>, 10>&, hls::stream<ap_fixed<64, 32, (ap_q_mode)5, (ap_o_mode)3, 0>, 10>&, hls::stream<ap_fixed<64, 32, (ap_q_mode)5, (ap_o_mode)3, 0>, 10>&, hls::stream<ap_int<2>, 10>&, hls::stream<ap_fixed<64, 32, (ap_q_mode)5, (ap_o_mode)3, 0>, 10>&, hls::stream<ap_fixed<64, 32, (ap_q_mode)5, (ap_o_mode)3, 0>, 10>&, hls::stream<ap_fixed<64, 32, (ap_q_mode)5, (ap_o_mode)3, 0>, 10>&, hls::stream<ap_fixed<64, 32, (ap_q_mode)5, (ap_o_mode)3, 0>, 10>&)'
+    DebugLoc:        { File: baseline/fit.cpp, Line: 89, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzeBoundsPattern
+DebugLoc:        { File: baseline/fit.cpp, Line: 137, Column: 10 }
+Function:        _Z11interStage2RN3hls6streamI6ap_intILi12EELi10EEES4_RNS0_I8ap_fixedILi64ELi32EL9ap_q_mode5EL9ap_o_mode3ELi0EELi10EEESA_SA_SA_SA_RNS0_IS1_ILi2EELi10EEERNS0_I6ResultLi0EEE
+Args:            
+  - String:          Could not analyze the loop bounds
+  - String:          ' _XLX_SEP_ '
+  - LoopName:        inter2
+  - String:          ' '
+  - LoopLoc:         'baseline/fit.cpp:137:10'
+  - String:          ' '
+  - Function:        'interStage2(hls::stream<ap_int<12>, 10>&, hls::stream<ap_int<12>, 10>&, hls::stream<ap_fixed<64, 32, (ap_q_mode)5, (ap_o_mode)3, 0>, 10>&, hls::stream<ap_fixed<64, 32, (ap_q_mode)5, (ap_o_mode)3, 0>, 10>&, hls::stream<ap_fixed<64, 32, (ap_q_mode)5, (ap_o_mode)3, 0>, 10>&, hls::stream<ap_fixed<64, 32, (ap_q_mode)5, (ap_o_mode)3, 0>, 10>&, hls::stream<ap_fixed<64, 32, (ap_q_mode)5, (ap_o_mode)3, 0>, 10>&, hls::stream<ap_int<2>, 10>&, hls::stream<Result, 0>&)'
+    DebugLoc:        { File: baseline/fit.cpp, Line: 127, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzeBoundsPattern
+DebugLoc:        { File: baseline/fit.cpp, Line: 175, Column: 14 }
+Function:        _Z10finalStageRN3hls6streamI6ResultLi10EEERNS0_I6ap_intILi12EELi0EEES7_RNS0_I8ap_fixedILi64ELi32EL9ap_q_mode5EL9ap_o_mode3ELi0EELi10EEERNS0_IS4_ILi2EELi10EEES3_
+Args:            
+  - String:          Could not analyze the loop bounds
+  - String:          ' _XLX_SEP_ '
+  - LoopName:        readResult
+  - String:          ' '
+  - LoopLoc:         'baseline/fit.cpp:175:14'
+  - String:          ' '
+  - Function:        'finalStage(hls::stream<Result, 10>&, hls::stream<ap_int<12>, 0>&, hls::stream<ap_int<12>, 0>&, hls::stream<ap_fixed<64, 32, (ap_q_mode)5, (ap_o_mode)3, 0>, 10>&, hls::stream<ap_int<2>, 10>&, hls::stream<Result, 10>&)'
+    DebugLoc:        { File: baseline/fit.cpp, Line: 168, Column: 0 }
+  - String:          ' '
+...
+--- !Failure
+Pass:            reflow-occurrence-inference
+Name:            NonComputableLoopForm
+DebugLoc:        { File: baseline/fit.cpp, Line: 28, Column: 19 }
+Function:        _Z9readStageRN3hls6streamI11ObservationLi500EEERNS0_I8ap_fixedILi64ELi32EL9ap_q_mode5EL9ap_o_mode3ELi0EELi10EEES9_S9_RNS0_I6ap_intILi12EELi10EEESD_SD_SD_S9_S9_RNS0_ISA_ILi2EELi10EEESG_SG_
+Args:            
+  - String:          'Could not analyze occurrence information within '''
+  - LoopName:        VITIS_LOOP_28_1
+  - String:          '''('
+  - LoopLoc:         'baseline/fit.cpp:28:19'
+  - String:          ') . Requires loop in simplify form and with single exit.'
+...
+--- !Failure
+Pass:            reflow-occurrence-inference
+Name:            NonComputableLoopForm
+DebugLoc:        { File: baseline/fit.cpp, Line: 92, Column: 10 }
+Function:        _Z11interStage1RN3hls6streamI8ap_fixedILi64ELi32EL9ap_q_mode5EL9ap_o_mode3ELi0EELi10EEES6_S6_RNS0_I6ap_intILi2EELi10EEES6_S6_S6_S6_
+Args:            
+  - String:          'Could not analyze occurrence information within '''
+  - LoopName:        inter1
+  - String:          '''('
+  - LoopLoc:         'baseline/fit.cpp:92:10'
+  - String:          ') . Requires loop in simplify form and with single exit.'
+...
+--- !Failure
+Pass:            reflow-occurrence-inference
+Name:            NonComputableLoopForm
+DebugLoc:        { File: baseline/fit.cpp, Line: 137, Column: 10 }
+Function:        _Z11interStage2RN3hls6streamI6ap_intILi12EELi10EEES4_RNS0_I8ap_fixedILi64ELi32EL9ap_q_mode5EL9ap_o_mode3ELi0EELi10EEESA_SA_SA_SA_RNS0_IS1_ILi2EELi10EEERNS0_I6ResultLi0EEE
+Args:            
+  - String:          'Could not analyze occurrence information within '''
+  - LoopName:        inter2
+  - String:          '''('
+  - LoopLoc:         'baseline/fit.cpp:137:10'
+  - String:          ') . Requires loop in simplify form and with single exit.'
+...
+--- !Failure
+Pass:            reflow-occurrence-inference
+Name:            NonComputableLoopForm
+DebugLoc:        { File: baseline/fit.cpp, Line: 175, Column: 14 }
+Function:        _Z10finalStageRN3hls6streamI6ResultLi10EEERNS0_I6ap_intILi12EELi0EEES7_RNS0_I8ap_fixedILi64ELi32EL9ap_q_mode5EL9ap_o_mode3ELi0EELi10EEERNS0_IS4_ILi2EELi10EEES3_
+Args:            
+  - String:          'Could not analyze occurrence information within '''
+  - LoopName:        readResult
+  - String:          '''('
+  - LoopLoc:         'baseline/fit.cpp:175:14'
+  - String:          ') . Requires loop in simplify form and with single exit.'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: baseline/fit.cpp, Line: 175, Column: 14 }
+Function:        _Z10finalStageRN3hls6streamI6ResultLi10EEERNS0_I6ap_intILi12EELi0EEES7_RNS0_I8ap_fixedILi64ELi32EL9ap_q_mode5EL9ap_o_mode3ELi0EELi10EEERNS0_IS4_ILi2EELi10EEES3_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        readResult
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: baseline/fit.cpp, Line: 137, Column: 10 }
+Function:        _Z11interStage2RN3hls6streamI6ap_intILi12EELi10EEES4_RNS0_I8ap_fixedILi64ELi32EL9ap_q_mode5EL9ap_o_mode3ELi0EELi10EEESA_SA_SA_SA_RNS0_IS1_ILi2EELi10EEERNS0_I6ResultLi0EEE
+Args:            
+  - String:          'Loop '''
+  - LoopName:        inter2
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: baseline/fit.cpp, Line: 92, Column: 10 }
+Function:        _Z11interStage1RN3hls6streamI8ap_fixedILi64ELi32EL9ap_q_mode5EL9ap_o_mode3ELi0EELi10EEES6_S6_RNS0_I6ap_intILi2EELi10EEES6_S6_S6_S6_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        inter1
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: baseline/fit.cpp, Line: 175, Column: 14 }
+Function:        _Z10finalStageRN3hls6streamI6ResultLi10EEERNS0_I6ap_intILi12EELi0EEES7_RNS0_I8ap_fixedILi64ELi32EL9ap_q_mode5EL9ap_o_mode3ELi0EELi10EEERNS0_IS4_ILi2EELi10EEES3_.1
+Args:            
+  - String:          'Loop '''
+  - LoopName:        readResult
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: baseline/fit.cpp, Line: 137, Column: 10 }
+Function:        _Z11interStage2RN3hls6streamI6ap_intILi12EELi10EEES4_RNS0_I8ap_fixedILi64ELi32EL9ap_q_mode5EL9ap_o_mode3ELi0EELi10EEESA_SA_SA_SA_RNS0_IS1_ILi2EELi10EEERNS0_I6ResultLi0EEE
+Args:            
+  - String:          'Loop '''
+  - LoopName:        inter2
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: baseline/fit.cpp, Line: 92, Column: 10 }
+Function:        _Z11interStage1RN3hls6streamI8ap_fixedILi64ELi32EL9ap_q_mode5EL9ap_o_mode3ELi0EELi10EEES6_S6_RNS0_I6ap_intILi2EELi10EEES6_S6_S6_S6_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        inter1
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...

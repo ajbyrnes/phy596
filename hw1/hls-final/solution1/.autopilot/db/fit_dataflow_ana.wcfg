@@ -1,0 +1,928 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="fit.wdb" id="1">
+         <top_modules>
+            <top_module name="apa_fit_top" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0ns"></ZoomStartTime>
+      <ZoomEndTime time="2000ns"></ZoomEndTime>
+      <Cursor1Time time="0ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="257"></NameColumnWidth>
+      <ValueColumnWidth column_width="84"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="2" />
+   <wvobject type="group" fp_name="HLS Process Summary Group">
+      <obj_property name="label">HLS Process Summary</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject type="group" fp_name="/apatb_fit_top/AESL_inst_fit//AESL_inst_fit_activity">
+         <obj_property name="label">AESL_inst_fit_activity</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="UseFullPath">true</obj_property>
+         <obj_property name="ElementShortName">AESL_inst_fit_activity</obj_property>
+         <obj_property name="ObjectShortName">AESL_inst_fit_activity</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+         <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="CustomSignalColor">turquoise</obj_property>
+         <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+         <obj_property name="Render_Data">/apatb_fit_top/AESL_inst_fit//AESL_inst_fit_activity.dataflowTxWaveData.Cycles</obj_property>
+         <obj_property name="Value_Data">/apatb_fit_top/AESL_inst_fit//AESL_inst_fit_activity.dataflowTxWaveData.OutStanding</obj_property>
+         <obj_property name="Detail_Data">/apatb_fit_top/AESL_inst_fit//AESL_inst_fit_activity.dataflowTxTooltipData</obj_property>
+         <wvobject type="group" fp_name="/apatb_fit_top/AESL_inst_fit/readStage_U0/readStage_U0_activity">
+            <obj_property name="label">readStage_U0_activity</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="UseFullPath">true</obj_property>
+            <obj_property name="ElementShortName">readStage_U0_activity</obj_property>
+            <obj_property name="ObjectShortName">readStage_U0_activity</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+            <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+            <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+            <obj_property name="CustomSignalColor">turquoise</obj_property>
+            <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+            <obj_property name="Render_Data">/apatb_fit_top/AESL_inst_fit/readStage_U0/readStage_U0_activity.dataflowTxWaveData.Cycles</obj_property>
+            <obj_property name="Value_Data">/apatb_fit_top/AESL_inst_fit/readStage_U0/readStage_U0_activity.dataflowTxWaveData.OutStanding</obj_property>
+            <obj_property name="Detail_Data">/apatb_fit_top/AESL_inst_fit/readStage_U0/readStage_U0_activity.dataflowTxTooltipData</obj_property>
+         </wvobject>
+         <wvobject type="group" fp_name="/apatb_fit_top/AESL_inst_fit/interStage1_U0/interStage1_U0_activity">
+            <obj_property name="label">interStage1_U0_activity</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="UseFullPath">true</obj_property>
+            <obj_property name="ElementShortName">interStage1_U0_activity</obj_property>
+            <obj_property name="ObjectShortName">interStage1_U0_activity</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+            <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+            <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+            <obj_property name="CustomSignalColor">turquoise</obj_property>
+            <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+            <obj_property name="Render_Data">/apatb_fit_top/AESL_inst_fit/interStage1_U0/interStage1_U0_activity.dataflowTxWaveData.Cycles</obj_property>
+            <obj_property name="Value_Data">/apatb_fit_top/AESL_inst_fit/interStage1_U0/interStage1_U0_activity.dataflowTxWaveData.OutStanding</obj_property>
+            <obj_property name="Detail_Data">/apatb_fit_top/AESL_inst_fit/interStage1_U0/interStage1_U0_activity.dataflowTxTooltipData</obj_property>
+         </wvobject>
+         <wvobject type="group" fp_name="/apatb_fit_top/AESL_inst_fit/interStage2_U0/interStage2_U0_activity">
+            <obj_property name="label">interStage2_U0_activity</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="UseFullPath">true</obj_property>
+            <obj_property name="ElementShortName">interStage2_U0_activity</obj_property>
+            <obj_property name="ObjectShortName">interStage2_U0_activity</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+            <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+            <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+            <obj_property name="CustomSignalColor">turquoise</obj_property>
+            <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+            <obj_property name="Render_Data">/apatb_fit_top/AESL_inst_fit/interStage2_U0/interStage2_U0_activity.dataflowTxWaveData.Cycles</obj_property>
+            <obj_property name="Value_Data">/apatb_fit_top/AESL_inst_fit/interStage2_U0/interStage2_U0_activity.dataflowTxWaveData.OutStanding</obj_property>
+            <obj_property name="Detail_Data">/apatb_fit_top/AESL_inst_fit/interStage2_U0/interStage2_U0_activity.dataflowTxTooltipData</obj_property>
+         </wvobject>
+         <wvobject type="group" fp_name="/apatb_fit_top/AESL_inst_fit/finalStage_U0/finalStage_U0_activity">
+            <obj_property name="label">finalStage_U0_activity</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="UseFullPath">true</obj_property>
+            <obj_property name="ElementShortName">finalStage_U0_activity</obj_property>
+            <obj_property name="ObjectShortName">finalStage_U0_activity</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+            <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+            <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+            <obj_property name="CustomSignalColor">turquoise</obj_property>
+            <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+            <obj_property name="Render_Data">/apatb_fit_top/AESL_inst_fit/finalStage_U0/finalStage_U0_activity.dataflowTxWaveData.Cycles</obj_property>
+            <obj_property name="Value_Data">/apatb_fit_top/AESL_inst_fit/finalStage_U0/finalStage_U0_activity.dataflowTxWaveData.OutStanding</obj_property>
+            <obj_property name="Detail_Data">/apatb_fit_top/AESL_inst_fit/finalStage_U0/finalStage_U0_activity.dataflowTxTooltipData</obj_property>
+         </wvobject>
+      </wvobject>
+   </wvobject>
+   <wvobject type="protoinst" fp_name="/apatb_fit_top/AESL_inst_fit//AESL_inst_fit_activity">
+      <obj_property name="ElementShortName">AESL_inst_fit_activity</obj_property>
+      <obj_property name="ObjectShortName">AESL_inst_fit_activity</obj_property>
+   </wvobject>
+   <wvobject type="group" fp_name="AESL_inst_fit_group">
+      <obj_property name="label">AESL_inst_fit</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject type="protoinst" fp_name="/apatb_fit_top/AESL_inst_fit/readStage_U0/readStage_U0_activity">
+         <obj_property name="ElementShortName">readStage_U0_activity</obj_property>
+         <obj_property name="ObjectShortName">readStage_U0_activity</obj_property>
+      </wvobject>
+      <wvobject type="protoinst" fp_name="/apatb_fit_top/AESL_inst_fit/interStage1_U0/interStage1_U0_activity">
+         <obj_property name="ElementShortName">interStage1_U0_activity</obj_property>
+         <obj_property name="ObjectShortName">interStage1_U0_activity</obj_property>
+      </wvobject>
+      <wvobject type="protoinst" fp_name="/apatb_fit_top/AESL_inst_fit/interStage2_U0/interStage2_U0_activity">
+         <obj_property name="ElementShortName">interStage2_U0_activity</obj_property>
+         <obj_property name="ObjectShortName">interStage2_U0_activity</obj_property>
+      </wvobject>
+      <wvobject type="protoinst" fp_name="/apatb_fit_top/AESL_inst_fit/finalStage_U0/finalStage_U0_activity">
+         <obj_property name="ElementShortName">finalStage_U0_activity</obj_property>
+         <obj_property name="ObjectShortName">finalStage_U0_activity</obj_property>
+      </wvobject>
+      <wvobject type="group" fp_name="AESL_inst_fit_Handshake_group">
+         <obj_property name="label">Block-level handshake</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="logic" fp_name="/apatb_fit_top/AESL_inst_fit/ap_start">
+            <obj_property name="ElementShortName">ap_start</obj_property>
+            <obj_property name="ObjectShortName">ap_start</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/apatb_fit_top/AESL_inst_fit/ap_ready">
+            <obj_property name="ElementShortName">ap_ready</obj_property>
+            <obj_property name="ObjectShortName">ap_ready</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/apatb_fit_top/AESL_inst_fit/ap_done">
+            <obj_property name="ElementShortName">ap_done</obj_property>
+            <obj_property name="ObjectShortName">ap_done</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/apatb_fit_top/AESL_inst_fit/ap_continue">
+            <obj_property name="ElementShortName">ap_continue</obj_property>
+            <obj_property name="ObjectShortName">ap_continue</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="readStage_U0_group">
+         <obj_property name="label">readStage_U0</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="group" fp_name="readStage_U0_Input_group">
+            <obj_property name="label">Input Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+         </wvobject>
+         <wvobject type="group" fp_name="readStage_U0_Handshake_group">
+            <obj_property name="label">Block-level handshake</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_fit_top/AESL_inst_fit/readStage_U0/ap_start">
+               <obj_property name="ElementShortName">ap_start</obj_property>
+               <obj_property name="ObjectShortName">ap_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_fit_top/AESL_inst_fit/readStage_U0/real_start">
+               <obj_property name="ElementShortName">real_start</obj_property>
+               <obj_property name="ObjectShortName">real_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_fit_top/AESL_inst_fit/readStage_U0/ap_ready">
+               <obj_property name="ElementShortName">ap_ready</obj_property>
+               <obj_property name="ObjectShortName">ap_ready</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_fit_top/AESL_inst_fit/readStage_U0/ap_done">
+               <obj_property name="ElementShortName">ap_done</obj_property>
+               <obj_property name="ObjectShortName">ap_done</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_fit_top/AESL_inst_fit/readStage_U0/ap_continue">
+               <obj_property name="ElementShortName">ap_continue</obj_property>
+               <obj_property name="ObjectShortName">ap_continue</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="readStage_U0_Output_group">
+            <obj_property name="label">Output Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="partialS_group">
+               <obj_property name="label">partialS(partialS_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_fit_top/AESL_inst_fit/readStage_U0/partialS_blk_n">
+                  <obj_property name="ElementShortName">partialS_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">partialS_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_fit_top/AESL_inst_fit/readStage_U0/partialS_din">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_fit_top/AESL_inst_fit/readStage_U0/partialS_full_n">
+                  <obj_property name="ElementShortName">partialS_full_n</obj_property>
+                  <obj_property name="ObjectShortName">partialS_full_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_fit_top/AESL_inst_fit/readStage_U0/partialS_write">
+                  <obj_property name="ElementShortName">partialS_write</obj_property>
+                  <obj_property name="ObjectShortName">partialS_write</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="partialSx_group">
+               <obj_property name="label">partialSx(partialSx_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_fit_top/AESL_inst_fit/readStage_U0/partialSx_blk_n">
+                  <obj_property name="ElementShortName">partialSx_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">partialSx_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_fit_top/AESL_inst_fit/readStage_U0/partialSx_din">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_fit_top/AESL_inst_fit/readStage_U0/partialSx_full_n">
+                  <obj_property name="ElementShortName">partialSx_full_n</obj_property>
+                  <obj_property name="ObjectShortName">partialSx_full_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_fit_top/AESL_inst_fit/readStage_U0/partialSx_write">
+                  <obj_property name="ElementShortName">partialSx_write</obj_property>
+                  <obj_property name="ObjectShortName">partialSx_write</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="partialSy_group">
+               <obj_property name="label">partialSy(partialSy_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_fit_top/AESL_inst_fit/readStage_U0/partialSy_blk_n">
+                  <obj_property name="ElementShortName">partialSy_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">partialSy_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_fit_top/AESL_inst_fit/readStage_U0/partialSy_din">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_fit_top/AESL_inst_fit/readStage_U0/partialSy_full_n">
+                  <obj_property name="ElementShortName">partialSy_full_n</obj_property>
+                  <obj_property name="ObjectShortName">partialSy_full_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_fit_top/AESL_inst_fit/readStage_U0/partialSy_write">
+                  <obj_property name="ElementShortName">partialSy_write</obj_property>
+                  <obj_property name="ObjectShortName">partialSy_write</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="x1_group">
+               <obj_property name="label">x1(x1_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_fit_top/AESL_inst_fit/readStage_U0/x1_blk_n">
+                  <obj_property name="ElementShortName">x1_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">x1_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_fit_top/AESL_inst_fit/readStage_U0/x1_din">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_fit_top/AESL_inst_fit/readStage_U0/x1_full_n">
+                  <obj_property name="ElementShortName">x1_full_n</obj_property>
+                  <obj_property name="ObjectShortName">x1_full_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_fit_top/AESL_inst_fit/readStage_U0/x1_write">
+                  <obj_property name="ElementShortName">x1_write</obj_property>
+                  <obj_property name="ObjectShortName">x1_write</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="x2_group">
+               <obj_property name="label">x2(x2_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_fit_top/AESL_inst_fit/readStage_U0/x2_blk_n">
+                  <obj_property name="ElementShortName">x2_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">x2_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_fit_top/AESL_inst_fit/readStage_U0/x2_din">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_fit_top/AESL_inst_fit/readStage_U0/x2_full_n">
+                  <obj_property name="ElementShortName">x2_full_n</obj_property>
+                  <obj_property name="ObjectShortName">x2_full_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_fit_top/AESL_inst_fit/readStage_U0/x2_write">
+                  <obj_property name="ElementShortName">x2_write</obj_property>
+                  <obj_property name="ObjectShortName">x2_write</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="y1_group">
+               <obj_property name="label">y1(y1_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_fit_top/AESL_inst_fit/readStage_U0/y1_blk_n">
+                  <obj_property name="ElementShortName">y1_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">y1_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_fit_top/AESL_inst_fit/readStage_U0/y1_din">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_fit_top/AESL_inst_fit/readStage_U0/y1_full_n">
+                  <obj_property name="ElementShortName">y1_full_n</obj_property>
+                  <obj_property name="ObjectShortName">y1_full_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_fit_top/AESL_inst_fit/readStage_U0/y1_write">
+                  <obj_property name="ElementShortName">y1_write</obj_property>
+                  <obj_property name="ObjectShortName">y1_write</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="y2_group">
+               <obj_property name="label">y2(y2_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_fit_top/AESL_inst_fit/readStage_U0/y2_blk_n">
+                  <obj_property name="ElementShortName">y2_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">y2_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_fit_top/AESL_inst_fit/readStage_U0/y2_din">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_fit_top/AESL_inst_fit/readStage_U0/y2_full_n">
+                  <obj_property name="ElementShortName">y2_full_n</obj_property>
+                  <obj_property name="ObjectShortName">y2_full_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_fit_top/AESL_inst_fit/readStage_U0/y2_write">
+                  <obj_property name="ElementShortName">y2_write</obj_property>
+                  <obj_property name="ObjectShortName">y2_write</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="sigmaDiv1_group">
+               <obj_property name="label">sigmaDiv1(sigmaDiv1_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_fit_top/AESL_inst_fit/readStage_U0/sigmaDiv1_blk_n">
+                  <obj_property name="ElementShortName">sigmaDiv1_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">sigmaDiv1_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_fit_top/AESL_inst_fit/readStage_U0/sigmaDiv1_din">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_fit_top/AESL_inst_fit/readStage_U0/sigmaDiv1_full_n">
+                  <obj_property name="ElementShortName">sigmaDiv1_full_n</obj_property>
+                  <obj_property name="ObjectShortName">sigmaDiv1_full_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_fit_top/AESL_inst_fit/readStage_U0/sigmaDiv1_write">
+                  <obj_property name="ElementShortName">sigmaDiv1_write</obj_property>
+                  <obj_property name="ObjectShortName">sigmaDiv1_write</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="sigmaSquaredDiv1_group">
+               <obj_property name="label">sigmaSquaredDiv1(sigmaSquaredDiv1_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_fit_top/AESL_inst_fit/readStage_U0/sigmaSquaredDiv1_blk_n">
+                  <obj_property name="ElementShortName">sigmaSquaredDiv1_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">sigmaSquaredDiv1_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_fit_top/AESL_inst_fit/readStage_U0/sigmaSquaredDiv1_din">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_fit_top/AESL_inst_fit/readStage_U0/sigmaSquaredDiv1_full_n">
+                  <obj_property name="ElementShortName">sigmaSquaredDiv1_full_n</obj_property>
+                  <obj_property name="ObjectShortName">sigmaSquaredDiv1_full_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_fit_top/AESL_inst_fit/readStage_U0/sigmaSquaredDiv1_write">
+                  <obj_property name="ElementShortName">sigmaSquaredDiv1_write</obj_property>
+                  <obj_property name="ObjectShortName">sigmaSquaredDiv1_write</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="last1_group">
+               <obj_property name="label">last1(last1_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_fit_top/AESL_inst_fit/readStage_U0/last1_blk_n">
+                  <obj_property name="ElementShortName">last1_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">last1_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_fit_top/AESL_inst_fit/readStage_U0/last1_din">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_fit_top/AESL_inst_fit/readStage_U0/last1_full_n">
+                  <obj_property name="ElementShortName">last1_full_n</obj_property>
+                  <obj_property name="ObjectShortName">last1_full_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_fit_top/AESL_inst_fit/readStage_U0/last1_write">
+                  <obj_property name="ElementShortName">last1_write</obj_property>
+                  <obj_property name="ObjectShortName">last1_write</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="last2_group">
+               <obj_property name="label">last2(last2_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_fit_top/AESL_inst_fit/readStage_U0/last2_blk_n">
+                  <obj_property name="ElementShortName">last2_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">last2_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_fit_top/AESL_inst_fit/readStage_U0/last2_din">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_fit_top/AESL_inst_fit/readStage_U0/last2_full_n">
+                  <obj_property name="ElementShortName">last2_full_n</obj_property>
+                  <obj_property name="ObjectShortName">last2_full_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_fit_top/AESL_inst_fit/readStage_U0/last2_write">
+                  <obj_property name="ElementShortName">last2_write</obj_property>
+                  <obj_property name="ObjectShortName">last2_write</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="last3_group">
+               <obj_property name="label">last3(last3_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_fit_top/AESL_inst_fit/readStage_U0/last3_blk_n">
+                  <obj_property name="ElementShortName">last3_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">last3_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_fit_top/AESL_inst_fit/readStage_U0/last3_din">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_fit_top/AESL_inst_fit/readStage_U0/last3_full_n">
+                  <obj_property name="ElementShortName">last3_full_n</obj_property>
+                  <obj_property name="ObjectShortName">last3_full_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_fit_top/AESL_inst_fit/readStage_U0/last3_write">
+                  <obj_property name="ElementShortName">last3_write</obj_property>
+                  <obj_property name="ObjectShortName">last3_write</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="interStage1_U0_group">
+         <obj_property name="label">interStage1_U0</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="group" fp_name="interStage1_U0_Input_group">
+            <obj_property name="label">Input Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="partialS_group">
+               <obj_property name="label">partialS(partialS_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_fit_top/AESL_inst_fit/interStage1_U0/partialS_blk_n">
+                  <obj_property name="ElementShortName">partialS_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">partialS_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_fit_top/AESL_inst_fit/interStage1_U0/partialS_dout">
+                  <obj_property name="ElementShortName">partialS_dout[63:0]</obj_property>
+                  <obj_property name="ObjectShortName">partialS_dout[63:0]</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_fit_top/AESL_inst_fit/interStage1_U0/partialS_empty_n">
+                  <obj_property name="ElementShortName">partialS_empty_n</obj_property>
+                  <obj_property name="ObjectShortName">partialS_empty_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_fit_top/AESL_inst_fit/interStage1_U0/partialS_read">
+                  <obj_property name="ElementShortName">partialS_read</obj_property>
+                  <obj_property name="ObjectShortName">partialS_read</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="partialSx_group">
+               <obj_property name="label">partialSx(partialSx_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_fit_top/AESL_inst_fit/interStage1_U0/partialSx_blk_n">
+                  <obj_property name="ElementShortName">partialSx_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">partialSx_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_fit_top/AESL_inst_fit/interStage1_U0/partialSx_dout">
+                  <obj_property name="ElementShortName">partialSx_dout[63:0]</obj_property>
+                  <obj_property name="ObjectShortName">partialSx_dout[63:0]</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_fit_top/AESL_inst_fit/interStage1_U0/partialSx_empty_n">
+                  <obj_property name="ElementShortName">partialSx_empty_n</obj_property>
+                  <obj_property name="ObjectShortName">partialSx_empty_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_fit_top/AESL_inst_fit/interStage1_U0/partialSx_read">
+                  <obj_property name="ElementShortName">partialSx_read</obj_property>
+                  <obj_property name="ObjectShortName">partialSx_read</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="partialSy_group">
+               <obj_property name="label">partialSy(partialSy_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_fit_top/AESL_inst_fit/interStage1_U0/partialSy_blk_n">
+                  <obj_property name="ElementShortName">partialSy_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">partialSy_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_fit_top/AESL_inst_fit/interStage1_U0/partialSy_dout">
+                  <obj_property name="ElementShortName">partialSy_dout[63:0]</obj_property>
+                  <obj_property name="ObjectShortName">partialSy_dout[63:0]</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_fit_top/AESL_inst_fit/interStage1_U0/partialSy_empty_n">
+                  <obj_property name="ElementShortName">partialSy_empty_n</obj_property>
+                  <obj_property name="ObjectShortName">partialSy_empty_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_fit_top/AESL_inst_fit/interStage1_U0/partialSy_read">
+                  <obj_property name="ElementShortName">partialSy_read</obj_property>
+                  <obj_property name="ObjectShortName">partialSy_read</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="last1_group">
+               <obj_property name="label">last1(last1_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_fit_top/AESL_inst_fit/interStage1_U0/last1_blk_n">
+                  <obj_property name="ElementShortName">last1_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">last1_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_fit_top/AESL_inst_fit/interStage1_U0/last1_dout">
+                  <obj_property name="ElementShortName">last1_dout[1:0]</obj_property>
+                  <obj_property name="ObjectShortName">last1_dout[1:0]</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_fit_top/AESL_inst_fit/interStage1_U0/last1_empty_n">
+                  <obj_property name="ElementShortName">last1_empty_n</obj_property>
+                  <obj_property name="ObjectShortName">last1_empty_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_fit_top/AESL_inst_fit/interStage1_U0/last1_read">
+                  <obj_property name="ElementShortName">last1_read</obj_property>
+                  <obj_property name="ObjectShortName">last1_read</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="interStage1_U0_Handshake_group">
+            <obj_property name="label">Block-level handshake</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_fit_top/AESL_inst_fit/interStage1_U0/ap_start">
+               <obj_property name="ElementShortName">ap_start</obj_property>
+               <obj_property name="ObjectShortName">ap_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_fit_top/AESL_inst_fit/interStage1_U0/ap_ready">
+               <obj_property name="ElementShortName">ap_ready</obj_property>
+               <obj_property name="ObjectShortName">ap_ready</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_fit_top/AESL_inst_fit/interStage1_U0/ap_done">
+               <obj_property name="ElementShortName">ap_done</obj_property>
+               <obj_property name="ObjectShortName">ap_done</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_fit_top/AESL_inst_fit/interStage1_U0/ap_continue">
+               <obj_property name="ElementShortName">ap_continue</obj_property>
+               <obj_property name="ObjectShortName">ap_continue</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="interStage1_U0_Output_group">
+            <obj_property name="label">Output Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="SDiv1_group">
+               <obj_property name="label">SDiv1(SDiv1_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_fit_top/AESL_inst_fit/interStage1_U0/SDiv1_blk_n">
+                  <obj_property name="ElementShortName">SDiv1_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">SDiv1_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_fit_top/AESL_inst_fit/interStage1_U0/SDiv1_din">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_fit_top/AESL_inst_fit/interStage1_U0/SDiv1_full_n">
+                  <obj_property name="ElementShortName">SDiv1_full_n</obj_property>
+                  <obj_property name="ObjectShortName">SDiv1_full_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_fit_top/AESL_inst_fit/interStage1_U0/SDiv1_write">
+                  <obj_property name="ElementShortName">SDiv1_write</obj_property>
+                  <obj_property name="ObjectShortName">SDiv1_write</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="SxDivS_group">
+               <obj_property name="label">SxDivS(SxDivS_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_fit_top/AESL_inst_fit/interStage1_U0/SxDivS_blk_n">
+                  <obj_property name="ElementShortName">SxDivS_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">SxDivS_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_fit_top/AESL_inst_fit/interStage1_U0/SxDivS_din">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_fit_top/AESL_inst_fit/interStage1_U0/SxDivS_full_n">
+                  <obj_property name="ElementShortName">SxDivS_full_n</obj_property>
+                  <obj_property name="ObjectShortName">SxDivS_full_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_fit_top/AESL_inst_fit/interStage1_U0/SxDivS_write">
+                  <obj_property name="ElementShortName">SxDivS_write</obj_property>
+                  <obj_property name="ObjectShortName">SxDivS_write</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="SxSquaredDivS_group">
+               <obj_property name="label">SxSquaredDivS(SxSquaredDivS_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_fit_top/AESL_inst_fit/interStage1_U0/SxSquaredDivS_blk_n">
+                  <obj_property name="ElementShortName">SxSquaredDivS_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">SxSquaredDivS_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_fit_top/AESL_inst_fit/interStage1_U0/SxSquaredDivS_din">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_fit_top/AESL_inst_fit/interStage1_U0/SxSquaredDivS_full_n">
+                  <obj_property name="ElementShortName">SxSquaredDivS_full_n</obj_property>
+                  <obj_property name="ObjectShortName">SxSquaredDivS_full_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_fit_top/AESL_inst_fit/interStage1_U0/SxSquaredDivS_write">
+                  <obj_property name="ElementShortName">SxSquaredDivS_write</obj_property>
+                  <obj_property name="ObjectShortName">SxSquaredDivS_write</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="SyDivS_group">
+               <obj_property name="label">SyDivS(SyDivS_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_fit_top/AESL_inst_fit/interStage1_U0/SyDivS_blk_n">
+                  <obj_property name="ElementShortName">SyDivS_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">SyDivS_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_fit_top/AESL_inst_fit/interStage1_U0/SyDivS_din">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_fit_top/AESL_inst_fit/interStage1_U0/SyDivS_full_n">
+                  <obj_property name="ElementShortName">SyDivS_full_n</obj_property>
+                  <obj_property name="ObjectShortName">SyDivS_full_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_fit_top/AESL_inst_fit/interStage1_U0/SyDivS_write">
+                  <obj_property name="ElementShortName">SyDivS_write</obj_property>
+                  <obj_property name="ObjectShortName">SyDivS_write</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="interStage2_U0_group">
+         <obj_property name="label">interStage2_U0</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="group" fp_name="interStage2_U0_Input_group">
+            <obj_property name="label">Input Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="x1_group">
+               <obj_property name="label">x1(x1_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_fit_top/AESL_inst_fit/interStage2_U0/x1_blk_n">
+                  <obj_property name="ElementShortName">x1_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">x1_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_fit_top/AESL_inst_fit/interStage2_U0/x1_dout">
+                  <obj_property name="ElementShortName">x1_dout[11:0]</obj_property>
+                  <obj_property name="ObjectShortName">x1_dout[11:0]</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_fit_top/AESL_inst_fit/interStage2_U0/x1_empty_n">
+                  <obj_property name="ElementShortName">x1_empty_n</obj_property>
+                  <obj_property name="ObjectShortName">x1_empty_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_fit_top/AESL_inst_fit/interStage2_U0/x1_read">
+                  <obj_property name="ElementShortName">x1_read</obj_property>
+                  <obj_property name="ObjectShortName">x1_read</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="y1_group">
+               <obj_property name="label">y1(y1_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_fit_top/AESL_inst_fit/interStage2_U0/y1_blk_n">
+                  <obj_property name="ElementShortName">y1_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">y1_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_fit_top/AESL_inst_fit/interStage2_U0/y1_dout">
+                  <obj_property name="ElementShortName">y1_dout[11:0]</obj_property>
+                  <obj_property name="ObjectShortName">y1_dout[11:0]</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_fit_top/AESL_inst_fit/interStage2_U0/y1_empty_n">
+                  <obj_property name="ElementShortName">y1_empty_n</obj_property>
+                  <obj_property name="ObjectShortName">y1_empty_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_fit_top/AESL_inst_fit/interStage2_U0/y1_read">
+                  <obj_property name="ElementShortName">y1_read</obj_property>
+                  <obj_property name="ObjectShortName">y1_read</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="sigmaDiv1_group">
+               <obj_property name="label">sigmaDiv1(sigmaDiv1_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_fit_top/AESL_inst_fit/interStage2_U0/sigmaDiv1_blk_n">
+                  <obj_property name="ElementShortName">sigmaDiv1_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">sigmaDiv1_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_fit_top/AESL_inst_fit/interStage2_U0/sigmaDiv1_dout">
+                  <obj_property name="ElementShortName">sigmaDiv1_dout[63:0]</obj_property>
+                  <obj_property name="ObjectShortName">sigmaDiv1_dout[63:0]</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_fit_top/AESL_inst_fit/interStage2_U0/sigmaDiv1_empty_n">
+                  <obj_property name="ElementShortName">sigmaDiv1_empty_n</obj_property>
+                  <obj_property name="ObjectShortName">sigmaDiv1_empty_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_fit_top/AESL_inst_fit/interStage2_U0/sigmaDiv1_read">
+                  <obj_property name="ElementShortName">sigmaDiv1_read</obj_property>
+                  <obj_property name="ObjectShortName">sigmaDiv1_read</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="SDiv1_group">
+               <obj_property name="label">SDiv1(SDiv1_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_fit_top/AESL_inst_fit/interStage2_U0/SDiv1_blk_n">
+                  <obj_property name="ElementShortName">SDiv1_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">SDiv1_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_fit_top/AESL_inst_fit/interStage2_U0/SDiv1_dout">
+                  <obj_property name="ElementShortName">SDiv1_dout[63:0]</obj_property>
+                  <obj_property name="ObjectShortName">SDiv1_dout[63:0]</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_fit_top/AESL_inst_fit/interStage2_U0/SDiv1_empty_n">
+                  <obj_property name="ElementShortName">SDiv1_empty_n</obj_property>
+                  <obj_property name="ObjectShortName">SDiv1_empty_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_fit_top/AESL_inst_fit/interStage2_U0/SDiv1_read">
+                  <obj_property name="ElementShortName">SDiv1_read</obj_property>
+                  <obj_property name="ObjectShortName">SDiv1_read</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="SxDivS_group">
+               <obj_property name="label">SxDivS(SxDivS_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_fit_top/AESL_inst_fit/interStage2_U0/SxDivS_blk_n">
+                  <obj_property name="ElementShortName">SxDivS_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">SxDivS_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_fit_top/AESL_inst_fit/interStage2_U0/SxDivS_dout">
+                  <obj_property name="ElementShortName">SxDivS_dout[63:0]</obj_property>
+                  <obj_property name="ObjectShortName">SxDivS_dout[63:0]</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_fit_top/AESL_inst_fit/interStage2_U0/SxDivS_empty_n">
+                  <obj_property name="ElementShortName">SxDivS_empty_n</obj_property>
+                  <obj_property name="ObjectShortName">SxDivS_empty_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_fit_top/AESL_inst_fit/interStage2_U0/SxDivS_read">
+                  <obj_property name="ElementShortName">SxDivS_read</obj_property>
+                  <obj_property name="ObjectShortName">SxDivS_read</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="SxSquaredDivS_group">
+               <obj_property name="label">SxSquaredDivS(SxSquaredDivS_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_fit_top/AESL_inst_fit/interStage2_U0/SxSquaredDivS_blk_n">
+                  <obj_property name="ElementShortName">SxSquaredDivS_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">SxSquaredDivS_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_fit_top/AESL_inst_fit/interStage2_U0/SxSquaredDivS_dout">
+                  <obj_property name="ElementShortName">SxSquaredDivS_dout[63:0]</obj_property>
+                  <obj_property name="ObjectShortName">SxSquaredDivS_dout[63:0]</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_fit_top/AESL_inst_fit/interStage2_U0/SxSquaredDivS_empty_n">
+                  <obj_property name="ElementShortName">SxSquaredDivS_empty_n</obj_property>
+                  <obj_property name="ObjectShortName">SxSquaredDivS_empty_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_fit_top/AESL_inst_fit/interStage2_U0/SxSquaredDivS_read">
+                  <obj_property name="ElementShortName">SxSquaredDivS_read</obj_property>
+                  <obj_property name="ObjectShortName">SxSquaredDivS_read</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="SyDivS_group">
+               <obj_property name="label">SyDivS(SyDivS_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_fit_top/AESL_inst_fit/interStage2_U0/SyDivS_blk_n">
+                  <obj_property name="ElementShortName">SyDivS_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">SyDivS_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_fit_top/AESL_inst_fit/interStage2_U0/SyDivS_dout">
+                  <obj_property name="ElementShortName">SyDivS_dout[63:0]</obj_property>
+                  <obj_property name="ObjectShortName">SyDivS_dout[63:0]</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_fit_top/AESL_inst_fit/interStage2_U0/SyDivS_empty_n">
+                  <obj_property name="ElementShortName">SyDivS_empty_n</obj_property>
+                  <obj_property name="ObjectShortName">SyDivS_empty_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_fit_top/AESL_inst_fit/interStage2_U0/SyDivS_read">
+                  <obj_property name="ElementShortName">SyDivS_read</obj_property>
+                  <obj_property name="ObjectShortName">SyDivS_read</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="last2_group">
+               <obj_property name="label">last2(last2_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_fit_top/AESL_inst_fit/interStage2_U0/last2_blk_n">
+                  <obj_property name="ElementShortName">last2_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">last2_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_fit_top/AESL_inst_fit/interStage2_U0/last2_dout">
+                  <obj_property name="ElementShortName">last2_dout[1:0]</obj_property>
+                  <obj_property name="ObjectShortName">last2_dout[1:0]</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_fit_top/AESL_inst_fit/interStage2_U0/last2_empty_n">
+                  <obj_property name="ElementShortName">last2_empty_n</obj_property>
+                  <obj_property name="ObjectShortName">last2_empty_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_fit_top/AESL_inst_fit/interStage2_U0/last2_read">
+                  <obj_property name="ElementShortName">last2_read</obj_property>
+                  <obj_property name="ObjectShortName">last2_read</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="interStage2_U0_Handshake_group">
+            <obj_property name="label">Block-level handshake</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_fit_top/AESL_inst_fit/interStage2_U0/ap_start">
+               <obj_property name="ElementShortName">ap_start</obj_property>
+               <obj_property name="ObjectShortName">ap_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_fit_top/AESL_inst_fit/interStage2_U0/ap_ready">
+               <obj_property name="ElementShortName">ap_ready</obj_property>
+               <obj_property name="ObjectShortName">ap_ready</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_fit_top/AESL_inst_fit/interStage2_U0/ap_done">
+               <obj_property name="ElementShortName">ap_done</obj_property>
+               <obj_property name="ObjectShortName">ap_done</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_fit_top/AESL_inst_fit/interStage2_U0/ap_continue">
+               <obj_property name="ElementShortName">ap_continue</obj_property>
+               <obj_property name="ObjectShortName">ap_continue</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="interStage2_U0_Output_group">
+            <obj_property name="label">Output Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="resultStream_group">
+               <obj_property name="label">resultStream(resultStream_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_fit_top/AESL_inst_fit/interStage2_U0/resultStream_blk_n">
+                  <obj_property name="ElementShortName">resultStream_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">resultStream_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_fit_top/AESL_inst_fit/interStage2_U0/resultStream_din">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_fit_top/AESL_inst_fit/interStage2_U0/resultStream_full_n">
+                  <obj_property name="ElementShortName">resultStream_full_n</obj_property>
+                  <obj_property name="ObjectShortName">resultStream_full_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_fit_top/AESL_inst_fit/interStage2_U0/resultStream_write">
+                  <obj_property name="ElementShortName">resultStream_write</obj_property>
+                  <obj_property name="ObjectShortName">resultStream_write</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="finalStage_U0_group">
+         <obj_property name="label">finalStage_U0</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="group" fp_name="finalStage_U0_Input_group">
+            <obj_property name="label">Input Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="resultStream_group">
+               <obj_property name="label">resultStream(resultStream_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_fit_top/AESL_inst_fit/finalStage_U0/resultStream_blk_n">
+                  <obj_property name="ElementShortName">resultStream_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">resultStream_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_fit_top/AESL_inst_fit/finalStage_U0/resultStream_dout">
+                  <obj_property name="ElementShortName">resultStream_dout[331:0]</obj_property>
+                  <obj_property name="ObjectShortName">resultStream_dout[331:0]</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_fit_top/AESL_inst_fit/finalStage_U0/resultStream_empty_n">
+                  <obj_property name="ElementShortName">resultStream_empty_n</obj_property>
+                  <obj_property name="ObjectShortName">resultStream_empty_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_fit_top/AESL_inst_fit/finalStage_U0/resultStream_read">
+                  <obj_property name="ElementShortName">resultStream_read</obj_property>
+                  <obj_property name="ObjectShortName">resultStream_read</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="x2_group">
+               <obj_property name="label">x2(x2_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_fit_top/AESL_inst_fit/finalStage_U0/x2_blk_n">
+                  <obj_property name="ElementShortName">x2_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">x2_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_fit_top/AESL_inst_fit/finalStage_U0/x2_dout">
+                  <obj_property name="ElementShortName">x2_dout[11:0]</obj_property>
+                  <obj_property name="ObjectShortName">x2_dout[11:0]</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_fit_top/AESL_inst_fit/finalStage_U0/x2_empty_n">
+                  <obj_property name="ElementShortName">x2_empty_n</obj_property>
+                  <obj_property name="ObjectShortName">x2_empty_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_fit_top/AESL_inst_fit/finalStage_U0/x2_read">
+                  <obj_property name="ElementShortName">x2_read</obj_property>
+                  <obj_property name="ObjectShortName">x2_read</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="y2_group">
+               <obj_property name="label">y2(y2_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_fit_top/AESL_inst_fit/finalStage_U0/y2_blk_n">
+                  <obj_property name="ElementShortName">y2_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">y2_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_fit_top/AESL_inst_fit/finalStage_U0/y2_dout">
+                  <obj_property name="ElementShortName">y2_dout[11:0]</obj_property>
+                  <obj_property name="ObjectShortName">y2_dout[11:0]</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_fit_top/AESL_inst_fit/finalStage_U0/y2_empty_n">
+                  <obj_property name="ElementShortName">y2_empty_n</obj_property>
+                  <obj_property name="ObjectShortName">y2_empty_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_fit_top/AESL_inst_fit/finalStage_U0/y2_read">
+                  <obj_property name="ElementShortName">y2_read</obj_property>
+                  <obj_property name="ObjectShortName">y2_read</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="sigmaSquaredDiv1_group">
+               <obj_property name="label">sigmaSquaredDiv1(sigmaSquaredDiv1_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_fit_top/AESL_inst_fit/finalStage_U0/sigmaSquaredDiv1_blk_n">
+                  <obj_property name="ElementShortName">sigmaSquaredDiv1_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">sigmaSquaredDiv1_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_fit_top/AESL_inst_fit/finalStage_U0/sigmaSquaredDiv1_dout">
+                  <obj_property name="ElementShortName">sigmaSquaredDiv1_dout[63:0]</obj_property>
+                  <obj_property name="ObjectShortName">sigmaSquaredDiv1_dout[63:0]</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_fit_top/AESL_inst_fit/finalStage_U0/sigmaSquaredDiv1_empty_n">
+                  <obj_property name="ElementShortName">sigmaSquaredDiv1_empty_n</obj_property>
+                  <obj_property name="ObjectShortName">sigmaSquaredDiv1_empty_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_fit_top/AESL_inst_fit/finalStage_U0/sigmaSquaredDiv1_read">
+                  <obj_property name="ElementShortName">sigmaSquaredDiv1_read</obj_property>
+                  <obj_property name="ObjectShortName">sigmaSquaredDiv1_read</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="last3_group">
+               <obj_property name="label">last3(last3_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_fit_top/AESL_inst_fit/finalStage_U0/last3_blk_n">
+                  <obj_property name="ElementShortName">last3_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">last3_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_fit_top/AESL_inst_fit/finalStage_U0/last3_dout">
+                  <obj_property name="ElementShortName">last3_dout[1:0]</obj_property>
+                  <obj_property name="ObjectShortName">last3_dout[1:0]</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_fit_top/AESL_inst_fit/finalStage_U0/last3_empty_n">
+                  <obj_property name="ElementShortName">last3_empty_n</obj_property>
+                  <obj_property name="ObjectShortName">last3_empty_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_fit_top/AESL_inst_fit/finalStage_U0/last3_read">
+                  <obj_property name="ElementShortName">last3_read</obj_property>
+                  <obj_property name="ObjectShortName">last3_read</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="finalStage_U0_Handshake_group">
+            <obj_property name="label">Block-level handshake</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_fit_top/AESL_inst_fit/finalStage_U0/ap_start">
+               <obj_property name="ElementShortName">ap_start</obj_property>
+               <obj_property name="ObjectShortName">ap_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_fit_top/AESL_inst_fit/finalStage_U0/ap_ready">
+               <obj_property name="ElementShortName">ap_ready</obj_property>
+               <obj_property name="ObjectShortName">ap_ready</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_fit_top/AESL_inst_fit/finalStage_U0/ap_done">
+               <obj_property name="ElementShortName">ap_done</obj_property>
+               <obj_property name="ObjectShortName">ap_done</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_fit_top/AESL_inst_fit/finalStage_U0/ap_continue">
+               <obj_property name="ElementShortName">ap_continue</obj_property>
+               <obj_property name="ObjectShortName">ap_continue</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="finalStage_U0_Output_group">
+            <obj_property name="label">Output Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+         </wvobject>
+      </wvobject>
+   </wvobject>
+</wave_config>

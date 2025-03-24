@@ -1,0 +1,1915 @@
+
+
+================================================================
+== Vitis HLS Report for 'interStage1'
+================================================================
+* Date:           Wed Mar  5 03:43:36 2025
+
+* Version:        2023.1 (Build 3854077 on May  4 2023)
+* Project:        baseline
+* Solution:       solution1 (Vitis Kernel Flow Target)
+* Product family: spartan7
+* Target device:  xc7s100-fgga676-2
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  5.773 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+-----------+----------+-----+--------+---------+
+    |  Latency (cycles) |  Latency (absolute)  |   Interval   | Pipeline|
+    |   min   |   max   |    min    |    max   | min |   max  |   Type  |
+    +---------+---------+-----------+----------+-----+--------+---------+
+    |        1|   535000|  10.000 ns|  5.350 ms|    1|  535000|       no|
+    +---------+---------+-----------+----------+-----+--------+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +----------+---------+---------+----------+-----------+-----------+------------+----------+
+        |          |  Latency (cycles) | Iteration|  Initiation Interval  |    Trip    |          |
+        | Loop Name|   min   |   max   |  Latency |  achieved |   target  |    Count   | Pipelined|
+        +----------+---------+---------+----------+-----------+-----------+------------+----------+
+        |- inter1  |      999|   534999|   2 ~ 107|          -|          -|  500 ~ 5000|        no|
+        +----------+---------+---------+----------+-----------+-----------+------------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 108
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 108 2 
+2 --> 3 108 
+3 --> 4 
+4 --> 5 
+5 --> 6 
+6 --> 7 
+7 --> 8 
+8 --> 9 
+9 --> 10 
+10 --> 11 
+11 --> 12 
+12 --> 13 
+13 --> 14 
+14 --> 15 
+15 --> 16 
+16 --> 17 
+17 --> 18 
+18 --> 19 
+19 --> 20 
+20 --> 21 
+21 --> 22 
+22 --> 23 
+23 --> 24 
+24 --> 25 
+25 --> 26 
+26 --> 27 
+27 --> 28 
+28 --> 29 
+29 --> 30 
+30 --> 31 
+31 --> 32 
+32 --> 33 
+33 --> 34 
+34 --> 35 
+35 --> 36 
+36 --> 37 
+37 --> 38 
+38 --> 39 
+39 --> 40 
+40 --> 41 
+41 --> 42 
+42 --> 43 
+43 --> 44 
+44 --> 45 
+45 --> 46 
+46 --> 47 
+47 --> 48 
+48 --> 49 
+49 --> 50 
+50 --> 51 
+51 --> 52 
+52 --> 53 
+53 --> 54 
+54 --> 55 
+55 --> 56 
+56 --> 57 
+57 --> 58 
+58 --> 59 
+59 --> 60 
+60 --> 61 
+61 --> 62 
+62 --> 63 
+63 --> 64 
+64 --> 65 
+65 --> 66 
+66 --> 67 
+67 --> 68 
+68 --> 69 
+69 --> 70 
+70 --> 71 
+71 --> 72 
+72 --> 73 
+73 --> 74 
+74 --> 75 
+75 --> 76 
+76 --> 77 
+77 --> 78 
+78 --> 79 
+79 --> 80 
+80 --> 81 
+81 --> 82 
+82 --> 83 
+83 --> 84 
+84 --> 85 
+85 --> 86 
+86 --> 87 
+87 --> 88 
+88 --> 89 
+89 --> 90 
+90 --> 91 
+91 --> 92 
+92 --> 93 
+93 --> 94 
+94 --> 95 
+95 --> 96 
+96 --> 97 
+97 --> 98 
+98 --> 99 
+99 --> 100 
+100 --> 101 
+101 --> 102 
+102 --> 103 
+103 --> 104 
+104 --> 105 
+105 --> 106 
+106 --> 107 
+107 --> 108 
+108 --> 2 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 0.00>
+ST_1 : Operation 109 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %SyDivS, void @empty_5, i32 0, i32 0, void @empty_8, i32 0, i32 0, void @empty_8, void @empty_8, void @empty_8, i32 0, i32 0, i32 0, i32 0, void @empty_8, void @empty_8, i32 4294967295, i32 0"   --->   Operation 109 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 110 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %SxSquaredDivS, void @empty_5, i32 0, i32 0, void @empty_8, i32 0, i32 0, void @empty_8, void @empty_8, void @empty_8, i32 0, i32 0, i32 0, i32 0, void @empty_8, void @empty_8, i32 4294967295, i32 0"   --->   Operation 110 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 111 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %SxDivS, void @empty_5, i32 0, i32 0, void @empty_8, i32 0, i32 0, void @empty_8, void @empty_8, void @empty_8, i32 0, i32 0, i32 0, i32 0, void @empty_8, void @empty_8, i32 4294967295, i32 0"   --->   Operation 111 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 112 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %SDiv1, void @empty_5, i32 0, i32 0, void @empty_8, i32 0, i32 0, void @empty_8, void @empty_8, void @empty_8, i32 0, i32 0, i32 0, i32 0, void @empty_8, void @empty_8, i32 4294967295, i32 0"   --->   Operation 112 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 113 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %partialSy, void @empty_5, i32 0, i32 0, void @empty_8, i32 0, i32 0, void @empty_8, void @empty_8, void @empty_8, i32 0, i32 0, i32 0, i32 0, void @empty_8, void @empty_8, i32 4294967295, i32 0"   --->   Operation 113 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 114 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %partialSx, void @empty_5, i32 0, i32 0, void @empty_8, i32 0, i32 0, void @empty_8, void @empty_8, void @empty_8, i32 0, i32 0, i32 0, i32 0, void @empty_8, void @empty_8, i32 4294967295, i32 0"   --->   Operation 114 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 115 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %partialS, void @empty_5, i32 0, i32 0, void @empty_8, i32 0, i32 0, void @empty_8, void @empty_8, void @empty_8, i32 0, i32 0, i32 0, i32 0, void @empty_8, void @empty_8, i32 4294967295, i32 0"   --->   Operation 115 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 116 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i2 %last1, void @empty_5, i32 0, i32 0, void @empty_8, i32 0, i32 0, void @empty_8, void @empty_8, void @empty_8, i32 0, i32 0, i32 0, i32 0, void @empty_8, void @empty_8, i32 4294967295, i32 0"   --->   Operation 116 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 117 [1/1] (0.00ns)   --->   "%specpipeline_ln91 = specpipeline void @_ssdm_op_SpecPipeline, i32 5, i32 0, i32 0, i32 0, void @empty_8" [baseline/fit.cpp:91]   --->   Operation 117 'specpipeline' 'specpipeline_ln91' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 118 [1/1] (0.00ns)   --->   "%tmp = nbreadreq i1 @_ssdm_op_NbReadReq.ap_fifo.i2P0A, i2 %last1, i32 1" [baseline/fit.cpp:92]   --->   Operation 118 'nbreadreq' 'tmp' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.42> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 2> <Depth = 10> <FIFO>
+ST_1 : Operation 119 [1/1] (0.00ns)   --->   "%br_ln92 = br i1 %tmp, void %while.end, void %while.body.preheader" [baseline/fit.cpp:92]   --->   Operation 119 'br' 'br_ln92' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 120 [1/1] (0.00ns)   --->   "%br_ln93 = br void %while.body" [baseline/fit.cpp:93]   --->   Operation 120 'br' 'br_ln93' <Predicate = (tmp)> <Delay = 0.00>
+
+State 2 <SV = 1> <Delay = 4.76>
+ST_2 : Operation 121 [1/1] (0.00ns)   --->   "%speclooptripcount_ln93 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 500, i64 5000, i64 2750" [baseline/fit.cpp:93]   --->   Operation 121 'speclooptripcount' 'speclooptripcount_ln93' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 122 [1/1] (0.00ns)   --->   "%specloopname_ln92 = specloopname void @_ssdm_op_SpecLoopName, void @empty_4" [baseline/fit.cpp:92]   --->   Operation 122 'specloopname' 'specloopname_ln92' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 123 [1/1] (3.42ns)   --->   "%partialS_read = read i64 @_ssdm_op_Read.ap_fifo.volatile.i64P0A, i64 %partialS" [baseline/fit.cpp:99]   --->   Operation 123 'read' 'partialS_read' <Predicate = true> <Delay = 3.42> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.42> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 64> <Depth = 10> <FIFO>
+ST_2 : Operation 124 [1/1] (3.42ns)   --->   "%partialSx_read = read i64 @_ssdm_op_Read.ap_fifo.volatile.i64P0A, i64 %partialSx" [baseline/fit.cpp:100]   --->   Operation 124 'read' 'partialSx_read' <Predicate = true> <Delay = 3.42> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.42> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 64> <Depth = 10> <FIFO>
+ST_2 : Operation 125 [1/1] (3.42ns)   --->   "%partialSy_read = read i64 @_ssdm_op_Read.ap_fifo.volatile.i64P0A, i64 %partialSy" [baseline/fit.cpp:101]   --->   Operation 125 'read' 'partialSy_read' <Predicate = true> <Delay = 3.42> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.42> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 64> <Depth = 10> <FIFO>
+ST_2 : Operation 126 [1/1] (3.42ns)   --->   "%last1_read = read i2 @_ssdm_op_Read.ap_fifo.volatile.i2P0A, i2 %last1" [baseline/fit.cpp:103]   --->   Operation 126 'read' 'last1_read' <Predicate = true> <Delay = 3.42> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.42> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 2> <Depth = 10> <FIFO>
+ST_2 : Operation 127 [1/1] (1.34ns)   --->   "%icmp_ln103 = icmp_eq  i2 %last1_read, i2 0" [baseline/fit.cpp:103]   --->   Operation 127 'icmp' 'icmp_ln103' <Predicate = true> <Delay = 1.34> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.34> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 128 [1/1] (0.00ns)   --->   "%br_ln103 = br i1 %icmp_ln103, void %_ZNK13ap_fixed_baseILi64ELi32ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEdvILi64ELi32ELb1ELS0_5ELS1_3ELi0EEENS2_5RTypeIXT_EXT0_EXT1_EE3divERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit132, void %if.end" [baseline/fit.cpp:103]   --->   Operation 128 'br' 'br_ln103' <Predicate = true> <Delay = 0.00>
+
+State 3 <SV = 2> <Delay = 4.30>
+ST_3 : Operation 129 [1/1] (0.00ns)   --->   "%sext_ln105 = sext i64 %partialS_read" [baseline/fit.cpp:105]   --->   Operation 129 'sext' 'sext_ln105' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 130 [1/1] (0.00ns)   --->   "%shl_ln = bitconcatenate i96 @_ssdm_op_BitConcatenate.i96.i64.i32, i64 %partialSx_read, i32 0" [baseline/fit.cpp:107]   --->   Operation 130 'bitconcatenate' 'shl_ln' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 131 [100/100] (4.30ns)   --->   "%sdiv_ln107 = sdiv i96 %shl_ln, i96 %sext_ln105" [baseline/fit.cpp:107]   --->   Operation 131 'sdiv' 'sdiv_ln107' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 99> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 132 [1/1] (0.00ns)   --->   "%shl_ln4 = bitconcatenate i96 @_ssdm_op_BitConcatenate.i96.i64.i32, i64 %partialSy_read, i32 0" [baseline/fit.cpp:111]   --->   Operation 132 'bitconcatenate' 'shl_ln4' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 133 [100/100] (4.30ns)   --->   "%sdiv_ln111 = sdiv i96 %shl_ln4, i96 %sext_ln105" [baseline/fit.cpp:111]   --->   Operation 133 'sdiv' 'sdiv_ln111' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 99> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 4 <SV = 3> <Delay = 4.30>
+ST_4 : Operation 134 [99/100] (4.30ns)   --->   "%sdiv_ln107 = sdiv i96 %shl_ln, i96 %sext_ln105" [baseline/fit.cpp:107]   --->   Operation 134 'sdiv' 'sdiv_ln107' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 99> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 135 [99/100] (4.30ns)   --->   "%sdiv_ln111 = sdiv i96 %shl_ln4, i96 %sext_ln105" [baseline/fit.cpp:111]   --->   Operation 135 'sdiv' 'sdiv_ln111' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 99> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 5 <SV = 4> <Delay = 4.30>
+ST_5 : Operation 136 [98/100] (4.30ns)   --->   "%sdiv_ln107 = sdiv i96 %shl_ln, i96 %sext_ln105" [baseline/fit.cpp:107]   --->   Operation 136 'sdiv' 'sdiv_ln107' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 99> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 137 [98/100] (4.30ns)   --->   "%sdiv_ln111 = sdiv i96 %shl_ln4, i96 %sext_ln105" [baseline/fit.cpp:111]   --->   Operation 137 'sdiv' 'sdiv_ln111' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 99> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 6 <SV = 5> <Delay = 4.30>
+ST_6 : Operation 138 [97/100] (4.30ns)   --->   "%sdiv_ln107 = sdiv i96 %shl_ln, i96 %sext_ln105" [baseline/fit.cpp:107]   --->   Operation 138 'sdiv' 'sdiv_ln107' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 99> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 139 [97/100] (4.30ns)   --->   "%sdiv_ln111 = sdiv i96 %shl_ln4, i96 %sext_ln105" [baseline/fit.cpp:111]   --->   Operation 139 'sdiv' 'sdiv_ln111' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 99> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 7 <SV = 6> <Delay = 4.30>
+ST_7 : Operation 140 [96/100] (4.30ns)   --->   "%sdiv_ln107 = sdiv i96 %shl_ln, i96 %sext_ln105" [baseline/fit.cpp:107]   --->   Operation 140 'sdiv' 'sdiv_ln107' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 99> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_7 : Operation 141 [96/100] (4.30ns)   --->   "%sdiv_ln111 = sdiv i96 %shl_ln4, i96 %sext_ln105" [baseline/fit.cpp:111]   --->   Operation 141 'sdiv' 'sdiv_ln111' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 99> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 8 <SV = 7> <Delay = 4.30>
+ST_8 : Operation 142 [95/100] (4.30ns)   --->   "%sdiv_ln107 = sdiv i96 %shl_ln, i96 %sext_ln105" [baseline/fit.cpp:107]   --->   Operation 142 'sdiv' 'sdiv_ln107' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 99> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_8 : Operation 143 [95/100] (4.30ns)   --->   "%sdiv_ln111 = sdiv i96 %shl_ln4, i96 %sext_ln105" [baseline/fit.cpp:111]   --->   Operation 143 'sdiv' 'sdiv_ln111' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 99> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 9 <SV = 8> <Delay = 4.30>
+ST_9 : Operation 144 [94/100] (4.30ns)   --->   "%sdiv_ln107 = sdiv i96 %shl_ln, i96 %sext_ln105" [baseline/fit.cpp:107]   --->   Operation 144 'sdiv' 'sdiv_ln107' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 99> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_9 : Operation 145 [94/100] (4.30ns)   --->   "%sdiv_ln111 = sdiv i96 %shl_ln4, i96 %sext_ln105" [baseline/fit.cpp:111]   --->   Operation 145 'sdiv' 'sdiv_ln111' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 99> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 10 <SV = 9> <Delay = 4.30>
+ST_10 : Operation 146 [93/100] (4.30ns)   --->   "%sdiv_ln107 = sdiv i96 %shl_ln, i96 %sext_ln105" [baseline/fit.cpp:107]   --->   Operation 146 'sdiv' 'sdiv_ln107' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 99> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_10 : Operation 147 [93/100] (4.30ns)   --->   "%sdiv_ln111 = sdiv i96 %shl_ln4, i96 %sext_ln105" [baseline/fit.cpp:111]   --->   Operation 147 'sdiv' 'sdiv_ln111' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 99> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 11 <SV = 10> <Delay = 4.30>
+ST_11 : Operation 148 [92/100] (4.30ns)   --->   "%sdiv_ln107 = sdiv i96 %shl_ln, i96 %sext_ln105" [baseline/fit.cpp:107]   --->   Operation 148 'sdiv' 'sdiv_ln107' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 99> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_11 : Operation 149 [92/100] (4.30ns)   --->   "%sdiv_ln111 = sdiv i96 %shl_ln4, i96 %sext_ln105" [baseline/fit.cpp:111]   --->   Operation 149 'sdiv' 'sdiv_ln111' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 99> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 12 <SV = 11> <Delay = 4.30>
+ST_12 : Operation 150 [91/100] (4.30ns)   --->   "%sdiv_ln107 = sdiv i96 %shl_ln, i96 %sext_ln105" [baseline/fit.cpp:107]   --->   Operation 150 'sdiv' 'sdiv_ln107' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 99> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_12 : Operation 151 [91/100] (4.30ns)   --->   "%sdiv_ln111 = sdiv i96 %shl_ln4, i96 %sext_ln105" [baseline/fit.cpp:111]   --->   Operation 151 'sdiv' 'sdiv_ln111' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 99> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 13 <SV = 12> <Delay = 4.30>
+ST_13 : Operation 152 [90/100] (4.30ns)   --->   "%sdiv_ln107 = sdiv i96 %shl_ln, i96 %sext_ln105" [baseline/fit.cpp:107]   --->   Operation 152 'sdiv' 'sdiv_ln107' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 99> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_13 : Operation 153 [90/100] (4.30ns)   --->   "%sdiv_ln111 = sdiv i96 %shl_ln4, i96 %sext_ln105" [baseline/fit.cpp:111]   --->   Operation 153 'sdiv' 'sdiv_ln111' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 99> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 14 <SV = 13> <Delay = 4.30>
+ST_14 : Operation 154 [89/100] (4.30ns)   --->   "%sdiv_ln107 = sdiv i96 %shl_ln, i96 %sext_ln105" [baseline/fit.cpp:107]   --->   Operation 154 'sdiv' 'sdiv_ln107' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 99> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_14 : Operation 155 [89/100] (4.30ns)   --->   "%sdiv_ln111 = sdiv i96 %shl_ln4, i96 %sext_ln105" [baseline/fit.cpp:111]   --->   Operation 155 'sdiv' 'sdiv_ln111' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 99> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 15 <SV = 14> <Delay = 4.30>
+ST_15 : Operation 156 [88/100] (4.30ns)   --->   "%sdiv_ln107 = sdiv i96 %shl_ln, i96 %sext_ln105" [baseline/fit.cpp:107]   --->   Operation 156 'sdiv' 'sdiv_ln107' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 99> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_15 : Operation 157 [88/100] (4.30ns)   --->   "%sdiv_ln111 = sdiv i96 %shl_ln4, i96 %sext_ln105" [baseline/fit.cpp:111]   --->   Operation 157 'sdiv' 'sdiv_ln111' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 99> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 16 <SV = 15> <Delay = 4.30>
+ST_16 : Operation 158 [87/100] (4.30ns)   --->   "%sdiv_ln107 = sdiv i96 %shl_ln, i96 %sext_ln105" [baseline/fit.cpp:107]   --->   Operation 158 'sdiv' 'sdiv_ln107' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 99> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_16 : Operation 159 [87/100] (4.30ns)   --->   "%sdiv_ln111 = sdiv i96 %shl_ln4, i96 %sext_ln105" [baseline/fit.cpp:111]   --->   Operation 159 'sdiv' 'sdiv_ln111' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 99> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 17 <SV = 16> <Delay = 4.30>
+ST_17 : Operation 160 [86/100] (4.30ns)   --->   "%sdiv_ln107 = sdiv i96 %shl_ln, i96 %sext_ln105" [baseline/fit.cpp:107]   --->   Operation 160 'sdiv' 'sdiv_ln107' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 99> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_17 : Operation 161 [86/100] (4.30ns)   --->   "%sdiv_ln111 = sdiv i96 %shl_ln4, i96 %sext_ln105" [baseline/fit.cpp:111]   --->   Operation 161 'sdiv' 'sdiv_ln111' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 99> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 18 <SV = 17> <Delay = 4.30>
+ST_18 : Operation 162 [85/100] (4.30ns)   --->   "%sdiv_ln107 = sdiv i96 %shl_ln, i96 %sext_ln105" [baseline/fit.cpp:107]   --->   Operation 162 'sdiv' 'sdiv_ln107' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 99> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_18 : Operation 163 [85/100] (4.30ns)   --->   "%sdiv_ln111 = sdiv i96 %shl_ln4, i96 %sext_ln105" [baseline/fit.cpp:111]   --->   Operation 163 'sdiv' 'sdiv_ln111' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 99> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 19 <SV = 18> <Delay = 4.30>
+ST_19 : Operation 164 [84/100] (4.30ns)   --->   "%sdiv_ln107 = sdiv i96 %shl_ln, i96 %sext_ln105" [baseline/fit.cpp:107]   --->   Operation 164 'sdiv' 'sdiv_ln107' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 99> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_19 : Operation 165 [84/100] (4.30ns)   --->   "%sdiv_ln111 = sdiv i96 %shl_ln4, i96 %sext_ln105" [baseline/fit.cpp:111]   --->   Operation 165 'sdiv' 'sdiv_ln111' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 99> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 20 <SV = 19> <Delay = 4.30>
+ST_20 : Operation 166 [83/100] (4.30ns)   --->   "%sdiv_ln107 = sdiv i96 %shl_ln, i96 %sext_ln105" [baseline/fit.cpp:107]   --->   Operation 166 'sdiv' 'sdiv_ln107' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 99> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_20 : Operation 167 [83/100] (4.30ns)   --->   "%sdiv_ln111 = sdiv i96 %shl_ln4, i96 %sext_ln105" [baseline/fit.cpp:111]   --->   Operation 167 'sdiv' 'sdiv_ln111' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 99> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 21 <SV = 20> <Delay = 4.30>
+ST_21 : Operation 168 [82/100] (4.30ns)   --->   "%sdiv_ln107 = sdiv i96 %shl_ln, i96 %sext_ln105" [baseline/fit.cpp:107]   --->   Operation 168 'sdiv' 'sdiv_ln107' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 99> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_21 : Operation 169 [82/100] (4.30ns)   --->   "%sdiv_ln111 = sdiv i96 %shl_ln4, i96 %sext_ln105" [baseline/fit.cpp:111]   --->   Operation 169 'sdiv' 'sdiv_ln111' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 99> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 22 <SV = 21> <Delay = 4.30>
+ST_22 : Operation 170 [81/100] (4.30ns)   --->   "%sdiv_ln107 = sdiv i96 %shl_ln, i96 %sext_ln105" [baseline/fit.cpp:107]   --->   Operation 170 'sdiv' 'sdiv_ln107' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 99> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_22 : Operation 171 [81/100] (4.30ns)   --->   "%sdiv_ln111 = sdiv i96 %shl_ln4, i96 %sext_ln105" [baseline/fit.cpp:111]   --->   Operation 171 'sdiv' 'sdiv_ln111' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 99> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 23 <SV = 22> <Delay = 4.30>
+ST_23 : Operation 172 [80/100] (4.30ns)   --->   "%sdiv_ln107 = sdiv i96 %shl_ln, i96 %sext_ln105" [baseline/fit.cpp:107]   --->   Operation 172 'sdiv' 'sdiv_ln107' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 99> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_23 : Operation 173 [80/100] (4.30ns)   --->   "%sdiv_ln111 = sdiv i96 %shl_ln4, i96 %sext_ln105" [baseline/fit.cpp:111]   --->   Operation 173 'sdiv' 'sdiv_ln111' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 99> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 24 <SV = 23> <Delay = 4.30>
+ST_24 : Operation 174 [79/100] (4.30ns)   --->   "%sdiv_ln107 = sdiv i96 %shl_ln, i96 %sext_ln105" [baseline/fit.cpp:107]   --->   Operation 174 'sdiv' 'sdiv_ln107' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 99> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_24 : Operation 175 [79/100] (4.30ns)   --->   "%sdiv_ln111 = sdiv i96 %shl_ln4, i96 %sext_ln105" [baseline/fit.cpp:111]   --->   Operation 175 'sdiv' 'sdiv_ln111' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 99> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 25 <SV = 24> <Delay = 4.30>
+ST_25 : Operation 176 [78/100] (4.30ns)   --->   "%sdiv_ln107 = sdiv i96 %shl_ln, i96 %sext_ln105" [baseline/fit.cpp:107]   --->   Operation 176 'sdiv' 'sdiv_ln107' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 99> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_25 : Operation 177 [78/100] (4.30ns)   --->   "%sdiv_ln111 = sdiv i96 %shl_ln4, i96 %sext_ln105" [baseline/fit.cpp:111]   --->   Operation 177 'sdiv' 'sdiv_ln111' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 99> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 26 <SV = 25> <Delay = 4.30>
+ST_26 : Operation 178 [77/100] (4.30ns)   --->   "%sdiv_ln107 = sdiv i96 %shl_ln, i96 %sext_ln105" [baseline/fit.cpp:107]   --->   Operation 178 'sdiv' 'sdiv_ln107' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 99> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_26 : Operation 179 [77/100] (4.30ns)   --->   "%sdiv_ln111 = sdiv i96 %shl_ln4, i96 %sext_ln105" [baseline/fit.cpp:111]   --->   Operation 179 'sdiv' 'sdiv_ln111' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 99> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 27 <SV = 26> <Delay = 4.30>
+ST_27 : Operation 180 [76/100] (4.30ns)   --->   "%sdiv_ln107 = sdiv i96 %shl_ln, i96 %sext_ln105" [baseline/fit.cpp:107]   --->   Operation 180 'sdiv' 'sdiv_ln107' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 99> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_27 : Operation 181 [76/100] (4.30ns)   --->   "%sdiv_ln111 = sdiv i96 %shl_ln4, i96 %sext_ln105" [baseline/fit.cpp:111]   --->   Operation 181 'sdiv' 'sdiv_ln111' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 99> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 28 <SV = 27> <Delay = 4.30>
+ST_28 : Operation 182 [75/100] (4.30ns)   --->   "%sdiv_ln107 = sdiv i96 %shl_ln, i96 %sext_ln105" [baseline/fit.cpp:107]   --->   Operation 182 'sdiv' 'sdiv_ln107' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 99> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_28 : Operation 183 [75/100] (4.30ns)   --->   "%sdiv_ln111 = sdiv i96 %shl_ln4, i96 %sext_ln105" [baseline/fit.cpp:111]   --->   Operation 183 'sdiv' 'sdiv_ln111' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 99> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 29 <SV = 28> <Delay = 4.30>
+ST_29 : Operation 184 [74/100] (4.30ns)   --->   "%sdiv_ln107 = sdiv i96 %shl_ln, i96 %sext_ln105" [baseline/fit.cpp:107]   --->   Operation 184 'sdiv' 'sdiv_ln107' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 99> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_29 : Operation 185 [74/100] (4.30ns)   --->   "%sdiv_ln111 = sdiv i96 %shl_ln4, i96 %sext_ln105" [baseline/fit.cpp:111]   --->   Operation 185 'sdiv' 'sdiv_ln111' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 99> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 30 <SV = 29> <Delay = 4.30>
+ST_30 : Operation 186 [73/100] (4.30ns)   --->   "%sdiv_ln107 = sdiv i96 %shl_ln, i96 %sext_ln105" [baseline/fit.cpp:107]   --->   Operation 186 'sdiv' 'sdiv_ln107' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 99> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_30 : Operation 187 [73/100] (4.30ns)   --->   "%sdiv_ln111 = sdiv i96 %shl_ln4, i96 %sext_ln105" [baseline/fit.cpp:111]   --->   Operation 187 'sdiv' 'sdiv_ln111' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 99> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 31 <SV = 30> <Delay = 4.30>
+ST_31 : Operation 188 [72/100] (4.30ns)   --->   "%sdiv_ln107 = sdiv i96 %shl_ln, i96 %sext_ln105" [baseline/fit.cpp:107]   --->   Operation 188 'sdiv' 'sdiv_ln107' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 99> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_31 : Operation 189 [72/100] (4.30ns)   --->   "%sdiv_ln111 = sdiv i96 %shl_ln4, i96 %sext_ln105" [baseline/fit.cpp:111]   --->   Operation 189 'sdiv' 'sdiv_ln111' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 99> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 32 <SV = 31> <Delay = 4.30>
+ST_32 : Operation 190 [71/100] (4.30ns)   --->   "%sdiv_ln107 = sdiv i96 %shl_ln, i96 %sext_ln105" [baseline/fit.cpp:107]   --->   Operation 190 'sdiv' 'sdiv_ln107' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 99> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_32 : Operation 191 [71/100] (4.30ns)   --->   "%sdiv_ln111 = sdiv i96 %shl_ln4, i96 %sext_ln105" [baseline/fit.cpp:111]   --->   Operation 191 'sdiv' 'sdiv_ln111' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 99> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 33 <SV = 32> <Delay = 4.30>
+ST_33 : Operation 192 [70/100] (4.30ns)   --->   "%sdiv_ln107 = sdiv i96 %shl_ln, i96 %sext_ln105" [baseline/fit.cpp:107]   --->   Operation 192 'sdiv' 'sdiv_ln107' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 99> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_33 : Operation 193 [70/100] (4.30ns)   --->   "%sdiv_ln111 = sdiv i96 %shl_ln4, i96 %sext_ln105" [baseline/fit.cpp:111]   --->   Operation 193 'sdiv' 'sdiv_ln111' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 99> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 34 <SV = 33> <Delay = 4.30>
+ST_34 : Operation 194 [69/100] (4.30ns)   --->   "%sdiv_ln107 = sdiv i96 %shl_ln, i96 %sext_ln105" [baseline/fit.cpp:107]   --->   Operation 194 'sdiv' 'sdiv_ln107' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 99> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_34 : Operation 195 [69/100] (4.30ns)   --->   "%sdiv_ln111 = sdiv i96 %shl_ln4, i96 %sext_ln105" [baseline/fit.cpp:111]   --->   Operation 195 'sdiv' 'sdiv_ln111' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 99> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 35 <SV = 34> <Delay = 4.30>
+ST_35 : Operation 196 [68/100] (4.30ns)   --->   "%sdiv_ln107 = sdiv i96 %shl_ln, i96 %sext_ln105" [baseline/fit.cpp:107]   --->   Operation 196 'sdiv' 'sdiv_ln107' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 99> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_35 : Operation 197 [68/100] (4.30ns)   --->   "%sdiv_ln111 = sdiv i96 %shl_ln4, i96 %sext_ln105" [baseline/fit.cpp:111]   --->   Operation 197 'sdiv' 'sdiv_ln111' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 99> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 36 <SV = 35> <Delay = 4.30>
+ST_36 : Operation 198 [67/100] (4.30ns)   --->   "%sdiv_ln107 = sdiv i96 %shl_ln, i96 %sext_ln105" [baseline/fit.cpp:107]   --->   Operation 198 'sdiv' 'sdiv_ln107' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 99> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_36 : Operation 199 [67/100] (4.30ns)   --->   "%sdiv_ln111 = sdiv i96 %shl_ln4, i96 %sext_ln105" [baseline/fit.cpp:111]   --->   Operation 199 'sdiv' 'sdiv_ln111' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 99> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 37 <SV = 36> <Delay = 4.30>
+ST_37 : Operation 200 [66/100] (4.30ns)   --->   "%sdiv_ln107 = sdiv i96 %shl_ln, i96 %sext_ln105" [baseline/fit.cpp:107]   --->   Operation 200 'sdiv' 'sdiv_ln107' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 99> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_37 : Operation 201 [66/100] (4.30ns)   --->   "%sdiv_ln111 = sdiv i96 %shl_ln4, i96 %sext_ln105" [baseline/fit.cpp:111]   --->   Operation 201 'sdiv' 'sdiv_ln111' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 99> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 38 <SV = 37> <Delay = 4.30>
+ST_38 : Operation 202 [1/1] (0.00ns)   --->   "%sext_ln105_1 = sext i64 %partialS_read" [baseline/fit.cpp:105]   --->   Operation 202 'sext' 'sext_ln105_1' <Predicate = true> <Delay = 0.00>
+ST_38 : Operation 203 [70/70] (4.30ns)   --->   "%sdiv_ln105 = sdiv i66 18446744073709551616, i66 %sext_ln105_1" [baseline/fit.cpp:105]   --->   Operation 203 'sdiv' 'sdiv_ln105' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 69> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_38 : Operation 204 [65/100] (4.30ns)   --->   "%sdiv_ln107 = sdiv i96 %shl_ln, i96 %sext_ln105" [baseline/fit.cpp:107]   --->   Operation 204 'sdiv' 'sdiv_ln107' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 99> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_38 : Operation 205 [65/100] (4.30ns)   --->   "%sdiv_ln111 = sdiv i96 %shl_ln4, i96 %sext_ln105" [baseline/fit.cpp:111]   --->   Operation 205 'sdiv' 'sdiv_ln111' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 99> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 39 <SV = 38> <Delay = 4.30>
+ST_39 : Operation 206 [69/70] (4.30ns)   --->   "%sdiv_ln105 = sdiv i66 18446744073709551616, i66 %sext_ln105_1" [baseline/fit.cpp:105]   --->   Operation 206 'sdiv' 'sdiv_ln105' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 69> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_39 : Operation 207 [64/100] (4.30ns)   --->   "%sdiv_ln107 = sdiv i96 %shl_ln, i96 %sext_ln105" [baseline/fit.cpp:107]   --->   Operation 207 'sdiv' 'sdiv_ln107' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 99> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_39 : Operation 208 [64/100] (4.30ns)   --->   "%sdiv_ln111 = sdiv i96 %shl_ln4, i96 %sext_ln105" [baseline/fit.cpp:111]   --->   Operation 208 'sdiv' 'sdiv_ln111' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 99> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 40 <SV = 39> <Delay = 4.30>
+ST_40 : Operation 209 [68/70] (4.30ns)   --->   "%sdiv_ln105 = sdiv i66 18446744073709551616, i66 %sext_ln105_1" [baseline/fit.cpp:105]   --->   Operation 209 'sdiv' 'sdiv_ln105' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 69> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_40 : Operation 210 [63/100] (4.30ns)   --->   "%sdiv_ln107 = sdiv i96 %shl_ln, i96 %sext_ln105" [baseline/fit.cpp:107]   --->   Operation 210 'sdiv' 'sdiv_ln107' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 99> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_40 : Operation 211 [63/100] (4.30ns)   --->   "%sdiv_ln111 = sdiv i96 %shl_ln4, i96 %sext_ln105" [baseline/fit.cpp:111]   --->   Operation 211 'sdiv' 'sdiv_ln111' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 99> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 41 <SV = 40> <Delay = 4.30>
+ST_41 : Operation 212 [67/70] (4.30ns)   --->   "%sdiv_ln105 = sdiv i66 18446744073709551616, i66 %sext_ln105_1" [baseline/fit.cpp:105]   --->   Operation 212 'sdiv' 'sdiv_ln105' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 69> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_41 : Operation 213 [62/100] (4.30ns)   --->   "%sdiv_ln107 = sdiv i96 %shl_ln, i96 %sext_ln105" [baseline/fit.cpp:107]   --->   Operation 213 'sdiv' 'sdiv_ln107' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 99> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_41 : Operation 214 [62/100] (4.30ns)   --->   "%sdiv_ln111 = sdiv i96 %shl_ln4, i96 %sext_ln105" [baseline/fit.cpp:111]   --->   Operation 214 'sdiv' 'sdiv_ln111' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 99> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 42 <SV = 41> <Delay = 4.30>
+ST_42 : Operation 215 [66/70] (4.30ns)   --->   "%sdiv_ln105 = sdiv i66 18446744073709551616, i66 %sext_ln105_1" [baseline/fit.cpp:105]   --->   Operation 215 'sdiv' 'sdiv_ln105' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 69> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_42 : Operation 216 [61/100] (4.30ns)   --->   "%sdiv_ln107 = sdiv i96 %shl_ln, i96 %sext_ln105" [baseline/fit.cpp:107]   --->   Operation 216 'sdiv' 'sdiv_ln107' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 99> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_42 : Operation 217 [61/100] (4.30ns)   --->   "%sdiv_ln111 = sdiv i96 %shl_ln4, i96 %sext_ln105" [baseline/fit.cpp:111]   --->   Operation 217 'sdiv' 'sdiv_ln111' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 99> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 43 <SV = 42> <Delay = 4.30>
+ST_43 : Operation 218 [65/70] (4.30ns)   --->   "%sdiv_ln105 = sdiv i66 18446744073709551616, i66 %sext_ln105_1" [baseline/fit.cpp:105]   --->   Operation 218 'sdiv' 'sdiv_ln105' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 69> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_43 : Operation 219 [60/100] (4.30ns)   --->   "%sdiv_ln107 = sdiv i96 %shl_ln, i96 %sext_ln105" [baseline/fit.cpp:107]   --->   Operation 219 'sdiv' 'sdiv_ln107' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 99> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_43 : Operation 220 [60/100] (4.30ns)   --->   "%sdiv_ln111 = sdiv i96 %shl_ln4, i96 %sext_ln105" [baseline/fit.cpp:111]   --->   Operation 220 'sdiv' 'sdiv_ln111' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 99> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 44 <SV = 43> <Delay = 4.30>
+ST_44 : Operation 221 [64/70] (4.30ns)   --->   "%sdiv_ln105 = sdiv i66 18446744073709551616, i66 %sext_ln105_1" [baseline/fit.cpp:105]   --->   Operation 221 'sdiv' 'sdiv_ln105' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 69> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_44 : Operation 222 [59/100] (4.30ns)   --->   "%sdiv_ln107 = sdiv i96 %shl_ln, i96 %sext_ln105" [baseline/fit.cpp:107]   --->   Operation 222 'sdiv' 'sdiv_ln107' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 99> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_44 : Operation 223 [59/100] (4.30ns)   --->   "%sdiv_ln111 = sdiv i96 %shl_ln4, i96 %sext_ln105" [baseline/fit.cpp:111]   --->   Operation 223 'sdiv' 'sdiv_ln111' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 99> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 45 <SV = 44> <Delay = 4.30>
+ST_45 : Operation 224 [63/70] (4.30ns)   --->   "%sdiv_ln105 = sdiv i66 18446744073709551616, i66 %sext_ln105_1" [baseline/fit.cpp:105]   --->   Operation 224 'sdiv' 'sdiv_ln105' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 69> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_45 : Operation 225 [58/100] (4.30ns)   --->   "%sdiv_ln107 = sdiv i96 %shl_ln, i96 %sext_ln105" [baseline/fit.cpp:107]   --->   Operation 225 'sdiv' 'sdiv_ln107' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 99> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_45 : Operation 226 [58/100] (4.30ns)   --->   "%sdiv_ln111 = sdiv i96 %shl_ln4, i96 %sext_ln105" [baseline/fit.cpp:111]   --->   Operation 226 'sdiv' 'sdiv_ln111' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 99> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 46 <SV = 45> <Delay = 4.30>
+ST_46 : Operation 227 [62/70] (4.30ns)   --->   "%sdiv_ln105 = sdiv i66 18446744073709551616, i66 %sext_ln105_1" [baseline/fit.cpp:105]   --->   Operation 227 'sdiv' 'sdiv_ln105' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 69> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_46 : Operation 228 [57/100] (4.30ns)   --->   "%sdiv_ln107 = sdiv i96 %shl_ln, i96 %sext_ln105" [baseline/fit.cpp:107]   --->   Operation 228 'sdiv' 'sdiv_ln107' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 99> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_46 : Operation 229 [57/100] (4.30ns)   --->   "%sdiv_ln111 = sdiv i96 %shl_ln4, i96 %sext_ln105" [baseline/fit.cpp:111]   --->   Operation 229 'sdiv' 'sdiv_ln111' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 99> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 47 <SV = 46> <Delay = 4.30>
+ST_47 : Operation 230 [61/70] (4.30ns)   --->   "%sdiv_ln105 = sdiv i66 18446744073709551616, i66 %sext_ln105_1" [baseline/fit.cpp:105]   --->   Operation 230 'sdiv' 'sdiv_ln105' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 69> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_47 : Operation 231 [56/100] (4.30ns)   --->   "%sdiv_ln107 = sdiv i96 %shl_ln, i96 %sext_ln105" [baseline/fit.cpp:107]   --->   Operation 231 'sdiv' 'sdiv_ln107' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 99> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_47 : Operation 232 [56/100] (4.30ns)   --->   "%sdiv_ln111 = sdiv i96 %shl_ln4, i96 %sext_ln105" [baseline/fit.cpp:111]   --->   Operation 232 'sdiv' 'sdiv_ln111' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 99> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 48 <SV = 47> <Delay = 4.30>
+ST_48 : Operation 233 [60/70] (4.30ns)   --->   "%sdiv_ln105 = sdiv i66 18446744073709551616, i66 %sext_ln105_1" [baseline/fit.cpp:105]   --->   Operation 233 'sdiv' 'sdiv_ln105' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 69> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_48 : Operation 234 [55/100] (4.30ns)   --->   "%sdiv_ln107 = sdiv i96 %shl_ln, i96 %sext_ln105" [baseline/fit.cpp:107]   --->   Operation 234 'sdiv' 'sdiv_ln107' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 99> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_48 : Operation 235 [55/100] (4.30ns)   --->   "%sdiv_ln111 = sdiv i96 %shl_ln4, i96 %sext_ln105" [baseline/fit.cpp:111]   --->   Operation 235 'sdiv' 'sdiv_ln111' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 99> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 49 <SV = 48> <Delay = 4.30>
+ST_49 : Operation 236 [59/70] (4.30ns)   --->   "%sdiv_ln105 = sdiv i66 18446744073709551616, i66 %sext_ln105_1" [baseline/fit.cpp:105]   --->   Operation 236 'sdiv' 'sdiv_ln105' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 69> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_49 : Operation 237 [54/100] (4.30ns)   --->   "%sdiv_ln107 = sdiv i96 %shl_ln, i96 %sext_ln105" [baseline/fit.cpp:107]   --->   Operation 237 'sdiv' 'sdiv_ln107' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 99> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_49 : Operation 238 [54/100] (4.30ns)   --->   "%sdiv_ln111 = sdiv i96 %shl_ln4, i96 %sext_ln105" [baseline/fit.cpp:111]   --->   Operation 238 'sdiv' 'sdiv_ln111' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 99> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 50 <SV = 49> <Delay = 4.30>
+ST_50 : Operation 239 [58/70] (4.30ns)   --->   "%sdiv_ln105 = sdiv i66 18446744073709551616, i66 %sext_ln105_1" [baseline/fit.cpp:105]   --->   Operation 239 'sdiv' 'sdiv_ln105' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 69> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_50 : Operation 240 [53/100] (4.30ns)   --->   "%sdiv_ln107 = sdiv i96 %shl_ln, i96 %sext_ln105" [baseline/fit.cpp:107]   --->   Operation 240 'sdiv' 'sdiv_ln107' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 99> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_50 : Operation 241 [53/100] (4.30ns)   --->   "%sdiv_ln111 = sdiv i96 %shl_ln4, i96 %sext_ln105" [baseline/fit.cpp:111]   --->   Operation 241 'sdiv' 'sdiv_ln111' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 99> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 51 <SV = 50> <Delay = 4.30>
+ST_51 : Operation 242 [57/70] (4.30ns)   --->   "%sdiv_ln105 = sdiv i66 18446744073709551616, i66 %sext_ln105_1" [baseline/fit.cpp:105]   --->   Operation 242 'sdiv' 'sdiv_ln105' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 69> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_51 : Operation 243 [52/100] (4.30ns)   --->   "%sdiv_ln107 = sdiv i96 %shl_ln, i96 %sext_ln105" [baseline/fit.cpp:107]   --->   Operation 243 'sdiv' 'sdiv_ln107' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 99> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_51 : Operation 244 [52/100] (4.30ns)   --->   "%sdiv_ln111 = sdiv i96 %shl_ln4, i96 %sext_ln105" [baseline/fit.cpp:111]   --->   Operation 244 'sdiv' 'sdiv_ln111' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 99> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 52 <SV = 51> <Delay = 4.30>
+ST_52 : Operation 245 [56/70] (4.30ns)   --->   "%sdiv_ln105 = sdiv i66 18446744073709551616, i66 %sext_ln105_1" [baseline/fit.cpp:105]   --->   Operation 245 'sdiv' 'sdiv_ln105' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 69> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_52 : Operation 246 [51/100] (4.30ns)   --->   "%sdiv_ln107 = sdiv i96 %shl_ln, i96 %sext_ln105" [baseline/fit.cpp:107]   --->   Operation 246 'sdiv' 'sdiv_ln107' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 99> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_52 : Operation 247 [51/100] (4.30ns)   --->   "%sdiv_ln111 = sdiv i96 %shl_ln4, i96 %sext_ln105" [baseline/fit.cpp:111]   --->   Operation 247 'sdiv' 'sdiv_ln111' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 99> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 53 <SV = 52> <Delay = 4.30>
+ST_53 : Operation 248 [55/70] (4.30ns)   --->   "%sdiv_ln105 = sdiv i66 18446744073709551616, i66 %sext_ln105_1" [baseline/fit.cpp:105]   --->   Operation 248 'sdiv' 'sdiv_ln105' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 69> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_53 : Operation 249 [50/100] (4.30ns)   --->   "%sdiv_ln107 = sdiv i96 %shl_ln, i96 %sext_ln105" [baseline/fit.cpp:107]   --->   Operation 249 'sdiv' 'sdiv_ln107' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 99> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_53 : Operation 250 [50/100] (4.30ns)   --->   "%sdiv_ln111 = sdiv i96 %shl_ln4, i96 %sext_ln105" [baseline/fit.cpp:111]   --->   Operation 250 'sdiv' 'sdiv_ln111' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 99> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 54 <SV = 53> <Delay = 4.30>
+ST_54 : Operation 251 [54/70] (4.30ns)   --->   "%sdiv_ln105 = sdiv i66 18446744073709551616, i66 %sext_ln105_1" [baseline/fit.cpp:105]   --->   Operation 251 'sdiv' 'sdiv_ln105' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 69> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_54 : Operation 252 [49/100] (4.30ns)   --->   "%sdiv_ln107 = sdiv i96 %shl_ln, i96 %sext_ln105" [baseline/fit.cpp:107]   --->   Operation 252 'sdiv' 'sdiv_ln107' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 99> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_54 : Operation 253 [49/100] (4.30ns)   --->   "%sdiv_ln111 = sdiv i96 %shl_ln4, i96 %sext_ln105" [baseline/fit.cpp:111]   --->   Operation 253 'sdiv' 'sdiv_ln111' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 99> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 55 <SV = 54> <Delay = 4.30>
+ST_55 : Operation 254 [53/70] (4.30ns)   --->   "%sdiv_ln105 = sdiv i66 18446744073709551616, i66 %sext_ln105_1" [baseline/fit.cpp:105]   --->   Operation 254 'sdiv' 'sdiv_ln105' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 69> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_55 : Operation 255 [48/100] (4.30ns)   --->   "%sdiv_ln107 = sdiv i96 %shl_ln, i96 %sext_ln105" [baseline/fit.cpp:107]   --->   Operation 255 'sdiv' 'sdiv_ln107' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 99> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_55 : Operation 256 [48/100] (4.30ns)   --->   "%sdiv_ln111 = sdiv i96 %shl_ln4, i96 %sext_ln105" [baseline/fit.cpp:111]   --->   Operation 256 'sdiv' 'sdiv_ln111' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 99> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 56 <SV = 55> <Delay = 4.30>
+ST_56 : Operation 257 [52/70] (4.30ns)   --->   "%sdiv_ln105 = sdiv i66 18446744073709551616, i66 %sext_ln105_1" [baseline/fit.cpp:105]   --->   Operation 257 'sdiv' 'sdiv_ln105' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 69> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_56 : Operation 258 [47/100] (4.30ns)   --->   "%sdiv_ln107 = sdiv i96 %shl_ln, i96 %sext_ln105" [baseline/fit.cpp:107]   --->   Operation 258 'sdiv' 'sdiv_ln107' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 99> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_56 : Operation 259 [47/100] (4.30ns)   --->   "%sdiv_ln111 = sdiv i96 %shl_ln4, i96 %sext_ln105" [baseline/fit.cpp:111]   --->   Operation 259 'sdiv' 'sdiv_ln111' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 99> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 57 <SV = 56> <Delay = 4.30>
+ST_57 : Operation 260 [51/70] (4.30ns)   --->   "%sdiv_ln105 = sdiv i66 18446744073709551616, i66 %sext_ln105_1" [baseline/fit.cpp:105]   --->   Operation 260 'sdiv' 'sdiv_ln105' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 69> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_57 : Operation 261 [46/100] (4.30ns)   --->   "%sdiv_ln107 = sdiv i96 %shl_ln, i96 %sext_ln105" [baseline/fit.cpp:107]   --->   Operation 261 'sdiv' 'sdiv_ln107' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 99> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_57 : Operation 262 [46/100] (4.30ns)   --->   "%sdiv_ln111 = sdiv i96 %shl_ln4, i96 %sext_ln105" [baseline/fit.cpp:111]   --->   Operation 262 'sdiv' 'sdiv_ln111' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 99> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 58 <SV = 57> <Delay = 4.30>
+ST_58 : Operation 263 [50/70] (4.30ns)   --->   "%sdiv_ln105 = sdiv i66 18446744073709551616, i66 %sext_ln105_1" [baseline/fit.cpp:105]   --->   Operation 263 'sdiv' 'sdiv_ln105' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 69> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_58 : Operation 264 [45/100] (4.30ns)   --->   "%sdiv_ln107 = sdiv i96 %shl_ln, i96 %sext_ln105" [baseline/fit.cpp:107]   --->   Operation 264 'sdiv' 'sdiv_ln107' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 99> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_58 : Operation 265 [45/100] (4.30ns)   --->   "%sdiv_ln111 = sdiv i96 %shl_ln4, i96 %sext_ln105" [baseline/fit.cpp:111]   --->   Operation 265 'sdiv' 'sdiv_ln111' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 99> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 59 <SV = 58> <Delay = 4.30>
+ST_59 : Operation 266 [49/70] (4.30ns)   --->   "%sdiv_ln105 = sdiv i66 18446744073709551616, i66 %sext_ln105_1" [baseline/fit.cpp:105]   --->   Operation 266 'sdiv' 'sdiv_ln105' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 69> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_59 : Operation 267 [44/100] (4.30ns)   --->   "%sdiv_ln107 = sdiv i96 %shl_ln, i96 %sext_ln105" [baseline/fit.cpp:107]   --->   Operation 267 'sdiv' 'sdiv_ln107' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 99> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_59 : Operation 268 [44/100] (4.30ns)   --->   "%sdiv_ln111 = sdiv i96 %shl_ln4, i96 %sext_ln105" [baseline/fit.cpp:111]   --->   Operation 268 'sdiv' 'sdiv_ln111' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 99> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 60 <SV = 59> <Delay = 4.30>
+ST_60 : Operation 269 [48/70] (4.30ns)   --->   "%sdiv_ln105 = sdiv i66 18446744073709551616, i66 %sext_ln105_1" [baseline/fit.cpp:105]   --->   Operation 269 'sdiv' 'sdiv_ln105' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 69> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_60 : Operation 270 [43/100] (4.30ns)   --->   "%sdiv_ln107 = sdiv i96 %shl_ln, i96 %sext_ln105" [baseline/fit.cpp:107]   --->   Operation 270 'sdiv' 'sdiv_ln107' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 99> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_60 : Operation 271 [43/100] (4.30ns)   --->   "%sdiv_ln111 = sdiv i96 %shl_ln4, i96 %sext_ln105" [baseline/fit.cpp:111]   --->   Operation 271 'sdiv' 'sdiv_ln111' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 99> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 61 <SV = 60> <Delay = 4.30>
+ST_61 : Operation 272 [47/70] (4.30ns)   --->   "%sdiv_ln105 = sdiv i66 18446744073709551616, i66 %sext_ln105_1" [baseline/fit.cpp:105]   --->   Operation 272 'sdiv' 'sdiv_ln105' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 69> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_61 : Operation 273 [42/100] (4.30ns)   --->   "%sdiv_ln107 = sdiv i96 %shl_ln, i96 %sext_ln105" [baseline/fit.cpp:107]   --->   Operation 273 'sdiv' 'sdiv_ln107' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 99> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_61 : Operation 274 [42/100] (4.30ns)   --->   "%sdiv_ln111 = sdiv i96 %shl_ln4, i96 %sext_ln105" [baseline/fit.cpp:111]   --->   Operation 274 'sdiv' 'sdiv_ln111' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 99> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 62 <SV = 61> <Delay = 4.30>
+ST_62 : Operation 275 [46/70] (4.30ns)   --->   "%sdiv_ln105 = sdiv i66 18446744073709551616, i66 %sext_ln105_1" [baseline/fit.cpp:105]   --->   Operation 275 'sdiv' 'sdiv_ln105' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 69> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_62 : Operation 276 [41/100] (4.30ns)   --->   "%sdiv_ln107 = sdiv i96 %shl_ln, i96 %sext_ln105" [baseline/fit.cpp:107]   --->   Operation 276 'sdiv' 'sdiv_ln107' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 99> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_62 : Operation 277 [41/100] (4.30ns)   --->   "%sdiv_ln111 = sdiv i96 %shl_ln4, i96 %sext_ln105" [baseline/fit.cpp:111]   --->   Operation 277 'sdiv' 'sdiv_ln111' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 99> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 63 <SV = 62> <Delay = 4.30>
+ST_63 : Operation 278 [45/70] (4.30ns)   --->   "%sdiv_ln105 = sdiv i66 18446744073709551616, i66 %sext_ln105_1" [baseline/fit.cpp:105]   --->   Operation 278 'sdiv' 'sdiv_ln105' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 69> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_63 : Operation 279 [40/100] (4.30ns)   --->   "%sdiv_ln107 = sdiv i96 %shl_ln, i96 %sext_ln105" [baseline/fit.cpp:107]   --->   Operation 279 'sdiv' 'sdiv_ln107' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 99> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_63 : Operation 280 [40/100] (4.30ns)   --->   "%sdiv_ln111 = sdiv i96 %shl_ln4, i96 %sext_ln105" [baseline/fit.cpp:111]   --->   Operation 280 'sdiv' 'sdiv_ln111' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 99> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 64 <SV = 63> <Delay = 4.30>
+ST_64 : Operation 281 [44/70] (4.30ns)   --->   "%sdiv_ln105 = sdiv i66 18446744073709551616, i66 %sext_ln105_1" [baseline/fit.cpp:105]   --->   Operation 281 'sdiv' 'sdiv_ln105' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 69> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_64 : Operation 282 [39/100] (4.30ns)   --->   "%sdiv_ln107 = sdiv i96 %shl_ln, i96 %sext_ln105" [baseline/fit.cpp:107]   --->   Operation 282 'sdiv' 'sdiv_ln107' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 99> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_64 : Operation 283 [39/100] (4.30ns)   --->   "%sdiv_ln111 = sdiv i96 %shl_ln4, i96 %sext_ln105" [baseline/fit.cpp:111]   --->   Operation 283 'sdiv' 'sdiv_ln111' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 99> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 65 <SV = 64> <Delay = 4.30>
+ST_65 : Operation 284 [43/70] (4.30ns)   --->   "%sdiv_ln105 = sdiv i66 18446744073709551616, i66 %sext_ln105_1" [baseline/fit.cpp:105]   --->   Operation 284 'sdiv' 'sdiv_ln105' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 69> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_65 : Operation 285 [38/100] (4.30ns)   --->   "%sdiv_ln107 = sdiv i96 %shl_ln, i96 %sext_ln105" [baseline/fit.cpp:107]   --->   Operation 285 'sdiv' 'sdiv_ln107' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 99> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_65 : Operation 286 [38/100] (4.30ns)   --->   "%sdiv_ln111 = sdiv i96 %shl_ln4, i96 %sext_ln105" [baseline/fit.cpp:111]   --->   Operation 286 'sdiv' 'sdiv_ln111' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 99> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 66 <SV = 65> <Delay = 4.30>
+ST_66 : Operation 287 [42/70] (4.30ns)   --->   "%sdiv_ln105 = sdiv i66 18446744073709551616, i66 %sext_ln105_1" [baseline/fit.cpp:105]   --->   Operation 287 'sdiv' 'sdiv_ln105' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 69> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_66 : Operation 288 [37/100] (4.30ns)   --->   "%sdiv_ln107 = sdiv i96 %shl_ln, i96 %sext_ln105" [baseline/fit.cpp:107]   --->   Operation 288 'sdiv' 'sdiv_ln107' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 99> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_66 : Operation 289 [37/100] (4.30ns)   --->   "%sdiv_ln111 = sdiv i96 %shl_ln4, i96 %sext_ln105" [baseline/fit.cpp:111]   --->   Operation 289 'sdiv' 'sdiv_ln111' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 99> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 67 <SV = 66> <Delay = 4.30>
+ST_67 : Operation 290 [41/70] (4.30ns)   --->   "%sdiv_ln105 = sdiv i66 18446744073709551616, i66 %sext_ln105_1" [baseline/fit.cpp:105]   --->   Operation 290 'sdiv' 'sdiv_ln105' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 69> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_67 : Operation 291 [36/100] (4.30ns)   --->   "%sdiv_ln107 = sdiv i96 %shl_ln, i96 %sext_ln105" [baseline/fit.cpp:107]   --->   Operation 291 'sdiv' 'sdiv_ln107' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 99> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_67 : Operation 292 [36/100] (4.30ns)   --->   "%sdiv_ln111 = sdiv i96 %shl_ln4, i96 %sext_ln105" [baseline/fit.cpp:111]   --->   Operation 292 'sdiv' 'sdiv_ln111' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 99> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 68 <SV = 67> <Delay = 4.30>
+ST_68 : Operation 293 [40/70] (4.30ns)   --->   "%sdiv_ln105 = sdiv i66 18446744073709551616, i66 %sext_ln105_1" [baseline/fit.cpp:105]   --->   Operation 293 'sdiv' 'sdiv_ln105' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 69> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_68 : Operation 294 [35/100] (4.30ns)   --->   "%sdiv_ln107 = sdiv i96 %shl_ln, i96 %sext_ln105" [baseline/fit.cpp:107]   --->   Operation 294 'sdiv' 'sdiv_ln107' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 99> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_68 : Operation 295 [35/100] (4.30ns)   --->   "%sdiv_ln111 = sdiv i96 %shl_ln4, i96 %sext_ln105" [baseline/fit.cpp:111]   --->   Operation 295 'sdiv' 'sdiv_ln111' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 99> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 69 <SV = 68> <Delay = 4.30>
+ST_69 : Operation 296 [39/70] (4.30ns)   --->   "%sdiv_ln105 = sdiv i66 18446744073709551616, i66 %sext_ln105_1" [baseline/fit.cpp:105]   --->   Operation 296 'sdiv' 'sdiv_ln105' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 69> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_69 : Operation 297 [34/100] (4.30ns)   --->   "%sdiv_ln107 = sdiv i96 %shl_ln, i96 %sext_ln105" [baseline/fit.cpp:107]   --->   Operation 297 'sdiv' 'sdiv_ln107' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 99> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_69 : Operation 298 [34/100] (4.30ns)   --->   "%sdiv_ln111 = sdiv i96 %shl_ln4, i96 %sext_ln105" [baseline/fit.cpp:111]   --->   Operation 298 'sdiv' 'sdiv_ln111' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 99> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 70 <SV = 69> <Delay = 4.30>
+ST_70 : Operation 299 [38/70] (4.30ns)   --->   "%sdiv_ln105 = sdiv i66 18446744073709551616, i66 %sext_ln105_1" [baseline/fit.cpp:105]   --->   Operation 299 'sdiv' 'sdiv_ln105' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 69> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_70 : Operation 300 [33/100] (4.30ns)   --->   "%sdiv_ln107 = sdiv i96 %shl_ln, i96 %sext_ln105" [baseline/fit.cpp:107]   --->   Operation 300 'sdiv' 'sdiv_ln107' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 99> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_70 : Operation 301 [33/100] (4.30ns)   --->   "%sdiv_ln111 = sdiv i96 %shl_ln4, i96 %sext_ln105" [baseline/fit.cpp:111]   --->   Operation 301 'sdiv' 'sdiv_ln111' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 99> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 71 <SV = 70> <Delay = 4.30>
+ST_71 : Operation 302 [37/70] (4.30ns)   --->   "%sdiv_ln105 = sdiv i66 18446744073709551616, i66 %sext_ln105_1" [baseline/fit.cpp:105]   --->   Operation 302 'sdiv' 'sdiv_ln105' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 69> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_71 : Operation 303 [32/100] (4.30ns)   --->   "%sdiv_ln107 = sdiv i96 %shl_ln, i96 %sext_ln105" [baseline/fit.cpp:107]   --->   Operation 303 'sdiv' 'sdiv_ln107' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 99> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_71 : Operation 304 [32/100] (4.30ns)   --->   "%sdiv_ln111 = sdiv i96 %shl_ln4, i96 %sext_ln105" [baseline/fit.cpp:111]   --->   Operation 304 'sdiv' 'sdiv_ln111' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 99> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 72 <SV = 71> <Delay = 4.30>
+ST_72 : Operation 305 [36/70] (4.30ns)   --->   "%sdiv_ln105 = sdiv i66 18446744073709551616, i66 %sext_ln105_1" [baseline/fit.cpp:105]   --->   Operation 305 'sdiv' 'sdiv_ln105' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 69> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_72 : Operation 306 [31/100] (4.30ns)   --->   "%sdiv_ln107 = sdiv i96 %shl_ln, i96 %sext_ln105" [baseline/fit.cpp:107]   --->   Operation 306 'sdiv' 'sdiv_ln107' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 99> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_72 : Operation 307 [31/100] (4.30ns)   --->   "%sdiv_ln111 = sdiv i96 %shl_ln4, i96 %sext_ln105" [baseline/fit.cpp:111]   --->   Operation 307 'sdiv' 'sdiv_ln111' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 99> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 73 <SV = 72> <Delay = 4.30>
+ST_73 : Operation 308 [35/70] (4.30ns)   --->   "%sdiv_ln105 = sdiv i66 18446744073709551616, i66 %sext_ln105_1" [baseline/fit.cpp:105]   --->   Operation 308 'sdiv' 'sdiv_ln105' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 69> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_73 : Operation 309 [30/100] (4.30ns)   --->   "%sdiv_ln107 = sdiv i96 %shl_ln, i96 %sext_ln105" [baseline/fit.cpp:107]   --->   Operation 309 'sdiv' 'sdiv_ln107' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 99> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_73 : Operation 310 [30/100] (4.30ns)   --->   "%sdiv_ln111 = sdiv i96 %shl_ln4, i96 %sext_ln105" [baseline/fit.cpp:111]   --->   Operation 310 'sdiv' 'sdiv_ln111' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 99> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 74 <SV = 73> <Delay = 4.30>
+ST_74 : Operation 311 [34/70] (4.30ns)   --->   "%sdiv_ln105 = sdiv i66 18446744073709551616, i66 %sext_ln105_1" [baseline/fit.cpp:105]   --->   Operation 311 'sdiv' 'sdiv_ln105' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 69> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_74 : Operation 312 [29/100] (4.30ns)   --->   "%sdiv_ln107 = sdiv i96 %shl_ln, i96 %sext_ln105" [baseline/fit.cpp:107]   --->   Operation 312 'sdiv' 'sdiv_ln107' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 99> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_74 : Operation 313 [29/100] (4.30ns)   --->   "%sdiv_ln111 = sdiv i96 %shl_ln4, i96 %sext_ln105" [baseline/fit.cpp:111]   --->   Operation 313 'sdiv' 'sdiv_ln111' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 99> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 75 <SV = 74> <Delay = 4.30>
+ST_75 : Operation 314 [33/70] (4.30ns)   --->   "%sdiv_ln105 = sdiv i66 18446744073709551616, i66 %sext_ln105_1" [baseline/fit.cpp:105]   --->   Operation 314 'sdiv' 'sdiv_ln105' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 69> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_75 : Operation 315 [28/100] (4.30ns)   --->   "%sdiv_ln107 = sdiv i96 %shl_ln, i96 %sext_ln105" [baseline/fit.cpp:107]   --->   Operation 315 'sdiv' 'sdiv_ln107' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 99> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_75 : Operation 316 [28/100] (4.30ns)   --->   "%sdiv_ln111 = sdiv i96 %shl_ln4, i96 %sext_ln105" [baseline/fit.cpp:111]   --->   Operation 316 'sdiv' 'sdiv_ln111' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 99> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 76 <SV = 75> <Delay = 4.30>
+ST_76 : Operation 317 [32/70] (4.30ns)   --->   "%sdiv_ln105 = sdiv i66 18446744073709551616, i66 %sext_ln105_1" [baseline/fit.cpp:105]   --->   Operation 317 'sdiv' 'sdiv_ln105' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 69> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_76 : Operation 318 [27/100] (4.30ns)   --->   "%sdiv_ln107 = sdiv i96 %shl_ln, i96 %sext_ln105" [baseline/fit.cpp:107]   --->   Operation 318 'sdiv' 'sdiv_ln107' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 99> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_76 : Operation 319 [27/100] (4.30ns)   --->   "%sdiv_ln111 = sdiv i96 %shl_ln4, i96 %sext_ln105" [baseline/fit.cpp:111]   --->   Operation 319 'sdiv' 'sdiv_ln111' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 99> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 77 <SV = 76> <Delay = 4.30>
+ST_77 : Operation 320 [31/70] (4.30ns)   --->   "%sdiv_ln105 = sdiv i66 18446744073709551616, i66 %sext_ln105_1" [baseline/fit.cpp:105]   --->   Operation 320 'sdiv' 'sdiv_ln105' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 69> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_77 : Operation 321 [26/100] (4.30ns)   --->   "%sdiv_ln107 = sdiv i96 %shl_ln, i96 %sext_ln105" [baseline/fit.cpp:107]   --->   Operation 321 'sdiv' 'sdiv_ln107' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 99> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_77 : Operation 322 [26/100] (4.30ns)   --->   "%sdiv_ln111 = sdiv i96 %shl_ln4, i96 %sext_ln105" [baseline/fit.cpp:111]   --->   Operation 322 'sdiv' 'sdiv_ln111' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 99> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 78 <SV = 77> <Delay = 4.30>
+ST_78 : Operation 323 [30/70] (4.30ns)   --->   "%sdiv_ln105 = sdiv i66 18446744073709551616, i66 %sext_ln105_1" [baseline/fit.cpp:105]   --->   Operation 323 'sdiv' 'sdiv_ln105' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 69> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_78 : Operation 324 [25/100] (4.30ns)   --->   "%sdiv_ln107 = sdiv i96 %shl_ln, i96 %sext_ln105" [baseline/fit.cpp:107]   --->   Operation 324 'sdiv' 'sdiv_ln107' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 99> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_78 : Operation 325 [25/100] (4.30ns)   --->   "%sdiv_ln111 = sdiv i96 %shl_ln4, i96 %sext_ln105" [baseline/fit.cpp:111]   --->   Operation 325 'sdiv' 'sdiv_ln111' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 99> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 79 <SV = 78> <Delay = 4.30>
+ST_79 : Operation 326 [29/70] (4.30ns)   --->   "%sdiv_ln105 = sdiv i66 18446744073709551616, i66 %sext_ln105_1" [baseline/fit.cpp:105]   --->   Operation 326 'sdiv' 'sdiv_ln105' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 69> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_79 : Operation 327 [24/100] (4.30ns)   --->   "%sdiv_ln107 = sdiv i96 %shl_ln, i96 %sext_ln105" [baseline/fit.cpp:107]   --->   Operation 327 'sdiv' 'sdiv_ln107' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 99> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_79 : Operation 328 [24/100] (4.30ns)   --->   "%sdiv_ln111 = sdiv i96 %shl_ln4, i96 %sext_ln105" [baseline/fit.cpp:111]   --->   Operation 328 'sdiv' 'sdiv_ln111' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 99> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 80 <SV = 79> <Delay = 4.30>
+ST_80 : Operation 329 [28/70] (4.30ns)   --->   "%sdiv_ln105 = sdiv i66 18446744073709551616, i66 %sext_ln105_1" [baseline/fit.cpp:105]   --->   Operation 329 'sdiv' 'sdiv_ln105' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 69> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_80 : Operation 330 [23/100] (4.30ns)   --->   "%sdiv_ln107 = sdiv i96 %shl_ln, i96 %sext_ln105" [baseline/fit.cpp:107]   --->   Operation 330 'sdiv' 'sdiv_ln107' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 99> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_80 : Operation 331 [23/100] (4.30ns)   --->   "%sdiv_ln111 = sdiv i96 %shl_ln4, i96 %sext_ln105" [baseline/fit.cpp:111]   --->   Operation 331 'sdiv' 'sdiv_ln111' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 99> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 81 <SV = 80> <Delay = 4.30>
+ST_81 : Operation 332 [27/70] (4.30ns)   --->   "%sdiv_ln105 = sdiv i66 18446744073709551616, i66 %sext_ln105_1" [baseline/fit.cpp:105]   --->   Operation 332 'sdiv' 'sdiv_ln105' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 69> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_81 : Operation 333 [22/100] (4.30ns)   --->   "%sdiv_ln107 = sdiv i96 %shl_ln, i96 %sext_ln105" [baseline/fit.cpp:107]   --->   Operation 333 'sdiv' 'sdiv_ln107' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 99> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_81 : Operation 334 [22/100] (4.30ns)   --->   "%sdiv_ln111 = sdiv i96 %shl_ln4, i96 %sext_ln105" [baseline/fit.cpp:111]   --->   Operation 334 'sdiv' 'sdiv_ln111' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 99> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 82 <SV = 81> <Delay = 4.30>
+ST_82 : Operation 335 [26/70] (4.30ns)   --->   "%sdiv_ln105 = sdiv i66 18446744073709551616, i66 %sext_ln105_1" [baseline/fit.cpp:105]   --->   Operation 335 'sdiv' 'sdiv_ln105' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 69> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_82 : Operation 336 [21/100] (4.30ns)   --->   "%sdiv_ln107 = sdiv i96 %shl_ln, i96 %sext_ln105" [baseline/fit.cpp:107]   --->   Operation 336 'sdiv' 'sdiv_ln107' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 99> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_82 : Operation 337 [21/100] (4.30ns)   --->   "%sdiv_ln111 = sdiv i96 %shl_ln4, i96 %sext_ln105" [baseline/fit.cpp:111]   --->   Operation 337 'sdiv' 'sdiv_ln111' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 99> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 83 <SV = 82> <Delay = 4.30>
+ST_83 : Operation 338 [25/70] (4.30ns)   --->   "%sdiv_ln105 = sdiv i66 18446744073709551616, i66 %sext_ln105_1" [baseline/fit.cpp:105]   --->   Operation 338 'sdiv' 'sdiv_ln105' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 69> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_83 : Operation 339 [20/100] (4.30ns)   --->   "%sdiv_ln107 = sdiv i96 %shl_ln, i96 %sext_ln105" [baseline/fit.cpp:107]   --->   Operation 339 'sdiv' 'sdiv_ln107' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 99> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_83 : Operation 340 [20/100] (4.30ns)   --->   "%sdiv_ln111 = sdiv i96 %shl_ln4, i96 %sext_ln105" [baseline/fit.cpp:111]   --->   Operation 340 'sdiv' 'sdiv_ln111' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 99> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 84 <SV = 83> <Delay = 4.30>
+ST_84 : Operation 341 [24/70] (4.30ns)   --->   "%sdiv_ln105 = sdiv i66 18446744073709551616, i66 %sext_ln105_1" [baseline/fit.cpp:105]   --->   Operation 341 'sdiv' 'sdiv_ln105' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 69> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_84 : Operation 342 [19/100] (4.30ns)   --->   "%sdiv_ln107 = sdiv i96 %shl_ln, i96 %sext_ln105" [baseline/fit.cpp:107]   --->   Operation 342 'sdiv' 'sdiv_ln107' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 99> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_84 : Operation 343 [19/100] (4.30ns)   --->   "%sdiv_ln111 = sdiv i96 %shl_ln4, i96 %sext_ln105" [baseline/fit.cpp:111]   --->   Operation 343 'sdiv' 'sdiv_ln111' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 99> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 85 <SV = 84> <Delay = 4.30>
+ST_85 : Operation 344 [23/70] (4.30ns)   --->   "%sdiv_ln105 = sdiv i66 18446744073709551616, i66 %sext_ln105_1" [baseline/fit.cpp:105]   --->   Operation 344 'sdiv' 'sdiv_ln105' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 69> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_85 : Operation 345 [18/100] (4.30ns)   --->   "%sdiv_ln107 = sdiv i96 %shl_ln, i96 %sext_ln105" [baseline/fit.cpp:107]   --->   Operation 345 'sdiv' 'sdiv_ln107' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 99> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_85 : Operation 346 [18/100] (4.30ns)   --->   "%sdiv_ln111 = sdiv i96 %shl_ln4, i96 %sext_ln105" [baseline/fit.cpp:111]   --->   Operation 346 'sdiv' 'sdiv_ln111' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 99> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 86 <SV = 85> <Delay = 4.30>
+ST_86 : Operation 347 [22/70] (4.30ns)   --->   "%sdiv_ln105 = sdiv i66 18446744073709551616, i66 %sext_ln105_1" [baseline/fit.cpp:105]   --->   Operation 347 'sdiv' 'sdiv_ln105' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 69> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_86 : Operation 348 [17/100] (4.30ns)   --->   "%sdiv_ln107 = sdiv i96 %shl_ln, i96 %sext_ln105" [baseline/fit.cpp:107]   --->   Operation 348 'sdiv' 'sdiv_ln107' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 99> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_86 : Operation 349 [17/100] (4.30ns)   --->   "%sdiv_ln111 = sdiv i96 %shl_ln4, i96 %sext_ln105" [baseline/fit.cpp:111]   --->   Operation 349 'sdiv' 'sdiv_ln111' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 99> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 87 <SV = 86> <Delay = 4.30>
+ST_87 : Operation 350 [21/70] (4.30ns)   --->   "%sdiv_ln105 = sdiv i66 18446744073709551616, i66 %sext_ln105_1" [baseline/fit.cpp:105]   --->   Operation 350 'sdiv' 'sdiv_ln105' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 69> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_87 : Operation 351 [16/100] (4.30ns)   --->   "%sdiv_ln107 = sdiv i96 %shl_ln, i96 %sext_ln105" [baseline/fit.cpp:107]   --->   Operation 351 'sdiv' 'sdiv_ln107' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 99> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_87 : Operation 352 [16/100] (4.30ns)   --->   "%sdiv_ln111 = sdiv i96 %shl_ln4, i96 %sext_ln105" [baseline/fit.cpp:111]   --->   Operation 352 'sdiv' 'sdiv_ln111' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 99> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 88 <SV = 87> <Delay = 4.30>
+ST_88 : Operation 353 [20/70] (4.30ns)   --->   "%sdiv_ln105 = sdiv i66 18446744073709551616, i66 %sext_ln105_1" [baseline/fit.cpp:105]   --->   Operation 353 'sdiv' 'sdiv_ln105' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 69> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_88 : Operation 354 [15/100] (4.30ns)   --->   "%sdiv_ln107 = sdiv i96 %shl_ln, i96 %sext_ln105" [baseline/fit.cpp:107]   --->   Operation 354 'sdiv' 'sdiv_ln107' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 99> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_88 : Operation 355 [15/100] (4.30ns)   --->   "%sdiv_ln111 = sdiv i96 %shl_ln4, i96 %sext_ln105" [baseline/fit.cpp:111]   --->   Operation 355 'sdiv' 'sdiv_ln111' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 99> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 89 <SV = 88> <Delay = 4.30>
+ST_89 : Operation 356 [19/70] (4.30ns)   --->   "%sdiv_ln105 = sdiv i66 18446744073709551616, i66 %sext_ln105_1" [baseline/fit.cpp:105]   --->   Operation 356 'sdiv' 'sdiv_ln105' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 69> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_89 : Operation 357 [14/100] (4.30ns)   --->   "%sdiv_ln107 = sdiv i96 %shl_ln, i96 %sext_ln105" [baseline/fit.cpp:107]   --->   Operation 357 'sdiv' 'sdiv_ln107' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 99> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_89 : Operation 358 [14/100] (4.30ns)   --->   "%sdiv_ln111 = sdiv i96 %shl_ln4, i96 %sext_ln105" [baseline/fit.cpp:111]   --->   Operation 358 'sdiv' 'sdiv_ln111' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 99> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 90 <SV = 89> <Delay = 4.30>
+ST_90 : Operation 359 [18/70] (4.30ns)   --->   "%sdiv_ln105 = sdiv i66 18446744073709551616, i66 %sext_ln105_1" [baseline/fit.cpp:105]   --->   Operation 359 'sdiv' 'sdiv_ln105' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 69> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_90 : Operation 360 [13/100] (4.30ns)   --->   "%sdiv_ln107 = sdiv i96 %shl_ln, i96 %sext_ln105" [baseline/fit.cpp:107]   --->   Operation 360 'sdiv' 'sdiv_ln107' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 99> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_90 : Operation 361 [13/100] (4.30ns)   --->   "%sdiv_ln111 = sdiv i96 %shl_ln4, i96 %sext_ln105" [baseline/fit.cpp:111]   --->   Operation 361 'sdiv' 'sdiv_ln111' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 99> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 91 <SV = 90> <Delay = 4.30>
+ST_91 : Operation 362 [17/70] (4.30ns)   --->   "%sdiv_ln105 = sdiv i66 18446744073709551616, i66 %sext_ln105_1" [baseline/fit.cpp:105]   --->   Operation 362 'sdiv' 'sdiv_ln105' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 69> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_91 : Operation 363 [12/100] (4.30ns)   --->   "%sdiv_ln107 = sdiv i96 %shl_ln, i96 %sext_ln105" [baseline/fit.cpp:107]   --->   Operation 363 'sdiv' 'sdiv_ln107' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 99> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_91 : Operation 364 [12/100] (4.30ns)   --->   "%sdiv_ln111 = sdiv i96 %shl_ln4, i96 %sext_ln105" [baseline/fit.cpp:111]   --->   Operation 364 'sdiv' 'sdiv_ln111' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 99> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 92 <SV = 91> <Delay = 4.30>
+ST_92 : Operation 365 [16/70] (4.30ns)   --->   "%sdiv_ln105 = sdiv i66 18446744073709551616, i66 %sext_ln105_1" [baseline/fit.cpp:105]   --->   Operation 365 'sdiv' 'sdiv_ln105' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 69> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_92 : Operation 366 [11/100] (4.30ns)   --->   "%sdiv_ln107 = sdiv i96 %shl_ln, i96 %sext_ln105" [baseline/fit.cpp:107]   --->   Operation 366 'sdiv' 'sdiv_ln107' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 99> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_92 : Operation 367 [11/100] (4.30ns)   --->   "%sdiv_ln111 = sdiv i96 %shl_ln4, i96 %sext_ln105" [baseline/fit.cpp:111]   --->   Operation 367 'sdiv' 'sdiv_ln111' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 99> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 93 <SV = 92> <Delay = 4.30>
+ST_93 : Operation 368 [15/70] (4.30ns)   --->   "%sdiv_ln105 = sdiv i66 18446744073709551616, i66 %sext_ln105_1" [baseline/fit.cpp:105]   --->   Operation 368 'sdiv' 'sdiv_ln105' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 69> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_93 : Operation 369 [10/100] (4.30ns)   --->   "%sdiv_ln107 = sdiv i96 %shl_ln, i96 %sext_ln105" [baseline/fit.cpp:107]   --->   Operation 369 'sdiv' 'sdiv_ln107' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 99> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_93 : Operation 370 [10/100] (4.30ns)   --->   "%sdiv_ln111 = sdiv i96 %shl_ln4, i96 %sext_ln105" [baseline/fit.cpp:111]   --->   Operation 370 'sdiv' 'sdiv_ln111' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 99> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 94 <SV = 93> <Delay = 4.30>
+ST_94 : Operation 371 [14/70] (4.30ns)   --->   "%sdiv_ln105 = sdiv i66 18446744073709551616, i66 %sext_ln105_1" [baseline/fit.cpp:105]   --->   Operation 371 'sdiv' 'sdiv_ln105' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 69> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_94 : Operation 372 [9/100] (4.30ns)   --->   "%sdiv_ln107 = sdiv i96 %shl_ln, i96 %sext_ln105" [baseline/fit.cpp:107]   --->   Operation 372 'sdiv' 'sdiv_ln107' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 99> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_94 : Operation 373 [9/100] (4.30ns)   --->   "%sdiv_ln111 = sdiv i96 %shl_ln4, i96 %sext_ln105" [baseline/fit.cpp:111]   --->   Operation 373 'sdiv' 'sdiv_ln111' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 99> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 95 <SV = 94> <Delay = 4.30>
+ST_95 : Operation 374 [13/70] (4.30ns)   --->   "%sdiv_ln105 = sdiv i66 18446744073709551616, i66 %sext_ln105_1" [baseline/fit.cpp:105]   --->   Operation 374 'sdiv' 'sdiv_ln105' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 69> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_95 : Operation 375 [8/100] (4.30ns)   --->   "%sdiv_ln107 = sdiv i96 %shl_ln, i96 %sext_ln105" [baseline/fit.cpp:107]   --->   Operation 375 'sdiv' 'sdiv_ln107' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 99> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_95 : Operation 376 [8/100] (4.30ns)   --->   "%sdiv_ln111 = sdiv i96 %shl_ln4, i96 %sext_ln105" [baseline/fit.cpp:111]   --->   Operation 376 'sdiv' 'sdiv_ln111' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 99> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 96 <SV = 95> <Delay = 4.30>
+ST_96 : Operation 377 [12/70] (4.30ns)   --->   "%sdiv_ln105 = sdiv i66 18446744073709551616, i66 %sext_ln105_1" [baseline/fit.cpp:105]   --->   Operation 377 'sdiv' 'sdiv_ln105' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 69> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_96 : Operation 378 [7/100] (4.30ns)   --->   "%sdiv_ln107 = sdiv i96 %shl_ln, i96 %sext_ln105" [baseline/fit.cpp:107]   --->   Operation 378 'sdiv' 'sdiv_ln107' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 99> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_96 : Operation 379 [7/100] (4.30ns)   --->   "%sdiv_ln111 = sdiv i96 %shl_ln4, i96 %sext_ln105" [baseline/fit.cpp:111]   --->   Operation 379 'sdiv' 'sdiv_ln111' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 99> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 97 <SV = 96> <Delay = 4.30>
+ST_97 : Operation 380 [11/70] (4.30ns)   --->   "%sdiv_ln105 = sdiv i66 18446744073709551616, i66 %sext_ln105_1" [baseline/fit.cpp:105]   --->   Operation 380 'sdiv' 'sdiv_ln105' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 69> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_97 : Operation 381 [6/100] (4.30ns)   --->   "%sdiv_ln107 = sdiv i96 %shl_ln, i96 %sext_ln105" [baseline/fit.cpp:107]   --->   Operation 381 'sdiv' 'sdiv_ln107' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 99> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_97 : Operation 382 [6/100] (4.30ns)   --->   "%sdiv_ln111 = sdiv i96 %shl_ln4, i96 %sext_ln105" [baseline/fit.cpp:111]   --->   Operation 382 'sdiv' 'sdiv_ln111' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 99> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 98 <SV = 97> <Delay = 4.30>
+ST_98 : Operation 383 [10/70] (4.30ns)   --->   "%sdiv_ln105 = sdiv i66 18446744073709551616, i66 %sext_ln105_1" [baseline/fit.cpp:105]   --->   Operation 383 'sdiv' 'sdiv_ln105' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 69> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_98 : Operation 384 [5/100] (4.30ns)   --->   "%sdiv_ln107 = sdiv i96 %shl_ln, i96 %sext_ln105" [baseline/fit.cpp:107]   --->   Operation 384 'sdiv' 'sdiv_ln107' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 99> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_98 : Operation 385 [5/100] (4.30ns)   --->   "%sdiv_ln111 = sdiv i96 %shl_ln4, i96 %sext_ln105" [baseline/fit.cpp:111]   --->   Operation 385 'sdiv' 'sdiv_ln111' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 99> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 99 <SV = 98> <Delay = 4.30>
+ST_99 : Operation 386 [9/70] (4.30ns)   --->   "%sdiv_ln105 = sdiv i66 18446744073709551616, i66 %sext_ln105_1" [baseline/fit.cpp:105]   --->   Operation 386 'sdiv' 'sdiv_ln105' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 69> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_99 : Operation 387 [4/100] (4.30ns)   --->   "%sdiv_ln107 = sdiv i96 %shl_ln, i96 %sext_ln105" [baseline/fit.cpp:107]   --->   Operation 387 'sdiv' 'sdiv_ln107' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 99> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_99 : Operation 388 [4/100] (4.30ns)   --->   "%sdiv_ln111 = sdiv i96 %shl_ln4, i96 %sext_ln105" [baseline/fit.cpp:111]   --->   Operation 388 'sdiv' 'sdiv_ln111' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 99> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 100 <SV = 99> <Delay = 4.30>
+ST_100 : Operation 389 [8/70] (4.30ns)   --->   "%sdiv_ln105 = sdiv i66 18446744073709551616, i66 %sext_ln105_1" [baseline/fit.cpp:105]   --->   Operation 389 'sdiv' 'sdiv_ln105' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 69> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_100 : Operation 390 [3/100] (4.30ns)   --->   "%sdiv_ln107 = sdiv i96 %shl_ln, i96 %sext_ln105" [baseline/fit.cpp:107]   --->   Operation 390 'sdiv' 'sdiv_ln107' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 99> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_100 : Operation 391 [3/100] (4.30ns)   --->   "%sdiv_ln111 = sdiv i96 %shl_ln4, i96 %sext_ln105" [baseline/fit.cpp:111]   --->   Operation 391 'sdiv' 'sdiv_ln111' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 99> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 101 <SV = 100> <Delay = 4.30>
+ST_101 : Operation 392 [7/70] (4.30ns)   --->   "%sdiv_ln105 = sdiv i66 18446744073709551616, i66 %sext_ln105_1" [baseline/fit.cpp:105]   --->   Operation 392 'sdiv' 'sdiv_ln105' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 69> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_101 : Operation 393 [2/100] (4.30ns)   --->   "%sdiv_ln107 = sdiv i96 %shl_ln, i96 %sext_ln105" [baseline/fit.cpp:107]   --->   Operation 393 'sdiv' 'sdiv_ln107' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 99> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_101 : Operation 394 [2/100] (4.30ns)   --->   "%sdiv_ln111 = sdiv i96 %shl_ln4, i96 %sext_ln105" [baseline/fit.cpp:111]   --->   Operation 394 'sdiv' 'sdiv_ln111' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 99> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 102 <SV = 101> <Delay = 4.30>
+ST_102 : Operation 395 [6/70] (4.30ns)   --->   "%sdiv_ln105 = sdiv i66 18446744073709551616, i66 %sext_ln105_1" [baseline/fit.cpp:105]   --->   Operation 395 'sdiv' 'sdiv_ln105' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 69> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_102 : Operation 396 [1/100] (4.30ns)   --->   "%sdiv_ln107 = sdiv i96 %shl_ln, i96 %sext_ln105" [baseline/fit.cpp:107]   --->   Operation 396 'sdiv' 'sdiv_ln107' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 99> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_102 : Operation 397 [1/100] (4.30ns)   --->   "%sdiv_ln111 = sdiv i96 %shl_ln4, i96 %sext_ln105" [baseline/fit.cpp:111]   --->   Operation 397 'sdiv' 'sdiv_ln111' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 99> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 103 <SV = 102> <Delay = 5.77>
+ST_103 : Operation 398 [5/70] (4.30ns)   --->   "%sdiv_ln105 = sdiv i66 18446744073709551616, i66 %sext_ln105_1" [baseline/fit.cpp:105]   --->   Operation 398 'sdiv' 'sdiv_ln105' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 69> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_103 : Operation 399 [1/1] (0.00ns)   --->   "%sext_ln107 = sext i64 %partialSx_read" [baseline/fit.cpp:107]   --->   Operation 399 'sext' 'sext_ln107' <Predicate = true> <Delay = 0.00>
+ST_103 : Operation 400 [1/1] (0.00ns)   --->   "%SxDivSTemp = trunc i64 %sdiv_ln107" [baseline/fit.cpp:107]   --->   Operation 400 'trunc' 'SxDivSTemp' <Predicate = true> <Delay = 0.00>
+ST_103 : Operation 401 [1/1] (0.00ns)   --->   "%sext_ln109 = sext i64 %SxDivSTemp" [baseline/fit.cpp:109]   --->   Operation 401 'sext' 'sext_ln109' <Predicate = true> <Delay = 0.00>
+ST_103 : Operation 402 [5/5] (5.77ns)   --->   "%mul_ln109 = mul i96 %sext_ln109, i96 %sext_ln107" [baseline/fit.cpp:109]   --->   Operation 402 'mul' 'mul_ln109' <Predicate = true> <Delay = 5.77> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 4> <II = 1> <Delay = 5.77> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+
+State 104 <SV = 103> <Delay = 5.77>
+ST_104 : Operation 403 [4/70] (4.30ns)   --->   "%sdiv_ln105 = sdiv i66 18446744073709551616, i66 %sext_ln105_1" [baseline/fit.cpp:105]   --->   Operation 403 'sdiv' 'sdiv_ln105' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 69> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_104 : Operation 404 [4/5] (5.77ns)   --->   "%mul_ln109 = mul i96 %sext_ln109, i96 %sext_ln107" [baseline/fit.cpp:109]   --->   Operation 404 'mul' 'mul_ln109' <Predicate = true> <Delay = 5.77> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 4> <II = 1> <Delay = 5.77> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+
+State 105 <SV = 104> <Delay = 5.77>
+ST_105 : Operation 405 [3/70] (4.30ns)   --->   "%sdiv_ln105 = sdiv i66 18446744073709551616, i66 %sext_ln105_1" [baseline/fit.cpp:105]   --->   Operation 405 'sdiv' 'sdiv_ln105' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 69> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_105 : Operation 406 [3/5] (5.77ns)   --->   "%mul_ln109 = mul i96 %sext_ln109, i96 %sext_ln107" [baseline/fit.cpp:109]   --->   Operation 406 'mul' 'mul_ln109' <Predicate = true> <Delay = 5.77> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 4> <II = 1> <Delay = 5.77> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+
+State 106 <SV = 105> <Delay = 5.77>
+ST_106 : Operation 407 [2/70] (4.30ns)   --->   "%sdiv_ln105 = sdiv i66 18446744073709551616, i66 %sext_ln105_1" [baseline/fit.cpp:105]   --->   Operation 407 'sdiv' 'sdiv_ln105' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 69> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_106 : Operation 408 [2/5] (5.77ns)   --->   "%mul_ln109 = mul i96 %sext_ln109, i96 %sext_ln107" [baseline/fit.cpp:109]   --->   Operation 408 'mul' 'mul_ln109' <Predicate = true> <Delay = 5.77> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 4> <II = 1> <Delay = 5.77> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+
+State 107 <SV = 106> <Delay = 5.77>
+ST_107 : Operation 409 [1/70] (4.30ns)   --->   "%sdiv_ln105 = sdiv i66 18446744073709551616, i66 %sext_ln105_1" [baseline/fit.cpp:105]   --->   Operation 409 'sdiv' 'sdiv_ln105' <Predicate = true> <Delay = 4.30> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 69> <II = 1> <Delay = 4.30> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_107 : Operation 410 [1/5] (5.77ns)   --->   "%mul_ln109 = mul i96 %sext_ln109, i96 %sext_ln107" [baseline/fit.cpp:109]   --->   Operation 410 'mul' 'mul_ln109' <Predicate = true> <Delay = 5.77> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 4> <II = 1> <Delay = 5.77> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_107 : Operation 411 [1/1] (0.00ns)   --->   "%trunc_ln1 = partselect i64 @_ssdm_op_PartSelect.i64.i96.i32.i32, i96 %mul_ln109, i32 32, i32 95" [baseline/fit.cpp:109]   --->   Operation 411 'partselect' 'trunc_ln1' <Predicate = true> <Delay = 0.00>
+
+State 108 <SV = 107> <Delay = 3.42>
+ST_108 : Operation 412 [1/1] (0.00ns)   --->   "%trunc_ln105 = trunc i64 %sdiv_ln105" [baseline/fit.cpp:105]   --->   Operation 412 'trunc' 'trunc_ln105' <Predicate = (tmp & !icmp_ln103)> <Delay = 0.00>
+ST_108 : Operation 413 [1/1] (3.42ns)   --->   "%write_ln105 = write void @_ssdm_op_Write.ap_fifo.volatile.i64P0A, i64 %SDiv1, i64 %trunc_ln105" [baseline/fit.cpp:105]   --->   Operation 413 'write' 'write_ln105' <Predicate = (tmp & !icmp_ln103)> <Delay = 3.42> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.42> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 64> <Depth = 10> <FIFO>
+ST_108 : Operation 414 [1/1] (3.42ns)   --->   "%write_ln108 = write void @_ssdm_op_Write.ap_fifo.volatile.i64P0A, i64 %SxDivS, i64 %SxDivSTemp" [baseline/fit.cpp:108]   --->   Operation 414 'write' 'write_ln108' <Predicate = (tmp & !icmp_ln103)> <Delay = 3.42> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.42> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 64> <Depth = 10> <FIFO>
+ST_108 : Operation 415 [1/1] (3.42ns)   --->   "%write_ln109 = write void @_ssdm_op_Write.ap_fifo.volatile.i64P0A, i64 %SxSquaredDivS, i64 %trunc_ln1" [baseline/fit.cpp:109]   --->   Operation 415 'write' 'write_ln109' <Predicate = (tmp & !icmp_ln103)> <Delay = 3.42> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.42> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 64> <Depth = 10> <FIFO>
+ST_108 : Operation 416 [1/1] (0.00ns)   --->   "%trunc_ln111 = trunc i64 %sdiv_ln111" [baseline/fit.cpp:111]   --->   Operation 416 'trunc' 'trunc_ln111' <Predicate = (tmp & !icmp_ln103)> <Delay = 0.00>
+ST_108 : Operation 417 [1/1] (3.42ns)   --->   "%write_ln111 = write void @_ssdm_op_Write.ap_fifo.volatile.i64P0A, i64 %SyDivS, i64 %trunc_ln111" [baseline/fit.cpp:111]   --->   Operation 417 'write' 'write_ln111' <Predicate = (tmp & !icmp_ln103)> <Delay = 3.42> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.42> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 64> <Depth = 10> <FIFO>
+ST_108 : Operation 418 [1/1] (0.00ns)   --->   "%br_ln115 = br void %if.end" [baseline/fit.cpp:115]   --->   Operation 418 'br' 'br_ln115' <Predicate = (tmp & !icmp_ln103)> <Delay = 0.00>
+ST_108 : Operation 419 [1/1] (0.00ns)   --->   "%tmp_s = nbreadreq i1 @_ssdm_op_NbReadReq.ap_fifo.i2P0A, i2 %last1, i32 1" [baseline/fit.cpp:92]   --->   Operation 419 'nbreadreq' 'tmp_s' <Predicate = (tmp)> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.42> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 2> <Depth = 10> <FIFO>
+ST_108 : Operation 420 [1/1] (0.00ns)   --->   "%br_ln92 = br i1 %tmp_s, void %while.end.loopexit, void %while.body" [baseline/fit.cpp:92]   --->   Operation 420 'br' 'br_ln92' <Predicate = (tmp)> <Delay = 0.00>
+ST_108 : Operation 421 [1/1] (0.00ns)   --->   "%br_ln0 = br void %while.end"   --->   Operation 421 'br' 'br_ln0' <Predicate = (tmp & !tmp_s)> <Delay = 0.00>
+ST_108 : Operation 422 [1/1] (0.00ns)   --->   "%ret_ln117 = ret" [baseline/fit.cpp:117]   --->   Operation 422 'ret' 'ret_ln117' <Predicate = (!tmp_s) | (!tmp)> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+STG Binding: 
+---------------- STG Properties BEGIN ----------------
+- Is combinational: 0
+- Is one-state seq: 0
+- Is datapath-only: 0
+- Is pipelined: 0
+- Is top level: 0
+Port [ Return ] is wired: 1; IO mode=ap_ctrl_hs:ce=0
+Port [ partialS]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=3; pingpong=0; private_global=0; IO mode=ap_fifo:ce=0
+Port [ partialSx]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=3; pingpong=0; private_global=0; IO mode=ap_fifo:ce=0
+Port [ partialSy]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=3; pingpong=0; private_global=0; IO mode=ap_fifo:ce=0
+Port [ last1]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=3; pingpong=0; private_global=0; IO mode=ap_fifo:ce=0
+Port [ SDiv1]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=3; pingpong=0; private_global=0; IO mode=ap_fifo:ce=0
+Port [ SxDivS]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=3; pingpong=0; private_global=0; IO mode=ap_fifo:ce=0
+Port [ SxSquaredDivS]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=3; pingpong=0; private_global=0; IO mode=ap_fifo:ce=0
+Port [ SyDivS]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=3; pingpong=0; private_global=0; IO mode=ap_fifo:ce=0
+---------------- STG Properties END ------------------
+
+---------------- Datapath Model BEGIN ----------------
+
+<LifeTime>
+<method=bitvector/>
+specinterface_ln0      (specinterface    ) [ 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000]
+specinterface_ln0      (specinterface    ) [ 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000]
+specinterface_ln0      (specinterface    ) [ 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000]
+specinterface_ln0      (specinterface    ) [ 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000]
+specinterface_ln0      (specinterface    ) [ 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000]
+specinterface_ln0      (specinterface    ) [ 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000]
+specinterface_ln0      (specinterface    ) [ 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000]
+specinterface_ln0      (specinterface    ) [ 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000]
+specpipeline_ln91      (specpipeline     ) [ 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000]
+tmp                    (nbreadreq        ) [ 0111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111]
+br_ln92                (br               ) [ 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000]
+br_ln93                (br               ) [ 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000]
+speclooptripcount_ln93 (speclooptripcount) [ 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000]
+specloopname_ln92      (specloopname     ) [ 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000]
+partialS_read          (read             ) [ 0001111111111111111111111111111111111110000000000000000000000000000000000000000000000000000000000000000000000]
+partialSx_read         (read             ) [ 0001111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111100000]
+partialSy_read         (read             ) [ 0001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000]
+last1_read             (read             ) [ 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000]
+icmp_ln103             (icmp             ) [ 0011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111]
+br_ln103               (br               ) [ 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000]
+sext_ln105             (sext             ) [ 0000111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111000000]
+shl_ln                 (bitconcatenate   ) [ 0000111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111000000]
+shl_ln4                (bitconcatenate   ) [ 0000111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111000000]
+sext_ln105_1           (sext             ) [ 0000000000000000000000000000000000000001111111111111111111111111111111111111111111111111111111111111111111110]
+sdiv_ln107             (sdiv             ) [ 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000]
+sdiv_ln111             (sdiv             ) [ 0010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000111111]
+sext_ln107             (sext             ) [ 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011110]
+SxDivSTemp             (trunc            ) [ 0010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011111]
+sext_ln109             (sext             ) [ 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011110]
+sdiv_ln105             (sdiv             ) [ 0010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001]
+mul_ln109              (mul              ) [ 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000]
+trunc_ln1              (partselect       ) [ 0010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001]
+trunc_ln105            (trunc            ) [ 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000]
+write_ln105            (write            ) [ 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000]
+write_ln108            (write            ) [ 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000]
+write_ln109            (write            ) [ 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000]
+trunc_ln111            (trunc            ) [ 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000]
+write_ln111            (write            ) [ 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000]
+br_ln115               (br               ) [ 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000]
+tmp_s                  (nbreadreq        ) [ 0011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111]
+br_ln92                (br               ) [ 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000]
+br_ln0                 (br               ) [ 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000]
+ret_ln117              (ret              ) [ 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000]
+</LifeTime>
+
+<model>
+
+<comp_list>
+<comp id="0" class="1000" name="partialS">
+<pin_list>
+<pin id="1" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="partialS"/></StgValue>
+</bind>
+</comp>
+
+<comp id="2" class="1000" name="partialSx">
+<pin_list>
+<pin id="3" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="partialSx"/></StgValue>
+</bind>
+</comp>
+
+<comp id="4" class="1000" name="partialSy">
+<pin_list>
+<pin id="5" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="partialSy"/></StgValue>
+</bind>
+</comp>
+
+<comp id="6" class="1000" name="last1">
+<pin_list>
+<pin id="7" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="last1"/></StgValue>
+</bind>
+</comp>
+
+<comp id="8" class="1000" name="SDiv1">
+<pin_list>
+<pin id="9" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="SDiv1"/></StgValue>
+</bind>
+</comp>
+
+<comp id="10" class="1000" name="SxDivS">
+<pin_list>
+<pin id="11" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="SxDivS"/></StgValue>
+</bind>
+</comp>
+
+<comp id="12" class="1000" name="SxSquaredDivS">
+<pin_list>
+<pin id="13" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="SxSquaredDivS"/></StgValue>
+</bind>
+</comp>
+
+<comp id="14" class="1000" name="SyDivS">
+<pin_list>
+<pin id="15" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="SyDivS"/></StgValue>
+</bind>
+</comp>
+
+<comp id="16" class="1001" name="const_16">
+<pin_list>
+<pin id="17" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_SpecInterface"/></StgValue>
+</bind>
+</comp>
+
+<comp id="18" class="1001" name="const_18">
+<pin_list>
+<pin id="19" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="empty_5"/></StgValue>
+</bind>
+</comp>
+
+<comp id="20" class="1001" name="const_20">
+<pin_list>
+<pin id="21" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="22" class="1001" name="const_22">
+<pin_list>
+<pin id="23" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="empty_8"/></StgValue>
+</bind>
+</comp>
+
+<comp id="24" class="1001" name="const_24">
+<pin_list>
+<pin id="25" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="26" class="1001" name="const_26">
+<pin_list>
+<pin id="27" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_SpecPipeline"/></StgValue>
+</bind>
+</comp>
+
+<comp id="28" class="1001" name="const_28">
+<pin_list>
+<pin id="29" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="30" class="1001" name="const_30">
+<pin_list>
+<pin id="31" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_NbReadReq.ap_fifo.i2P0A"/></StgValue>
+</bind>
+</comp>
+
+<comp id="32" class="1001" name="const_32">
+<pin_list>
+<pin id="33" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="34" class="1001" name="const_34">
+<pin_list>
+<pin id="35" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_SpecLoopTripCount"/></StgValue>
+</bind>
+</comp>
+
+<comp id="36" class="1001" name="const_36">
+<pin_list>
+<pin id="37" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="38" class="1001" name="const_38">
+<pin_list>
+<pin id="39" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="40" class="1001" name="const_40">
+<pin_list>
+<pin id="41" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="42" class="1001" name="const_42">
+<pin_list>
+<pin id="43" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_SpecLoopName"/></StgValue>
+</bind>
+</comp>
+
+<comp id="44" class="1001" name="const_44">
+<pin_list>
+<pin id="45" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="empty_4"/></StgValue>
+</bind>
+</comp>
+
+<comp id="46" class="1001" name="const_46">
+<pin_list>
+<pin id="47" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_Read.ap_fifo.volatile.i64P0A"/></StgValue>
+</bind>
+</comp>
+
+<comp id="48" class="1001" name="const_48">
+<pin_list>
+<pin id="49" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_Read.ap_fifo.volatile.i2P0A"/></StgValue>
+</bind>
+</comp>
+
+<comp id="50" class="1001" name="const_50">
+<pin_list>
+<pin id="51" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="52" class="1001" name="const_52">
+<pin_list>
+<pin id="53" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_BitConcatenate.i96.i64.i32"/></StgValue>
+</bind>
+</comp>
+
+<comp id="54" class="1001" name="const_54">
+<pin_list>
+<pin id="55" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="56" class="1001" name="const_56">
+<pin_list>
+<pin id="57" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_PartSelect.i64.i96.i32.i32"/></StgValue>
+</bind>
+</comp>
+
+<comp id="58" class="1001" name="const_58">
+<pin_list>
+<pin id="59" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="60" class="1001" name="const_60">
+<pin_list>
+<pin id="61" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="62" class="1001" name="const_62">
+<pin_list>
+<pin id="63" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_Write.ap_fifo.volatile.i64P0A"/></StgValue>
+</bind>
+</comp>
+
+<comp id="64" class="1004" name="grp_nbreadreq_fu_64">
+<pin_list>
+<pin id="65" dir="0" index="0" bw="1" slack="0"/>
+<pin id="66" dir="0" index="1" bw="2" slack="0"/>
+<pin id="67" dir="0" index="2" bw="1" slack="0"/>
+<pin id="68" dir="1" index="3" bw="1" slack="107"/>
+</pin_list>
+<bind>
+<opcode="nbreadreq(1156) " fcode="nbreadreq"/>
+<opset="tmp/1 tmp_s/108 "/>
+</bind>
+</comp>
+
+<comp id="72" class="1004" name="partialS_read_read_fu_72">
+<pin_list>
+<pin id="73" dir="0" index="0" bw="64" slack="0"/>
+<pin id="74" dir="0" index="1" bw="64" slack="0"/>
+<pin id="75" dir="1" index="2" bw="64" slack="1"/>
+</pin_list>
+<bind>
+<opcode="read(1150) " fcode="read"/>
+<opset="partialS_read/2 "/>
+</bind>
+</comp>
+
+<comp id="78" class="1004" name="partialSx_read_read_fu_78">
+<pin_list>
+<pin id="79" dir="0" index="0" bw="64" slack="0"/>
+<pin id="80" dir="0" index="1" bw="64" slack="0"/>
+<pin id="81" dir="1" index="2" bw="64" slack="1"/>
+</pin_list>
+<bind>
+<opcode="read(1150) " fcode="read"/>
+<opset="partialSx_read/2 "/>
+</bind>
+</comp>
+
+<comp id="84" class="1004" name="partialSy_read_read_fu_84">
+<pin_list>
+<pin id="85" dir="0" index="0" bw="64" slack="0"/>
+<pin id="86" dir="0" index="1" bw="64" slack="0"/>
+<pin id="87" dir="1" index="2" bw="64" slack="1"/>
+</pin_list>
+<bind>
+<opcode="read(1150) " fcode="read"/>
+<opset="partialSy_read/2 "/>
+</bind>
+</comp>
+
+<comp id="90" class="1004" name="last1_read_read_fu_90">
+<pin_list>
+<pin id="91" dir="0" index="0" bw="2" slack="0"/>
+<pin id="92" dir="0" index="1" bw="2" slack="0"/>
+<pin id="93" dir="1" index="2" bw="2" slack="0"/>
+</pin_list>
+<bind>
+<opcode="read(1150) " fcode="read"/>
+<opset="last1_read/2 "/>
+</bind>
+</comp>
+
+<comp id="96" class="1004" name="write_ln105_write_fu_96">
+<pin_list>
+<pin id="97" dir="0" index="0" bw="0" slack="0"/>
+<pin id="98" dir="0" index="1" bw="64" slack="0"/>
+<pin id="99" dir="0" index="2" bw="64" slack="0"/>
+<pin id="100" dir="1" index="3" bw="0" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="write(1151) " fcode="write"/>
+<opset="write_ln105/108 "/>
+</bind>
+</comp>
+
+<comp id="103" class="1004" name="write_ln108_write_fu_103">
+<pin_list>
+<pin id="104" dir="0" index="0" bw="0" slack="0"/>
+<pin id="105" dir="0" index="1" bw="64" slack="0"/>
+<pin id="106" dir="0" index="2" bw="64" slack="5"/>
+<pin id="107" dir="1" index="3" bw="0" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="write(1151) " fcode="write"/>
+<opset="write_ln108/108 "/>
+</bind>
+</comp>
+
+<comp id="110" class="1004" name="write_ln109_write_fu_110">
+<pin_list>
+<pin id="111" dir="0" index="0" bw="0" slack="0"/>
+<pin id="112" dir="0" index="1" bw="64" slack="0"/>
+<pin id="113" dir="0" index="2" bw="64" slack="1"/>
+<pin id="114" dir="1" index="3" bw="0" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="write(1151) " fcode="write"/>
+<opset="write_ln109/108 "/>
+</bind>
+</comp>
+
+<comp id="117" class="1004" name="write_ln111_write_fu_117">
+<pin_list>
+<pin id="118" dir="0" index="0" bw="0" slack="0"/>
+<pin id="119" dir="0" index="1" bw="64" slack="0"/>
+<pin id="120" dir="0" index="2" bw="64" slack="0"/>
+<pin id="121" dir="1" index="3" bw="0" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="write(1151) " fcode="write"/>
+<opset="write_ln111/108 "/>
+</bind>
+</comp>
+
+<comp id="124" class="1004" name="grp_fu_124">
+<pin_list>
+<pin id="125" dir="0" index="0" bw="64" slack="0"/>
+<pin id="126" dir="0" index="1" bw="64" slack="0"/>
+<pin id="127" dir="1" index="2" bw="96" slack="0"/>
+</pin_list>
+<bind>
+<opcode="mul(12) " fcode="mul"/>
+<opset="mul_ln109/103 "/>
+</bind>
+</comp>
+
+<comp id="128" class="1004" name="icmp_ln103_fu_128">
+<pin_list>
+<pin id="129" dir="0" index="0" bw="2" slack="0"/>
+<pin id="130" dir="0" index="1" bw="1" slack="0"/>
+<pin id="131" dir="1" index="2" bw="1" slack="106"/>
+</pin_list>
+<bind>
+<opcode="icmp(45) " fcode="icmp"/>
+<opset="icmp_ln103/2 "/>
+</bind>
+</comp>
+
+<comp id="134" class="1004" name="sext_ln105_fu_134">
+<pin_list>
+<pin id="135" dir="0" index="0" bw="64" slack="1"/>
+<pin id="136" dir="1" index="1" bw="96" slack="0"/>
+</pin_list>
+<bind>
+<opcode="sext(35) " fcode="sext"/>
+<opset="sext_ln105/3 "/>
+</bind>
+</comp>
+
+<comp id="137" class="1004" name="shl_ln_fu_137">
+<pin_list>
+<pin id="138" dir="0" index="0" bw="96" slack="0"/>
+<pin id="139" dir="0" index="1" bw="64" slack="1"/>
+<pin id="140" dir="0" index="2" bw="1" slack="0"/>
+<pin id="141" dir="1" index="3" bw="96" slack="0"/>
+</pin_list>
+<bind>
+<opcode="bitconcatenate(1004) " fcode="bitconcatenate"/>
+<opset="shl_ln/3 "/>
+</bind>
+</comp>
+
+<comp id="144" class="1004" name="grp_fu_144">
+<pin_list>
+<pin id="145" dir="0" index="0" bw="96" slack="0"/>
+<pin id="146" dir="0" index="1" bw="64" slack="0"/>
+<pin id="147" dir="1" index="2" bw="64" slack="1"/>
+</pin_list>
+<bind>
+<opcode="sdiv(15) " fcode="sdiv"/>
+<opset="sdiv_ln107/3 "/>
+</bind>
+</comp>
+
+<comp id="150" class="1004" name="shl_ln4_fu_150">
+<pin_list>
+<pin id="151" dir="0" index="0" bw="96" slack="0"/>
+<pin id="152" dir="0" index="1" bw="64" slack="1"/>
+<pin id="153" dir="0" index="2" bw="1" slack="0"/>
+<pin id="154" dir="1" index="3" bw="96" slack="0"/>
+</pin_list>
+<bind>
+<opcode="bitconcatenate(1004) " fcode="bitconcatenate"/>
+<opset="shl_ln4/3 "/>
+</bind>
+</comp>
+
+<comp id="157" class="1004" name="grp_fu_157">
+<pin_list>
+<pin id="158" dir="0" index="0" bw="96" slack="0"/>
+<pin id="159" dir="0" index="1" bw="64" slack="0"/>
+<pin id="160" dir="1" index="2" bw="64" slack="6"/>
+</pin_list>
+<bind>
+<opcode="sdiv(15) " fcode="sdiv"/>
+<opset="sdiv_ln111/3 "/>
+</bind>
+</comp>
+
+<comp id="163" class="1004" name="sext_ln105_1_fu_163">
+<pin_list>
+<pin id="164" dir="0" index="0" bw="64" slack="36"/>
+<pin id="165" dir="1" index="1" bw="66" slack="0"/>
+</pin_list>
+<bind>
+<opcode="sext(35) " fcode="sext"/>
+<opset="sext_ln105_1/38 "/>
+</bind>
+</comp>
+
+<comp id="166" class="1004" name="grp_fu_166">
+<pin_list>
+<pin id="167" dir="0" index="0" bw="66" slack="0"/>
+<pin id="168" dir="0" index="1" bw="64" slack="0"/>
+<pin id="169" dir="1" index="2" bw="64" slack="1"/>
+</pin_list>
+<bind>
+<opcode="sdiv(15) " fcode="sdiv"/>
+<opset="sdiv_ln105/38 "/>
+</bind>
+</comp>
+
+<comp id="172" class="1004" name="sext_ln107_fu_172">
+<pin_list>
+<pin id="173" dir="0" index="0" bw="64" slack="101"/>
+<pin id="174" dir="1" index="1" bw="96" slack="0"/>
+</pin_list>
+<bind>
+<opcode="sext(35) " fcode="sext"/>
+<opset="sext_ln107/103 "/>
+</bind>
+</comp>
+
+<comp id="176" class="1004" name="SxDivSTemp_fu_176">
+<pin_list>
+<pin id="177" dir="0" index="0" bw="64" slack="1"/>
+<pin id="178" dir="1" index="1" bw="64" slack="0"/>
+</pin_list>
+<bind>
+<opcode="trunc(33) " fcode="trunc"/>
+<opset="SxDivSTemp/103 "/>
+</bind>
+</comp>
+
+<comp id="179" class="1004" name="sext_ln109_fu_179">
+<pin_list>
+<pin id="180" dir="0" index="0" bw="64" slack="0"/>
+<pin id="181" dir="1" index="1" bw="96" slack="0"/>
+</pin_list>
+<bind>
+<opcode="sext(35) " fcode="sext"/>
+<opset="sext_ln109/103 "/>
+</bind>
+</comp>
+
+<comp id="184" class="1004" name="trunc_ln1_fu_184">
+<pin_list>
+<pin id="185" dir="0" index="0" bw="64" slack="0"/>
+<pin id="186" dir="0" index="1" bw="96" slack="0"/>
+<pin id="187" dir="0" index="2" bw="7" slack="0"/>
+<pin id="188" dir="0" index="3" bw="8" slack="0"/>
+<pin id="189" dir="1" index="4" bw="64" slack="1"/>
+</pin_list>
+<bind>
+<opcode="partselect(1002) " fcode="partselect"/>
+<opset="trunc_ln1/107 "/>
+</bind>
+</comp>
+
+<comp id="194" class="1004" name="trunc_ln105_fu_194">
+<pin_list>
+<pin id="195" dir="0" index="0" bw="64" slack="1"/>
+<pin id="196" dir="1" index="1" bw="64" slack="0"/>
+</pin_list>
+<bind>
+<opcode="trunc(33) " fcode="trunc"/>
+<opset="trunc_ln105/108 "/>
+</bind>
+</comp>
+
+<comp id="198" class="1004" name="trunc_ln111_fu_198">
+<pin_list>
+<pin id="199" dir="0" index="0" bw="64" slack="6"/>
+<pin id="200" dir="1" index="1" bw="64" slack="0"/>
+</pin_list>
+<bind>
+<opcode="trunc(33) " fcode="trunc"/>
+<opset="trunc_ln111/108 "/>
+</bind>
+</comp>
+
+<comp id="202" class="1005" name="tmp_reg_202">
+<pin_list>
+<pin id="203" dir="0" index="0" bw="1" slack="107"/>
+<pin id="204" dir="1" index="1" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<opset="tmp "/>
+</bind>
+</comp>
+
+<comp id="206" class="1005" name="partialS_read_reg_206">
+<pin_list>
+<pin id="207" dir="0" index="0" bw="64" slack="1"/>
+<pin id="208" dir="1" index="1" bw="64" slack="1"/>
+</pin_list>
+<bind>
+<opset="partialS_read "/>
+</bind>
+</comp>
+
+<comp id="212" class="1005" name="partialSx_read_reg_212">
+<pin_list>
+<pin id="213" dir="0" index="0" bw="64" slack="1"/>
+<pin id="214" dir="1" index="1" bw="64" slack="1"/>
+</pin_list>
+<bind>
+<opset="partialSx_read "/>
+</bind>
+</comp>
+
+<comp id="218" class="1005" name="partialSy_read_reg_218">
+<pin_list>
+<pin id="219" dir="0" index="0" bw="64" slack="1"/>
+<pin id="220" dir="1" index="1" bw="64" slack="1"/>
+</pin_list>
+<bind>
+<opset="partialSy_read "/>
+</bind>
+</comp>
+
+<comp id="223" class="1005" name="icmp_ln103_reg_223">
+<pin_list>
+<pin id="224" dir="0" index="0" bw="1" slack="106"/>
+<pin id="225" dir="1" index="1" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<opset="icmp_ln103 "/>
+</bind>
+</comp>
+
+<comp id="227" class="1005" name="sext_ln105_reg_227">
+<pin_list>
+<pin id="228" dir="0" index="0" bw="96" slack="1"/>
+<pin id="229" dir="1" index="1" bw="96" slack="1"/>
+</pin_list>
+<bind>
+<opset="sext_ln105 "/>
+</bind>
+</comp>
+
+<comp id="233" class="1005" name="shl_ln_reg_233">
+<pin_list>
+<pin id="234" dir="0" index="0" bw="96" slack="1"/>
+<pin id="235" dir="1" index="1" bw="96" slack="1"/>
+</pin_list>
+<bind>
+<opset="shl_ln "/>
+</bind>
+</comp>
+
+<comp id="238" class="1005" name="shl_ln4_reg_238">
+<pin_list>
+<pin id="239" dir="0" index="0" bw="96" slack="1"/>
+<pin id="240" dir="1" index="1" bw="96" slack="1"/>
+</pin_list>
+<bind>
+<opset="shl_ln4 "/>
+</bind>
+</comp>
+
+<comp id="243" class="1005" name="sext_ln105_1_reg_243">
+<pin_list>
+<pin id="244" dir="0" index="0" bw="66" slack="1"/>
+<pin id="245" dir="1" index="1" bw="66" slack="1"/>
+</pin_list>
+<bind>
+<opset="sext_ln105_1 "/>
+</bind>
+</comp>
+
+<comp id="248" class="1005" name="sdiv_ln107_reg_248">
+<pin_list>
+<pin id="249" dir="0" index="0" bw="64" slack="1"/>
+<pin id="250" dir="1" index="1" bw="64" slack="1"/>
+</pin_list>
+<bind>
+<opset="sdiv_ln107 "/>
+</bind>
+</comp>
+
+<comp id="253" class="1005" name="sdiv_ln111_reg_253">
+<pin_list>
+<pin id="254" dir="0" index="0" bw="64" slack="6"/>
+<pin id="255" dir="1" index="1" bw="64" slack="6"/>
+</pin_list>
+<bind>
+<opset="sdiv_ln111 "/>
+</bind>
+</comp>
+
+<comp id="258" class="1005" name="sext_ln107_reg_258">
+<pin_list>
+<pin id="259" dir="0" index="0" bw="96" slack="1"/>
+<pin id="260" dir="1" index="1" bw="96" slack="1"/>
+</pin_list>
+<bind>
+<opset="sext_ln107 "/>
+</bind>
+</comp>
+
+<comp id="263" class="1005" name="SxDivSTemp_reg_263">
+<pin_list>
+<pin id="264" dir="0" index="0" bw="64" slack="5"/>
+<pin id="265" dir="1" index="1" bw="64" slack="5"/>
+</pin_list>
+<bind>
+<opset="SxDivSTemp "/>
+</bind>
+</comp>
+
+<comp id="268" class="1005" name="sext_ln109_reg_268">
+<pin_list>
+<pin id="269" dir="0" index="0" bw="96" slack="1"/>
+<pin id="270" dir="1" index="1" bw="96" slack="1"/>
+</pin_list>
+<bind>
+<opset="sext_ln109 "/>
+</bind>
+</comp>
+
+<comp id="273" class="1005" name="sdiv_ln105_reg_273">
+<pin_list>
+<pin id="274" dir="0" index="0" bw="64" slack="1"/>
+<pin id="275" dir="1" index="1" bw="64" slack="1"/>
+</pin_list>
+<bind>
+<opset="sdiv_ln105 "/>
+</bind>
+</comp>
+
+<comp id="278" class="1005" name="trunc_ln1_reg_278">
+<pin_list>
+<pin id="279" dir="0" index="0" bw="64" slack="1"/>
+<pin id="280" dir="1" index="1" bw="64" slack="1"/>
+</pin_list>
+<bind>
+<opset="trunc_ln1 "/>
+</bind>
+</comp>
+
+</comp_list>
+
+<net_list>
+<net id="69"><net_src comp="30" pin="0"/><net_sink comp="64" pin=0"/></net>
+
+<net id="70"><net_src comp="6" pin="0"/><net_sink comp="64" pin=1"/></net>
+
+<net id="71"><net_src comp="32" pin="0"/><net_sink comp="64" pin=2"/></net>
+
+<net id="76"><net_src comp="46" pin="0"/><net_sink comp="72" pin=0"/></net>
+
+<net id="77"><net_src comp="0" pin="0"/><net_sink comp="72" pin=1"/></net>
+
+<net id="82"><net_src comp="46" pin="0"/><net_sink comp="78" pin=0"/></net>
+
+<net id="83"><net_src comp="2" pin="0"/><net_sink comp="78" pin=1"/></net>
+
+<net id="88"><net_src comp="46" pin="0"/><net_sink comp="84" pin=0"/></net>
+
+<net id="89"><net_src comp="4" pin="0"/><net_sink comp="84" pin=1"/></net>
+
+<net id="94"><net_src comp="48" pin="0"/><net_sink comp="90" pin=0"/></net>
+
+<net id="95"><net_src comp="6" pin="0"/><net_sink comp="90" pin=1"/></net>
+
+<net id="101"><net_src comp="62" pin="0"/><net_sink comp="96" pin=0"/></net>
+
+<net id="102"><net_src comp="8" pin="0"/><net_sink comp="96" pin=1"/></net>
+
+<net id="108"><net_src comp="62" pin="0"/><net_sink comp="103" pin=0"/></net>
+
+<net id="109"><net_src comp="10" pin="0"/><net_sink comp="103" pin=1"/></net>
+
+<net id="115"><net_src comp="62" pin="0"/><net_sink comp="110" pin=0"/></net>
+
+<net id="116"><net_src comp="12" pin="0"/><net_sink comp="110" pin=1"/></net>
+
+<net id="122"><net_src comp="62" pin="0"/><net_sink comp="117" pin=0"/></net>
+
+<net id="123"><net_src comp="14" pin="0"/><net_sink comp="117" pin=1"/></net>
+
+<net id="132"><net_src comp="90" pin="2"/><net_sink comp="128" pin=0"/></net>
+
+<net id="133"><net_src comp="50" pin="0"/><net_sink comp="128" pin=1"/></net>
+
+<net id="142"><net_src comp="52" pin="0"/><net_sink comp="137" pin=0"/></net>
+
+<net id="143"><net_src comp="20" pin="0"/><net_sink comp="137" pin=2"/></net>
+
+<net id="148"><net_src comp="137" pin="3"/><net_sink comp="144" pin=0"/></net>
+
+<net id="149"><net_src comp="134" pin="1"/><net_sink comp="144" pin=1"/></net>
+
+<net id="155"><net_src comp="52" pin="0"/><net_sink comp="150" pin=0"/></net>
+
+<net id="156"><net_src comp="20" pin="0"/><net_sink comp="150" pin=2"/></net>
+
+<net id="161"><net_src comp="150" pin="3"/><net_sink comp="157" pin=0"/></net>
+
+<net id="162"><net_src comp="134" pin="1"/><net_sink comp="157" pin=1"/></net>
+
+<net id="170"><net_src comp="54" pin="0"/><net_sink comp="166" pin=0"/></net>
+
+<net id="171"><net_src comp="163" pin="1"/><net_sink comp="166" pin=1"/></net>
+
+<net id="175"><net_src comp="172" pin="1"/><net_sink comp="124" pin=1"/></net>
+
+<net id="182"><net_src comp="176" pin="1"/><net_sink comp="179" pin=0"/></net>
+
+<net id="183"><net_src comp="179" pin="1"/><net_sink comp="124" pin=0"/></net>
+
+<net id="190"><net_src comp="56" pin="0"/><net_sink comp="184" pin=0"/></net>
+
+<net id="191"><net_src comp="124" pin="2"/><net_sink comp="184" pin=1"/></net>
+
+<net id="192"><net_src comp="58" pin="0"/><net_sink comp="184" pin=2"/></net>
+
+<net id="193"><net_src comp="60" pin="0"/><net_sink comp="184" pin=3"/></net>
+
+<net id="197"><net_src comp="194" pin="1"/><net_sink comp="96" pin=2"/></net>
+
+<net id="201"><net_src comp="198" pin="1"/><net_sink comp="117" pin=2"/></net>
+
+<net id="205"><net_src comp="64" pin="3"/><net_sink comp="202" pin=0"/></net>
+
+<net id="209"><net_src comp="72" pin="2"/><net_sink comp="206" pin=0"/></net>
+
+<net id="210"><net_src comp="206" pin="1"/><net_sink comp="134" pin=0"/></net>
+
+<net id="211"><net_src comp="206" pin="1"/><net_sink comp="163" pin=0"/></net>
+
+<net id="215"><net_src comp="78" pin="2"/><net_sink comp="212" pin=0"/></net>
+
+<net id="216"><net_src comp="212" pin="1"/><net_sink comp="137" pin=1"/></net>
+
+<net id="217"><net_src comp="212" pin="1"/><net_sink comp="172" pin=0"/></net>
+
+<net id="221"><net_src comp="84" pin="2"/><net_sink comp="218" pin=0"/></net>
+
+<net id="222"><net_src comp="218" pin="1"/><net_sink comp="150" pin=1"/></net>
+
+<net id="226"><net_src comp="128" pin="2"/><net_sink comp="223" pin=0"/></net>
+
+<net id="230"><net_src comp="134" pin="1"/><net_sink comp="227" pin=0"/></net>
+
+<net id="231"><net_src comp="227" pin="1"/><net_sink comp="144" pin=1"/></net>
+
+<net id="232"><net_src comp="227" pin="1"/><net_sink comp="157" pin=1"/></net>
+
+<net id="236"><net_src comp="137" pin="3"/><net_sink comp="233" pin=0"/></net>
+
+<net id="237"><net_src comp="233" pin="1"/><net_sink comp="144" pin=0"/></net>
+
+<net id="241"><net_src comp="150" pin="3"/><net_sink comp="238" pin=0"/></net>
+
+<net id="242"><net_src comp="238" pin="1"/><net_sink comp="157" pin=0"/></net>
+
+<net id="246"><net_src comp="163" pin="1"/><net_sink comp="243" pin=0"/></net>
+
+<net id="247"><net_src comp="243" pin="1"/><net_sink comp="166" pin=1"/></net>
+
+<net id="251"><net_src comp="144" pin="2"/><net_sink comp="248" pin=0"/></net>
+
+<net id="252"><net_src comp="248" pin="1"/><net_sink comp="176" pin=0"/></net>
+
+<net id="256"><net_src comp="157" pin="2"/><net_sink comp="253" pin=0"/></net>
+
+<net id="257"><net_src comp="253" pin="1"/><net_sink comp="198" pin=0"/></net>
+
+<net id="261"><net_src comp="172" pin="1"/><net_sink comp="258" pin=0"/></net>
+
+<net id="262"><net_src comp="258" pin="1"/><net_sink comp="124" pin=1"/></net>
+
+<net id="266"><net_src comp="176" pin="1"/><net_sink comp="263" pin=0"/></net>
+
+<net id="267"><net_src comp="263" pin="1"/><net_sink comp="103" pin=2"/></net>
+
+<net id="271"><net_src comp="179" pin="1"/><net_sink comp="268" pin=0"/></net>
+
+<net id="272"><net_src comp="268" pin="1"/><net_sink comp="124" pin=0"/></net>
+
+<net id="276"><net_src comp="166" pin="2"/><net_sink comp="273" pin=0"/></net>
+
+<net id="277"><net_src comp="273" pin="1"/><net_sink comp="194" pin=0"/></net>
+
+<net id="281"><net_src comp="184" pin="4"/><net_sink comp="278" pin=0"/></net>
+
+<net id="282"><net_src comp="278" pin="1"/><net_sink comp="110" pin=2"/></net>
+
+</net_list>
+
+</model> 
+---------------- Datapath Model END ------------------
+
+* FSMD analyzer results:
+  - Output states:
+	Port: SDiv1 | {108 }
+	Port: SxDivS | {108 }
+	Port: SxSquaredDivS | {108 }
+	Port: SyDivS | {108 }
+ - Input state : 
+	Port: interStage1 : partialS | {2 }
+	Port: interStage1 : partialSx | {2 }
+	Port: interStage1 : partialSy | {2 }
+	Port: interStage1 : last1 | {1 2 108 }
+  - Chain level:
+	State 1
+	State 2
+		br_ln103 : 1
+	State 3
+		sdiv_ln107 : 1
+		sdiv_ln111 : 1
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+	State 9
+	State 10
+	State 11
+	State 12
+	State 13
+	State 14
+	State 15
+	State 16
+	State 17
+	State 18
+	State 19
+	State 20
+	State 21
+	State 22
+	State 23
+	State 24
+	State 25
+	State 26
+	State 27
+	State 28
+	State 29
+	State 30
+	State 31
+	State 32
+	State 33
+	State 34
+	State 35
+	State 36
+	State 37
+	State 38
+		sdiv_ln105 : 1
+	State 39
+	State 40
+	State 41
+	State 42
+	State 43
+	State 44
+	State 45
+	State 46
+	State 47
+	State 48
+	State 49
+	State 50
+	State 51
+	State 52
+	State 53
+	State 54
+	State 55
+	State 56
+	State 57
+	State 58
+	State 59
+	State 60
+	State 61
+	State 62
+	State 63
+	State 64
+	State 65
+	State 66
+	State 67
+	State 68
+	State 69
+	State 70
+	State 71
+	State 72
+	State 73
+	State 74
+	State 75
+	State 76
+	State 77
+	State 78
+	State 79
+	State 80
+	State 81
+	State 82
+	State 83
+	State 84
+	State 85
+	State 86
+	State 87
+	State 88
+	State 89
+	State 90
+	State 91
+	State 92
+	State 93
+	State 94
+	State 95
+	State 96
+	State 97
+	State 98
+	State 99
+	State 100
+	State 101
+	State 102
+	State 103
+		sext_ln109 : 1
+		mul_ln109 : 2
+	State 104
+	State 105
+	State 106
+	State 107
+		trunc_ln1 : 1
+	State 108
+		write_ln105 : 1
+		write_ln111 : 1
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+
+* Functional unit list:
+|----------|---------------------------|---------|---------|---------|
+| Operation|      Functional Unit      |   DSP   |    FF   |   LUT   |
+|----------|---------------------------|---------|---------|---------|
+|          |         grp_fu_144        |    0    |   8651  |   6607  |
+|   sdiv   |         grp_fu_157        |    0    |   8651  |   6607  |
+|          |         grp_fu_166        |    0    |   8651  |   6607  |
+|----------|---------------------------|---------|---------|---------|
+|    mul   |         grp_fu_124        |    15   |   441   |   256   |
+|----------|---------------------------|---------|---------|---------|
+|   icmp   |     icmp_ln103_fu_128     |    0    |    0    |    10   |
+|----------|---------------------------|---------|---------|---------|
+| nbreadreq|    grp_nbreadreq_fu_64    |    0    |    0    |    0    |
+|----------|---------------------------|---------|---------|---------|
+|          |  partialS_read_read_fu_72 |    0    |    0    |    0    |
+|   read   | partialSx_read_read_fu_78 |    0    |    0    |    0    |
+|          | partialSy_read_read_fu_84 |    0    |    0    |    0    |
+|          |   last1_read_read_fu_90   |    0    |    0    |    0    |
+|----------|---------------------------|---------|---------|---------|
+|          |  write_ln105_write_fu_96  |    0    |    0    |    0    |
+|   write  |  write_ln108_write_fu_103 |    0    |    0    |    0    |
+|          |  write_ln109_write_fu_110 |    0    |    0    |    0    |
+|          |  write_ln111_write_fu_117 |    0    |    0    |    0    |
+|----------|---------------------------|---------|---------|---------|
+|          |     sext_ln105_fu_134     |    0    |    0    |    0    |
+|   sext   |    sext_ln105_1_fu_163    |    0    |    0    |    0    |
+|          |     sext_ln107_fu_172     |    0    |    0    |    0    |
+|          |     sext_ln109_fu_179     |    0    |    0    |    0    |
+|----------|---------------------------|---------|---------|---------|
+|bitconcatenate|       shl_ln_fu_137       |    0    |    0    |    0    |
+|          |       shl_ln4_fu_150      |    0    |    0    |    0    |
+|----------|---------------------------|---------|---------|---------|
+|          |     SxDivSTemp_fu_176     |    0    |    0    |    0    |
+|   trunc  |     trunc_ln105_fu_194    |    0    |    0    |    0    |
+|          |     trunc_ln111_fu_198    |    0    |    0    |    0    |
+|----------|---------------------------|---------|---------|---------|
+|partselect|      trunc_ln1_fu_184     |    0    |    0    |    0    |
+|----------|---------------------------|---------|---------|---------|
+|   Total  |                           |    15   |  26394  |  20087  |
+|----------|---------------------------|---------|---------|---------|
+
+Memories:
+N/A
+
+* Register list:
++----------------------+--------+
+|                      |   FF   |
++----------------------+--------+
+|  SxDivSTemp_reg_263  |   64   |
+|  icmp_ln103_reg_223  |    1   |
+| partialS_read_reg_206|   64   |
+|partialSx_read_reg_212|   64   |
+|partialSy_read_reg_218|   64   |
+|  sdiv_ln105_reg_273  |   64   |
+|  sdiv_ln107_reg_248  |   64   |
+|  sdiv_ln111_reg_253  |   64   |
+| sext_ln105_1_reg_243 |   66   |
+|  sext_ln105_reg_227  |   96   |
+|  sext_ln107_reg_258  |   96   |
+|  sext_ln109_reg_268  |   96   |
+|    shl_ln4_reg_238   |   96   |
+|    shl_ln_reg_233    |   96   |
+|      tmp_reg_202     |    1   |
+|   trunc_ln1_reg_278  |   64   |
++----------------------+--------+
+|         Total        |  1060  |
++----------------------+--------+
+
+* Multiplexer (MUX) list: 
+|------------|------|------|------|--------||---------||---------|
+|    Comp    |  Pin | Size |  BW  | S x BW ||  Delay  ||   LUT   |
+|------------|------|------|------|--------||---------||---------|
+| grp_fu_124 |  p0  |   2  |  64  |   128  ||    9    |
+| grp_fu_124 |  p1  |   2  |  64  |   128  ||    9    |
+| grp_fu_144 |  p0  |   2  |  96  |   192  ||    9    |
+| grp_fu_144 |  p1  |   2  |  64  |   128  ||    9    |
+| grp_fu_157 |  p0  |   2  |  96  |   192  ||    9    |
+| grp_fu_157 |  p1  |   2  |  64  |   128  ||    9    |
+| grp_fu_166 |  p1  |   2  |  64  |   128  ||    9    |
+|------------|------|------|------|--------||---------||---------|
+|    Total   |      |      |      |  1024  ||  9.058  ||    63   |
+|------------|------|------|------|--------||---------||---------|
+
+
+
+* Summary:
++-----------+--------+--------+--------+--------+
+|           |   DSP  |  Delay |   FF   |   LUT  |
++-----------+--------+--------+--------+--------+
+|  Function |   15   |    -   |  26394 |  20087 |
+|   Memory  |    -   |    -   |    -   |    -   |
+|Multiplexer|    -   |    9   |    -   |   63   |
+|  Register |    -   |    -   |  1060  |    -   |
++-----------+--------+--------+--------+--------+
+|   Total   |   15   |    9   |  27454 |  20150 |
++-----------+--------+--------+--------+--------+

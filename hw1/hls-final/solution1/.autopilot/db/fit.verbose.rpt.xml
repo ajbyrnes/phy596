@@ -1,0 +1,157 @@
+<profile>
+
+<section name = "Vitis HLS Report for 'fit'" level="0">
+<item name = "Date">Wed Mar  5 03:43:42 2025
+</item>
+<item name = "Version">2023.1 (Build 3854077 on May  4 2023)</item>
+<item name = "Project">baseline</item>
+<item name = "Solution">solution1 (Vitis Kernel Flow Target)</item>
+<item name = "Product family">spartan7</item>
+<item name = "Target device">xc7s100-fgga676-2</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">10.00 ns, 7.030 ns, 2.70 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">?, ?, ?, ?, ?, ?, dataflow</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+<column name="readStage_U0">readStage, ?, ?, ?, ?, ?, ?, no</column>
+<column name="interStage1_U0">interStage1, 1, 535000, 10.000 ns, 5.350 ms, 1, 535000, no</column>
+<column name="interStage2_U0">interStage2, 1, 485000, 10.000 ns, 4.850 ms, 1, 485000, no</column>
+<column name="finalStage_U0">finalStage, 1, 430000, 10.000 ns, 4.300 ms, 1, 430000, no</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Utilization Estimates" level="0">
+<item name = "Summary"><table name="" hasTotal="1">
+<keys size="6">Name, BRAM_18K, DSP, FF, LUT, URAM</keys>
+<column name="DSP">-, -, -, -, -</column>
+<column name="Expression">-, -, 0, 4, -</column>
+<column name="FIFO">19, -, 1735, 1122, -</column>
+<column name="Instance">0, 168, 54087, 40480, -</column>
+<column name="Memory">-, -, -, -, -</column>
+<column name="Multiplexer">-, -, -, -, -</column>
+<column name="Register">-, -, 3, -, -</column>
+<specialColumn name="Available">240, 160, 128000, 64000, 0</specialColumn>
+<specialColumn name="Utilization (%)">7, 105, 43, 65, 0</specialColumn>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="1">
+<keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
+<column name="control_s_axi_U">control_s_axi, 0, 0, 36, 40, 0</column>
+<column name="finalStage_U0">finalStage, 0, 54, 10924, 8201, 0</column>
+<column name="interStage1_U0">interStage1, 0, 15, 27017, 20723, 0</column>
+<column name="interStage2_U0">interStage2, 0, 91, 12959, 9191, 0</column>
+<column name="readStage_U0">readStage, 0, 8, 3151, 2325, 0</column>
+</table>
+</item>
+<item name = "DSP"><table name="" hasTotal="0">
+<keys size="3">Instance, Module, Expression</keys>
+</table>
+</item>
+<item name = "Memory"><table name="" hasTotal="1">
+<keys size="10">Memory, Module, BRAM_18K, FF, LUT, URAM, Words, Bits, Banks, W*Bits*Banks</keys>
+</table>
+</item>
+<item name = "FIFO"><table name="" hasTotal="1">
+<keys size="8">Name, BRAM_18K, FF, LUT, URAM, Depth, Bits, Size:D*B</keys>
+<column name="SDiv1_U">0, 99, 0, -, 10, 64, 640</column>
+<column name="SxDivS_U">0, 99, 0, -, 10, 64, 640</column>
+<column name="SxSquaredDivS_U">0, 99, 0, -, 10, 64, 640</column>
+<column name="SyDivS_U">0, 99, 0, -, 10, 64, 640</column>
+<column name="last1_U">0, 99, 0, -, 10, 2, 20</column>
+<column name="last2_U">0, 99, 0, -, 10, 2, 20</column>
+<column name="last3_U">0, 99, 0, -, 10, 2, 20</column>
+<column name="partialS_U">0, 99, 0, -, 10, 64, 640</column>
+<column name="partialSx_U">0, 99, 0, -, 10, 64, 640</column>
+<column name="partialSy_U">0, 99, 0, -, 10, 64, 640</column>
+<column name="resultStream_U">19, 151, 0, -, 10, 332, 3320</column>
+<column name="sigmaDiv1_U">0, 99, 0, -, 10, 64, 640</column>
+<column name="sigmaSquaredDiv1_U">0, 99, 0, -, 10, 64, 640</column>
+<column name="x1_U">0, 99, 0, -, 10, 12, 120</column>
+<column name="x2_U">0, 99, 0, -, 10, 12, 120</column>
+<column name="y1_U">0, 99, 0, -, 10, 12, 120</column>
+<column name="y2_U">0, 99, 0, -, 10, 12, 120</column>
+</table>
+</item>
+<item name = "Expression"><table name="" hasTotal="1">
+<keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
+<column name="ap_idle">and, 0, 0, 2, 1, 1</column>
+<column name="readStage_U0_start_full_n">and, 0, 0, 2, 1, 1</column>
+</table>
+</item>
+<item name = "Multiplexer"><table name="" hasTotal="1">
+<keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
+</table>
+</item>
+<item name = "Register"><table name="" hasTotal="1">
+<keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
+<column name="ap_rst_n_inv">1, 0, 1, 0</column>
+<column name="ap_rst_reg_1">1, 0, 1, 0</column>
+<column name="ap_rst_reg_2">1, 0, 1, 0</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Interface" level="0">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">RTL Ports, Dir, Bits, Protocol, Source Object, C Type</keys>
+<column name="s_axi_control_AWVALID">in, 1, s_axi, control, return void</column>
+<column name="s_axi_control_AWREADY">out, 1, s_axi, control, return void</column>
+<column name="s_axi_control_AWADDR">in, 4, s_axi, control, return void</column>
+<column name="s_axi_control_WVALID">in, 1, s_axi, control, return void</column>
+<column name="s_axi_control_WREADY">out, 1, s_axi, control, return void</column>
+<column name="s_axi_control_WDATA">in, 32, s_axi, control, return void</column>
+<column name="s_axi_control_WSTRB">in, 4, s_axi, control, return void</column>
+<column name="s_axi_control_ARVALID">in, 1, s_axi, control, return void</column>
+<column name="s_axi_control_ARREADY">out, 1, s_axi, control, return void</column>
+<column name="s_axi_control_ARADDR">in, 4, s_axi, control, return void</column>
+<column name="s_axi_control_RVALID">out, 1, s_axi, control, return void</column>
+<column name="s_axi_control_RREADY">in, 1, s_axi, control, return void</column>
+<column name="s_axi_control_RDATA">out, 32, s_axi, control, return void</column>
+<column name="s_axi_control_RRESP">out, 2, s_axi, control, return void</column>
+<column name="s_axi_control_BVALID">out, 1, s_axi, control, return void</column>
+<column name="s_axi_control_BREADY">in, 1, s_axi, control, return void</column>
+<column name="s_axi_control_BRESP">out, 2, s_axi, control, return void</column>
+<column name="ap_clk">in, 1, ap_ctrl_chain, fit, return value</column>
+<column name="ap_rst_n">in, 1, ap_ctrl_chain, fit, return value</column>
+<column name="interrupt">out, 1, ap_ctrl_chain, fit, return value</column>
+<column name="input_r_TDATA">in, 64, axis, input_r, pointer</column>
+<column name="input_r_TVALID">in, 1, axis, input_r, pointer</column>
+<column name="input_r_TREADY">out, 1, axis, input_r, pointer</column>
+<column name="output_r_TDATA">out, 384, axis, output_r, pointer</column>
+<column name="output_r_TVALID">out, 1, axis, output_r, pointer</column>
+<column name="output_r_TREADY">in, 1, axis, output_r, pointer</column>
+</table>
+</item>
+</section>
+</profile>

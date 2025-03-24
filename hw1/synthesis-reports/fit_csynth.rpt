@@ -1,0 +1,179 @@
+
+
+================================================================
+== Vitis HLS Report for 'fit'
+================================================================
+* Date:           Wed Mar  5 03:43:42 2025
+
+* Version:        2023.1 (Build 3854077 on May  4 2023)
+* Project:        baseline
+* Solution:       solution1 (Vitis Kernel Flow Target)
+* Product family: spartan7
+* Target device:  xc7s100-fgga676-2
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  7.030 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+----------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline |
+    |   min   |   max   |    min   |    max   | min | max |   Type   |
+    +---------+---------+----------+----------+-----+-----+----------+
+    |        ?|        ?|         ?|         ?|    ?|    ?|  dataflow|
+    +---------+---------+----------+----------+-----+-----+----------+
+
+    + Detail: 
+        * Instance: 
+        +----------------+-------------+---------+---------+-----------+----------+-----+--------+---------+
+        |                |             |  Latency (cycles) |  Latency (absolute)  |   Interval   | Pipeline|
+        |    Instance    |    Module   |   min   |   max   |    min    |    max   | min |   max  |   Type  |
+        +----------------+-------------+---------+---------+-----------+----------+-----+--------+---------+
+        |readStage_U0    |readStage    |        ?|        ?|          ?|         ?|    ?|       ?|       no|
+        |interStage1_U0  |interStage1  |        1|   535000|  10.000 ns|  5.350 ms|    1|  535000|       no|
+        |interStage2_U0  |interStage2  |        1|   485000|  10.000 ns|  4.850 ms|    1|  485000|       no|
+        |finalStage_U0   |finalStage   |        1|   430000|  10.000 ns|  4.300 ms|    1|  430000|       no|
+        +----------------+-------------+---------+---------+-----------+----------+-----+--------+---------+
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-----+--------+-------+-----+
+|       Name      | BRAM_18K| DSP |   FF   |  LUT  | URAM|
++-----------------+---------+-----+--------+-------+-----+
+|DSP              |        -|    -|       -|      -|    -|
+|Expression       |        -|    -|       0|      4|    -|
+|FIFO             |       19|    -|    1735|   1122|    -|
+|Instance         |        0|  168|   54087|  40480|    -|
+|Memory           |        -|    -|       -|      -|    -|
+|Multiplexer      |        -|    -|       -|      -|    -|
+|Register         |        -|    -|       3|      -|    -|
++-----------------+---------+-----+--------+-------+-----+
+|Total            |       19|  168|   55825|  41606|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Available        |      240|  160|  128000|  64000|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Utilization (%)  |        7|  105|      43|     65|    0|
++-----------------+---------+-----+--------+-------+-----+
+
++ Detail: 
+    * Instance: 
+    +-----------------+---------------+---------+----+-------+-------+-----+
+    |     Instance    |     Module    | BRAM_18K| DSP|   FF  |  LUT  | URAM|
+    +-----------------+---------------+---------+----+-------+-------+-----+
+    |control_s_axi_U  |control_s_axi  |        0|   0|     36|     40|    0|
+    |finalStage_U0    |finalStage     |        0|  54|  10924|   8201|    0|
+    |interStage1_U0   |interStage1    |        0|  15|  27017|  20723|    0|
+    |interStage2_U0   |interStage2    |        0|  91|  12959|   9191|    0|
+    |readStage_U0     |readStage      |        0|   8|   3151|   2325|    0|
+    +-----------------+---------------+---------+----+-------+-------+-----+
+    |Total            |               |        0| 168|  54087|  40480|    0|
+    +-----------------+---------------+---------+----+-------+-------+-----+
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    +--------------------+---------+-----+----+-----+------+-----+---------+
+    |        Name        | BRAM_18K|  FF | LUT| URAM| Depth| Bits| Size:D*B|
+    +--------------------+---------+-----+----+-----+------+-----+---------+
+    |SDiv1_U             |        0|   99|   0|    -|    10|   64|      640|
+    |SxDivS_U            |        0|   99|   0|    -|    10|   64|      640|
+    |SxSquaredDivS_U     |        0|   99|   0|    -|    10|   64|      640|
+    |SyDivS_U            |        0|   99|   0|    -|    10|   64|      640|
+    |last1_U             |        0|   99|   0|    -|    10|    2|       20|
+    |last2_U             |        0|   99|   0|    -|    10|    2|       20|
+    |last3_U             |        0|   99|   0|    -|    10|    2|       20|
+    |partialS_U          |        0|   99|   0|    -|    10|   64|      640|
+    |partialSx_U         |        0|   99|   0|    -|    10|   64|      640|
+    |partialSy_U         |        0|   99|   0|    -|    10|   64|      640|
+    |resultStream_U      |       19|  151|   0|    -|    10|  332|     3320|
+    |sigmaDiv1_U         |        0|   99|   0|    -|    10|   64|      640|
+    |sigmaSquaredDiv1_U  |        0|   99|   0|    -|    10|   64|      640|
+    |x1_U                |        0|   99|   0|    -|    10|   12|      120|
+    |x2_U                |        0|   99|   0|    -|    10|   12|      120|
+    |y1_U                |        0|   99|   0|    -|    10|   12|      120|
+    |y2_U                |        0|   99|   0|    -|    10|   12|      120|
+    +--------------------+---------+-----+----+-----+------+-----+---------+
+    |Total               |       19| 1735|   0|    0|   170|  962|     9620|
+    +--------------------+---------+-----+----+-----+------+-----+---------+
+
+    * Expression: 
+    +---------------------------+----------+----+---+----+------------+------------+
+    |       Variable Name       | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +---------------------------+----------+----+---+----+------------+------------+
+    |ap_idle                    |       and|   0|  0|   2|           1|           1|
+    |readStage_U0_start_full_n  |       and|   0|  0|   2|           1|           1|
+    +---------------------------+----------+----+---+----+------------+------------+
+    |Total                      |          |   0|  0|   4|           2|           2|
+    +---------------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    N/A
+
+    * Register: 
+    +--------------+---+----+-----+-----------+
+    |     Name     | FF| LUT| Bits| Const Bits|
+    +--------------+---+----+-----+-----------+
+    |ap_rst_n_inv  |  1|   0|    1|          0|
+    |ap_rst_reg_1  |  1|   0|    1|          0|
+    |ap_rst_reg_2  |  1|   0|    1|          0|
+    +--------------+---+----+-----+-----------+
+    |Total         |  3|   0|    3|          0|
+    +--------------+---+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++-----------------------+-----+-----+---------------+--------------+--------------+
+|       RTL Ports       | Dir | Bits|    Protocol   | Source Object|    C Type    |
++-----------------------+-----+-----+---------------+--------------+--------------+
+|s_axi_control_AWVALID  |   in|    1|          s_axi|       control|   return void|
+|s_axi_control_AWREADY  |  out|    1|          s_axi|       control|   return void|
+|s_axi_control_AWADDR   |   in|    4|          s_axi|       control|   return void|
+|s_axi_control_WVALID   |   in|    1|          s_axi|       control|   return void|
+|s_axi_control_WREADY   |  out|    1|          s_axi|       control|   return void|
+|s_axi_control_WDATA    |   in|   32|          s_axi|       control|   return void|
+|s_axi_control_WSTRB    |   in|    4|          s_axi|       control|   return void|
+|s_axi_control_ARVALID  |   in|    1|          s_axi|       control|   return void|
+|s_axi_control_ARREADY  |  out|    1|          s_axi|       control|   return void|
+|s_axi_control_ARADDR   |   in|    4|          s_axi|       control|   return void|
+|s_axi_control_RVALID   |  out|    1|          s_axi|       control|   return void|
+|s_axi_control_RREADY   |   in|    1|          s_axi|       control|   return void|
+|s_axi_control_RDATA    |  out|   32|          s_axi|       control|   return void|
+|s_axi_control_RRESP    |  out|    2|          s_axi|       control|   return void|
+|s_axi_control_BVALID   |  out|    1|          s_axi|       control|   return void|
+|s_axi_control_BREADY   |   in|    1|          s_axi|       control|   return void|
+|s_axi_control_BRESP    |  out|    2|          s_axi|       control|   return void|
+|ap_clk                 |   in|    1|  ap_ctrl_chain|           fit|  return value|
+|ap_rst_n               |   in|    1|  ap_ctrl_chain|           fit|  return value|
+|interrupt              |  out|    1|  ap_ctrl_chain|           fit|  return value|
+|input_r_TDATA          |   in|   64|           axis|       input_r|       pointer|
+|input_r_TVALID         |   in|    1|           axis|       input_r|       pointer|
+|input_r_TREADY         |  out|    1|           axis|       input_r|       pointer|
+|output_r_TDATA         |  out|  384|           axis|      output_r|       pointer|
+|output_r_TVALID        |  out|    1|           axis|      output_r|       pointer|
+|output_r_TREADY        |   in|    1|           axis|      output_r|       pointer|
++-----------------------+-----+-----+---------------+--------------+--------------+
+

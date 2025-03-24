@@ -1,0 +1,56 @@
+{
+  "0": {
+    "basicblocks": 1,
+    "calls": "1 4 3 2",
+    "file": "fit.cpp",
+    "fileloc": 201,
+    "instructions": 60,
+    "name": "fit",
+    "total_instructions": 440
+  },
+  "1": {
+    "basicblocks": 4,
+    "calls": "",
+    "file": "fit.cpp",
+    "fileloc": 14,
+    "instructions": 36,
+    "name": "readStage",
+    "total_instructions": 36
+  },
+  "2": {
+    "basicblocks": 9,
+    "calls": "",
+    "file": "fit.cpp",
+    "fileloc": 163,
+    "instructions": 100,
+    "loads": {
+      "G": 1
+    },
+    "name": "finalStage",
+    "stores": {
+      "G": 2
+    },
+    "total_instructions": 172
+  },
+  "3": {
+    "basicblocks": 7,
+    "calls": "",
+    "file": "fit.cpp",
+    "fileloc": 119,
+    "instructions": 88,
+    "name": "interStage2",
+    "total_instructions": 129
+  },
+  "4": {
+    "basicblocks": 7,
+    "calls": "",
+    "file": "fit.cpp",
+    "fileloc": 81,
+    "instructions": 43,
+    "name": "interStage1",
+    "stores": {
+      "G": 3
+    },
+    "total_instructions": 43
+  }
+}

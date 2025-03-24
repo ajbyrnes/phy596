@@ -1,0 +1,1742 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1741167822366">
+  <ports id="1" name="resultStream" type="PortType" coreName="FIFO" coreId="1967537184" bitwidth="332" iftype="IfTypeRom">
+    <dataOutputObjs>read</dataOutputObjs>
+    <dataOutputObjs>nbreadreq</dataOutputObjs>
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="2" name="x2" type="PortType" originalName="x" coreName="FIFO_SRL" coreId="1698970656" bitwidth="12" iftype="IfTypeRom">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="3" name="y2" type="PortType" originalName="y" coreName="FIFO_SRL" coreId="540876904" bitwidth="12" iftype="IfTypeRom">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="4" name="sigmaSquaredDiv1" type="PortType" originalName="sigma" coreName="FIFO_SRL" coreId="980316009" bitwidth="64" iftype="IfTypeRom">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="5" name="last3" type="PortType" originalName="last" coreName="FIFO_SRL" coreId="1931485194" bitwidth="2" iftype="IfTypeRom">
+    <dataOutputObjs>nbreadreq</dataOutputObjs>
+    <dataOutputObjs>read</dataOutputObjs>
+    <dataOutputObjs>nbreadreq</dataOutputObjs>
+  </ports>
+  <ports id="6" name="output_r" type="PortType" originalName="output" coreId="980316009" bitwidth="384" direction="DirOut">
+    <dataInputObjs>write</dataInputObjs>
+  </ports>
+  <edges id="107" source_obj="//@ports.0" sink_obj="//@blocks.0/@node_objs.0"/>
+  <edges id="110" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.0/@node_objs.1"/>
+  <edges id="116" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.0/@node_objs.2"/>
+  <edges id="122" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.0/@node_objs.3"/>
+  <edges id="128" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.0/@node_objs.4"/>
+  <edges id="135" source_obj="//@ports.4" sink_obj="//@blocks.0/@node_objs.5"/>
+  <edges id="138" source_obj="//@blocks.0/@node_objs.5" sink_obj="//@blocks.0/@node_objs.6"/>
+  <edges id="139" edge_type="CtrlEdge" source_obj="//@blocks.9" sink_obj="//@blocks.0/@node_objs.6"/>
+  <edges id="140" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@blocks.0/@node_objs.6"/>
+  <edges id="146" sink_obj="//@blocks.1/@node_objs.5"/>
+  <edges id="147" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@blocks.1/@node_objs.6"/>
+  <edges id="148" source_obj="//@blocks.1/@node_objs.4" sink_obj="//@blocks.1/@node_objs.6"/>
+  <edges id="149" source_obj="//@blocks.0/@node_objs.4" sink_obj="//@blocks.1/@node_objs.7"/>
+  <edges id="150" source_obj="//@blocks.1/@node_objs.3" sink_obj="//@blocks.1/@node_objs.7"/>
+  <edges id="151" source_obj="//@blocks.0/@node_objs.3" sink_obj="//@blocks.1/@node_objs.8"/>
+  <edges id="152" source_obj="//@blocks.1/@node_objs.2" sink_obj="//@blocks.1/@node_objs.8"/>
+  <edges id="153" source_obj="//@blocks.0/@node_objs.2" sink_obj="//@blocks.1/@node_objs.9"/>
+  <edges id="154" source_obj="//@blocks.1/@node_objs.1" sink_obj="//@blocks.1/@node_objs.9"/>
+  <edges id="155" source_obj="//@blocks.1/@node_objs.5" sink_obj="//@blocks.1/@node_objs.10"/>
+  <edges id="156" source_obj="//@blocks.1/@node_objs.0" sink_obj="//@blocks.1/@node_objs.10"/>
+  <edges id="157" edge_type="CtrlEdge" source_obj="//@blocks.2" sink_obj="//@blocks.1/@node_objs.11"/>
+  <edges id="158" source_obj="//@blocks.1/@node_objs.0" sink_obj="//@blocks.2/@node_objs.0"/>
+  <edges id="159" source_obj="//@blocks.1/@node_objs.1" sink_obj="//@blocks.2/@node_objs.1"/>
+  <edges id="160" source_obj="//@blocks.1/@node_objs.2" sink_obj="//@blocks.2/@node_objs.2"/>
+  <edges id="163" source_obj="//@ports.2" sink_obj="//@blocks.2/@node_objs.3"/>
+  <edges id="166" source_obj="//@blocks.2/@node_objs.3" sink_obj="//@blocks.2/@node_objs.4"/>
+  <edges id="169" source_obj="//@blocks.2/@node_objs.4" sink_obj="//@blocks.2/@node_objs.5"/>
+  <edges id="170" source_obj="//@blocks.2/@node_objs.5" sink_obj="//@blocks.2/@node_objs.6"/>
+  <edges id="171" source_obj="//@blocks.2/@node_objs.1" sink_obj="//@blocks.2/@node_objs.6"/>
+  <edges id="173" source_obj="//@ports.1" sink_obj="//@blocks.2/@node_objs.7"/>
+  <edges id="175" source_obj="//@blocks.2/@node_objs.7" sink_obj="//@blocks.2/@node_objs.8"/>
+  <edges id="177" source_obj="//@blocks.2/@node_objs.2" sink_obj="//@blocks.2/@node_objs.9"/>
+  <edges id="178" source_obj="//@blocks.2/@node_objs.8" sink_obj="//@blocks.2/@node_objs.10"/>
+  <edges id="179" source_obj="//@blocks.2/@node_objs.9" sink_obj="//@blocks.2/@node_objs.11"/>
+  <edges id="180" source_obj="//@blocks.2/@node_objs.10" sink_obj="//@blocks.2/@node_objs.11"/>
+  <edges id="183" source_obj="//@blocks.2/@node_objs.6" sink_obj="//@blocks.2/@node_objs.12"/>
+  <edges id="185" source_obj="//@blocks.2/@node_objs.12" sink_obj="//@blocks.2/@node_objs.13"/>
+  <edges id="186" source_obj="//@blocks.2/@node_objs.11" sink_obj="//@blocks.2/@node_objs.13"/>
+  <edges id="189" source_obj="//@blocks.2/@node_objs.13" sink_obj="//@blocks.2/@node_objs.14"/>
+  <edges id="194" source_obj="//@blocks.2/@node_objs.14" sink_obj="//@blocks.2/@node_objs.15"/>
+  <edges id="197" source_obj="//@ports.3" sink_obj="//@blocks.2/@node_objs.16"/>
+  <edges id="198" source_obj="//@blocks.2/@node_objs.16" sink_obj="//@blocks.2/@node_objs.17"/>
+  <edges id="199" source_obj="//@blocks.2/@node_objs.15" sink_obj="//@blocks.2/@node_objs.18"/>
+  <edges id="200" source_obj="//@blocks.2/@node_objs.17" sink_obj="//@blocks.2/@node_objs.18"/>
+  <edges id="201" source_obj="//@blocks.2/@node_objs.18" sink_obj="//@blocks.2/@node_objs.19"/>
+  <edges id="202" source_obj="//@blocks.2/@node_objs.15" sink_obj="//@blocks.2/@node_objs.19"/>
+  <edges id="205" source_obj="//@blocks.2/@node_objs.19" sink_obj="//@blocks.2/@node_objs.20"/>
+  <edges id="210" source_obj="//@blocks.2/@node_objs.0" sink_obj="//@blocks.2/@node_objs.21"/>
+  <edges id="215" source_obj="//@ports.4" sink_obj="//@blocks.2/@node_objs.22"/>
+  <edges id="216" source_obj="//@blocks.2/@node_objs.22" sink_obj="//@blocks.2/@node_objs.23"/>
+  <edges id="219" source_obj="//@blocks.2/@node_objs.23" sink_obj="//@blocks.2/@node_objs.24"/>
+  <edges id="220" edge_type="CtrlEdge" source_obj="//@blocks.3" sink_obj="//@blocks.2/@node_objs.24"/>
+  <edges id="221" edge_type="CtrlEdge" source_obj="//@blocks.6" sink_obj="//@blocks.2/@node_objs.24"/>
+  <edges id="222" source_obj="//@blocks.2/@node_objs.21" sink_obj="//@blocks.6/@node_objs.0"/>
+  <edges id="223" source_obj="//@blocks.1/@node_objs.0" sink_obj="//@blocks.6/@node_objs.0"/>
+  <edges id="224" edge_type="CtrlEdge" source_obj="//@blocks.7" sink_obj="//@blocks.6/@node_objs.1"/>
+  <edges id="225" source_obj="//@blocks.1/@node_objs.3" sink_obj="//@blocks.3/@node_objs.0"/>
+  <edges id="226" source_obj="//@blocks.1/@node_objs.4" sink_obj="//@blocks.3/@node_objs.1"/>
+  <edges id="227" source_obj="//@blocks.2/@node_objs.21" sink_obj="//@blocks.3/@node_objs.2"/>
+  <edges id="228" source_obj="//@blocks.3/@node_objs.2" sink_obj="//@blocks.3/@node_objs.3"/>
+  <edges id="231" source_obj="//@blocks.3/@node_objs.3" sink_obj="//@blocks.3/@node_objs.4"/>
+  <edges id="232" source_obj="//@blocks.2/@node_objs.20" sink_obj="//@blocks.3/@node_objs.5"/>
+  <edges id="233" source_obj="//@blocks.3/@node_objs.4" sink_obj="//@blocks.3/@node_objs.5"/>
+  <edges id="236" source_obj="//@blocks.3/@node_objs.5" sink_obj="//@blocks.3/@node_objs.6"/>
+  <edges id="237" source_obj="//@blocks.3/@node_objs.1" sink_obj="//@blocks.3/@node_objs.6"/>
+  <edges id="238" source_obj="//@blocks.3/@node_objs.0" sink_obj="//@blocks.3/@node_objs.6"/>
+  <edges id="239" source_obj="//@blocks.2/@node_objs.2" sink_obj="//@blocks.3/@node_objs.6"/>
+  <edges id="240" source_obj="//@blocks.2/@node_objs.1" sink_obj="//@blocks.3/@node_objs.6"/>
+  <edges id="243" source_obj="//@blocks.2/@node_objs.21" sink_obj="//@blocks.3/@node_objs.6"/>
+  <edges id="246" source_obj="//@blocks.3/@node_objs.7" sink_obj="//@ports.5"/>
+  <edges id="247" source_obj="//@blocks.3/@node_objs.6" sink_obj="//@blocks.3/@node_objs.7"/>
+  <edges id="250" source_obj="//@ports.0" sink_obj="//@blocks.3/@node_objs.8"/>
+  <edges id="252" source_obj="//@blocks.3/@node_objs.8" sink_obj="//@blocks.3/@node_objs.9"/>
+  <edges id="253" edge_type="CtrlEdge" source_obj="//@blocks.5" sink_obj="//@blocks.3/@node_objs.9"/>
+  <edges id="254" edge_type="CtrlEdge" source_obj="//@blocks.4" sink_obj="//@blocks.3/@node_objs.9"/>
+  <edges id="256" source_obj="//@ports.0" sink_obj="//@blocks.4/@node_objs.0"/>
+  <edges id="257" source_obj="//@blocks.4/@node_objs.0" sink_obj="//@blocks.4/@node_objs.1"/>
+  <edges id="260" source_obj="//@blocks.4/@node_objs.0" sink_obj="//@blocks.4/@node_objs.2"/>
+  <edges id="265" source_obj="//@blocks.4/@node_objs.2" sink_obj="//@blocks.4/@node_objs.3"/>
+  <edges id="267" source_obj="//@blocks.4/@node_objs.1" sink_obj="//@blocks.4/@node_objs.3"/>
+  <edges id="268" edge_type="CtrlEdge" source_obj="//@blocks.5" sink_obj="//@blocks.4/@node_objs.4"/>
+  <edges id="269" source_obj="//@blocks.4/@node_objs.3" sink_obj="//@blocks.5/@node_objs.0"/>
+  <edges id="270" edge_type="CtrlEdge" source_obj="//@blocks.4" sink_obj="//@blocks.5/@node_objs.0"/>
+  <edges id="273" edge_type="CtrlEdge" source_obj="//@blocks.3" sink_obj="//@blocks.5/@node_objs.0"/>
+  <edges id="276" source_obj="//@blocks.5/@node_objs.0" sink_obj="//@blocks.5/@node_objs.1"/>
+  <edges id="280" source_obj="//@blocks.5/@node_objs.0" sink_obj="//@blocks.5/@node_objs.2"/>
+  <edges id="286" source_obj="//@blocks.5/@node_objs.0" sink_obj="//@blocks.5/@node_objs.3"/>
+  <edges id="292" source_obj="//@blocks.5/@node_objs.0" sink_obj="//@blocks.5/@node_objs.4"/>
+  <edges id="297" source_obj="//@blocks.5/@node_objs.4" sink_obj="//@blocks.5/@node_objs.5"/>
+  <edges id="298" source_obj="//@blocks.1/@node_objs.4" sink_obj="//@blocks.5/@node_objs.5"/>
+  <edges id="299" source_obj="//@blocks.5/@node_objs.3" sink_obj="//@blocks.5/@node_objs.6"/>
+  <edges id="300" source_obj="//@blocks.1/@node_objs.3" sink_obj="//@blocks.5/@node_objs.6"/>
+  <edges id="301" source_obj="//@blocks.5/@node_objs.2" sink_obj="//@blocks.5/@node_objs.7"/>
+  <edges id="302" source_obj="//@blocks.1/@node_objs.2" sink_obj="//@blocks.5/@node_objs.7"/>
+  <edges id="303" source_obj="//@blocks.5/@node_objs.1" sink_obj="//@blocks.5/@node_objs.8"/>
+  <edges id="304" source_obj="//@blocks.1/@node_objs.1" sink_obj="//@blocks.5/@node_objs.8"/>
+  <edges id="307" source_obj="//@blocks.1/@node_objs.0" sink_obj="//@blocks.5/@node_objs.9"/>
+  <edges id="308" edge_type="CtrlEdge" source_obj="//@blocks.7" sink_obj="//@blocks.5/@node_objs.10"/>
+  <edges id="310" source_obj="//@ports.4" sink_obj="//@blocks.7/@node_objs.0"/>
+  <edges id="312" source_obj="//@blocks.7/@node_objs.0" sink_obj="//@blocks.7/@node_objs.1"/>
+  <edges id="313" edge_type="CtrlEdge" source_obj="//@blocks.8" sink_obj="//@blocks.7/@node_objs.1"/>
+  <edges id="314" edge_type="CtrlEdge" source_obj="//@blocks.2" sink_obj="//@blocks.7/@node_objs.1"/>
+  <edges id="315" source_obj="//@blocks.1/@node_objs.0" sink_obj="//@blocks.8/@node_objs.0"/>
+  <edges id="316" source_obj="//@blocks.8/@node_objs.0" sink_obj="//@blocks.8/@node_objs.1"/>
+  <edges id="317" sink_obj="//@blocks.8/@node_objs.1"/>
+  <edges id="318" edge_type="CtrlEdge" source_obj="//@blocks.9" sink_obj="//@blocks.8/@node_objs.2"/>
+  <edges id="459" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@blocks.1"/>
+  <edges id="460" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@blocks.9"/>
+  <edges id="461" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@blocks.2"/>
+  <edges id="462" edge_type="CtrlEdge" source_obj="//@blocks.2" sink_obj="//@blocks.6"/>
+  <edges id="463" edge_type="CtrlEdge" source_obj="//@blocks.2" sink_obj="//@blocks.3"/>
+  <edges id="464" edge_type="CtrlEdge" source_obj="//@blocks.3" sink_obj="//@blocks.4"/>
+  <edges id="465" edge_type="CtrlEdge" source_obj="//@blocks.3" sink_obj="//@blocks.5"/>
+  <edges id="466" edge_type="CtrlEdge" source_obj="//@blocks.4" sink_obj="//@blocks.5"/>
+  <edges id="467" edge_type="CtrlEdge" source_obj="//@blocks.5" sink_obj="//@blocks.7"/>
+  <edges id="468" edge_type="CtrlEdge" source_obj="//@blocks.6" sink_obj="//@blocks.7"/>
+  <edges id="469" edge_type="CtrlEdge" source_obj="//@blocks.7" sink_obj="//@blocks.2" is_back_edge="1"/>
+  <edges id="470" edge_type="CtrlEdge" source_obj="//@blocks.7" sink_obj="//@blocks.8"/>
+  <edges id="471" edge_type="CtrlEdge" source_obj="//@blocks.8" sink_obj="//@blocks.9"/>
+  <edges id="472" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.5" sink_obj="//@blocks.2/@node_objs.22"/>
+  <edges id="473" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.3/@node_objs.8"/>
+  <edges id="474" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.4/@node_objs.0"/>
+  <edges id="475" edge_type="VirtEdge" source_obj="//@blocks.1/@node_objs.8" sink_obj="//@blocks.2/@node_objs.2"/>
+  <edges id="476" edge_type="VirtEdge" source_obj="//@blocks.1/@node_objs.9" sink_obj="//@blocks.2/@node_objs.1"/>
+  <edges id="477" edge_type="VirtEdge" source_obj="//@blocks.1/@node_objs.10" sink_obj="//@blocks.2/@node_objs.0"/>
+  <edges id="478" edge_type="VirtEdge" source_obj="//@blocks.1/@node_objs.10" sink_obj="//@blocks.6/@node_objs.0"/>
+  <edges id="479" edge_type="VirtEdge" source_obj="//@blocks.1/@node_objs.6" sink_obj="//@blocks.3/@node_objs.1"/>
+  <edges id="480" edge_type="VirtEdge" source_obj="//@blocks.1/@node_objs.7" sink_obj="//@blocks.3/@node_objs.0"/>
+  <edges id="481" edge_type="VirtEdge" source_obj="//@blocks.1/@node_objs.6" sink_obj="//@blocks.5/@node_objs.5"/>
+  <edges id="482" edge_type="VirtEdge" source_obj="//@blocks.1/@node_objs.7" sink_obj="//@blocks.5/@node_objs.6"/>
+  <edges id="483" edge_type="VirtEdge" source_obj="//@blocks.1/@node_objs.8" sink_obj="//@blocks.5/@node_objs.7"/>
+  <edges id="484" edge_type="VirtEdge" source_obj="//@blocks.1/@node_objs.9" sink_obj="//@blocks.5/@node_objs.8"/>
+  <edges id="485" edge_type="VirtEdge" source_obj="//@blocks.1/@node_objs.10" sink_obj="//@blocks.5/@node_objs.9"/>
+  <edges id="486" edge_type="VirtEdge" source_obj="//@blocks.1/@node_objs.5" sink_obj="//@blocks.8/@node_objs.1"/>
+  <edges id="487" edge_type="VirtEdge" source_obj="//@blocks.1/@node_objs.10" sink_obj="//@blocks.8/@node_objs.0"/>
+  <edges id="488" edge_type="VirtEdge" source_obj="//@blocks.2/@node_objs.0" sink_obj="//@blocks.6/@node_objs.0"/>
+  <edges id="489" edge_type="VirtEdge" source_obj="//@blocks.2/@node_objs.22" sink_obj="//@blocks.7/@node_objs.0"/>
+  <edges id="490" edge_type="VirtEdge" source_obj="//@blocks.2/@node_objs.0" sink_obj="//@blocks.5/@node_objs.9"/>
+  <edges id="491" edge_type="VirtEdge" source_obj="//@blocks.2/@node_objs.1" sink_obj="//@blocks.5/@node_objs.8"/>
+  <edges id="492" edge_type="VirtEdge" source_obj="//@blocks.2/@node_objs.2" sink_obj="//@blocks.5/@node_objs.7"/>
+  <edges id="493" edge_type="VirtEdge" source_obj="//@blocks.3/@node_objs.8" sink_obj="//@blocks.4/@node_objs.0"/>
+  <edges id="494" edge_type="VirtEdge" source_obj="//@blocks.3/@node_objs.0" sink_obj="//@blocks.5/@node_objs.6"/>
+  <edges id="495" edge_type="VirtEdge" source_obj="//@blocks.3/@node_objs.1" sink_obj="//@blocks.5/@node_objs.5"/>
+  <edges id="496" edge_type="VirtEdge" source_obj="//@blocks.5/@node_objs.9" sink_obj="//@blocks.8/@node_objs.0"/>
+  <edges id="497" edge_type="VirtEdge" source_obj="//@blocks.6/@node_objs.0" sink_obj="//@blocks.8/@node_objs.0"/>
+  <blocks id="22" name="entry" type="BlockType">
+    <controlOutputObjs>while.body.lr.ph</controlOutputObjs>
+    <controlOutputObjs>while.end</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="15" name="resultStream_read" lineNumber="172" fileName="baseline/fit.cpp" fileDirectory="../." coreName="FIFO" implIndex="memory" control="no" opType="fifo" coreId="78" contextFuncName="finalStage" bitwidth="332" opcode="read" m_display="0" m_delay="3.3" m_topoIndex="1" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="baseline/fit.cpp" linenumber="172" fileDirectory="C:\Users\abelo\AppData\Roaming\Xilinx\Vitis\phy596\hw1" functionName="finalStage"/>
+      <dataInputObjs>resultStream</dataInputObjs>
+      <dataOutputObjs>partselect</dataOutputObjs>
+      <dataOutputObjs>partselect</dataOutputObjs>
+      <dataOutputObjs>partselect</dataOutputObjs>
+      <dataOutputObjs>partselect</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="16" name="r_sigmaB" lineNumber="172" originalName="r.sigmaB" fileName="baseline/fit.cpp" fileDirectory="../." rtlName="r_sigmaB_1_fu_142" coreId="0" contextFuncName="finalStage" bitwidth="64" opcode="partselect" m_display="0" m_topoIndex="2" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="baseline/fit.cpp" linenumber="172" fileDirectory="C:\Users\abelo\AppData\Roaming\Xilinx\Vitis\phy596\hw1" functionName="finalStage"/>
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="17" name="r_a" lineNumber="172" originalName="r.a" fileName="baseline/fit.cpp" fileDirectory="../." rtlName="r_a_1_fu_130" coreId="0" contextFuncName="finalStage" bitwidth="64" opcode="partselect" m_display="0" m_topoIndex="3" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="baseline/fit.cpp" linenumber="172" fileDirectory="C:\Users\abelo\AppData\Roaming\Xilinx\Vitis\phy596\hw1" functionName="finalStage"/>
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="18" name="r_b" lineNumber="172" originalName="r.b" fileName="baseline/fit.cpp" fileDirectory="../." rtlName="r_b_1_fu_134" coreId="0" contextFuncName="finalStage" bitwidth="64" opcode="partselect" m_display="0" m_topoIndex="4" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="baseline/fit.cpp" linenumber="172" fileDirectory="C:\Users\abelo\AppData\Roaming\Xilinx\Vitis\phy596\hw1" functionName="finalStage"/>
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="19" name="r_sigmaA" lineNumber="172" originalName="r.sigmaA" fileName="baseline/fit.cpp" fileDirectory="../." rtlName="r_sigmaA_1_fu_138" coreId="0" contextFuncName="finalStage" bitwidth="64" opcode="partselect" m_display="0" m_topoIndex="5" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="baseline/fit.cpp" linenumber="172" fileDirectory="C:\Users\abelo\AppData\Roaming\Xilinx\Vitis\phy596\hw1" functionName="finalStage"/>
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="20" name="tmp" lineNumber="175" fileName="baseline/fit.cpp" fileDirectory="../." coreName="FIFO_SRL" implIndex="srl" control="no" opType="fifo" coreId="81" contextFuncName="finalStage" bitwidth="1" opcode="nbreadreq" m_display="0" m_topoIndex="6" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="baseline/fit.cpp" linenumber="175" fileDirectory="C:\Users\abelo\AppData\Roaming\Xilinx\Vitis\phy596\hw1" functionName="finalStage"/>
+      <dataInputObjs>last3</dataInputObjs>
+      <dataOutputObjs>br</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="21" name="br_ln175" lineNumber="175" fileName="baseline/fit.cpp" fileDirectory="../." coreId="0" contextFuncName="finalStage" opcode="br" m_display="0" m_topoIndex="7" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="baseline/fit.cpp" linenumber="175" fileDirectory="C:\Users\abelo\AppData\Roaming\Xilinx\Vitis\phy596\hw1" functionName="finalStage"/>
+      <dataInputObjs>nbreadreq</dataInputObjs>
+      <controlInputObjs>while.end</controlInputObjs>
+      <controlInputObjs>while.body.lr.ph</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="baseline/fit.cpp">
+      <validLinenumbers>172</validLinenumbers>
+      <validLinenumbers>175</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="35" name="while.body.lr.ph" type="BlockType">
+    <controlInputObjs>entry</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>while.body</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="23" name="r_n_1" originalName="r.n" coreId="0" bitwidth="12" opcode="alloca" m_display="0" m_topoIndex="8" m_clusterGroupNumber="-1">
+      <dataOutputObjs>store</dataOutputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="24" name="r_a_1" originalName="r.a" coreId="4094074192" bitwidth="64" opcode="alloca" m_display="0" m_topoIndex="9" m_clusterGroupNumber="-1">
+      <dataOutputObjs>store</dataOutputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="25" name="r_b_1" originalName="r.b" coreId="0" bitwidth="64" opcode="alloca" m_display="0" m_topoIndex="10" m_clusterGroupNumber="-1">
+      <dataOutputObjs>store</dataOutputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="26" name="r_sigmaA_1" originalName="r.sigmaA" coreId="0" bitwidth="64" opcode="alloca" m_display="0" m_topoIndex="11" m_clusterGroupNumber="-1">
+      <dataOutputObjs>store</dataOutputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="27" name="r_sigmaB_1" originalName="r.sigmaB" coreId="0" bitwidth="64" opcode="alloca" m_display="0" m_topoIndex="12" m_clusterGroupNumber="-1">
+      <dataOutputObjs>store</dataOutputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="28" name="n_load" lineNumber="188" fileName="baseline/fit.cpp" fileDirectory="../." coreId="0" contextFuncName="finalStage" bitwidth="12" opcode="load" m_display="0" m_topoIndex="13" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="baseline/fit.cpp" linenumber="188" fileDirectory="C:\Users\abelo\AppData\Roaming\Xilinx\Vitis\phy596\hw1" functionName="finalStage"/>
+      <dataOutputObjs>store</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="29" name="r_sigmaB_1_write_ln175" lineNumber="175" fileName="baseline/fit.cpp" fileDirectory="../." coreId="0" contextFuncName="finalStage" opcode="store" m_display="0" m_delay="1.29" m_topoIndex="14" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="baseline/fit.cpp" linenumber="175" fileDirectory="C:\Users\abelo\AppData\Roaming\Xilinx\Vitis\phy596\hw1" functionName="finalStage"/>
+      <dataInputObjs>partselect</dataInputObjs>
+      <dataInputObjs>alloca</dataInputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="30" name="r_sigmaA_1_write_ln175" lineNumber="175" fileName="baseline/fit.cpp" fileDirectory="../." coreId="4094074192" contextFuncName="finalStage" opcode="store" m_display="0" m_delay="1.29" m_topoIndex="15" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="baseline/fit.cpp" linenumber="175" fileDirectory="C:\Users\abelo\AppData\Roaming\Xilinx\Vitis\phy596\hw1" functionName="finalStage"/>
+      <dataInputObjs>partselect</dataInputObjs>
+      <dataInputObjs>alloca</dataInputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="31" name="r_b_1_write_ln175" lineNumber="175" fileName="baseline/fit.cpp" fileDirectory="../." coreId="0" contextFuncName="finalStage" opcode="store" m_display="0" m_delay="1.29" m_topoIndex="16" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="baseline/fit.cpp" linenumber="175" fileDirectory="C:\Users\abelo\AppData\Roaming\Xilinx\Vitis\phy596\hw1" functionName="finalStage"/>
+      <dataInputObjs>partselect</dataInputObjs>
+      <dataInputObjs>alloca</dataInputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="32" name="r_a_1_write_ln175" lineNumber="175" fileName="baseline/fit.cpp" fileDirectory="../." coreId="0" contextFuncName="finalStage" opcode="store" m_display="0" m_delay="1.29" m_topoIndex="17" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="baseline/fit.cpp" linenumber="175" fileDirectory="C:\Users\abelo\AppData\Roaming\Xilinx\Vitis\phy596\hw1" functionName="finalStage"/>
+      <dataInputObjs>partselect</dataInputObjs>
+      <dataInputObjs>alloca</dataInputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="33" name="r_n_1_write_ln175" lineNumber="175" fileName="baseline/fit.cpp" fileDirectory="../." coreId="0" contextFuncName="finalStage" opcode="store" m_display="0" m_delay="1.43" m_topoIndex="18" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="baseline/fit.cpp" linenumber="175" fileDirectory="C:\Users\abelo\AppData\Roaming\Xilinx\Vitis\phy596\hw1" functionName="finalStage"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataInputObjs>alloca</dataInputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="34" name="br_ln175" lineNumber="175" fileName="baseline/fit.cpp" fileDirectory="../." coreId="0" contextFuncName="finalStage" opcode="br" m_display="0" m_topoIndex="19" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="baseline/fit.cpp" linenumber="175" fileDirectory="C:\Users\abelo\AppData\Roaming\Xilinx\Vitis\phy596\hw1" functionName="finalStage"/>
+      <controlInputObjs>while.body</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="baseline/fit.cpp">
+      <validLinenumbers>188</validLinenumbers>
+      <validLinenumbers>175</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="63" name="while.body" type="BlockType">
+    <controlInputObjs>while.body.lr.ph</controlInputObjs>
+    <controlInputObjs>if.end</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>while.body.if.end_crit_edge</controlOutputObjs>
+    <controlOutputObjs>if.then</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="36" name="r_n_1_load" lineNumber="184" fileName="baseline/fit.cpp" fileDirectory="../." coreId="0" contextFuncName="finalStage" bitwidth="12" opcode="load" nodeLabel="17.0" m_display="0" m_topoIndex="41" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="baseline/fit.cpp" linenumber="184" fileDirectory="C:\Users\abelo\AppData\Roaming\Xilinx\Vitis\phy596\hw1" functionName="finalStage"/>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="37" name="r_a_2" lineNumber="190" originalName="r.a" fileName="baseline/fit.cpp" fileDirectory="../." coreId="0" contextFuncName="finalStage" bitwidth="64" opcode="load" nodeLabel="7.0" m_display="0" m_topoIndex="30" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="baseline/fit.cpp" linenumber="190" fileDirectory="C:\Users\abelo\AppData\Roaming\Xilinx\Vitis\phy596\hw1" functionName="finalStage"/>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataOutputObjs>sub</dataOutputObjs>
+      <dataOutputObjs>bitconcatenate</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="38" name="r_b_2" lineNumber="181" originalName="r.b" fileName="baseline/fit.cpp" fileDirectory="../." coreId="0" contextFuncName="finalStage" bitwidth="64" opcode="load" nodeLabel="2.0" m_display="0" m_topoIndex="25" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="baseline/fit.cpp" linenumber="181" fileDirectory="C:\Users\abelo\AppData\Roaming\Xilinx\Vitis\phy596\hw1" functionName="finalStage"/>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataOutputObjs>sext</dataOutputObjs>
+      <dataOutputObjs>bitconcatenate</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="41" name="y2_read" lineNumber="181" fileName="baseline/fit.cpp" fileDirectory="../." coreName="FIFO_SRL" implIndex="srl" control="no" opType="fifo" coreId="81" contextFuncName="finalStage" bitwidth="12" opcode="read" nodeLabel="1.0" m_display="0" m_delay="3.42" m_topoIndex="20" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="baseline/fit.cpp" linenumber="181" fileDirectory="C:\Users\abelo\AppData\Roaming\Xilinx\Vitis\phy596\hw1" functionName="finalStage"/>
+      <dataInputObjs>y2</dataInputObjs>
+      <dataOutputObjs>bitconcatenate</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="42" name="shl_ln" lineNumber="181" fileName="baseline/fit.cpp" fileDirectory="../." rtlName="shl_ln_fu_322_p3" coreId="0" contextFuncName="finalStage" bitwidth="44" opcode="bitconcatenate" nodeLabel="7.0" m_display="0" m_topoIndex="31" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="baseline/fit.cpp" linenumber="181" fileDirectory="C:\Users\abelo\AppData\Roaming\Xilinx\Vitis\phy596\hw1" functionName="finalStage"/>
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>sext</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="43" name="sext_ln181" lineNumber="181" fileName="baseline/fit.cpp" fileDirectory="../." rtlName="sext_ln181_fu_329_p1" coreId="0" contextFuncName="finalStage" bitwidth="64" opcode="sext" nodeLabel="7.0" m_display="0" m_topoIndex="32" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="baseline/fit.cpp" linenumber="181" fileDirectory="C:\Users\abelo\AppData\Roaming\Xilinx\Vitis\phy596\hw1" functionName="finalStage"/>
+      <dataInputObjs>bitconcatenate</dataInputObjs>
+      <dataOutputObjs>sub</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="44" name="sub_ln181" lineNumber="181" fileName="baseline/fit.cpp" fileDirectory="../." rtlName="sub_ln181_fu_333_p2" coreName="Adder" implIndex="fabric" control="no" opType="sub" coreId="1" contextFuncName="finalStage" bitwidth="64" opcode="sub" nodeLabel="7.0" m_display="0" m_delay="2.92" m_topoIndex="33" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="baseline/fit.cpp" linenumber="181" fileDirectory="C:\Users\abelo\AppData\Roaming\Xilinx\Vitis\phy596\hw1" functionName="finalStage"/>
+      <dataInputObjs>sext</dataInputObjs>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>bitconcatenate</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="45" name="x2_read" lineNumber="181" fileName="baseline/fit.cpp" fileDirectory="../." coreName="FIFO_SRL" implIndex="srl" control="no" opType="fifo" coreId="81" contextFuncName="finalStage" bitwidth="12" opcode="read" nodeLabel="1.0" m_display="0" m_delay="3.42" m_topoIndex="21" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="baseline/fit.cpp" linenumber="181" fileDirectory="C:\Users\abelo\AppData\Roaming\Xilinx\Vitis\phy596\hw1" functionName="finalStage"/>
+      <dataInputObjs>x2</dataInputObjs>
+      <dataOutputObjs>bitconcatenate</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="46" name="shl_ln181_1" lineNumber="181" fileName="baseline/fit.cpp" fileDirectory="../." rtlName="shl_ln181_1_fu_302_p3" coreId="0" contextFuncName="finalStage" bitwidth="44" opcode="bitconcatenate" nodeLabel="2.0" m_display="0" m_topoIndex="26" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="baseline/fit.cpp" linenumber="181" fileDirectory="C:\Users\abelo\AppData\Roaming\Xilinx\Vitis\phy596\hw1" functionName="finalStage"/>
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>sext</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="47" name="sext_ln181_1" lineNumber="181" fileName="baseline/fit.cpp" fileDirectory="../." coreId="4294967295" contextFuncName="finalStage" bitwidth="96" opcode="sext" nodeLabel="2.0" m_display="0" m_topoIndex="27" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="baseline/fit.cpp" linenumber="181" fileDirectory="C:\Users\abelo\AppData\Roaming\Xilinx\Vitis\phy596\hw1" functionName="finalStage"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>mul</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="48" name="sext_ln181_2" lineNumber="181" fileName="baseline/fit.cpp" fileDirectory="../." coreId="4094093344" contextFuncName="finalStage" bitwidth="96" opcode="sext" nodeLabel="2.0" m_display="0" m_topoIndex="28" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="baseline/fit.cpp" linenumber="181" fileDirectory="C:\Users\abelo\AppData\Roaming\Xilinx\Vitis\phy596\hw1" functionName="finalStage"/>
+      <dataInputObjs>bitconcatenate</dataInputObjs>
+      <dataOutputObjs>mul</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="49" name="mul_ln181" lineNumber="181" fileName="baseline/fit.cpp" fileDirectory="../." rtlName="mul_64s_44s_96_5_1_U58" coreName="Multiplier" implIndex="auto" control="no" opType="mul" coreId="3" contextFuncName="finalStage" bitwidth="96" opcode="mul" nodeLabel="2.0" nodeLatency="4" m_display="0" m_delay="5.77" m_topoIndex="29" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="baseline/fit.cpp" linenumber="181" fileDirectory="C:\Users\abelo\AppData\Roaming\Xilinx\Vitis\phy596\hw1" functionName="finalStage"/>
+      <dataInputObjs>sext</dataInputObjs>
+      <dataInputObjs>sext</dataInputObjs>
+      <dataOutputObjs>sub</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="50" name="shl_ln181_2" lineNumber="181" fileName="baseline/fit.cpp" fileDirectory="../." rtlName="shl_ln181_2_fu_339_p3" coreId="2358419424" contextFuncName="finalStage" bitwidth="96" opcode="bitconcatenate" nodeLabel="7.0" m_display="0" m_topoIndex="34" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="baseline/fit.cpp" linenumber="181" fileDirectory="C:\Users\abelo\AppData\Roaming\Xilinx\Vitis\phy596\hw1" functionName="finalStage"/>
+      <dataInputObjs>sub</dataInputObjs>
+      <dataOutputObjs>sub</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="51" name="sub_ln181_1" lineNumber="181" fileName="baseline/fit.cpp" fileDirectory="../." rtlName="sub_ln181_1_fu_347_p2" coreName="Adder" implIndex="fabric" control="no" opType="sub" coreId="1" contextFuncName="finalStage" bitwidth="96" opcode="sub" nodeLabel="7.0" m_display="0" m_delay="3.7" m_topoIndex="35" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="baseline/fit.cpp" linenumber="181" fileDirectory="C:\Users\abelo\AppData\Roaming\Xilinx\Vitis\phy596\hw1" functionName="finalStage"/>
+      <dataInputObjs>bitconcatenate</dataInputObjs>
+      <dataInputObjs>mul</dataInputObjs>
+      <dataOutputObjs>partselect</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="52" name="trunc_ln" lineNumber="181" fileName="baseline/fit.cpp" fileDirectory="../." rtlName="trunc_ln_reg_607" coreId="121034241" contextFuncName="finalStage" bitwidth="64" opcode="partselect" nodeLabel="7.0" m_display="0" m_topoIndex="36" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="baseline/fit.cpp" linenumber="181" fileDirectory="C:\Users\abelo\AppData\Roaming\Xilinx\Vitis\phy596\hw1" functionName="finalStage"/>
+      <dataInputObjs>sub</dataInputObjs>
+      <dataOutputObjs>sext</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="53" name="sext_ln182" lineNumber="182" fileName="baseline/fit.cpp" fileDirectory="../." rtlName="sext_ln182_fu_362_p1" coreId="1481547922" contextFuncName="finalStage" bitwidth="128" opcode="sext" nodeLabel="8.0" m_display="0" m_topoIndex="37" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="baseline/fit.cpp" linenumber="182" fileDirectory="C:\Users\abelo\AppData\Roaming\Xilinx\Vitis\phy596\hw1" functionName="finalStage"/>
+      <dataInputObjs>partselect</dataInputObjs>
+      <dataOutputObjs>mul</dataOutputObjs>
+      <dataOutputObjs>mul</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="54" name="sigmaSquaredDiv1_read" lineNumber="182" fileName="baseline/fit.cpp" fileDirectory="../." coreName="FIFO_SRL" implIndex="srl" control="no" opType="fifo" coreId="81" contextFuncName="finalStage" bitwidth="64" opcode="read" nodeLabel="1.0" m_display="0" m_delay="3.42" m_topoIndex="22" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="baseline/fit.cpp" linenumber="182" fileDirectory="C:\Users\abelo\AppData\Roaming\Xilinx\Vitis\phy596\hw1" functionName="finalStage"/>
+      <dataInputObjs>sigmaSquaredDiv1</dataInputObjs>
+      <dataOutputObjs>sext</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="55" name="sext_ln182_1" lineNumber="182" fileName="baseline/fit.cpp" fileDirectory="../." coreId="2296604913" contextFuncName="finalStage" bitwidth="128" opcode="sext" nodeLabel="8.0" m_display="0" m_topoIndex="38" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="baseline/fit.cpp" linenumber="182" fileDirectory="C:\Users\abelo\AppData\Roaming\Xilinx\Vitis\phy596\hw1" functionName="finalStage"/>
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>mul</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="56" name="mul_ln182" lineNumber="182" fileName="baseline/fit.cpp" fileDirectory="../." rtlName="mul_64s_64s_128_5_1_U59" coreName="Multiplier" implIndex="auto" control="no" opType="mul" coreId="3" contextFuncName="finalStage" bitwidth="128" opcode="mul" nodeLabel="8.0" nodeLatency="4" m_display="0" m_delay="5.77" m_topoIndex="39" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="baseline/fit.cpp" linenumber="182" fileDirectory="C:\Users\abelo\AppData\Roaming\Xilinx\Vitis\phy596\hw1" functionName="finalStage"/>
+      <dataInputObjs>sext</dataInputObjs>
+      <dataInputObjs>sext</dataInputObjs>
+      <dataOutputObjs>mul</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="57" name="mul_ln182_1" lineNumber="182" fileName="baseline/fit.cpp" fileDirectory="../." rtlName="mul_128s_64s_128_5_1_U60" coreName="Multiplier" implIndex="auto" control="no" opType="mul" coreId="3" contextFuncName="finalStage" bitwidth="128" opcode="mul" nodeLabel="13.0" nodeLatency="4" m_display="0" m_delay="5.77" m_topoIndex="40" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="baseline/fit.cpp" linenumber="182" fileDirectory="C:\Users\abelo\AppData\Roaming\Xilinx\Vitis\phy596\hw1" functionName="finalStage"/>
+      <dataInputObjs>mul</dataInputObjs>
+      <dataInputObjs>sext</dataInputObjs>
+      <dataOutputObjs>partselect</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="58" name="trunc_ln3" lineNumber="182" fileName="baseline/fit.cpp" fileDirectory="../." rtlName="trunc_ln3_reg_628" coreId="4294967295" contextFuncName="finalStage" bitwidth="64" opcode="partselect" nodeLabel="17.0" m_display="0" m_topoIndex="42" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="baseline/fit.cpp" linenumber="182" fileDirectory="C:\Users\abelo\AppData\Roaming\Xilinx\Vitis\phy596\hw1" functionName="finalStage"/>
+      <dataInputObjs>mul</dataInputObjs>
+      <dataOutputObjs>sdiv</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="59" name="r_n" lineNumber="184" originalName="r.n" fileName="baseline/fit.cpp" fileDirectory="../." rtlName="r_n_fu_380_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="finalStage" bitwidth="12" opcode="add" nodeLabel="17.0" m_display="0" m_delay="1.69" m_topoIndex="43" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="baseline/fit.cpp" linenumber="184" fileDirectory="C:\Users\abelo\AppData\Roaming\Xilinx\Vitis\phy596\hw1" functionName="finalStage"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <dataOutputObjs>sext</dataOutputObjs>
+      <dataOutputObjs>bitconcatenate</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="60" name="last3_read" lineNumber="186" fileName="baseline/fit.cpp" fileDirectory="../." coreName="FIFO_SRL" implIndex="srl" control="no" opType="fifo" coreId="81" contextFuncName="finalStage" bitwidth="2" opcode="read" nodeLabel="1.0" m_display="0" m_delay="3.42" m_topoIndex="23" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="baseline/fit.cpp" linenumber="186" fileDirectory="C:\Users\abelo\AppData\Roaming\Xilinx\Vitis\phy596\hw1" functionName="finalStage"/>
+      <dataInputObjs>last3</dataInputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="61" name="icmp_ln186" lineNumber="186" fileName="baseline/fit.cpp" fileDirectory="../." rtlName="icmp_ln186_fu_293_p2" coreName="Cmp" implIndex="auto" control="no" opType="icmp" coreId="9" contextFuncName="finalStage" bitwidth="1" opcode="icmp" nodeLabel="1.0" m_display="0" m_delay="1.34" m_topoIndex="24" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="baseline/fit.cpp" linenumber="186" fileDirectory="C:\Users\abelo\AppData\Roaming\Xilinx\Vitis\phy596\hw1" functionName="finalStage"/>
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>br</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="62" name="br_ln186" lineNumber="186" fileName="baseline/fit.cpp" fileDirectory="../." coreId="4094082928" contextFuncName="finalStage" opcode="br" nodeLabel="17.0" m_display="0" m_topoIndex="44" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="baseline/fit.cpp" linenumber="186" fileDirectory="C:\Users\abelo\AppData\Roaming\Xilinx\Vitis\phy596\hw1" functionName="finalStage"/>
+      <dataInputObjs>icmp</dataInputObjs>
+      <controlInputObjs>if.then</controlInputObjs>
+      <controlInputObjs>while.body.if.end_crit_edge</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="baseline/fit.cpp">
+      <validLinenumbers>184</validLinenumbers>
+      <validLinenumbers>190</validLinenumbers>
+      <validLinenumbers>181</validLinenumbers>
+      <validLinenumbers>182</validLinenumbers>
+      <validLinenumbers>186</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="74" name="if.then" type="BlockType">
+    <controlInputObjs>while.body</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>cond.true</controlOutputObjs>
+    <controlOutputObjs>cond.end</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="64" name="r_sigmaA_1_load" lineNumber="190" fileName="baseline/fit.cpp" fileDirectory="../." coreId="4294967295" contextFuncName="finalStage" bitwidth="64" opcode="load" nodeLabel="85.0" m_display="0" m_topoIndex="51" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="baseline/fit.cpp" linenumber="190" fileDirectory="C:\Users\abelo\AppData\Roaming\Xilinx\Vitis\phy596\hw1" functionName="finalStage"/>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataOutputObjs>bitconcatenate</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="65" name="r_sigmaB_1_load" lineNumber="190" fileName="baseline/fit.cpp" fileDirectory="../." coreId="0" contextFuncName="finalStage" bitwidth="64" opcode="load" nodeLabel="85.0" m_display="0" m_topoIndex="52" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="baseline/fit.cpp" linenumber="190" fileDirectory="C:\Users\abelo\AppData\Roaming\Xilinx\Vitis\phy596\hw1" functionName="finalStage"/>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataOutputObjs>bitconcatenate</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="66" name="sext_ln188" lineNumber="188" fileName="baseline/fit.cpp" fileDirectory="../." rtlName="sext_ln188_fu_391_p1" coreId="0" contextFuncName="finalStage" bitwidth="13" opcode="sext" nodeLabel="18.0" m_display="0" m_topoIndex="47" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="baseline/fit.cpp" linenumber="188" fileDirectory="C:\Users\abelo\AppData\Roaming\Xilinx\Vitis\phy596\hw1" functionName="finalStage"/>
+      <dataInputObjs>add</dataInputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="67" name="add_ln188" lineNumber="188" fileName="baseline/fit.cpp" fileDirectory="../." rtlName="add_ln188_fu_394_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="finalStage" bitwidth="13" opcode="add" nodeLabel="18.0" m_display="0" m_delay="1.69" m_topoIndex="48" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="baseline/fit.cpp" linenumber="188" fileDirectory="C:\Users\abelo\AppData\Roaming\Xilinx\Vitis\phy596\hw1" functionName="finalStage"/>
+      <dataInputObjs>sext</dataInputObjs>
+      <dataOutputObjs>sext</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="68" name="sext_ln188_1" lineNumber="188" fileName="baseline/fit.cpp" fileDirectory="../." coreId="0" contextFuncName="finalStage" bitwidth="64" opcode="sext" nodeLabel="18.0" m_display="0" m_topoIndex="49" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="baseline/fit.cpp" linenumber="188" fileDirectory="C:\Users\abelo\AppData\Roaming\Xilinx\Vitis\phy596\hw1" functionName="finalStage"/>
+      <dataInputObjs>add</dataInputObjs>
+      <dataOutputObjs>sdiv</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="69" name="r_chiSquaredNdof" lineNumber="188" originalName="r.chiSquaredNdof" fileName="baseline/fit.cpp" fileDirectory="../." rtlName="sdiv_64ns_13s_64_68_1_U61" coreName="Divider" implIndex="auto" control="no" opType="sdiv" coreId="6" contextFuncName="finalStage" bitwidth="64" opcode="sdiv" nodeLabel="18.0" nodeLatency="67" m_display="0" m_delay="4.3" m_topoIndex="50" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="baseline/fit.cpp" linenumber="188" fileDirectory="C:\Users\abelo\AppData\Roaming\Xilinx\Vitis\phy596\hw1" functionName="finalStage"/>
+      <dataInputObjs>partselect</dataInputObjs>
+      <dataInputObjs>sext</dataInputObjs>
+      <dataOutputObjs>bitconcatenate</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="70" name="or_ln190_4" lineNumber="190" fileName="baseline/fit.cpp" fileDirectory="../." rtlName="output_r_TDATA_int_regslice" coreId="4294967295" contextFuncName="finalStage" bitwidth="384" opcode="bitconcatenate" nodeLabel="85.0" m_display="0" m_topoIndex="53" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="baseline/fit.cpp" linenumber="190" fileDirectory="C:\Users\abelo\AppData\Roaming\Xilinx\Vitis\phy596\hw1" functionName="finalStage"/>
+      <dataInputObjs>sdiv</dataInputObjs>
+      <dataInputObjs>load</dataInputObjs>
+      <dataInputObjs>load</dataInputObjs>
+      <dataInputObjs>load</dataInputObjs>
+      <dataInputObjs>load</dataInputObjs>
+      <dataInputObjs>add</dataInputObjs>
+      <dataOutputObjs>write</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="71" name="output_r_write_ln190" lineNumber="190" fileName="baseline/fit.cpp" fileDirectory="../." coreName="axis" implIndex="axi4stream" control="no" opType="adapter" coreId="115" contextFuncName="finalStage" opcode="write" nodeLabel="85.0" nodeLatency="1" m_display="0" m_topoIndex="54" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="baseline/fit.cpp" linenumber="190" fileDirectory="C:\Users\abelo\AppData\Roaming\Xilinx\Vitis\phy596\hw1" functionName="finalStage"/>
+      <dataInputObjs>bitconcatenate</dataInputObjs>
+      <dataOutputObjs>output_r</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="72" name="tmp_s" lineNumber="196" fileName="baseline/fit.cpp" fileDirectory="../." coreName="FIFO" implIndex="memory" control="no" opType="fifo" coreId="78" contextFuncName="finalStage" bitwidth="1" opcode="nbreadreq" nodeLabel="86.0" m_display="0" m_topoIndex="55" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="baseline/fit.cpp" linenumber="196" fileDirectory="C:\Users\abelo\AppData\Roaming\Xilinx\Vitis\phy596\hw1" functionName="finalStage"/>
+      <dataInputObjs>resultStream</dataInputObjs>
+      <dataOutputObjs>br</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="73" name="br_ln196" lineNumber="196" fileName="baseline/fit.cpp" fileDirectory="../." coreId="825306416" contextFuncName="finalStage" opcode="br" nodeLabel="86.0" m_display="0" m_topoIndex="56" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="baseline/fit.cpp" linenumber="196" fileDirectory="C:\Users\abelo\AppData\Roaming\Xilinx\Vitis\phy596\hw1" functionName="finalStage"/>
+      <dataInputObjs>nbreadreq</dataInputObjs>
+      <controlInputObjs>cond.end</controlInputObjs>
+      <controlInputObjs>cond.true</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="baseline/fit.cpp">
+      <validLinenumbers>190</validLinenumbers>
+      <validLinenumbers>188</validLinenumbers>
+      <validLinenumbers>196</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="80" name="cond.true" type="BlockType">
+    <controlInputObjs>if.then</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>cond.end</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="75" name="resultStream_read_1" lineNumber="196" fileName="baseline/fit.cpp" fileDirectory="../." coreName="FIFO" implIndex="memory" control="no" opType="fifo" coreId="78" contextFuncName="finalStage" bitwidth="332" opcode="read" nodeLabel="86.0" m_display="0" m_delay="3.3" m_topoIndex="57" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="baseline/fit.cpp" linenumber="196" fileDirectory="C:\Users\abelo\AppData\Roaming\Xilinx\Vitis\phy596\hw1" functionName="finalStage"/>
+      <dataInputObjs>resultStream</dataInputObjs>
+      <dataOutputObjs>trunc</dataOutputObjs>
+      <dataOutputObjs>partselect</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="76" name="trunc_ln196" lineNumber="196" fileName="baseline/fit.cpp" fileDirectory="../." rtlName="trunc_ln196_fu_431_p1" coreId="1702043696" contextFuncName="finalStage" bitwidth="12" opcode="trunc" nodeLabel="86.0" m_display="0" m_topoIndex="58" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="baseline/fit.cpp" linenumber="196" fileDirectory="C:\Users\abelo\AppData\Roaming\Xilinx\Vitis\phy596\hw1" functionName="finalStage"/>
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>bitconcatenate</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="77" name="tmp_5" lineNumber="196" fileName="baseline/fit.cpp" fileDirectory="../." rtlName="tmp_5_fu_435_p4" coreId="1869182069" contextFuncName="finalStage" bitwidth="256" opcode="partselect" nodeLabel="86.0" m_display="0" m_topoIndex="59" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="baseline/fit.cpp" linenumber="196" fileDirectory="C:\Users\abelo\AppData\Roaming\Xilinx\Vitis\phy596\hw1" functionName="finalStage"/>
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>bitconcatenate</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="78" name="tmp_3" lineNumber="196" fileName="baseline/fit.cpp" fileDirectory="../." rtlName="tmp_3_fu_445_p4" coreId="0" contextFuncName="finalStage" bitwidth="320" opcode="bitconcatenate" nodeLabel="86.0" m_display="0" m_topoIndex="60" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="baseline/fit.cpp" linenumber="196" fileDirectory="C:\Users\abelo\AppData\Roaming\Xilinx\Vitis\phy596\hw1" functionName="finalStage"/>
+      <dataInputObjs>partselect</dataInputObjs>
+      <dataInputObjs>trunc</dataInputObjs>
+      <dataOutputObjs>phi</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="79" name="br_ln196" lineNumber="196" fileName="baseline/fit.cpp" fileDirectory="../." coreId="1936025716" contextFuncName="finalStage" opcode="br" nodeLabel="86.0" m_display="0" m_topoIndex="61" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="baseline/fit.cpp" linenumber="196" fileDirectory="C:\Users\abelo\AppData\Roaming\Xilinx\Vitis\phy596\hw1" functionName="finalStage"/>
+      <controlInputObjs>cond.end</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="baseline/fit.cpp">
+      <validLinenumbers>196</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="92" name="cond.end" type="BlockType">
+    <controlInputObjs>if.then</controlInputObjs>
+    <controlInputObjs>cond.true</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>if.end</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="81" name="ref_tmp28_0" lineNumber="196" fileName="baseline/fit.cpp" fileDirectory="../." coreId="808598128" contextFuncName="finalStage" bitwidth="320" opcode="phi" nodeLabel="86.0" m_display="0" m_topoIndex="62" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="baseline/fit.cpp" linenumber="196" fileDirectory="C:\Users\abelo\AppData\Roaming\Xilinx\Vitis\phy596\hw1" functionName="finalStage"/>
+      <dataInputObjs>bitconcatenate</dataInputObjs>
+      <dataOutputObjs>partselect</dataOutputObjs>
+      <dataOutputObjs>partselect</dataOutputObjs>
+      <dataOutputObjs>partselect</dataOutputObjs>
+      <dataOutputObjs>partselect</dataOutputObjs>
+      <controlInputObjs>cond.true</controlInputObjs>
+      <controlInputObjs>if.then</controlInputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="82" name="r_a_3" lineNumber="196" originalName="r.a" fileName="baseline/fit.cpp" fileDirectory="../." rtlName="r_a_1_fu_130" coreId="0" contextFuncName="finalStage" bitwidth="64" opcode="partselect" nodeLabel="86.0" m_display="0" m_topoIndex="63" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="baseline/fit.cpp" linenumber="196" fileDirectory="C:\Users\abelo\AppData\Roaming\Xilinx\Vitis\phy596\hw1" functionName="finalStage"/>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="83" name="r_b_3" lineNumber="196" originalName="r.b" fileName="baseline/fit.cpp" fileDirectory="../." rtlName="r_b_1_fu_134" coreId="1735289196" contextFuncName="finalStage" bitwidth="64" opcode="partselect" nodeLabel="86.0" m_display="0" m_topoIndex="64" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="baseline/fit.cpp" linenumber="196" fileDirectory="C:\Users\abelo\AppData\Roaming\Xilinx\Vitis\phy596\hw1" functionName="finalStage"/>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="84" name="r_sigmaA_2" lineNumber="196" originalName="r.sigmaA" fileName="baseline/fit.cpp" fileDirectory="../." rtlName="r_sigmaA_1_fu_138" coreId="0" contextFuncName="finalStage" bitwidth="64" opcode="partselect" nodeLabel="86.0" m_display="0" m_topoIndex="65" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="baseline/fit.cpp" linenumber="196" fileDirectory="C:\Users\abelo\AppData\Roaming\Xilinx\Vitis\phy596\hw1" functionName="finalStage"/>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="85" name="r_sigmaB_2" lineNumber="196" originalName="r.sigmaB" fileName="baseline/fit.cpp" fileDirectory="../." rtlName="r_sigmaB_1_fu_142" coreId="1869357164" contextFuncName="finalStage" bitwidth="64" opcode="partselect" nodeLabel="86.0" m_display="0" m_topoIndex="66" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="baseline/fit.cpp" linenumber="196" fileDirectory="C:\Users\abelo\AppData\Roaming\Xilinx\Vitis\phy596\hw1" functionName="finalStage"/>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="86" name="r_sigmaB_1_write_ln197" lineNumber="197" fileName="baseline/fit.cpp" fileDirectory="../." coreId="575620686" contextFuncName="finalStage" opcode="store" nodeLabel="86.0" m_display="0" m_delay="1.29" m_topoIndex="67" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="baseline/fit.cpp" linenumber="197" fileDirectory="C:\Users\abelo\AppData\Roaming\Xilinx\Vitis\phy596\hw1" functionName="finalStage"/>
+      <dataInputObjs>partselect</dataInputObjs>
+      <dataInputObjs>alloca</dataInputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="87" name="r_sigmaA_1_write_ln197" lineNumber="197" fileName="baseline/fit.cpp" fileDirectory="../." coreId="808591443" contextFuncName="finalStage" opcode="store" nodeLabel="86.0" m_display="0" m_delay="1.29" m_topoIndex="68" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="baseline/fit.cpp" linenumber="197" fileDirectory="C:\Users\abelo\AppData\Roaming\Xilinx\Vitis\phy596\hw1" functionName="finalStage"/>
+      <dataInputObjs>partselect</dataInputObjs>
+      <dataInputObjs>alloca</dataInputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="88" name="r_b_1_write_ln197" lineNumber="197" fileName="baseline/fit.cpp" fileDirectory="../." coreId="539122993" contextFuncName="finalStage" opcode="store" nodeLabel="86.0" m_display="0" m_delay="1.29" m_topoIndex="69" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="baseline/fit.cpp" linenumber="197" fileDirectory="C:\Users\abelo\AppData\Roaming\Xilinx\Vitis\phy596\hw1" functionName="finalStage"/>
+      <dataInputObjs>partselect</dataInputObjs>
+      <dataInputObjs>alloca</dataInputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="89" name="r_a_1_write_ln197" lineNumber="197" fileName="baseline/fit.cpp" fileDirectory="../." coreId="1885415030" contextFuncName="finalStage" opcode="store" nodeLabel="86.0" m_display="0" m_delay="1.29" m_topoIndex="70" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="baseline/fit.cpp" linenumber="197" fileDirectory="C:\Users\abelo\AppData\Roaming\Xilinx\Vitis\phy596\hw1" functionName="finalStage"/>
+      <dataInputObjs>partselect</dataInputObjs>
+      <dataInputObjs>alloca</dataInputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="90" name="r_n_1_write_ln197" lineNumber="197" fileName="baseline/fit.cpp" fileDirectory="../." coreId="1701273971" contextFuncName="finalStage" opcode="store" nodeLabel="86.0" m_display="0" m_delay="1.43" m_topoIndex="71" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="baseline/fit.cpp" linenumber="197" fileDirectory="C:\Users\abelo\AppData\Roaming\Xilinx\Vitis\phy596\hw1" functionName="finalStage"/>
+      <dataInputObjs>alloca</dataInputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="91" name="br_ln197" lineNumber="197" fileName="baseline/fit.cpp" fileDirectory="../." coreId="1330405203" contextFuncName="finalStage" opcode="br" nodeLabel="86.0" m_display="0" m_topoIndex="72" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="baseline/fit.cpp" linenumber="197" fileDirectory="C:\Users\abelo\AppData\Roaming\Xilinx\Vitis\phy596\hw1" functionName="finalStage"/>
+      <controlInputObjs>if.end</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="baseline/fit.cpp">
+      <validLinenumbers>196</validLinenumbers>
+      <validLinenumbers>197</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="95" name="while.body.if.end_crit_edge" type="BlockType">
+    <controlInputObjs>while.body</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>if.end</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="93" name="r_n_1_write_ln186" lineNumber="186" fileName="baseline/fit.cpp" fileDirectory="../." coreId="539119430" contextFuncName="finalStage" opcode="store" nodeLabel="17.0" m_display="0" m_delay="1.43" m_topoIndex="45" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="baseline/fit.cpp" linenumber="186" fileDirectory="C:\Users\abelo\AppData\Roaming\Xilinx\Vitis\phy596\hw1" functionName="finalStage"/>
+      <dataInputObjs>add</dataInputObjs>
+      <dataInputObjs>alloca</dataInputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="94" name="br_ln186" lineNumber="186" fileName="baseline/fit.cpp" fileDirectory="../." coreId="757935405" contextFuncName="finalStage" opcode="br" nodeLabel="17.0" m_display="0" m_topoIndex="46" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="baseline/fit.cpp" linenumber="186" fileDirectory="C:\Users\abelo\AppData\Roaming\Xilinx\Vitis\phy596\hw1" functionName="finalStage"/>
+      <controlInputObjs>if.end</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="baseline/fit.cpp">
+      <validLinenumbers>186</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="98" name="if.end" type="BlockType">
+    <controlInputObjs>cond.end</controlInputObjs>
+    <controlInputObjs>while.body.if.end_crit_edge</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>while.body</controlOutputObjs>
+    <controlOutputObjs>while.end.loopexit</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="96" name="tmp_4" lineNumber="175" fileName="baseline/fit.cpp" fileDirectory="../." coreName="FIFO_SRL" implIndex="srl" control="no" opType="fifo" coreId="81" contextFuncName="finalStage" bitwidth="1" opcode="nbreadreq" nodeLabel="86.0" m_display="0" m_topoIndex="73" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="baseline/fit.cpp" linenumber="175" fileDirectory="C:\Users\abelo\AppData\Roaming\Xilinx\Vitis\phy596\hw1" functionName="finalStage"/>
+      <dataInputObjs>last3</dataInputObjs>
+      <dataOutputObjs>br</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="97" name="br_ln175" lineNumber="175" fileName="baseline/fit.cpp" fileDirectory="../." coreId="0" contextFuncName="finalStage" opcode="br" nodeLabel="86.0" m_display="0" m_topoIndex="74" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="baseline/fit.cpp" linenumber="175" fileDirectory="C:\Users\abelo\AppData\Roaming\Xilinx\Vitis\phy596\hw1" functionName="finalStage"/>
+      <dataInputObjs>nbreadreq</dataInputObjs>
+      <controlInputObjs>while.end.loopexit</controlInputObjs>
+      <controlInputObjs>while.body</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="baseline/fit.cpp">
+      <validLinenumbers>175</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="102" name="while.end.loopexit" type="BlockType">
+    <controlInputObjs>if.end</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>while.end</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="99" name="r_n_1_load_1" lineNumber="188" fileName="baseline/fit.cpp" fileDirectory="../." coreId="1735289198" contextFuncName="finalStage" bitwidth="12" opcode="load" nodeLabel="86.0" m_display="0" m_topoIndex="75" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="baseline/fit.cpp" linenumber="188" fileDirectory="C:\Users\abelo\AppData\Roaming\Xilinx\Vitis\phy596\hw1" functionName="finalStage"/>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="100" name="n_write_ln188" lineNumber="188" fileName="baseline/fit.cpp" fileDirectory="../." coreId="0" contextFuncName="finalStage" opcode="store" nodeLabel="86.0" m_display="0" m_topoIndex="76" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="baseline/fit.cpp" linenumber="188" fileDirectory="C:\Users\abelo\AppData\Roaming\Xilinx\Vitis\phy596\hw1" functionName="finalStage"/>
+      <dataInputObjs>load</dataInputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="101" name="br_ln199" lineNumber="199" fileName="baseline/fit.cpp" fileDirectory="../." coreId="979725673" contextFuncName="finalStage" opcode="br" nodeLabel="86.0" m_display="0" m_topoIndex="77" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="baseline/fit.cpp" linenumber="199" fileDirectory="C:\Users\abelo\AppData\Roaming\Xilinx\Vitis\phy596\hw1" functionName="finalStage"/>
+      <controlInputObjs>while.end</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="baseline/fit.cpp">
+      <validLinenumbers>188</validLinenumbers>
+      <validLinenumbers>199</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="104" name="while.end" type="BlockType">
+    <controlInputObjs>entry</controlInputObjs>
+    <controlInputObjs>while.end.loopexit</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="103" name="_ln199" lineNumber="199" fileName="baseline/fit.cpp" fileDirectory="../." coreId="0" contextFuncName="finalStage" opcode="ret" nodeLabel="86.0" m_display="0" m_topoIndex="78" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="baseline/fit.cpp" linenumber="199" fileDirectory="C:\Users\abelo\AppData\Roaming\Xilinx\Vitis\phy596\hw1" functionName="finalStage"/>
+    </node_objs>
+    <fileValidLineNumbers fileName="baseline/fit.cpp">
+      <validLinenumbers>199</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <ScheduleInfo time="0"/>
+  <ScheduleInfo time="1"/>
+  <ScheduleInfo time="2"/>
+  <ScheduleInfo time="3"/>
+  <ScheduleInfo time="4"/>
+  <ScheduleInfo time="5"/>
+  <ScheduleInfo time="6"/>
+  <ScheduleInfo time="7"/>
+  <ScheduleInfo time="8"/>
+  <ScheduleInfo time="9"/>
+  <ScheduleInfo time="10"/>
+  <ScheduleInfo time="11"/>
+  <ScheduleInfo time="12"/>
+  <ScheduleInfo time="13"/>
+  <ScheduleInfo time="14"/>
+  <ScheduleInfo time="15"/>
+  <ScheduleInfo time="16"/>
+  <ScheduleInfo time="17"/>
+  <ScheduleInfo time="18"/>
+  <ScheduleInfo time="19"/>
+  <ScheduleInfo time="20"/>
+  <ScheduleInfo time="21"/>
+  <ScheduleInfo time="22"/>
+  <ScheduleInfo time="23"/>
+  <ScheduleInfo time="24"/>
+  <ScheduleInfo time="25"/>
+  <ScheduleInfo time="26"/>
+  <ScheduleInfo time="27"/>
+  <ScheduleInfo time="28"/>
+  <ScheduleInfo time="29"/>
+  <ScheduleInfo time="30"/>
+  <ScheduleInfo time="31"/>
+  <ScheduleInfo time="32"/>
+  <ScheduleInfo time="33"/>
+  <ScheduleInfo time="34"/>
+  <ScheduleInfo time="35"/>
+  <ScheduleInfo time="36"/>
+  <ScheduleInfo time="37"/>
+  <ScheduleInfo time="38"/>
+  <ScheduleInfo time="39"/>
+  <ScheduleInfo time="40"/>
+  <ScheduleInfo time="41"/>
+  <ScheduleInfo time="42"/>
+  <ScheduleInfo time="43"/>
+  <ScheduleInfo time="44"/>
+  <ScheduleInfo time="45"/>
+  <ScheduleInfo time="46"/>
+  <ScheduleInfo time="47"/>
+  <ScheduleInfo time="48"/>
+  <ScheduleInfo time="49"/>
+  <ScheduleInfo time="50"/>
+  <ScheduleInfo time="51"/>
+  <ScheduleInfo time="52"/>
+  <ScheduleInfo time="53"/>
+  <ScheduleInfo time="54"/>
+  <ScheduleInfo time="55"/>
+  <ScheduleInfo time="56"/>
+  <ScheduleInfo time="57"/>
+  <ScheduleInfo time="58"/>
+  <ScheduleInfo time="59"/>
+  <ScheduleInfo time="60"/>
+  <ScheduleInfo time="61"/>
+  <ScheduleInfo time="62"/>
+  <ScheduleInfo time="63"/>
+  <ScheduleInfo time="64"/>
+  <ScheduleInfo time="65"/>
+  <ScheduleInfo time="66"/>
+  <ScheduleInfo time="67"/>
+  <ScheduleInfo time="68"/>
+  <ScheduleInfo time="69"/>
+  <ScheduleInfo time="70"/>
+  <ScheduleInfo time="71"/>
+  <ScheduleInfo time="72"/>
+  <ScheduleInfo time="73"/>
+  <ScheduleInfo time="74"/>
+  <ScheduleInfo time="75"/>
+  <ScheduleInfo time="76"/>
+  <ScheduleInfo time="77"/>
+  <ScheduleInfo time="78"/>
+  <ScheduleInfo time="79"/>
+  <ScheduleInfo time="80"/>
+  <ScheduleInfo time="81"/>
+  <ScheduleInfo time="82"/>
+  <ScheduleInfo time="83"/>
+  <ScheduleInfo time="84"/>
+  <ScheduleInfo time="85"/>
+  <ScheduleInfo time="86"/>
+  <regnodes realName="r_b_1_reg_546">
+    <nodeIds>25</nodeIds>
+  </regnodes>
+  <regnodes realName="icmp_ln186_reg_582">
+    <nodeIds>61</nodeIds>
+  </regnodes>
+  <regnodes realName="mul_ln182_reg_623">
+    <nodeIds>56</nodeIds>
+  </regnodes>
+  <regnodes realName="ref_tmp28_0_reg_199">
+    <nodeIds>81</nodeIds>
+  </regnodes>
+  <regnodes realName="sext_ln181_1_reg_589">
+    <nodeIds>47</nodeIds>
+  </regnodes>
+  <regnodes realName="r_sigmaA_1_reg_553">
+    <nodeIds>26</nodeIds>
+  </regnodes>
+  <regnodes realName="r_n_reg_633">
+    <nodeIds>59</nodeIds>
+  </regnodes>
+  <regnodes realName="sext_ln181_2_reg_594">
+    <nodeIds>48</nodeIds>
+  </regnodes>
+  <regnodes realName="r_sigmaB_1_reg_560">
+    <nodeIds>27</nodeIds>
+  </regnodes>
+  <regnodes realName="mul_ln181_reg_599">
+    <nodeIds>49</nodeIds>
+  </regnodes>
+  <regnodes realName="r_n_1_reg_531">
+    <nodeIds>23</nodeIds>
+  </regnodes>
+  <regnodes realName="x2_read_reg_572">
+    <nodeIds>45</nodeIds>
+  </regnodes>
+  <regnodes realName="r_a_1_reg_539">
+    <nodeIds>24</nodeIds>
+  </regnodes>
+  <regnodes realName="sigmaSquaredDiv1_read_reg_577">
+    <nodeIds>54</nodeIds>
+  </regnodes>
+  <regnodes realName="tmp_reg_527">
+    <nodeIds>20</nodeIds>
+  </regnodes>
+  <regnodes realName="y2_read_reg_567">
+    <nodeIds>41</nodeIds>
+  </regnodes>
+  <regnodes realName="sext_ln182_reg_612">
+    <nodeIds>53</nodeIds>
+  </regnodes>
+  <regnodes realName="trunc_ln_reg_607">
+    <nodeIds>52</nodeIds>
+  </regnodes>
+  <regnodes realName="sext_ln182_1_reg_618">
+    <nodeIds>55</nodeIds>
+  </regnodes>
+  <regnodes realName="trunc_ln3_reg_628">
+    <nodeIds>58</nodeIds>
+  </regnodes>
+  <regnodes realName="or_ln190_4_reg_644">
+    <nodeIds>70</nodeIds>
+  </regnodes>
+  <regnodes realName="sext_ln188_1_reg_639">
+    <nodeIds>68</nodeIds>
+  </regnodes>
+  <expressionNodes realName="sext_ln182_fu_362">
+    <nodeIds>53</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_5_fu_435">
+    <nodeIds>77</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="r_b_3_fu_466">
+    <nodeIds>83</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="r_b_fu_244">
+    <nodeIds>18</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="r_sigmaA_fu_254">
+    <nodeIds>19</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="r_a_1_fu_130">
+    <nodeIds>24</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sext_ln188_fu_391">
+    <nodeIds>66</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="r_n_1_fu_126">
+    <nodeIds>23</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="r_sigmaA_2_fu_476">
+    <nodeIds>84</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="r_a_3_fu_456">
+    <nodeIds>82</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sub_ln181_1_fu_347">
+    <nodeIds>51</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sext_ln181_fu_329">
+    <nodeIds>43</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="r_sigmaB_1_fu_142">
+    <nodeIds>27</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="r_sigmaA_1_fu_138">
+    <nodeIds>26</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="trunc_ln196_fu_431">
+    <nodeIds>76</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln188_fu_394">
+    <nodeIds>67</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="shl_ln181_1_fu_302">
+    <nodeIds>46</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="or_ln190_4_fu_415">
+    <nodeIds>70</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="r_sigmaB_2_fu_486">
+    <nodeIds>85</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="r_sigmaB_fu_224">
+    <nodeIds>16</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="ref_tmp28_0_phi_fu_202">
+    <nodeIds>81</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="shl_ln181_2_fu_339">
+    <nodeIds>50</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_3_fu_445">
+    <nodeIds>78</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="shl_ln_fu_322">
+    <nodeIds>42</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="r_a_fu_234">
+    <nodeIds>17</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sext_ln181_1_fu_309">
+    <nodeIds>47</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="r_b_1_fu_134">
+    <nodeIds>25</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="r_n_fu_380">
+    <nodeIds>59</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sext_ln182_1_fu_366">
+    <nodeIds>55</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln186_fu_293">
+    <nodeIds>61</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sext_ln181_2_fu_314">
+    <nodeIds>48</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sext_ln188_1_fu_400">
+    <nodeIds>68</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="trunc_ln3_fu_370">
+    <nodeIds>58</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="trunc_ln_fu_352">
+    <nodeIds>52</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sub_ln181_fu_333">
+    <nodeIds>44</nodeIds>
+  </expressionNodes>
+  <moduleNodes realName="grp_fu_209">
+    <nodeIds>49</nodeIds>
+  </moduleNodes>
+  <moduleNodes realName="grp_fu_217">
+    <nodeIds>57</nodeIds>
+  </moduleNodes>
+  <moduleNodes realName="grp_fu_404">
+    <nodeIds>69</nodeIds>
+  </moduleNodes>
+  <moduleNodes realName="grp_fu_213">
+    <nodeIds>56</nodeIds>
+  </moduleNodes>
+  <ioNodes realName="store_ln175_store_fu_283">
+    <nodeIds>32</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln197_store_fu_516">
+    <nodeIds>90</nodeIds>
+  </ioNodes>
+  <ioNodes realName="y2_read_read_fu_160">
+    <nodeIds>41</nodeIds>
+  </ioNodes>
+  <ioNodes realName="n_load_load_fu_264">
+    <nodeIds>28</nodeIds>
+  </ioNodes>
+  <ioNodes realName="r_sigmaA_1_load_load_fu_409">
+    <nodeIds>64</nodeIds>
+  </ioNodes>
+  <ioNodes realName="r_b_2_load_fu_299">
+    <nodeIds>38</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln197_store_fu_511">
+    <nodeIds>89</nodeIds>
+  </ioNodes>
+  <ioNodes realName="grp_nbreadreq_fu_152">
+    <nodeIds>20</nodeIds>
+    <nodeIds>96</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln197_store_fu_496">
+    <nodeIds>86</nodeIds>
+  </ioNodes>
+  <ioNodes realName="tmp_s_nbreadreq_fu_191">
+    <nodeIds>72</nodeIds>
+  </ioNodes>
+  <ioNodes realName="x2_read_read_fu_166">
+    <nodeIds>45</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln175_store_fu_288">
+    <nodeIds>33</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln175_store_fu_268">
+    <nodeIds>29</nodeIds>
+  </ioNodes>
+  <ioNodes realName="r_a_2_load_fu_319">
+    <nodeIds>37</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln175_store_fu_273">
+    <nodeIds>30</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln197_store_fu_506">
+    <nodeIds>88</nodeIds>
+  </ioNodes>
+  <ioNodes realName="grp_read_fu_146">
+    <nodeIds>15</nodeIds>
+    <nodeIds>75</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln186_store_fu_386">
+    <nodeIds>93</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln197_store_fu_501">
+    <nodeIds>87</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln188_store_fu_521">
+    <nodeIds>100</nodeIds>
+  </ioNodes>
+  <ioNodes realName="r_sigmaB_1_load_load_fu_412">
+    <nodeIds>65</nodeIds>
+  </ioNodes>
+  <ioNodes realName="sigmaSquaredDiv1_read_read_fu_172">
+    <nodeIds>54</nodeIds>
+  </ioNodes>
+  <ioNodes realName="grp_write_fu_184">
+    <nodeIds>71</nodeIds>
+  </ioNodes>
+  <ioNodes realName="grp_load_fu_221">
+    <nodeIds>36</nodeIds>
+    <nodeIds>99</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln175_store_fu_278">
+    <nodeIds>31</nodeIds>
+  </ioNodes>
+  <ioNodes realName="last3_read_read_fu_178">
+    <nodeIds>60</nodeIds>
+  </ioNodes>
+  <ioPorts name="last3">
+    <contents name="nbreadreq">
+      <nodeIds>20</nodeIds>
+      <nodeIds>96</nodeIds>
+    </contents>
+    <contents name="read">
+      <nodeIds>60</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="output_r">
+    <contents name="write">
+      <nodeIds>71</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="resultStream">
+    <contents name="nbreadreq">
+      <nodeIds>72</nodeIds>
+    </contents>
+    <contents name="read">
+      <nodeIds>15</nodeIds>
+      <nodeIds>75</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="sigmaSquaredDiv1">
+    <contents name="read">
+      <nodeIds>54</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="x2">
+    <contents name="read">
+      <nodeIds>45</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="y2">
+    <contents name="read">
+      <nodeIds>41</nodeIds>
+    </contents>
+  </ioPorts>
+  <fsm>
+    <states id="1">
+      <operations id="8" stage="1" latency="1"/>
+      <operations id="9" stage="1" latency="1"/>
+      <operations id="10" stage="1" latency="1"/>
+      <operations id="11" stage="1" latency="1"/>
+      <operations id="12" stage="1" latency="1"/>
+      <operations id="13" stage="1" latency="1"/>
+      <operations id="14" stage="1" latency="1"/>
+      <operations id="15" stage="1" latency="1"/>
+      <operations id="16" stage="1" latency="1"/>
+      <operations id="17" stage="1" latency="1"/>
+      <operations id="18" stage="1" latency="1"/>
+      <operations id="19" stage="1" latency="1"/>
+      <operations id="20" stage="1" latency="1"/>
+      <operations id="21" stage="1" latency="1"/>
+      <operations id="23" stage="1" latency="1"/>
+      <operations id="24" stage="1" latency="1"/>
+      <operations id="25" stage="1" latency="1"/>
+      <operations id="26" stage="1" latency="1"/>
+      <operations id="27" stage="1" latency="1"/>
+      <operations id="28" stage="1" latency="1"/>
+      <operations id="29" stage="1" latency="1"/>
+      <operations id="30" stage="1" latency="1"/>
+      <operations id="31" stage="1" latency="1"/>
+      <operations id="32" stage="1" latency="1"/>
+      <operations id="33" stage="1" latency="1"/>
+      <operations id="34" stage="1" latency="1"/>
+    </states>
+    <states id="2">
+      <operations id="41" stage="1" latency="1"/>
+      <operations id="45" stage="1" latency="1"/>
+      <operations id="54" stage="1" latency="1"/>
+      <operations id="60" stage="1" latency="1"/>
+      <operations id="61" stage="1" latency="1"/>
+    </states>
+    <states id="3">
+      <operations id="38" stage="1" latency="1"/>
+      <operations id="46" stage="1" latency="1"/>
+      <operations id="47" stage="1" latency="1"/>
+      <operations id="48" stage="1" latency="1"/>
+      <operations id="49" stage="5" latency="5"/>
+    </states>
+    <states id="4">
+      <operations id="49" stage="4" latency="5"/>
+    </states>
+    <states id="5">
+      <operations id="49" stage="3" latency="5"/>
+    </states>
+    <states id="6">
+      <operations id="49" stage="2" latency="5"/>
+    </states>
+    <states id="7">
+      <operations id="49" stage="1" latency="5"/>
+    </states>
+    <states id="8">
+      <operations id="37" stage="1" latency="1"/>
+      <operations id="42" stage="1" latency="1"/>
+      <operations id="43" stage="1" latency="1"/>
+      <operations id="44" stage="1" latency="1"/>
+      <operations id="50" stage="1" latency="1"/>
+      <operations id="51" stage="1" latency="1"/>
+      <operations id="52" stage="1" latency="1"/>
+    </states>
+    <states id="9">
+      <operations id="53" stage="1" latency="1"/>
+      <operations id="55" stage="1" latency="1"/>
+      <operations id="56" stage="5" latency="5"/>
+    </states>
+    <states id="10">
+      <operations id="56" stage="4" latency="5"/>
+    </states>
+    <states id="11">
+      <operations id="56" stage="3" latency="5"/>
+    </states>
+    <states id="12">
+      <operations id="56" stage="2" latency="5"/>
+    </states>
+    <states id="13">
+      <operations id="56" stage="1" latency="5"/>
+    </states>
+    <states id="14">
+      <operations id="57" stage="5" latency="5"/>
+    </states>
+    <states id="15">
+      <operations id="57" stage="4" latency="5"/>
+    </states>
+    <states id="16">
+      <operations id="57" stage="3" latency="5"/>
+    </states>
+    <states id="17">
+      <operations id="57" stage="2" latency="5"/>
+    </states>
+    <states id="18">
+      <operations id="36" stage="1" latency="1"/>
+      <operations id="39" stage="1" latency="1"/>
+      <operations id="40" stage="1" latency="1"/>
+      <operations id="57" stage="1" latency="5"/>
+      <operations id="58" stage="1" latency="1"/>
+      <operations id="59" stage="1" latency="1"/>
+      <operations id="62" stage="1" latency="1"/>
+      <operations id="93" stage="1" latency="1"/>
+      <operations id="94" stage="1" latency="1"/>
+    </states>
+    <states id="19">
+      <operations id="66" stage="1" latency="1"/>
+      <operations id="67" stage="1" latency="1"/>
+      <operations id="68" stage="1" latency="1"/>
+      <operations id="69" stage="68" latency="68"/>
+    </states>
+    <states id="20">
+      <operations id="69" stage="67" latency="68"/>
+    </states>
+    <states id="21">
+      <operations id="69" stage="66" latency="68"/>
+    </states>
+    <states id="22">
+      <operations id="69" stage="65" latency="68"/>
+    </states>
+    <states id="23">
+      <operations id="69" stage="64" latency="68"/>
+    </states>
+    <states id="24">
+      <operations id="69" stage="63" latency="68"/>
+    </states>
+    <states id="25">
+      <operations id="69" stage="62" latency="68"/>
+    </states>
+    <states id="26">
+      <operations id="69" stage="61" latency="68"/>
+    </states>
+    <states id="27">
+      <operations id="69" stage="60" latency="68"/>
+    </states>
+    <states id="28">
+      <operations id="69" stage="59" latency="68"/>
+    </states>
+    <states id="29">
+      <operations id="69" stage="58" latency="68"/>
+    </states>
+    <states id="30">
+      <operations id="69" stage="57" latency="68"/>
+    </states>
+    <states id="31">
+      <operations id="69" stage="56" latency="68"/>
+    </states>
+    <states id="32">
+      <operations id="69" stage="55" latency="68"/>
+    </states>
+    <states id="33">
+      <operations id="69" stage="54" latency="68"/>
+    </states>
+    <states id="34">
+      <operations id="69" stage="53" latency="68"/>
+    </states>
+    <states id="35">
+      <operations id="69" stage="52" latency="68"/>
+    </states>
+    <states id="36">
+      <operations id="69" stage="51" latency="68"/>
+    </states>
+    <states id="37">
+      <operations id="69" stage="50" latency="68"/>
+    </states>
+    <states id="38">
+      <operations id="69" stage="49" latency="68"/>
+    </states>
+    <states id="39">
+      <operations id="69" stage="48" latency="68"/>
+    </states>
+    <states id="40">
+      <operations id="69" stage="47" latency="68"/>
+    </states>
+    <states id="41">
+      <operations id="69" stage="46" latency="68"/>
+    </states>
+    <states id="42">
+      <operations id="69" stage="45" latency="68"/>
+    </states>
+    <states id="43">
+      <operations id="69" stage="44" latency="68"/>
+    </states>
+    <states id="44">
+      <operations id="69" stage="43" latency="68"/>
+    </states>
+    <states id="45">
+      <operations id="69" stage="42" latency="68"/>
+    </states>
+    <states id="46">
+      <operations id="69" stage="41" latency="68"/>
+    </states>
+    <states id="47">
+      <operations id="69" stage="40" latency="68"/>
+    </states>
+    <states id="48">
+      <operations id="69" stage="39" latency="68"/>
+    </states>
+    <states id="49">
+      <operations id="69" stage="38" latency="68"/>
+    </states>
+    <states id="50">
+      <operations id="69" stage="37" latency="68"/>
+    </states>
+    <states id="51">
+      <operations id="69" stage="36" latency="68"/>
+    </states>
+    <states id="52">
+      <operations id="69" stage="35" latency="68"/>
+    </states>
+    <states id="53">
+      <operations id="69" stage="34" latency="68"/>
+    </states>
+    <states id="54">
+      <operations id="69" stage="33" latency="68"/>
+    </states>
+    <states id="55">
+      <operations id="69" stage="32" latency="68"/>
+    </states>
+    <states id="56">
+      <operations id="69" stage="31" latency="68"/>
+    </states>
+    <states id="57">
+      <operations id="69" stage="30" latency="68"/>
+    </states>
+    <states id="58">
+      <operations id="69" stage="29" latency="68"/>
+    </states>
+    <states id="59">
+      <operations id="69" stage="28" latency="68"/>
+    </states>
+    <states id="60">
+      <operations id="69" stage="27" latency="68"/>
+    </states>
+    <states id="61">
+      <operations id="69" stage="26" latency="68"/>
+    </states>
+    <states id="62">
+      <operations id="69" stage="25" latency="68"/>
+    </states>
+    <states id="63">
+      <operations id="69" stage="24" latency="68"/>
+    </states>
+    <states id="64">
+      <operations id="69" stage="23" latency="68"/>
+    </states>
+    <states id="65">
+      <operations id="69" stage="22" latency="68"/>
+    </states>
+    <states id="66">
+      <operations id="69" stage="21" latency="68"/>
+    </states>
+    <states id="67">
+      <operations id="69" stage="20" latency="68"/>
+    </states>
+    <states id="68">
+      <operations id="69" stage="19" latency="68"/>
+    </states>
+    <states id="69">
+      <operations id="69" stage="18" latency="68"/>
+    </states>
+    <states id="70">
+      <operations id="69" stage="17" latency="68"/>
+    </states>
+    <states id="71">
+      <operations id="69" stage="16" latency="68"/>
+    </states>
+    <states id="72">
+      <operations id="69" stage="15" latency="68"/>
+    </states>
+    <states id="73">
+      <operations id="69" stage="14" latency="68"/>
+    </states>
+    <states id="74">
+      <operations id="69" stage="13" latency="68"/>
+    </states>
+    <states id="75">
+      <operations id="69" stage="12" latency="68"/>
+    </states>
+    <states id="76">
+      <operations id="69" stage="11" latency="68"/>
+    </states>
+    <states id="77">
+      <operations id="69" stage="10" latency="68"/>
+    </states>
+    <states id="78">
+      <operations id="69" stage="9" latency="68"/>
+    </states>
+    <states id="79">
+      <operations id="69" stage="8" latency="68"/>
+    </states>
+    <states id="80">
+      <operations id="69" stage="7" latency="68"/>
+    </states>
+    <states id="81">
+      <operations id="69" stage="6" latency="68"/>
+    </states>
+    <states id="82">
+      <operations id="69" stage="5" latency="68"/>
+    </states>
+    <states id="83">
+      <operations id="69" stage="4" latency="68"/>
+    </states>
+    <states id="84">
+      <operations id="69" stage="3" latency="68"/>
+    </states>
+    <states id="85">
+      <operations id="69" stage="2" latency="68"/>
+    </states>
+    <states id="86">
+      <operations id="64" stage="1" latency="1"/>
+      <operations id="65" stage="1" latency="1"/>
+      <operations id="69" stage="1" latency="68"/>
+      <operations id="70" stage="1" latency="1"/>
+      <operations id="71" stage="2" latency="2"/>
+    </states>
+    <states id="87">
+      <operations id="71" stage="1" latency="2"/>
+      <operations id="72" stage="1" latency="1"/>
+      <operations id="73" stage="1" latency="1"/>
+      <operations id="75" stage="1" latency="1"/>
+      <operations id="76" stage="1" latency="1"/>
+      <operations id="77" stage="1" latency="1"/>
+      <operations id="78" stage="1" latency="1"/>
+      <operations id="79" stage="1" latency="1"/>
+      <operations id="81" stage="1" latency="1"/>
+      <operations id="82" stage="1" latency="1"/>
+      <operations id="83" stage="1" latency="1"/>
+      <operations id="84" stage="1" latency="1"/>
+      <operations id="85" stage="1" latency="1"/>
+      <operations id="86" stage="1" latency="1"/>
+      <operations id="87" stage="1" latency="1"/>
+      <operations id="88" stage="1" latency="1"/>
+      <operations id="89" stage="1" latency="1"/>
+      <operations id="90" stage="1" latency="1"/>
+      <operations id="91" stage="1" latency="1"/>
+      <operations id="96" stage="1" latency="1"/>
+      <operations id="97" stage="1" latency="1"/>
+      <operations id="99" stage="1" latency="1"/>
+      <operations id="100" stage="1" latency="1"/>
+      <operations id="101" stage="1" latency="1"/>
+      <operations id="103" stage="1" latency="1"/>
+    </states>
+    <transitions inState="1" outState="87">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="1" outState="2">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="2" outState="3">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="3" outState="4">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="4" outState="5">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="5" outState="6">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="6" outState="7">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="7" outState="8">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="8" outState="9">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="9" outState="10">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="10" outState="11">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="11" outState="12">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="12" outState="13">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="13" outState="14">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="14" outState="15">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="15" outState="16">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="16" outState="17">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="17" outState="18">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="18" outState="19">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="19" outState="20">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="20" outState="21">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="21" outState="22">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="22" outState="23">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="23" outState="24">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="24" outState="25">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="25" outState="26">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="26" outState="27">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="27" outState="28">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="28" outState="29">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="29" outState="30">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="30" outState="31">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="31" outState="32">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="32" outState="33">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="33" outState="34">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="34" outState="35">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="35" outState="36">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="36" outState="37">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="37" outState="38">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="38" outState="39">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="39" outState="40">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="40" outState="41">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="41" outState="42">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="42" outState="43">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="43" outState="44">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="44" outState="45">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="45" outState="46">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="46" outState="47">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="47" outState="48">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="48" outState="49">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="49" outState="50">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="50" outState="51">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="51" outState="52">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="52" outState="53">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="53" outState="54">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="54" outState="55">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="55" outState="56">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="56" outState="57">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="57" outState="58">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="58" outState="59">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="59" outState="60">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="60" outState="61">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="61" outState="62">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="62" outState="63">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="63" outState="64">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="64" outState="65">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="65" outState="66">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="66" outState="67">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="67" outState="68">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="68" outState="69">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="69" outState="70">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="70" outState="71">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="71" outState="72">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="72" outState="73">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="73" outState="74">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="74" outState="75">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="75" outState="76">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="76" outState="77">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="77" outState="78">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="78" outState="79">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="79" outState="80">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="80" outState="81">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="81" outState="82">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="82" outState="83">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="83" outState="84">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="84" outState="85">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="85" outState="86">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="86" outState="87">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="18" outState="87">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="87" outState="2">
+      <condition id="-1"/>
+    </transitions>
+  </fsm>
+  <CFGRegionsRoot>
+    <cfgRegions mId="1" mTag="finalStage" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="1" mMaxLatency="430000">
+      <subRegions>2</subRegions>
+      <subRegions>3</subRegions>
+      <subRegions>4</subRegions>
+      <subRegions>5</subRegions>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="2" mTag="Entry" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1">
+      <basicBlocks>22</basicBlocks>
+      <basicBlocks>35</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="3" mTag="readResult" mII="-1" mDepth="-1" mMinTripCount="500" mMaxTripCount="5000" mMinLatency="8999" mMaxLatency="429999" mType="1">
+      <basicBlocks>63</basicBlocks>
+      <basicBlocks>74</basicBlocks>
+      <basicBlocks>80</basicBlocks>
+      <basicBlocks>92</basicBlocks>
+      <basicBlocks>95</basicBlocks>
+      <basicBlocks>98</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="4" mTag="Region 1" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1">
+      <basicBlocks>102</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="5" mTag="Return" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1">
+      <basicBlocks>104</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+  </CFGRegionsRoot>
+</cdfg:DBCdfg>
