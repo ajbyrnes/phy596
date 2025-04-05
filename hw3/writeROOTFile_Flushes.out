@@ -1,0 +1,135 @@
+******************************************************************************
+*Tree    :tvec      : Tree with vectors                                      *
+*Entries :  1000000 : Total =       659279513 bytes  File  Size =  420299429 *
+*        :          : Tree compression factor =   1.46                       *
+******************************************************************************
+*Br    0 :vpx       : vector<float>                                          *
+*Entries :  1000000 : Total  Size=  112218729 bytes  File Size  =   93681909 *
+*Baskets :     2418 : Basket Size=    8030208 bytes  Compression=   1.13     *
+*............................................................................*
+*Br    1 :vpy       : vector<float>                                          *
+*Entries :  1000000 : Total  Size=  112218729 bytes  File Size  =   93681447 *
+*Baskets :     2418 : Basket Size=    8030208 bytes  Compression=   1.13     *
+*............................................................................*
+*Br    2 :vpz       : vector<float>                                          *
+*Entries :  1000000 : Total  Size=  112218729 bytes  File Size  =   91205731 *
+*Baskets :     2418 : Basket Size=    8030208 bytes  Compression=   1.16     *
+*............................................................................*
+*Br    3 :vpt       : vector<float>                                          *
+*Entries :  1000000 : Total  Size=  210399053 bytes  File Size  =  103847063 *
+*Baskets :     4464 : Basket Size=   25600000 bytes  Compression=   1.83     *
+*............................................................................*
+*Br    4 :vpint     : vector<int>                                            *
+*Entries :  1000000 : Total  Size=  112223681 bytes  File Size  =   37747088 *
+*Baskets :     2419 : Basket Size=    8030208 bytes  Compression=   2.80     *
+*............................................................................*
+
+wr_hvec_N1000000_F0_Sz50: Real Time =  19.21 seconds Cpu Time =  18.85 seconds
+******************************************************************************
+*Tree    :tvec      : Tree with vectors                                      *
+*Entries :  1000000 : Total =       658063987 bytes  File  Size =  448881130 *
+*        :          : Tree compression factor =   1.46                       *
+******************************************************************************
+*Br    0 :vpx       : vector<float>                                          *
+*Entries :  1000000 : Total  Size=  112011889 bytes  File Size  =   98961824 *
+*Baskets :      284 : Basket Size=    3255808 bytes  Compression=   1.13     *
+*............................................................................*
+*Br    1 :vpy       : vector<float>                                          *
+*Entries :  1000000 : Total  Size=  112011889 bytes  File Size  =   98961057 *
+*Baskets :      284 : Basket Size=    3255808 bytes  Compression=   1.13     *
+*............................................................................*
+*Br    2 :vpz       : vector<float>                                          *
+*Entries :  1000000 : Total  Size=  112011889 bytes  File Size  =   96429686 *
+*Baskets :      284 : Basket Size=    3255808 bytes  Compression=   1.16     *
+*............................................................................*
+*Br    3 :vpt       : vector<float>                                          *
+*Entries :  1000000 : Total  Size=  210015259 bytes  File Size  =  115272642 *
+*Baskets :      489 : Basket Size=    5638656 bytes  Compression=   1.82     *
+*............................................................................*
+*Br    4 :vpint     : vector<int>                                            *
+*Entries :  1000000 : Total  Size=  112012469 bytes  File Size  =   39240824 *
+*Baskets :      284 : Basket Size=    3256320 bytes  Compression=   2.85     *
+*............................................................................*
+
+          : Real Time =  21.40 seconds Cpu Time =  20.95 seconds
+******************************************************************************
+*Tree    :tvec      : Tree with vectors                                      *
+*Entries :  1000000 : Total =       658562943 bytes  File  Size =  450508289 *
+*        :          : Tree compression factor =   1.46                       *
+******************************************************************************
+*Br    0 :vpx       : vector<float>                                          *
+*Entries :  1000000 : Total  Size=  112100931 bytes  File Size  =   99260357 *
+*Baskets :      435 : Basket Size=     286208 bytes  Compression=   1.13     *
+*............................................................................*
+*Br    1 :vpy       : vector<float>                                          *
+*Entries :  1000000 : Total  Size=  112100931 bytes  File Size  =   99260001 *
+*Baskets :      435 : Basket Size=     286208 bytes  Compression=   1.13     *
+*............................................................................*
+*Br    2 :vpz       : vector<float>                                          *
+*Entries :  1000000 : Total  Size=  112100931 bytes  File Size  =   96752472 *
+*Baskets :      435 : Basket Size=     286208 bytes  Compression=   1.16     *
+*............................................................................*
+*Br    3 :vpt       : vector<float>                                          *
+*Entries :  1000000 : Total  Size=  210157745 bytes  File Size  =  115621529 *
+*Baskets :      442 : Basket Size=     520704 bytes  Compression=   1.82     *
+*............................................................................*
+*Br    4 :vpint     : vector<int>                                            *
+*Entries :  1000000 : Total  Size=  112101813 bytes  File Size  =   39595117 *
+*Baskets :      435 : Basket Size=     286208 bytes  Compression=   2.83     *
+*............................................................................*
+
+wr_hvec_N1000000_F-1000000_Sz50: Real Time =  21.59 seconds Cpu Time =  20.49 seconds
+******************************************************************************
+*Tree    :tvec      : Tree with vectors                                      *
+*Entries :  1000000 : Total =       658373295 bytes  File  Size =  450119181 *
+*        :          : Tree compression factor =   1.46                       *
+******************************************************************************
+*Br    0 :vpx       : vector<float>                                          *
+*Entries :  1000000 : Total  Size=  112063901 bytes  File Size  =   99217394 *
+*Baskets :      136 : Basket Size=    1204224 bytes  Compression=   1.13     *
+*............................................................................*
+*Br    1 :vpy       : vector<float>                                          *
+*Entries :  1000000 : Total  Size=  112063901 bytes  File Size  =   99216782 *
+*Baskets :      136 : Basket Size=    1204224 bytes  Compression=   1.13     *
+*............................................................................*
+*Br    2 :vpz       : vector<float>                                          *
+*Entries :  1000000 : Total  Size=  112063901 bytes  File Size  =   96687157 *
+*Baskets :      136 : Basket Size=    1204224 bytes  Compression=   1.16     *
+*............................................................................*
+*Br    3 :vpt       : vector<float>                                          *
+*Entries :  1000000 : Total  Size=  210116787 bytes  File Size  =  115634851 *
+*Baskets :      167 : Basket Size=    2187776 bytes  Compression=   1.82     *
+*............................................................................*
+*Br    4 :vpint     : vector<int>                                            *
+*Entries :  1000000 : Total  Size=  112064181 bytes  File Size  =   39356030 *
+*Baskets :      136 : Basket Size=    1204224 bytes  Compression=   2.85     *
+*............................................................................*
+
+wr_hvec_N1000000_F10000_Sz50: Real Time =  21.20 seconds Cpu Time =  20.46 seconds
+******************************************************************************
+*Tree    :tvec      : Tree with vectors                                      *
+*Entries :  1000000 : Total =       665585551 bytes  File  Size =  459214253 *
+*        :          : Tree compression factor =   1.45                       *
+******************************************************************************
+*Br    0 :vpx       : vector<float>                                          *
+*Entries :  1000000 : Total  Size=  113491211 bytes  File Size  =  101165511 *
+*Baskets :    14337 : Basket Size=      11776 bytes  Compression=   1.12     *
+*............................................................................*
+*Br    1 :vpy       : vector<float>                                          *
+*Entries :  1000000 : Total  Size=  113491211 bytes  File Size  =  101166117 *
+*Baskets :    14337 : Basket Size=      11776 bytes  Compression=   1.12     *
+*............................................................................*
+*Br    2 :vpz       : vector<float>                                          *
+*Entries :  1000000 : Total  Size=  113491211 bytes  File Size  =   98439282 *
+*Baskets :    14337 : Basket Size=      11776 bytes  Compression=   1.15     *
+*............................................................................*
+*Br    3 :vpt       : vector<float>                                          *
+*Entries :  1000000 : Total  Size=  211588593 bytes  File Size  =  115231241 *
+*Baskets :    15012 : Basket Size=      21504 bytes  Compression=   1.83     *
+*............................................................................*
+*Br    4 :vpint     : vector<int>                                            *
+*Entries :  1000000 : Total  Size=  113522701 bytes  File Size  =   42599448 *
+*Baskets :    14364 : Basket Size=      11776 bytes  Compression=   2.66     *
+*............................................................................*
+
+wr_hvec_N1000000_F100_Sz50: Real Time =  20.28 seconds Cpu Time =  19.45 seconds

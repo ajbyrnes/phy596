@@ -8,7 +8,7 @@ EXECS = $(SRCS:.cpp=)
 all: $(EXECS)
 
 $(EXECS): %: %.cpp
-	$(CXX) $(ROOTFLAGS) $(CXXFLAGS) -o $@ $<
+	$(CXX) -o $@ $< $(ROOTFLAGS) $(CXXFLAGS) 
 
 clean: 
 	rm -rf *.o $(EXECS)

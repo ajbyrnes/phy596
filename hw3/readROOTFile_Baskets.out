@@ -1,0 +1,45 @@
+
+<==== Basket Size: @ 4====>
+
+Disk Mean = 0.144338 and RMS/sqrt(N) = 0.0348021
+read_hvector: Real Time = 224.18 seconds Cpu Time = 221.34 seconds
+
+<==== Basket Size: @ 8====>
+
+Disk Mean = 0.34734 and RMS/sqrt(N) = 0.192674
+read_hvector: Real Time = 226.97 seconds Cpu Time = 222.66 seconds
+
+<==== Basket Size: @ 16====>
+
+Disk Mean = 0.490732 and RMS/sqrt(N) = 0.274434
+read_hvector: Real Time = 229.01 seconds Cpu Time = 225.74 seconds
+
+<==== Basket Size: @ 32====>
+
+Disk Mean = 0.390768 and RMS/sqrt(N) = 0.228327
+read_hvector: Real Time = 232.01 seconds Cpu Time = 227.04 seconds
+
+<==== Basket Size: @ 64====>
+
+Disk Mean = 0.685322 and RMS/sqrt(N) = 0.43498
+read_hvector: Real Time = 234.36 seconds Cpu Time = 231.02 seconds
+
+<==== Basket Size: @ 128====>
+
+Disk Mean = 0.340017 and RMS/sqrt(N) = 0.154349
+read_hvector: Real Time = 229.82 seconds Cpu Time = 227.42 seconds
+
+<==== Basket Size: @ 256====>
+
+Disk Mean = 0.388844 and RMS/sqrt(N) = 0.192162
+read_hvector: Real Time = 227.20 seconds Cpu Time = 224.41 seconds
+
+<==== Basket Size: @ 512====>
+
+Disk Mean = 0.416712 and RMS/sqrt(N) = 0.189527
+read_hvector: Real Time = 226.52 seconds Cpu Time = 223.33 seconds
+
+<==== Basket Size: @ 1024====>
+
+Disk Mean = 0.444073 and RMS/sqrt(N) = 0.221554
+read_hvector: Real Time = 230.33 seconds Cpu Time = 227.22 seconds

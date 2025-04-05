@@ -1,0 +1,25 @@
+
+<==== Flush Setting: @ 0====>
+
+Disk Mean = 0.0944909 and RMS/sqrt(N) = 0.00966608
+read_hvector: Real Time = 184.50 seconds Cpu Time = 182.73 seconds
+
+<==== Flush Setting: @ -30000000====>
+
+Disk Mean = 0.0896908 and RMS/sqrt(N) = 0.0103546
+read_hvector: Real Time = 188.19 seconds Cpu Time = 181.57 seconds
+
+<==== Flush Setting: @ -1000000====>
+
+Disk Mean = 0.177034 and RMS/sqrt(N) = 0.0450185
+read_hvector: Real Time = 186.79 seconds Cpu Time = 182.84 seconds
+
+<==== Flush Setting: @ 10000====>
+
+Disk Mean = 0.126017 and RMS/sqrt(N) = 0.0320982
+read_hvector: Real Time = 185.80 seconds Cpu Time = 183.25 seconds
+
+<==== Flush Setting: @ 100====>
+
+Disk Mean = 0.382924 and RMS/sqrt(N) = 0.194932
+read_hvector: Real Time = 193.46 seconds Cpu Time = 193.33 seconds

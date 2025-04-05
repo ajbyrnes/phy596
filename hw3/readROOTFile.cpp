@@ -14,6 +14,8 @@
 #include <TTree.h>
 #include<TTreePerfStats.h>
 
+#include "size.hpp"
+
 int ntodo{10};
 
 void read(char* fin, char* fout) {
@@ -63,7 +65,7 @@ void read(char* fin, char* fout) {
 
             // Monitor progress
             if (i % 10'000 && iter > 0) {
-                std::cerr << "\rLOOP [read()] iter = " << iter << ", i = " << i << " / " << N << std::flush;
+                std::cerr << "\rLOOP [read()] iter = " << iter << ", i = " << i + 1 << " / " << N << std::flush;
             }
         }
 
@@ -81,34 +83,46 @@ void read(char* fin, char* fout) {
         
         // Close file with tree
         f->Close();
+
+        // Cleanup
+        delete myIOStats;
     }
     
-    std::cerr << std::endl;
-    std::cerr << "Disk Mean = " << hdisk->GetMean() << " and RMS/sqrt(N) = " << hdisk->GetRMS() / sqrt(ntodo) << std::endl;
+    std::cout << std::endl;
+    std::cout << "Disk Mean = " << hdisk->GetMean() << " and RMS/sqrt(N) = " << hdisk->GetRMS() / sqrt(ntodo) << std::endl;
+
+    // Cleanup
+    delete hdisk;
 }
 
 int main() {
-    int N{static_cast<int>(1e3)};
+    int N{SIZE};
 
-    std::vector<int> flushes{};
-    flushes.emplace_back(0);
-    flushes.emplace_back(-30'000'000);
-    flushes.emplace_back(-1'000'000);
-    flushes.emplace_back(1e4);
-    flushes.emplace_back(1e2);
+    // std::vector<int> flushes{};
+    // flushes.emplace_back(0);
+    // flushes.emplace_back(-30'000'000);
+    // flushes.emplace_back(-1'000'000);
+    // flushes.emplace_back(1e4);
+    // flushes.emplace_back(1e2);
+
+    // int flush{0};
+
+    std::vector<int> basketSizes{4, 8, 16, 32, 64, 128, 256, 512, 1024};
 
     // Timed read()
-    for (const int& flush : flushes) {
-        // std::cerr << "Flush = " << flush << " and N = " << N << " and vec size = " << vecsize << std::endl;
-
+    // for (const int& flush : flushes) {
+    for (const int& basketSize : basketSizes) {
         gBenchmark = new TBenchmark();
         gBenchmark->Start("read_hvector");
         
-        std::cerr << std::endl;
-        std::cerr << "<==== Flush Setting: @ " << flush << "====>" << std::endl;
+        std::cout << std::endl;
+        std::cout << "<==== Basket Size: @ " << basketSize << "====>" << std::endl;
+        // std::cout << "<==== Flush Setting: @ " << flush << "====>" << std::endl;
 
-        char* fname_in{Form("hvector_%d_%d_50.root", N, flush)};
-        char* fname_out{Form("stats_%d_%d_50.root", N, flush)};
+        // char* fname_in{Form("hvector_%d_%d_50.root", N, flush)};
+        // char* fname_out{Form("stats_%d_%d_50.root", N, flush)};
+        char* fname_in{Form("hvector_%d_F=%d_Bsz=%d_v=%d.root", N, 0, basketSize, 50)};
+        char* fname_out{Form("stats_%d_F=%d_Bsz=%d_v=%d.root", N, 0, basketSize, 50)};
         read(fname_in, fname_out);
 
         gBenchmark->Stop("read_hvector");
