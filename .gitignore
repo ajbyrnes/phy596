@@ -1,3 +1,6 @@
 hw3/athena
 hw3/build
 hw3/run
+hw3/*.root
+readROOTFile
+writeROOTFile
